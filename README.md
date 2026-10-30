@@ -1,14 +1,16 @@
-# Data and code for the systematic review "How forest roads, trails, and drainage structures alter hydrological connectivity"
+------------------------------------------------------------------------
 
-Amerhauser, E., Holzleitner, F., Wemple, B., Behringer, M., Lechner, V., Scheidl, C.
+editor_options: markdown: wrap: 72 ---
 
-This repository holds the data and code behind the review. Running one script
-reproduces every figure and table of the article and of its Supplementary
-Material.
+# How forest roads, trails, and drainage structures alter hydrological connectivity: A systematic review of three decades of evidence
+
+Elias Amerhauser <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0008-3260-9634)</sup>, Franz Holzleitner <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0001-8489-3050)</sup>, Beverley Wemple <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-3155-9099)</sup>, Maximilian Behringer<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0003-2073-0943)</sup>, Veronika Lechner <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-5716-6541)</sup>, Christian Scheidl<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-5625-6238)</sup> (2026): **How forest roads, trails, and drainage structures alter hydrological connectivity: A systematic review of three decades of evidence**.
+
+This repository holds the data and code behind the review. Running one script reproduces every figure and table of the article and of its Supplementary Material.
 
 ## Contents
 
-```
+```         
 analysis/                     data and R code, run from this folder
   run_all.R                   reproduces all outputs
   aquasilva.csv               reference-library export, 272 entries; selected
@@ -43,20 +45,17 @@ protocol/
 
 ## Reproducing the results
 
-Requirements: R (4.3 or later) with the packages tidyverse, here, patchwork,
-scales, and stringr.
+Requirements: R (4.3 or later) with the packages tidyverse, here, patchwork, scales, and stringr.
 
-```
+```         
 cd analysis
 Rscript run_all.R
 ```
 
-The script writes the figures to `analysis/figures/`, the companion tables to
-`analysis/tables/`, and the LaTeX tables of the Supplementary Material to
-`analysis/writeup/`.
+The script writes the figures to `analysis/figures/`, the companion tables to `analysis/tables/`, and the LaTeX tables of the Supplementary Material to `analysis/writeup/`.
 
 | Script | Produces |
-|---|---|
+|----|----|
 | `build_cite_map.R` | `cite_map.csv` |
 | `extraction_load.R` | validates the closed vocabularies, applies `effects_corrections.csv`, joins the sheets to the library |
 | `aquasilva_slr_visualization.R` | tag-based counts, PRISMA flow diagram |
@@ -68,19 +67,14 @@ The script writes the figures to `analysis/figures/`, the companion tables to
 
 ## Tag system
 
-Each record in `aquasilva.csv` carries its provenance and decisions in the
-column `Manual Tags`: `001-` database, `090-` query, `091-ManualAdd` citation
-tracking, `006-` screening decision and reason, `002-` to `005-` and `010-` to
-`030-` content codes. The tag families are defined in Supplementary Material S1.
+Each record in `aquasilva.csv` carries its provenance and decisions in the column `Manual Tags`: `001-` database, `090-` query, `091-ManualAdd` citation tracking, `006-` screening decision and reason, `002-` to `005-` and `010-` to `030-` content codes. The tag families are defined in Supplementary Material S1.
 
 ## Extraction pipeline
 
-`pipeline/` holds the Python scripts that produced the extraction tables
-(Supplementary Material S4). They need Python 3 with `pypdf` and `anthropic`
-and an API key in `ANTHROPIC_API_KEY`.
+`pipeline/` holds the Python scripts that produced the extraction tables (Supplementary Material S4). They need Python 3 with `pypdf` and `anthropic` and an API key in `ANTHROPIC_API_KEY`.
 
 | Script | Step |
-|---|---|
+|----|----|
 | `0_prepare.py` | selects the included records, extracts the PDF full texts, writes `manifest.json` |
 | `fix_glyphs.py` | repairs full texts with glyph codes from PDFs without a ToUnicode map |
 | `1_submit.py` | builds and submits one batch per skill (switch `SKILLS`) |
@@ -88,12 +82,7 @@ and an API key in `ANTHROPIC_API_KEY`.
 | `rerun_b.py`, `rerun_c.py` | re-run Skill B or C for single records and merge the result |
 | `prompts.py` | system prompts of Skills A to E, as run |
 
-The scripts are archived in the state of their last use (for example
-`SKILLS = ["E"]` in `1_submit.py`). `0_prepare.py` reads the PDF paths from the
-full reference-manager export, which is not part of this repository; the full
-texts are not shared for copyright reasons. Language-model output is not
-deterministic, so a re-run reproduces the procedure, not every value. The
-extraction tables in `analysis/` are the data the article is based on.
+The scripts are archived in the state of their last use (for example `SKILLS = ["E"]` in `1_submit.py`). `0_prepare.py` reads the PDF paths from the full reference-manager export, which is not part of this repository; the full texts are not shared for copyright reasons. Language-model output is not deterministic, so a re-run reproduces the procedure, not every value. The extraction tables in `analysis/` are the data the article is based on.
 
 ## Licence
 
