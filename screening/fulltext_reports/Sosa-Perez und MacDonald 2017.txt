@@ -1,0 +1,89 @@
+I'll read the full text of the paper to conduct the gate evaluation properly.
+
+[Reading: ⁨Sosa-Perez⁩ und ⁨MacDonald⁩ 2017, p. 1-14 (14 results)]
+
+Now let me check the existing Zotero tags on this item to complete the provenance verification.
+
+[Get metadata]
+
+---
+
+## Stage-2 Gate Report — Sosa-Pérez & MacDonald 2017
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No — item carries `006-Include-Stage1` (clean pass); no `90-borderline-*` helper tags present. Note: the item also already carries `006-Include-Stage2` and `006-Include-Final`, applied prior to this gate evaluation; the assessment below serves as the validating record for those tags.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attached (10-QCJCZKY6), 14 pages, fully retrievable. |
+| **Gate 2** | **PASS** | See (a)+(b) below. |
+| Gate 2(a) — B1 as study variable | PASS | The unpaved forest road (Old Flowers Road, USFS Road 152) is the primary study object; road segment slope, drainage design, length, width, and surface cover are all explicit independent variables in statistical models. (Sosa-Perez and MacDonald 2017)  (Sosa-Perez and MacDonald 2017) |
+| Gate 2(b) — connectivity as primary/co-reported outcome | PASS | Road–stream connectivity is the second stated study objective and is operationalized with a binary metric (drainage feature reaching within 5 m of a channel) and reported as percent connected by burn-severity class.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) |
+| **Q1** — Study context | **PASS** | Region: Colorado Front Range, ~40 km west of Fort Collins, CO (s61). Climate: semi-arid, mean annual precipitation ~550 mm, convective summer storms (s76–s78). Catchment scale: mean contributing area above road 0.82 ha (s143). Land use: USFS managed forest, Arapaho-Roosevelt National Forest (s62).  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) |
+| **Q2** — Study design | **PASS** | Gradient design: 141 road segments stratified post-hoc by upslope burn severity (high / moderate / low), surveyed one year after the 2012 High Park Fire. Supplementary comparative modeling with WEPP:Road and Disturbed WEPP is auxiliary, not co-central.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) |
+| **Q3** — Method description | **PASS** | Burn severity protocol cited (Parsons et al. 2010, s90); GPS segment delineation (s88); clinometer slope, visual cover estimation calibrated against 29 reference segments (s113); connectivity criterion explicitly defined at ≤5 m from channel (s127); DEM: 1 m LiDAR + ArcHydro, 5000 m² threshold (s104–s106); statistical approach (ANOVA, Kruskal–Wallis, stepwise MLR) fully described (s132–s140).  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) |
+| **Q4** — Infrastructure characterized | **PASS** | Unpaved USFS road; primarily planar design (86% of segments), with 20 outsloped segments; waterbars as drainage structures; mean segment length 49 m, active width 2.4 m, mean slope 8%; n = 141 segments across 6.8 km.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) |
+| **Q5** — Connectivity operationalized | **PASS** | Binary connectivity metric: connected if drainage feature extends within 5 m of nearest channel (s127). Percentage connected per burn-severity class reported (100% high, 100% moderate, 78% low severity). Cross-sectional area of drainage rills (mean 0.1 m² for high/moderate) and horizontal distance to stream (mean 70 m) are additional quantitative supporting metrics.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) |
+| **Q6** — Effect direction | **PASS** | Clear and quantified: wildfire at high or moderate severity → 100% road–stream connectivity; low severity → 78% connectivity; unburned analogues from comparable Colorado Front Range studies report only 14–15%. Effect direction: strong monotonic increase in connectivity with burn severity. Road slope amplifies rilling and drainage-feature size within each severity class.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) |
+| **Q7** — Sample/scope | **PASS** | n = 141 segments (54 high, 37 moderate, 50 low severity); full statistical analysis completed; complete investigation iteration.  (Sosa-Perez and MacDonald 2017) |
+| **Gate 4** | **PASS** | Confirms Q7. |
+| **Gate 5** | **PASS** | Quantitative effect directions directly extractable: % connectivity by burn-severity class (s271–272); rill proportions by severity class (s195); rill volumes in m³ (s224–225); cross-sectional drainage areas in m² (s267–268); WEPP-modeled runoff (m³/yr) and sediment yields (kg/yr) by hillslope condition (s303–307).  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017) |
+
+---
+
+### Provenance verification
+
+Existing provenance tags: `010-A1-ConnectivityConcepts`, `020-B1-Roads`, `090-H01`, `001-WoS`.
+
+**Potential A-block content–provenance drift (minor, flag for screener):** The item was retrieved under `010-A1-ConnectivityConcepts`. The paper does centrally use connectivity as a concept (A1), but a substantive portion of the results and discussion is devoted to flow-path alteration — the road intercepts dispersed hillslope runoff and funnels it to a single drainage point, forming and extending connected flow paths downslope to the stream.  (Sosa-Perez and MacDonald 2017) This flow-path description and analysis aligns substantively with `010-A2-FlowPathDescriptors`. The paper could equally have been captured under an A2-type query. The screener may wish to note this as an additive A2 signal for synthesis mapping purposes (the import provenance remains `A1` and need not change).
+
+**020-B1-Roads:** Perfect match — the entire study focuses on a single unpaved forest road. No drift.
+
+**030-C\*:** Not applicable (H-query, no mitigation block). The management-implications section (s345–s362) discusses waterbars and outsloping qualitatively but these are not study variables; no drift expected.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final` *(both already present on the item; this assessment confirms their validity)*
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None — all items resolved with high confidence from full text.
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — study object is exclusively an unpaved USFS forest road (Old Flowers Road / Road 152); waterbars are pre-existing segment delimiters, not co-equal study variables.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017)
+
+- **003** [Study type]: `003-FieldMonitoring` (single tag) — primary data are field measurements from a post-fire road survey; WEPP:Road/Disturbed WEPP modeling is explicitly framed as supplementary comparison ("helped compare the relative amounts," s59) and does not constitute a co-central modeling strand.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017)
+
+- **004 primary** [Outcome]: `004-FlowPathInitiation` — the novel primary finding is the near-total extension of connected flow paths from road drainage points to the stream network under burned conditions (100% at high/moderate severity vs. 14–34% in unburned references), driven by the road's funneling of dispersed hillslope runoff to a single discharge point and the reduction in downslope infiltration and roughness. This is a topological connectivity / flow-path-extension outcome.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017)
+
+- **004 secondary**: `004-SedimentDelivery` — road surface rilling (rill length, area, volume, cross-sectional drainage area) is the other central outcome, quantifying sediment detachment and delivery as a function of burn severity × road slope.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017)
+
+- **004 tertiary**: `004-RunoffResponse` — WEPP-predicted runoff volumes (m³/yr) and the mechanistic analysis of overland-flow generation (infiltration-excess HOF from burned hillslopes feeding road runoff) are co-reported as the mechanistic driver of both connectivity and erosion outcomes.  (Sosa-Perez and MacDonald 2017)
+
+- **005** [Region]: `005-NorthAmerica` — study site: Colorado Front Range, Colorado, USA.  (Sosa-Perez and MacDonald 2017)
+
+---
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** This paper provides the most direct quantitative evidence in the corpus for wildfire-induced amplification of road–stream connectivity, reporting 100% connectivity at high/moderate severity versus 14–34% in comparable unburned systems — a result attributable to the road's flow-path concentration mechanism rather than proximity to the stream alone. The road-slope × burn-severity interaction model (R² = 0.76 for high-severity segments, Table II) offers a parameterizable empirical basis for AquaSilva's connectivity modeling and Maßnahmenkatalog drainage-frequency recommendations.  (Sosa-Perez and MacDonald 2017) (Sosa-Perez and MacDonald 2017)
+
+---
+
+**Tag replacements made:** none.
+
+## Sources
+
+Sosa-Perez, Gabriel, and Lee MacDonald. 2017. “Wildfire Effects on Road Surface Erosion, Deposition, and Road-Stream Connectivity.” EARTH SURFACE PROCESSES AND LANDFORMS 42 (5): 735–48. https://doi.org/10.1002/esp.4018.

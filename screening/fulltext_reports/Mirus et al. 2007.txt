@@ -1,0 +1,54 @@
+[Reading: Mirus et al. 2007, p. 1-8 (8 results)]
+
+Reading: Mirus et al. 2007
+## Stage 2 screening — Mirus et al. (2007)
+
+**Study profile.** 3D physics-based hydrologic-response simulation (InHM) of a 1·7 ha unchannelled upland catchment (C3) in the H. J. Andrews Experimental Forest, Oregon, dissected by a forest road with a culvert. The road is parameterized as a low-permeability surface layer ($K = 1 \times 10^{-8}$ m s⁻¹) overlying soil at $K = 1 \times 10^{-3}$ m s⁻¹, and the simulation is compared to a 2D vertical-slice variant to isolate convergent subsurface flow effects. (Mirus et al. 2007, 3) (Mirus et al. 2007, 6)
+
+### Gate-by-gate assessment
+
+**Gate 1 — Full text retrievable:** PASS. PDF available (17 pp.).
+
+**Gate 2 — Stage-1 inclusion confirmed:** PASS.
+- Block-B infrastructure as variable: the forest road and its culvert are the explicit experimental contrast; the BVP characterizes the road as a discrete hydrogeologic unit.  (Mirus et al. 2007, 3)
+- Connectivity operationalized as outcome: although the paper does not use the term "connectivity," the mechanism studied is the road-induced diversion of subsurface flow paths and the convergence of subsurface stormflow toward the road-cut and culvert — i.e. functional flow-path linkage between the hillslope and the channel network. This is operationalized through pressure-head fields at the soil/bedrock interface, infiltration/exfiltration maps, and horizontal subsurface flow-direction snapshots.  (Mirus et al. 2007, 8) (Mirus et al. 2007, 11) Co-authorship by Wemple (anchor author) reinforces topical alignment.
+
+**Gate 3 — Q-items (primary modeling study):**
+- Q1 context: catchment, climate, storm record, soils, vegetation, dimensions all reported. PASS.  (Mirus et al. 2007, 3)
+- Q2 design classifiable: 3D continuous physics-based simulation with 2D counterfactual. PASS.  (Mirus et al. 2007, 2)
+- Q3 method reproducibility: governing equations, mesh resolution, boundary conditions, parameter tables, and initial-condition protocol fully documented. PASS.  (Mirus et al. 2007, 4–6)
+- Q4 infrastructure characterized: road geometry, depth (1·0 m), porosity, $K_{\text{sat}}$, and compressibility specified. PASS.  (Mirus et al. 2007, 3)
+- Q5 connectivity operationalized: pore-pressure response up-gradient of road, persistent elevated pressures at the road-cut, and culvert-routed surface flow are quantified at ten monitoring locations along the hollow axis. PASS.  (Mirus et al. 2007, 13–14)
+- Q6 effect direction derivable: 3D simulation yields systematically higher up-gradient pore-water pressures than 2D, with the maximum at the base of the road-cut and lowest factors of safety at the same location. PASS.  (Mirus et al. 2007, 14)
+
+**Gate 4 — Sample/scope:** PASS. 91-day continuous simulation, six runoff events, four largest storms of the regional record.  (Mirus et al. 2007, 6–7)
+
+**Gate 5 — Effect direction extractable:** PASS. Road increases up-gradient subsurface pore-water pressures (e.g. at the culvert, 3D 3·0 m pore pressure 37·5 kPa vs. 2D 30·8 kPa) and decreases simulated slope stability; convergent subsurface flow is concentrated at the road-cut and culvert.  (Mirus et al. 2007, 14)
+
+### Recommended terminal tags
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+### Proposed content-coding tags (suggestions for human screener)
+
+| Family | Proposed value | Supporting sentence |
+|---|---|---|
+| 002 Infrastructure subtype | `002-B1-Roads` | Forest road characterized as a discrete hydrogeologic unit with reduced $K$.  (Mirus et al. 2007, 3) |
+| 003 Study type | `003-Modeling` | 3D physics-based InHM simulation, continuous, with 2D counterfactual.  (Mirus et al. 2007, 2) |
+| 004 Hydrological focus | `004-FlowPathInitiation` | Road diverts subsurface flow paths and concentrates convergent flow at the road-cut/culvert.  (Mirus et al. 2007, 11) |
+| 004 Hydrological focus (secondary) | `004-RunoffResponse` | Observed vs. simulated discharge for six runoff events at the culvert.  (Mirus et al. 2007, 7) |
+| 005 Region | `005-NorthAmerica` | H. J. Andrews Experimental Forest, Oregon, USA.  (Mirus et al. 2007, 3) |
+| 010 Block A | `010-A2-FlowPaths` | Road-induced permeability contrast redirects subsurface flow paths and elevates up-gradient pore pressures.  (Mirus et al. 2007, 1) |
+| 020 Block B | `020-B1-Roads` | Single dissecting forest road with culvert is the infrastructure of interest.  (Mirus et al. 2007, 3) |
+| 030 Block C | `030-empty` | No retention, infiltration, or BMP measure is tested; the study is diagnostic, not mitigation. |
+
+### Notes for the screener
+
+The connectivity framing here is implicit rather than terminological — the paper predates the strong "structural vs. functional connectivity" vocabulary that became standard after ~2008. The mechanism (road-cut interception of subsurface stormflow → culvert → new surface flow path) is nonetheless a textbook case of infrastructure-mediated functional flow-path connectivity and is consistent with the anchor literature (Wemple is a co-author). If the screener applies a strict terminological filter at Gate 2 ("connectivity not operationalized as outcome"), this record would be borderline; under a mechanism-based reading it clearly belongs in the core corpus.
+
+## Sources
+
+Mirus, B. B., B. A. Ebel, K. Loague, and B. C. Wemple. 2007. “Simulated Effect of a Forest Road on Near-Surface Hydrologic Response: Redux.” Earth Surface Processes and Landforms 32 (1): 126–42. Scopus. https://doi.org/10.1002/esp.1387.

@@ -1,0 +1,37 @@
+[Reading: Bowling et al. 2000, p. 1-5 (5 results)]
+
+[Reading: Bowling et al. 2000, p. 10-18 (9 results)]
+
+## Gate Report — Bowling, Storck, Lettenmaier 2000
+
+**Study type:** Paired catchment + Modeling (DHSVM model residuals analysis on 23 western Washington basins, 14–1600 km²)
+
+**Gate 2:** **FAIL** — Block-B infrastructure (forest roads, B1) appears only as a secondary covariate (road density plotted against Kendall slope estimates of trend, Fig. 11) and is otherwise discussed as a confound rather than a controlled study variable; hydrological connectivity is invoked only verbally ("forest roads … can effectively short circuit the natural drainage network", p. 3224) and is **not** operationalized as a primary or co-reported outcome. The reported outcomes are streamflow trends (AMS, POT, MAF, annual minima) attributable to harvest/road area, not connectivity metrics. (Bowling et al. 2000, 2) (Bowling et al. 2000, 11)
+
+**Gate 3 (Q1–Q6, primary study):**
+- **Q1:** PASS — Region (western Washington, Pacific maritime, transient snow zone 300–900 m), catchment sizes (14–1600 km²), land use (forested, GAP-classified harvest age), and climate context are reported.  (Bowling et al. 2000, 1) (Bowling et al. 2000, 2)
+- **Q2:** PASS — Design is unambiguously a paired-catchment retrospective trend analysis (n = 40 pairs) plus a model-residuals analysis using DHSVM as a synthetic control on 3 catchments.  (Bowling et al. 2000, 2) (Bowling et al. 2000, 14)
+- **Q3:** PASS — Mann-Kendall test, paired-difference construction with time-of-occurrence matching, generalized Pareto return-period normalization, DHSVM forcings and calibration (1983–1986, fixed 1989 vegetation), and the MDD derivation (Appendix) are reproducibly described.  (Bowling et al. 2000, 2) (Bowling et al. 2000, 14–15) (Bowling et al. 2000, 17)
+- **Q4:** UNCLEAR — Roads are characterized only by **density (km/km²)** at the basin scale (Fig. 11); no length, age, design, condition, position relative to drainage, or hydrologic connection class is reported. This is below the B1 characterization threshold expected by the protocol.  (Bowling et al. 2000, 11)
+- **Q5:** FAIL — Connectivity is referenced only as a verbal mechanism ("short circuit the natural drainage network", "extent of integration with the stream network"); no metric, index, or mechanistic quantification of structural or functional connectivity is computed.  (Bowling et al. 2000, 2) (Bowling et al. 2000, 16)
+- **Q6:** PASS — Effect directions are derivable for streamflow outcomes (e.g., decreasing annual minima dominated by PDO, no net peak-flow trend in paired analysis, increasing trends in model residuals for AMS/POT, mean treatment–control difference decreasing with return period up to 10 yr).  (Bowling et al. 2000, 16–17)
+
+**Gate 4:** PASS — Multiple complete iterations: 23 single-basin trend series (1930–1996, 1945–1996, 1960–1996), 40 paired-catchment difference series, and 3 DHSVM model-residual series.  (Bowling et al. 2000, 2)
+
+**Gate 5:** UNCLEAR — Effect direction is derivable for streamflow but **not for connectivity** (the SLR's anchor outcome). Since no connectivity quantity is reported, no direction on connectivity can be extracted; only an indirect inference via road-density × peak-flow trend covariation is available.  (Bowling et al. 2000, 11)
+
+---
+
+**Recommendation:** **Exclude-Quality** — proposed taxonomy string: *"Connectivity not operationalized as outcome (verbal mention only)"* — i.e., runoff-hydrology paired-catchment study without explicit connectivity framing or metric, the canonical Type I exclusion class described in the user's methodological framing. *(Note: I do not have access to Stage2_Operationalization.md §4; please verify the exact taxonomy string against the source document.)*
+
+**Confidence:** High (on Gate 2/Q5 failure); Medium (on the precise §4 taxonomy label)
+
+**Items flagged for human re-read:**
+- Q4 (UNCLEAR): road density is reported but no other B1 characteristic — borderline against the "density + ≥1 characteristic" rule. Worth a second look on p. 11 and the discussion on p. 16 regarding "extent of integration with the stream network."
+- Gate 5 (UNCLEAR): if the screener chooses to treat road-density × trend covariation as a proxy for functional connectivity effect direction, Gate 5 could shift to PASS, but this would conflict with the connectivity-anchored protocol.
+
+**Borderline-Stage-1 carry-over:** Not indicated in the supplied metadata — please confirm from the Stage-1 log. Given that the cited anchor authors (Wemple 1996, LaMarche & Lettenmaier 1998) appear in the reference list and roads are discussed mechanistically, a Stage-1 borderline flag would be plausible.
+
+## Sources
+
+Bowling, Laura C., Pascal Storck, and Dennis P. Lettenmaier. 2000. “Hydrologic Effects of Logging in Western Washington, United States.” Water Resources Research 36 (11): 3223–40.

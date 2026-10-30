@@ -1,0 +1,49 @@
+Reading: Yu et al. 2024
+
+[Reading: Yu et al. 2024, p. 11-18 (8 results)]
+
+## Stage-2 Gate Report — Yu et al. 2024
+
+**Study type:** `003-Review`
+**Checklist applied:** R1–R3
+**Borderline carry-over from Stage 1:** No (none indicated in the attached metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (20 pp.). |
+| Gate 2 (a) Infrastructure as variable | PASS | Forest roads (surface, cut slope, fill slope), side ditches, culverts, drainage outlets, and mitigation structures (check dams, sediment ponds, silt fences) are analyzed as the central study variable across sections 2–4. (Yu et al. 2024, 3) (Yu et al. 2024, 13) |
+| Gate 2 (b) Connectivity operationalized | PASS | Dedicated section 3.2.2 "Sediment Connectivity between Roads and Streams"; reviews quantitative connectivity tools (SDR, Borselli/Cavalli IC, RoadCAT, READI) and slope–area threshold $D_s = 0.35 E_{ca}^{-0.13}$ for gully-pathway initiation.  (Yu et al. 2024, 10–12) |
+| R1 Peer-reviewed venue | PASS | Published in *Forests* (MDPI), peer-reviewed journal.  (Yu et al. 2024, 1) |
+| R2 Topical alignment (forest infrastructure × connectivity) | PASS | Explicit scope: sediment transport from forest roads to streams via diffuse / partially gullied / gully pathways, framed around connectivity.  (Yu et al. 2024, 9–11) |
+| R3 Extractable synthesis statements | PASS | Multiple anchor-grade syntheses: 9–35% of forest roads are directly/indirectly connected to streams via gully pathways with mean transport distance ≈86 m; sedimentation ponds reduce sediment delivery by 92.5%; erosion-control mats by 91.7%; identified gap on slope-scale connectivity quantification.  (Yu et al. 2024, 11) (Yu et al. 2024, 13) (Yu et al. 2024, 14) |
+| Gate 4 | PASS | Auto-pass (review). |
+| Gate 5 | PASS | Clear effect directions extractable: gully pathways increase connectivity vs. diffuse pathways; rainfall intensity ↑ → connectivity ↑; vegetation buffers/sediment ponds → connectivity ↓ with quantified reduction rates.  (Yu et al. 2024, 11–13) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** None. Optional verification: R3 anchor selection — screener may want to choose which of several synthesis statements (effectiveness table for BMPs vs. pathway-typology vs. IC application) to extract as the primary anchor in the synthesis matrix.
+
+### Content-coding suggestions
+
+- **002:** `002-Mixed` — Review jointly treats roads (B1), road structures/culverts/ditches (B3), and BMP-type mitigation (C1/C2/C3).  (Yu et al. 2024, 3) (Yu et al. 2024, 13)
+- **003:** `003-Review` — Self-declared review covering global literature over the past two decades.  (Yu et al. 2024, 1) (Yu et al. 2024, 3)
+- **004:** `004-A1-ConnectivityConcepts` and `004-A3-ConnectivityMetrics` — Reviews both the conceptual framing of sediment connectivity (source–sink) and quantitative indices (SDR, IC, RoadCAT, READI).  (Yu et al. 2024, 11–12)
+- **005:** `005-empty` — Global-scope review without single-region anchoring; case examples span USA, Spain, China, Australia, Malaysia, Caribbean, Ethiopia.  (Yu et al. 2024, 4)
+- **010:** `010-A1-ConnectivityConcepts`, `010-A2-FlowPathDescriptors`, `010-A3-ConnectivityMetrics` — Conceptual framing, explicit flow-path typology (diffuse / partially gullied / gully), and metric inventory all present.  (Yu et al. 2024, 9–12)
+- **020:** `020-B1-Roads` and `020-B3-Structures` — Roads (surface, cut/fill slope) are the primary infrastructure; ditches, culverts, drainage outlets explicitly treated as Block-B3 structural components.  (Yu et al. 2024, 3) (Yu et al. 2024, 9)
+- **030:** `030-C1-RetentionDetention`, `030-C2-InfiltrationDisconnection`, `030-C3-RoadDrainageBMP` — Section 4 explicitly invokes BMPs and reviews engineering (check dams, detention ponds, sedimentation basins) and biological (vegetation, mulch, mats, buffer zones) measures with quantified reduction rates.  (Yu et al. 2024, 13)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `review`
+**RQ5 vote-counting:** excluded (prevents double-counting of underlying primary studies)
+**Notes for synthesis phase:** Strong consensus/anchor source for (i) the diffuse / partially gullied / gully pathway typology and the slope–area threshold concept (RQ1–RQ2 framing), (ii) the BMP effectiveness table (engineering ≈76%, biological ≈80% mean sediment reduction; sediment pond 92.5%; erosion-control mat 91.7%) usable as synthesis context for RQ6, and (iii) the explicit identification of the road–stream slope as the under-researched scale — a citable research-gap anchor for AquaSilva's connectivity framing.
+
+## Sources
+
+Yu, J., Q. Zhao, Z. Yu, Y. Liu, and S. Ding. 2024. “A Review of the Sediment Production and Transport Processes of Forest Road Erosion.” Forests 15 (3). Scopus. https://doi.org/10.3390/f15030454.

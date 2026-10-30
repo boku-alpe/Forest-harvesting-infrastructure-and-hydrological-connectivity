@@ -1,0 +1,104 @@
+I'll read the full text of the paper to conduct the Stage-2 gate assessment.
+
+[Reading: Zhao et al. 2022, p. 1-10 (10 results)]
+
+[Reading: Zhao et al. 2022, p. 11-18 (8 results)]
+
+Now let me retrieve the item's provenance tags to conduct the provenance verification.
+
+[Get metadata]
+
+Here is the full Stage-2 Gate Report.
+
+---
+
+## Stage-2 Gate Report — Zhao et al. 2022
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No — no `90-borderline-*` helper tags detected in the record.
+
+> **Note:** This record already carries `006-Include-Stage2` and `006-Include-Final` tags (applied prior to the present screening pass). The assessment below independently confirms that classification.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF (18 pp.) retrieved and read in full. |
+| **Gate 2(a)** — infrastructure as variable | **PASS** | Forest roads are the explicit study subject, analyzed both as sediment-connectivity drivers and as the substrate for BMP placement. Sediment basins (drainage-structure BMP) and riparian buffers are the intervention variables across 18 optimization scenarios. (Zhao et al. 2022) |
+| **Gate 2(b)** — connectivity operationalized | **PASS** | The Borselli Index of Connectivity (IC), modified with a Relative Smoothness Index (RSI) weighting factor and road-raster superimposition, serves as the sole quantitative connectivity metric. It is calculated pixel-by-pixel across the watershed and constitutes the optimization target for both BMP types.  (Zhao et al. 2022) (Zhao et al. 2022) |
+| **Q1** — study context | **PASS** | Xiangchagou watershed, Jigongshan National Nature Reserve, Henan province, central China; 6.40 km²; subtropical–warm temperate transition climate; mean annual rainfall 1,119 mm; predominantly forested with >90% canopy cover; 11.26 km of forest roads.  (Zhao et al. 2022) |
+| **Q2** — study design classifiable | **PASS** | Spatial-connectivity modeling with scenario analysis: IC is computed from a 16 m DEM with roads superimposed, then re-computed under 9 sediment-basin quantity scenarios (Sink_10 to Sink_90) and 9 riparian-buffer-width scenarios (buffer_32 to buffer_160). Optimal thresholds are identified via the mean change point method.  (Zhao et al. 2022) (Zhao et al. 2022) |
+| **Q3** — method reproducibly described | **PASS** | DEM source, resolution, and software specified (16 m, 91 satellite map assistant + Google Earth v6; ArcGIS 10.2). IC equations (Dup, Ddn, RSI, Manning-based roughness) presented in full (Eqs. 1–6). Sediment-basin upslope drainage area formula provided (Eq. 7). Riparian-buffer sediment retention formula given (Eq. 8–10). Mean change point detection fully formalized (Eqs. 11–13).  (Zhao et al. 2022) (Zhao et al. 2022) (Zhao et al. 2022) (Zhao et al. 2022) (Zhao et al. 2022) |
+| **Q4** — infrastructure characterized | **PASS** | Roads: 11.26 km total length, poorly designed and maintained, severely eroded with rills and gullies, functioning as sediment source and pathway. Road density along streams up to 8.80 km/km² within 30 m. 105 road segments delineated; 90 eligible for sediment-basin installation.  (Zhao et al. 2022) (Zhao et al. 2022) (Zhao et al. 2022) |
+| **Q5** — connectivity operationalized as metric | **PASS** | IC is computed spatially (range –3.19 to 3.35 in the study watershed) and mean IC is tracked across all scenarios as the quantitative connectivity output. The study explicitly frames IC as the numeric representation of sediment connectivity from source (roads) to sink (streams).  (Zhao et al. 2022) (Zhao et al. 2022) |
+| **Q6** — effect direction derivable | **PASS** | Both interventions decrease IC. Sediment basins: mean IC decreases from –0.396 (no basins) to –0.496 (90 basins), a 25.3% reduction; statistically significant up to 30 basins (p < 0.05). Riparian buffers: mean IC decreases by 0.020–0.121 relative to no-buffer condition across all width scenarios.  (Zhao et al. 2022) (Zhao et al. 2022) (Zhao et al. 2022) |
+| **Q7** — sample/scope adequate | **PASS** | One complete watershed investigation: IC mapped across the full 6.40 km² domain; 18 BMP scenarios run to quantitative completion; optimal thresholds statistically determined.  (Zhao et al. 2022) |
+| **Gate 4** | **PASS** | Confirmed by Q7. |
+| **Gate 5** | **PASS** | Effect direction unambiguous and numerically quantified: BMPs (sediment basins and riparian buffers) decrease IC (sediment connectivity). Optimal quantities derived: 30 sediment basins (≥2 ha upslope drainage area) and 64 m riparian buffer width.  (Zhao et al. 2022) |
+
+---
+
+### Provenance verification
+
+Provenance tags: `010-A3-ConnectivityMetrics` · `020-B1-Roads` · `020-B3-Structures` · `030-Cany-MitigationControls` · `090-H07` · `090-H09` · `090-M07` · `090-M09`
+
+- **A3-ConnectivityMetrics**: The paper's analytical core is the IC — a sediment-connectivity index — used as the optimization target. Full match.
+- **B1-Roads**: Forest roads are the primary connectivity source variable. Full match.
+- **B3-Structures**: Sediment basins (drainage-outlet engineering structures placed at road segments) are one of the two co-equal BMP interventions. Full match.
+- **030-Cany-MitigationControls**: The study's explicit purpose is optimizing mitigation controls (BMPs) to reduce sediment connectivity from forest roads, consistent with an M-query framing. Substantive match confirmed. *(The string "Cany" in the tag is an unusual substring; this is an existing provenance tag and is flagged here for screener awareness only — no retagging proposed.)*
+
+**Provenance verification: no drift detected.**
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-Mixed` — Forest roads (B1) are the connectivity source variable and sediment basins (B3, engineering drainage structures) are co-equal as the primary engineered BMP intervention; both are analyzed as study variables across all scenarios.  (Zhao et al. 2022) (Zhao et al. 2022)
+
+- **003** [Study type]: `003-Modeling` — Spatial connectivity modeling using a DEM-derived IC with road-raster superimposition and 18 BMP-scenario simulations. No field sediment measurements; the authors explicitly acknowledge the "absence of long-term field monitoring on sediment production and delivery" as a study constraint.  (Zhao et al. 2022)
+
+- **004 primary** [Outcome]: `004-SedimentDelivery` — IC (Borselli sediment-connectivity index, modified with RSI) is the sole reported outcome and the minimization target of the entire BMP optimization framework. Scenario results are uniformly expressed as changes in mean IC.  (Zhao et al. 2022) (Zhao et al. 2022) *(Per 004 dual-tag rule: IC is computed as connectivity index AND serves as the optimization target → `004-SedimentDelivery` applies.)*
+
+- **004 secondary:** None — no co-reported outcome variables (discharge, runoff volumes, flow-path topology) are independently measured or modeled. Riparian buffer width and road proximity effects are reported strictly as IC changes, not as separate hydrological outcomes.
+
+- **005** [Region]: `005-Asia` — Xiangchagou watershed, Henan province, central China.  (Zhao et al. 2022)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** The paper's most distinctive contribution is the methodological framework for BMP *quantity/width optimization* using IC as the objective function and the mean change point method as the threshold detector — an approach absent from earlier road-erosion BMP literature. The derived thresholds (30 sediment basins at ≥2 ha upslope drainage area; 64 m riparian buffer) provide extractable effectiveness anchors for RQ6, with the important caveat that the model assumes 100% sediment-basin retention efficiency and does not validate IC against measured sediment yields.  (Zhao et al. 2022)
+
+---
+
+### Final tag conformance check
+
+All proposed tag strings checked character-for-character against the permitted taxonomy:
+
+| Proposed tag | Status |
+|---|---|
+| `002-Mixed` | ✓ Exact match |
+| `003-Modeling` | ✓ Exact match |
+| `004-SedimentDelivery` | ✓ Exact match |
+| `005-Asia` | ✓ Exact match |
+
+**Tag replacements made: none.**
+
+## Sources
+
+Zhao, Q., A. Wang, Y. Jing, et al. 2022. “Optimizing Management Practices to Reduce Sediment Connectivity between Forest Roads and Streams in a Mountainous Watershed.” Remote Sensing 14 (19). Scopus. https://doi.org/10.3390/rs14194897.

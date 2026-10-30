@@ -1,0 +1,37 @@
+Reading: Saari et al. 2010
+
+## Stage-2 Gate Report — Saari et al. 2010
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7 (gate evaluation stops at Gate 2)
+**Borderline carry-over from Stage 1:** Unknown from attached metadata — no `90-borderline-*` helper tag visible in the supplied record. Recommend screener verifies. The topic profile (peatland buffer + sedimentation pond + ditches) is the type of case that often enters Stage 2 as a borderline-B-context candidate.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (14 pp). |
+| Gate 2(a) — Block-B as variable | UNCLEAR → leaning PASS | Sedimentation pond, cleaned ditches, and a constructed peatland buffer are study variables (gas fluxes measured *from* the pond and *across* the buffer transects); the abstract frames the system as buffer + pond capturing solids/nutrients. (Saari et al. 2010, 1) (Saari et al. 2010, 3) |
+| Gate 2(b) — Connectivity as outcome | **FAIL** | Outcomes are N₂O fluxes, soil pore-gas concentrations, water-table depth, vegetation cover, and N concentrations in vadose water; no connectivity concept, flow-path metric, or mechanistic connectivity quantification is reported. The only spatial-linkage language is verbal ("change in vegetation along the overland flow paths").  (Saari et al. 2010, 1) (Saari et al. 2010, 2) |
+| Q1–Q7 | Not evaluated | Gate 2 failure halts sequential evaluation. |
+| Gate 4 | Not evaluated | — |
+| Gate 5 | Not evaluated | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `connectivity only narrative, not operationalized`
+**Confidence:** High — the paper's outcome variables are biogeochemical (N₂O, CH₄, CO₂, NTOT, NO₃⁻, NH₄⁺) and ecological (vegetation cover); hydrological connectivity is not operationalized as a metric, index, or mechanistic flow-path quantification. Even under a generous reading where the sedimentation pond + buffer constitute Block-C mitigation infrastructure (`C1-Retention` / `C2-Infiltration`), the connectivity axis required by the SLR scope is absent.
+**Items flagged for human re-read:** Gate 2(a) — screener should confirm whether the buffer/pond functions here as a Block-B/C *variable* in the AquaSilva sense, or only as a passive study setting. If Stage 1 assigned a `90-borderline-*` tag, the full text resolves it toward exclusion because the connectivity outcome is missing, not because the infrastructure framing is missing.
+
+### Content-coding suggestions
+
+Not applicable (excluded at Gate 2).
+
+### Synthesis role
+
+Not applicable (excluded). Note for the protocol log: this record is a candidate exemplar for the *peatland-buffer / nutrient-retention* exclusion class — useful as a documented boundary case demonstrating that biogeochemical buffer studies without connectivity operationalization fall outside the connectivity-anchored corpus, even when Block-C-like structures (sedimentation pond, vegetated buffer) are present.
+
+## Sources
+
+Saari, P., S. Saarnio, V. Saari, J. Heinonen, and J. Alm. 2010. “Initial Effects of Forestry Operations on N2O and Vegetation Dynamics in a Boreal Peatland Buffer.” Plant and Soil 330 (1): 149–62. Scopus. https://doi.org/10.1007/s11104-009-0188-6.

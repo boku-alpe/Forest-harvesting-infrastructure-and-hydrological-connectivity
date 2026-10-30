@@ -1,0 +1,39 @@
+Reading: Picchio et al. 2021
+
+[Reading: Picchio et al. 2021, p. 9-14 (6 results)]
+
+## Stage-2 Gate Report — Picchio, Jourgholami & Zenner 2021
+
+**Study type:** `003-Review`
+**Checklist applied:** R1–R3 (Gate 4 auto-passes)
+**Borderline carry-over from Stage 1:** Not indicated in the provided metadata — no `90-borderline-*` helper tag visible. Screener should verify against Stage1_CalibrationLog.md.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (16 pp). (Picchio et al. 2021, 1) |
+| Gate 2(a) Infrastructure as variable | PASS | Roads, landings, and skid trails are treated as analytical drivers, not just context: "Road construction, landings, and skid trails in forest catchment areas typically dwarf the effects of canopy reductions or removals on the hydrological responses."  (Picchio et al. 2021, 2) Hillslope-plot synthesis explicitly stratifies by "forest roads, skid trails, and harvested hillslope areas."  (Picchio et al. 2021, 10) |
+| Gate 2(b) Connectivity operationalized | **FAIL** | The term "hydrological connectivity" appears only as a narrative borrowing from cited primary work — "as well as increased hydrological connectivity [15]" (ref. = Lopez-Vicente et al. 2017) and "Vegetation recovery … can enhance the hydrological connectivity of catchments [15]."  (Picchio et al. 2021, 2) (Picchio et al. 2021, 11) No connectivity metric, index, flow-path descriptor, or mechanistic quantification is synthesized; outcome variables throughout are WYI and TSY (pure runoff-hydrology framing). |
+| R1 Peer-reviewed venue | PASS | Current Forestry Reports (Springer), Topical Collection on Forest Engineering.  (Picchio et al. 2021, 1) |
+| R2 Infrastructure × connectivity addressed | **FAIL** | The review's stated objectives target WYI, TSY, recovery times, and BMP strategy — not connectivity. Objectives: "(1) quantify the changes in WYI and TSY … (2) assess the recovery over time … (3) provide strategies for the development of BMPs."  (Picchio et al. 2021, 3) Search string excludes connectivity terms entirely: "Forest harvesting / logging AND water yield / surface runoff / overland flow / streamflow AND sediment yield … AND BMPs AND catchment / hillslope plot."  (Picchio et al. 2021, 3) |
+| R3 Synthesis-level statement extractable | PASS | Yes — multiple quantitative anchors (e.g., +180 mm WYI, +477 t km⁻² yr⁻¹ TSY across 155 paired catchments) and BMP-effectiveness summaries are extractable.  (Picchio et al. 2021, 1) (Picchio et al. 2021, 11) But Gate 2 already fails. |
+| Gate 4 | auto-PASS (review) | n/a |
+| Gate 5 | n/a | Not evaluated; Gate 2 failed first. |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `connectivity only narrative, not operationalized`
+**Confidence:** High
+**Items flagged for human re-read:** None objectively required. Optional screener check: pages 2 and 11 to confirm that the two narrative mentions of "hydrological connectivity" (both citing Lopez-Vicente et al. 2017, ref. [15]) are the only occurrences and are not accompanied by any synthesis-level connectivity discussion in the BMP/Management Implications section. The reference to check-dams "near the area in which roads or skid trails connect to the stream"  (Picchio et al. 2021, 12) is verbal linkage, not operationalized connectivity.
+
+### Notes for the screener
+
+- This is a paradigmatic example of the Type I-error risk the connectivity-anchoring rule is designed to prevent: infrastructure (B1-Roads, B2-SkidSnigTrails) is clearly a variable, and the paper would be highly relevant for a runoff/sediment-yield SLR — but the connectivity framing is absent. The two narrative mentions both attribute the concept to a single cited primary study (Lopez-Vicente et al. 2017, Geomorphology), which is itself an anchor candidate for the AquaSilva corpus and should be screened independently if not already included.
+- The paper remains useful as **background/context** for RQ6 (BMP effectiveness) and for situating the magnitude of WYI/TSY effects, even though it does not enter the connectivity-anchored core corpus. Consider whether the protocol allows a separate "context" tag for excluded-but-useful items; if not, no further action.
+- No content-coding suggestions or synthesis-role assignment are provided, per protocol (these apply only to `006-Include-Final` records).
+
+## Sources
+
+Picchio, R., M. Jourgholami, and E. K. Zenner. 2021. “Effects of Forest Harvesting on Water and Sediment Yields: A Review Toward Better Mitigation and Rehabilitation Strategies.” Current Forestry Reports 7 (4): 214–29. Scopus. https://doi.org/10.1007/s40725-021-00146-7.

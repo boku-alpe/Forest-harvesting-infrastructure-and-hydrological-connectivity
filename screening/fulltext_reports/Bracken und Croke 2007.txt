@@ -1,0 +1,89 @@
+I'll read the full text of the Bracken & Croke (2007) paper to conduct the gate evaluation.
+
+[Reading: ⁨Bracken⁩ und ⁨Croke⁩ 2007, p. 1-15 (15 results)]
+
+Now let me retrieve the item's existing Zotero tags to complete the provenance verification step.
+
+[Get metadata]
+
+Here is the complete Stage-2 gate report.
+
+---
+
+## Stage-2 Gate Report — Bracken & Croke 2007
+
+**Study type:** `003-Review`
+**Checklist applied:** R1–R3 (Gate 4 auto-pass)
+**Borderline carry-over from Stage 1:** No — no `90-borderline-*` helper tag found in the record.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | PDF attached and fully readable (15 pages, 904 sentences). |
+| Gate 2(a) — Infrastructure as variable | PASS | Road-to-stream connectivity is explicitly analysed as the worked empirical test-case for the volume-to-breakthrough measure: "Road-to-stream connectivity is a specific form of catchment connectivity that identifies the potential impact of runoff from a specific source, such as a road or track, on in-stream water quality and catchment response." (Bracken and Croke 2007) A dedicated multi-page section applies the framework to road drain spacing, culvert typology, and overland flow plumes from road outlets in forested catchments in SE Australia.  (Bracken and Croke 2007) Roads are also used in Figure 7 to map connectivity patterns (gullied-connected vs. dispersive pathways). Roads are thus a study variable, not mere contextual colour. |
+| Gate 2(b) — Connectivity as primary outcome | PASS | Hydrological connectivity is the central object of the entire paper. The volume-to-breakthrough is proposed as a quantitative, mechanistically grounded measure: "the accumulated runoff volume per unit width to be applied at a point before flow appears at a downslope point."  (Bracken and Croke 2007) The five-component conceptual model operationalises connectivity at hillslope-to-catchment scale.  (Bracken and Croke 2007) |
+| R1 — Peer-reviewed venue | PASS | Published in *Hydrological Processes: An International Journal* (Wiley), vol. 21(13), 2007.  (Bracken and Croke 2007) |
+| R2 — Forest infrastructure × connectivity | PASS | The paper explicitly addresses road network connectivity in a dedicated section, citing and synthesising Wemple et al. (1996), Croke & Mockler (2001), La Marche & Lettenmaier (2001), Hairsine et al. (2002), and Lane et al. (2004/2006).  (Bracken and Croke 2007) The road-connectivity section is the sole empirical application of the proposed framework. |
+| R3 — Synthesis-level anchor extractable | PASS | Multiple synthesis-level statements are extractable: the five-component framework definition  (Bracken and Croke 2007), the static/dynamic distinction in connectivity  (Bracken and Croke 2007), the road-to-stream connectivity typology (four pathway modes, s366–s368), and the volume-to-breakthrough definition.  (Bracken and Croke 2007) |
+| Gate 4 | PASS (auto) | Review article — Gate 4 auto-passes per protocol. |
+| Gate 5 — Effect direction extractable | PASS | Effect direction (roads increase connectivity) is explicitly stated and quantified: "compacted surfaces of roads that may enhance runoff connectivity through the physical integration of the road and stream network."  (Bracken and Croke 2007) Road drain spacing and gully formation at outlets are analysed as factors controlling the degree of enhancement.  (Bracken and Croke 2007) |
+
+---
+
+### Provenance verification
+
+The record carries `010-A1-ConnectivityConcepts`, `010-A2-FlowPathDescriptors`, `020-B1-Roads`, `020-B3-Structures`, `090-H01`, `090-H03`, `090-H04`, `090-H06`.
+
+**Possible drift — `020-B3-Structures`:** The paper discusses culverts and relief drains only as components embedded within the road drainage system (s365–s368), not as independently-analysed hydraulic structures. Whether this justifies a standalone `020-B3` retrieval tag is arguable; the structures appear instrumentally in the B1-Roads context rather than as co-equal variables. This is a borderline signal for the screener — no retag action warranted, but worth noting if B3-Structures records are being tallied for separate synthesis rows.
+
+All other provenance tags (`010-A1`, `010-A2`, `020-B1`) match the paper's substantive content cleanly.
+
+**Provenance note — non-standard terminal tag already applied:** The record carries `006-Include-Final-review`. This string does not appear in the permitted terminal-tag taxonomy (the permitted string is `006-Include-Final`, no suffix). The screener should verify whether this was intentional (a local working label) or a tagging drift; if the latter, `006-Include-Final` should be applied/substituted manually.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+*(Both are already functionally present — `006-Include-Stage2` is correctly applied; `006-Include-Final-review` should be reconciled with the canonical `006-Include-Final` string — see note above.)*
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None — all gates resolved unambiguously from full text.
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+The following is an independent assessment; several tags have already been partially applied to this record. Agreements and flags are noted explicitly.
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — roads are the sole B-type analysed as an empirical variable (road drainage outlets, drain spacing, road-to-stream gully formation).  (Bracken and Croke 2007) ✓ *Matches tag already applied.*
+
+- **003** [Study type]: `003-Review` — the paper proposes a conceptual framework and synthesises existing literature; the volume-to-breakthrough example uses data from Hairsine et al. (2002) and Lane et al. (2004, 2006), not original field measurements by the authors.  (Bracken and Croke 2007) ✓ *Matches tag already applied.*
+
+- **004 primary** [Outcome]: `004-RunoffResponse` — the primary outcome variable is runoff generation and delivery as the mechanism driving connectivity, specifically operationalised through the volume-to-breakthrough (a volumetric threshold for runoff plume propagation).  (Bracken and Croke 2007) ✓ *Matches tag already applied.*
+
+- **004 secondary**: `004-FlowPathInitiation` — road outlets are explicitly treated as initiators of new flow paths (gully development, channel-network extension): "concentrated flow paths at road outlets with respect to channel initiation and gully development."  (Bracken and Croke 2007) Overland flow plume dispersal patterns also address whether runoff plumes reach (i.e. initiate connection to) the stream network.  (Bracken and Croke 2007) ✓ *Matches tag already applied.*
+
+- **005** [Region]: **Flag — dual-region tagging requires resolution.** The record currently carries both `005-Europe` (SE Spain examples) and `005-Oceania` (SE Australia empirical work). The protocol permits a single value except for `005-Global`. The paper synthesises across Europe, Oceania, North America (Utah, Idaho), and the Middle East (Negev, Sinai), with no single dominant regional focus. This satisfies the `005-Global` condition ("reviews or comparative studies that synthesise across three or more continents without a single regional focus"). **Screener action recommended: replace `005-Europe` + `005-Oceania` with `005-Global`.**
+  → ⚠️ `005-Global` may not yet be formally listed in PSALSAR_Protocol_final.md §9. If not present, the screener should add it before applying, per the protocol flag instruction.
+
+---
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `review`
+**RQ5 vote-counting:** Excluded (prevents double-counting of primary studies that the review itself cites, e.g., Hairsine et al. 2002, Croke et al. 2005).
+**Notes for synthesis phase:** Bracken & Croke (2007) is the primary conceptual anchor for the structural/dynamic connectivity distinction and the five-component catchment connectivity framework; it also introduces the *volume to breakthrough* as a quantifiable road-to-stream connectivity metric, making it directly usable as a definitional and methodological reference point in the RQ1 (concepts) and RQ3 (metrics) narrative synthesis.
+
+---
+
+### Tag replacements made
+
+The gate report proposes `006-Include-Final` (canonical string) in place of the already-applied `006-Include-Final-review` (non-standard suffix). All other tag strings proposed above are exact character-for-character matches of permitted values. Note: `005-Global` is flagged as potentially absent from the formal protocol list and requires screener verification before application.
+
+## Sources
+
+Bracken, Louise J., and Jacky Croke. 2007. “The Concept of Hydrological Connectivity and Its Contribution to Understanding Runoff‐dominated Geomorphic Systems.” Hydrological Processes: An International Journal 21 (13): 1749–63. https://doi.org/10.1002/hyp.6313.

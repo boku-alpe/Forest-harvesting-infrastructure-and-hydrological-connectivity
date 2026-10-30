@@ -1,0 +1,37 @@
+Reading Wright et al. 1990
+
+**Study type:** `003-PairedCatchment` (inferable from abstract: 424 ha coastal watershed, before/after road building and logging, with lag time and storm-runoff comparison)
+**Checklist applied:** Q1–Q7 (not reached)
+**Borderline carry-over from Stage 1:** Not indicated in the supplied record metadata.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | **FAIL** | Only a Snapshot (HTML) attachment exists; `fulltext_status="unavailable"`, `status_reason` explicitly forbids tool-based retrieval and states no other library copies exist. (Wright et al. 1990) |
+| Gate 2 | not evaluated (sequential stop) | — |
+| Q1–Q7 | not evaluated | — |
+| Gate 4 | not evaluated | — |
+| Gate 5 | not evaluated | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-NoFullText`
+**Exclusion-reason string:** `full text not retrievable`
+**Confidence:** High (on Gate 1 only — the file type is genuinely inaccessible)
+**Items flagged for human re-read:**
+- Gate 2 (a) and (b): The abstract describes Block-B infrastructure (forest roads, skid trails, landings; >15 % of watershed compacted) as a study variable, but connectivity is **not** explicitly operationalized — runoff metrics (lag time, storm volume, storm peak) are the outcomes.  (Wright et al. 1990)
+- This is exactly the profile flagged in the AquaSilva methodological framing as a "pure runoff-hydrology study without explicit connectivity framing." Even if the human screener retrieves the full text manually (e.g., via institutional access at BOKU/BFW), Gate 2(b) is the likely second failure point and the appropriate exclusion reason would shift to `connectivity only narrative, not operationalized`.
+
+### Note for the human screener
+
+Two pathways are plausible:
+
+1. **Keep as Gate 1 exclusion** (`006-Exclude-NoFullText`) if no institutional PDF can be obtained. The Scopus DOI (10.1029/WR026i007p01657) is open via AGU (this is a U.S. government work, "not subject to U.S. copyright"), so a PDF is very likely retrievable manually — recommend attempting retrieval before finalizing.
+2. **Retrieve PDF, then re-screen at Gate 2.** Based on the abstract, the dominant framing is rainfall–runoff response on a paired catchment (North Fork vs. South Fork Caspar Creek style design). Infrastructure is treated as a watershed-scale disturbance percentage, not as a connectivity element (no flow-path mapping, no road–stream linkage analysis, no connectivity index). Expected outcome: Gate 2(b) FAIL → `connectivity only narrative, not operationalized`.
+
+No content-coding suggestions or synthesis-role assignment are issued, since the paper does not reach Include-Final.
+
+## Sources
+
+Wright, K. A., K. H. Sendek, R. M. Rice, and R. B. Thomas. 1990. “Logging Effects on Streamflow: Storm Runoff at Caspar Creek in Northwestern California.” Water Resources Research 26 (7): 1657–67. Scopus. https://doi.org/10.1029/WR026i007p01657.

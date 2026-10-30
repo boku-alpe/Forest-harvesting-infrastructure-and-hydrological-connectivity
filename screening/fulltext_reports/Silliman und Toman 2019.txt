@@ -1,0 +1,51 @@
+Reading: ⁨Silliman⁩ und ⁨Toman⁩ 2019
+
+## Stage-2 Gate Report — Silliman & Toman 2019
+
+**Study type:** `003-Experimental` (rainfall-simulation experiments on eight road segments, complemented by stream gauging; the experimental rainfall protocol is the dominant design)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in supplied metadata (no `90-borderline-*` tag visible on record).
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS (borderline on connectivity) | (a) Unpaved legacy forest roads are the study variable: "Rainfall was simulated twice on eight segments of unbound aggregate road… compared to characteristics of the road" (Silliman and Toman 2019, 3). (b) Connectivity is co-reported as outcome via a watershed-scale road–stream connectivity rate (50%) used to scale sediment delivery: "Using a connectivity rate of 50% reduces the estimate of the mass of sediment produced by the roads and delivered to Middle Creek to 263 kg… 16% of the total suspended sediment"  (Silliman and Toman 2019, 9). Flow-path observations (tire tracks as concentrated flow paths, gully delivering road runoff directly to stream) also documented  (Silliman and Toman 2019, 8). |
+| Q1 (context) | PASS | Region, catchment size, climate, land use all reported: "Middle Creek watershed is a small (212 ha)… headwater watershed located in Noble County, Ohio… approximately 53% pasture, 45% forest… 0.6% roads"  (Silliman and Toman 2019, 3). |
+| Q2 (design) | PASS | Controlled rainfall-simulation experiment with repeated runs (dry/wet, pre/post traffic) plus stream-outlet monitoring — classifiable as experimental + field-monitoring hybrid  (Silliman and Toman 2019, 3–4). |
+| Q3 (method reproducibility) | PASS | Sprinkler system (1.6 cm in 30 min), 30.5 m segments, Clegg Impact Soil Tester, TSS by USEPA 160.2, YSI sonde, turbidity–TSS linear regression all described, with explicit reference to Bloser & Sheetz (2012) protocol  (Silliman and Toman 2019, 4). |
+| Q4 (infrastructure characterized) | PASS | B1-Roads with multiple characteristics: width (3.4–6.0 m), slope (2–16%), Clegg strength (7.6–15.6 CIV), rutting length, road age (1960s legacy), density (1.5 km/km²)  (Silliman and Toman 2019, 6) (Silliman and Toman 2019, 9). |
+| Q5 (connectivity operationalized) | UNCLEAR | Connectivity is quantified but as a borrowed parameter rather than a measured or modeled metric/index for this site: "the connectivity of the road and stream networks… has been shown to vary with research citing 11%, 31%, 34%, 57%, and 75%… Using a connectivity rate of 50%…"  (Silliman and Toman 2019, 9). No CI/IC index, no field mapping of connected road length, no mechanistic delivery model — connectivity is applied as a scalar. Borderline w.r.t. the AquaSilva connectivity-anchored inclusion rule. Flag for human re-read. |
+| Q6 (effect direction) | PASS | Direction on connectivity-related variable (sediment delivery via road–stream linkage) is derivable: wet+traffic increased road-surface sediment 95% on average  (Silliman and Toman 2019, 5); tire-track ruts act as concentrated flow paths conveying runoff directly to channel via roadside gully  (Silliman and Toman 2019, 8–9); ~16% of watershed sediment yield attributable to roads at 50% connectivity  (Silliman and Toman 2019, 9). |
+| Q7 (sample/scope) | PASS | Eight road segments × 2 runs = 16 simulation iterations plus 8-month stream record — ≥1 complete iteration  (Silliman and Toman 2019, 3–4). |
+| Gate 4 (scope adequacy) | PASS | Same evidence as Q7. |
+| Gate 5 (extractability) | PASS | Quantitative effect directions and magnitudes extractable (g/m²/mm rates, % delivery to stream, % increase with wet+traffic)  (Silliman and Toman 2019, 6) (Silliman and Toman 2019, 9). |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final` (contingent on screener resolving Q5)
+**Exclusion-reason string:** n/a
+**Confidence:** Medium — gate-2 inclusion is solid (roads = variable, connectivity quantified at watershed scale), but Q5 is interpretive: connectivity is operationalized only as a literature-borrowed scalar (50%), not as a site-derived metric/index. A strict reading of the AquaSilva connectivity-anchored rule could push this to `006-Exclude-Quality` / `connectivity not operationalized`.
+**Items flagged for human re-read:**
+- **Q5** — Decide whether application of a literature-derived 50% connectivity rate + qualitative flow-path documentation (tire tracks, roadside gully to channel) meets the "mechanistic quantification" threshold, or whether absence of a site-specific connectivity metric (e.g., IC, mapped connected road length, delivery model) constitutes a verbal claim only.
+- **Gate 2 (b)** — Same decision, applied at the gate level.
+
+### Content-coding suggestions (only if Include-Final)
+
+- 002: `002-B1-Roads` — "Rainfall was simulated twice on eight segments of unbound aggregate road"  (Silliman and Toman 2019, 3).
+- 003: `003-Experimental` — controlled rainfall-simulation experiments on road segments  (Silliman and Toman 2019, 3–4); secondary `003-FieldMonitoring` element for the stream-outlet record  (Silliman and Toman 2019, 4).
+- 004: `004-A2-FlowPathDescriptors` (tire tracks identified as concentrated flow paths, gully linkage to channel)  (Silliman and Toman 2019, 8–9); co-tag `004-RunoffResponse` (runoff hydrographs and sediment yields are core outputs)  (Silliman and Toman 2019, 5).
+- 005: `005-NorthAmerica` — Noble County, Ohio, USA  (Silliman and Toman 2019, 3).
+- 010: `010-A2-FlowPathDescriptors` — concentrated flow in tire tracks observed as runoff pathway  (Silliman and Toman 2019, 8). (No A3 metric is computed in-study; A1 is invoked only at narrative level via Wemple 1996.)
+- 020: `020-B1-Roads` — legacy unbound-aggregate forest/access roads as study object  (Silliman and Toman 2019, 2).
+- 030: `030-C3-RoadDrainageBMP` — explicit discussion of water bars, road shape, vegetated ditches, and disconnection BMPs as mitigation  (Silliman and Toman 2019, 8) (Silliman and Toman 2019, 10).
+
+### Synthesis role (only if Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Provides quantitative anchor for RQ6 (road-surface sediment production: 2.6 g/m²/mm; 95% mean increase under wet + traffic; ~16% of watershed sediment yield delivered via roads at 50% structural connectivity in a small Appalachian agricultural-forest mixed-use watershed). Useful as a low-tech connectivity-scaling example (literature-borrowed connectivity rate applied to road network), and as evidence for the rut-as-flow-path mechanism relevant to A2-FlowPathDescriptors. Methodologically modest connectivity treatment — should be cited for the road-delivery quantification, not as a connectivity-metric reference.
+
+## Sources
+
+Silliman, Benjamin A., and Elizabeth Myers Toman. 2019. “Production of Sediment from the Running Surface of Unpaved Legacy Roads in Southeast Ohio, USA.” INTERNATIONAL JOURNAL OF FOREST ENGINEERING 30 (2): 99–108. https://doi.org/10.1080/14942119.2019.1616477.

@@ -1,0 +1,49 @@
+[Reading: Fu et al. 2025, p. 1-4 (4 results)]
+
+# Stage-2 gate assessment — Fu et al. (2025)
+
+## Gate-by-gate evaluation
+
+**Gate 1 — Full text retrievable: PASS.** The primary PDF (13 pp.) is accessible.
+
+**Gate 2 — Stage-1 inclusion confirmed by full text: BORDERLINE → recommend FAIL.**
+- Block-B infrastructure as variable: clearly satisfied. The road (specifically a newly exposed road-cut slope in a dolomite hillslope) is the central manipulated/observed feature, with 156 rainfall events monitored from 2019–2022 (Fu et al. 2025, 1).
+- Connectivity operationalized as outcome: **not satisfied in the connectivity-anchored sense.** The road-cut slope is studied as a flow-path interceptor (surface runoff SR vs. soil-epikarst lateral flow SEF), which is mechanistically the same process described in the Wemple/Croke road-hydrology canon (road as a new flow path that captures subsurface lateral flow). However, the framing throughout is rainwater harvesting efficiency for RBWH systems, with runoff coefficients (SR 2.2 %, SEF 16.0 %, RCF 18.2 %) reported as collection-yield metrics rather than as hillslope–channel connectivity indices, IC-type metrics, or delivery-to-stream measures  (Fu et al. 2025, 1) (Fu et al. 2025, 3). The terms "connectivity", "flow-path linkage to channel network", or "sediment/water delivery to drainage" are not used; the dependent variable is partitioning of intercepted volume into a roadside cistern, not transfer along a hillslope–channel continuum.
+
+→ Proposed terminal tag: **`006-Exclude-Quality`**
+→ Proposed reason note (verbatim): **`connectivity not operationalized as outcome`**
+
+(Note: Gates 3–5 are not evaluated because the first-failed-gate rule applies.)
+
+## Caveat flagged for the human screener
+
+The mechanism studied — road-cut interception of subsurface lateral flow on a hillslope — is *substantively* a forest/rural-road connectivity process (cf. Wemple 1996, 2001; Croke 2005; Dutton 2005, on roads as flow-path interceptors and extenders of the drainage network). The dataset (3 years, 156 events, quantified SEF vs. SR partitioning on a dolomite hillslope) would be a strong empirical reference point if the SLR's exclusion rule is read narrowly as "framing" rather than "mechanism". Two options the screener may want to weigh:
+
+1. **Strict reading (recommended above):** exclude at Gate 2; the paper does not treat connectivity as an outcome variable.
+2. **Permissive reading:** retain as Include-Final on the grounds that road interception of SEF *is* a functional-connectivity process, and re-tag the outcome as `004-FlowPathInitiation`. This would require a documented deviation from the connectivity-anchored screening rule in the PSALSAR Appraisal log to avoid downstream Type I-error inflation.
+
+My recommendation is option 1 to preserve the corpus discipline; the paper can still be cited as supporting mechanistic evidence in the Synthesis without being part of the core coded corpus.
+
+## Conditional content-coding suggestions (only if screener overrides to Include-Final)
+
+Should the screener choose option 2, the following content tags are proposed:
+
+- `002-B1-Roads` — the road-cut slope of an 80-m hillslope road is the only infrastructure studied  (Fu et al. 2025, 3).
+- `003-FieldMonitoring` — 156 rainfall events monitored in situ, May 2019 – May 2022, with separate collection of SR and SEF  (Fu et al. 2025, 1) (Fu et al. 2025, 4).
+- `004-FlowPathInitiation` — primary outcome is partitioning of intercepted flow paths (SR vs. SEF) at the road-cut soil-epikarst cross-section  (Fu et al. 2025, 3). (Secondary: `004-RunoffResponse` for the runoff-coefficient quantification.)
+- `005-Asia` — Mulian catchment, peak-cluster depression karst, southwest China (Guangxi)  (Fu et al. 2025, 3).
+- `010-A2-FlowPaths` — the conceptual contribution is identifying SEF as the dominant flow path along the road-cut cross-section  (Fu et al. 2025, 3). (Not A3-Metrics: no connectivity index computed.)
+- `020-B1-Roads` — confirmed by infrastructure subtype above.
+- `030-Cany-MitigationControls` — only weak fit; the road-cut is treated as a harvesting opportunity, not a mitigation structure. If retained, `030-empty` is more defensible than forcing a C-block tag.
+
+## Suggested action
+
+Please confirm:
+1. Apply `006-Exclude-Quality` + note `connectivity not operationalized as outcome` (my recommendation), **or**
+2. Override to Include-Final with the content tags above and log the deviation in the Appraisal record.
+
+I will not apply tags unilaterally — awaiting your decision before any Zotero write.
+
+## Sources
+
+Fu, Zhiyong, Peining Liang, Hamid M. Behzad, et al. 2025. “Enhancing Rainwater Harvesting Efficiency in Karst Terrains: The Role of Road Intercepted Soil-Epikarst Lateral Flow.” JOURNAL OF ENVIRONMENTAL MANAGEMENT 373 (January): 123730. https://doi.org/10.1016/j.jenvman.2024.123730.

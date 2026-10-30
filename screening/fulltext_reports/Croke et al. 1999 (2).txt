@@ -1,0 +1,56 @@
+[Reading: Croke et al. 1999, p. 1-6 (6 results)]
+
+[Reading: Croke et al. 1999, p. 14-20 (7 results)]
+
+## Stage-2 Gate Report — Croke, Hairsine & Fogarty 1999
+
+**Study type:** `003-Experimental` (large-scale rainfall simulator on 13 logged hillslope plots; not a paired-catchment or routine field-monitoring design)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (no `90-borderline-*` tag visible in the record; flagging recommended on connectivity-framing grounds — see Gate 2)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS (with caveat) | (a) Snig tracks (B2) and cross banks (B3/BMP) are the central variables, not context: "quantify runoff production on forest snig tracks and the GHA … elucidate the nature and magnitude of runoff redistribution between the snig track and GHA." (Croke et al. 1999, 2) (b) Functional connectivity is operationalized via transport distances, "time of connection," and concentrated flow-path linkage from cross-bank outlets to the plot exit / drainage lines: "the degree of connection between the cross bank outlet and the bottom of the plot."  (Croke et al. 1999, 15) Caveat: the term "hydrological connectivity" is not used as the primary conceptual frame — the framing is runoff redistribution. Anchor-author status (Croke) and explicit reference to Wemple et al. 1996 on drainage-structure → channel-network extension  (Croke et al. 1999, 19) support inclusion. |
+| Q1 | PASS | Eden FMA (NSW) and East Gippsland FMA (VIC), temperate climate 650–900 mm a⁻¹, eucalypt production forest, 300 m² plot scale.  (Croke et al. 1999, 3) |
+| Q2 | PASS | Experimental gradient design: 13 sites across soil type × age-since-logging, three sequential simulated storms (2, 10, 100 y RI).  (Croke et al. 1999, 1) |
+| Q3 | PASS | Rainfall simulator (300 m² plots, 30-min storms at three intensities), drip infiltrometer, fluorescein dye tracing for flow paths, stepwise regression.  (Croke et al. 1999, 2) (Croke et al. 1999, 15) |
+| Q4 | PASS | Snig tracks and cross banks characterized by area %, gradient, age, soil class, cover, bulk density (Tables 1–2); compacted-area share quantified at 8–25 % of harvested area.  (Croke et al. 1999, 4) (Croke et al. 1999, 19) |
+| Q5 | PASS (interpretive — flag) | Connectivity quantified mechanistically: transport distances up to 40 m on recent sites vs. <10 m on 5 y sites; surface velocities 0.1 → 0.5–1.0 m s⁻¹ across RI; time-of-connection (3–25 min) from cross-bank outlet to plot exit.  (Croke et al. 1999, 16) (Croke et al. 1999, 18) No formal IC/connectivity index, however — operationalization is mechanistic-quantitative, not metric-based. |
+| Q6 | PASS | Direction clearly derivable: snig tracks ↑ runoff 6–9× vs. GHA for small/medium storms, declining to ~4× for 100 y event; cross-bank effectiveness ↓ with storm magnitude; runoff ↓ with recovery age (≈5 y).  (Croke et al. 1999, 16) (Croke et al. 1999, 18) |
+| Q7 | PASS | 13 sites × 3 storm intensities, with full simulator iterations and replicated infiltrometer measurements.  (Croke et al. 1999, 4) |
+| Gate 4 | PASS | Q7 satisfied. |
+| Gate 5 | PASS | Multiple quantitative effect-direction statements on infrastructure → flow-path connectivity and on BMP (cross bank) effectiveness, including the failure mode under extreme events: "concentrated flow paths from one discharge outlet connecting with another 10–20 m downslope."  (Croke et al. 1999, 20) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** Medium-High. Methodology and effect-direction are unambiguous; the only interpretive risk is Q5 / Gate 2(b) — the paper operationalizes flow-path linkage mechanistically (distances, velocities, time-of-connection) but does not adopt "hydrological connectivity" as an explicit framing concept. Given Croke is an anchor author and the paper directly informs forest-road / skid-trail connectivity discourse (cited by Croke 2005 and downstream connectivity literature), inclusion is defensible.
+**Items flagged for human re-read:**
+- Q5 — confirm whether mechanistic flow-path quantification (transport distance, time-of-connection) satisfies the AquaSilva operationalization threshold, or whether a formal connectivity metric/index is required.
+- Gate 2(b) — confirm acceptance of pre-2000 work that pre-dates explicit connectivity terminology but provides foundational quantification of structural/functional linkage between forest infrastructure and drainage network.
+
+### Content-coding suggestions
+
+- 002: `002-B2-ExtractionTrails` — snig tracks are the dominant infrastructure variable.  (Croke et al. 1999, 2)
+- 002 (additional): `002-C3-RoadDrainageBMP` — cross banks evaluated as a drainage BMP redistributing snig-track runoff onto the GHA.  (Croke et al. 1999, 2) (Croke et al. 1999, 20)
+- 003: `003-Experimental` — controlled rainfall-simulator experiments at three prescribed intensities.  (Croke et al. 1999, 1)
+- 004: `004-A2-FlowPathDescriptors` — transport distance, time-of-connection, flow velocity quantified as flow-path descriptors.  (Croke et al. 1999, 16)
+- 004 (additional): `004-RunoffResponse` — runoff volumes/coefficients on snig tracks vs. GHA across storm RIs.  (Croke et al. 1999, 16)
+- 005: `005-Oceania` — Eden FMA (NSW) and East Gippsland FMA (VIC), Australia.  (Croke et al. 1999, 3)
+- 010: `010-A2-FlowPathDescriptors` — explicit treatment of concentrated flow paths from outlets toward drainage lines.  (Croke et al. 1999, 20)
+- 020: `020-B2-SkidSnigTrails` — primary infrastructure type studied.  (Croke et al. 1999, 2)
+- 020 (additional): `020-B3-Structures` — cross banks as drainage structures explicitly analyzed.  (Croke et al. 1999, 15–16)
+- 030: `030-C3-RoadDrainageBMP` — cross banks evaluated as a mitigation BMP, including failure regime under extreme events.  (Croke et al. 1999, 20)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Provides quantitative effect sizes on (i) snig-track vs. undisturbed runoff ratio (6–9× small storms, ~4× extreme), (ii) BMP effectiveness decay with storm magnitude (cross banks effective at 2 y RI, failing at 100 y RI with 40 m transport distances and 0.5–1.0 m s⁻¹ velocities), and (iii) ~5 y recovery time of skid-trail hydrologic function. Strong anchor for RQ6 effectiveness synthesis on `C3-RoadDrainageBMP` measures (cross banks / water bars) and for the structural→functional connectivity distinction on extraction trails.
+
+## Sources
+
+Croke, Jacky, Peter Hairsine, and Peter Fogarty. 1999. “Runoff Generation and Re-Distribution in Logged Eucalyptus Forests, South-Eastern Australia.” Journal of Hydrology 216 (1): 56–77. https://doi.org/10.1016/S0022-1694(98)00288-1.

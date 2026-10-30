@@ -1,0 +1,86 @@
+I'll read the full text of the Tague & Band (2001) paper to gather evidence for all gate items.
+
+[Reading: ⁨Tague⁩ und ⁨Band⁩ 2001, p. 1-17 (17 results)]
+
+Now let me retrieve the item's existing provenance tags to complete the provenance verification step.
+
+[Get metadata]
+
+I now have everything needed for the full gate assessment. Here is the Stage-2 Gate Report.
+
+---
+
+## Stage-2 Gate Report — Tague & Band 2001
+
+**Study type:** `003-Modeling` (primary) + `003-PairedCatchment` (secondary)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No — no `90-borderline-*` helper tag found in the record's tag list.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | PDF attachment `10-SA8PR6V7` is present and fully retrievable (17 pages). |
+| Gate 2(a) | PASS | Roads (cut depth, drainage pattern) are the explicit manipulation variables throughout; "The model is used to explore the implications of road cut depth and road drainage patterns on seasonal hydrologic responses." (Tague and Band 2001) Two road construction scenario families are formally designed (cut depths 0.5 m vs. 5 m; connectivity routing to stream / high WI / low WI).  (Tague and Band 2001) |
+| Gate 2(b) | PASS | Hydrological connectivity (Wemple's road–stream connectivity framework) is the organizing conceptual lens and is quantitatively parameterized: "Wemple et al. (1996) proposed that connectivity of road ditches and culverts with stream networks increases the impact of roads on peak flow."  (Tague and Band 2001) Connectivity is operationalized as a model scenario variable (three routing regimes), with quantitative outflow and soil moisture effects as outcomes; "An algorithm for determining road connectivity will be implemented in later versions of the model."  (Tague and Band 2001) *Note for screener: connectivity is the central independent variable (routing scenario), not the dependent variable. Gate 2(b) passes because it is mechanistically operationalized and drives all quantitative outcomes — but the screener should confirm this matches the SLR's definition of "co-reported outcome."* |
+| Q1 | PASS | H.J. Andrews Experimental Forest, Western Oregon Cascades, USA; Watershed 3, 101 ha, elevation 400–1000 m, mean annual precipitation >2000 mm, seasonal precipitation regime (Oct–Apr wet), soils gravelly clay loam, vegetation Douglas Fir.  (Tague and Band 2001) |
+| Q2 | PASS | Spatially distributed process model (RHESSys) with scenario design (road cut depth × routing regime) + empirical comparison against a paired-catchment record (Watershed 3 vs. control Watershed 2, plus a no-road reference Watershed 1).  (Tague and Band 2001) (Tague and Band 2001) |
+| Q3 | PASS | RHESSys is described: modified DHSVM explicit routing (Wigmosta et al. 1994), BIOME-BGC canopy model, MTN_CLIM climate interpolation. Road interception algorithm described mathematically (Equations 1–3). Calibration: single Ksat multiplier via Simplex method maximizing Nash–Sutcliffe efficiency; NS = 0.77 on Watershed 2, 0.70 on Watershed 3 pre-disturbance.  (Tague and Band 2001) |
+| Q4 | PASS | Roads in Watershed 3; construction started April 1959  (Tague and Band 2001); road network spatial position shown in Figure 3  (Tague and Band 2001); road cut depths 0.5 m and 5 m  (Tague and Band 2001); culvert spacing 30–120 m  (Tague and Band 2001); three routing alternatives (to stream, to highest WI, to lowest WI) fully characterized.  (Tague and Band 2001) B1 (roads) and B3 (culverts as drainage structures) both identifiable. |
+| Q5 | PASS | Connectivity is operationalized mechanistically: road cut depth D is a quantitative parameter controlling intercepted subsurface flow volume (Equations 1–3)  (Tague and Band 2001); TOPMODEL wetness index WI = ln(A/tanβ·T) is used to classify receiving patches a priori  (Tague and Band 2001); routing scenarios discretize the connectivity continuum into three positions. Annual outflow change and ET change are quantified in Table I for each scenario. This is mechanistic parameterization, not a purely verbal claim. |
+| Q6 | PASS | Effect directions clearly derivable: roads routed directly to stream → +0.5–1.7% annual outflow increase (Table I)  (Tague and Band 2001); larger cut depth (5 m) produces ~5× greater cumulative outflow difference than 0.5 m cut  (Tague and Band 2001); diffuse routing (lowest WI) → negligible to zero effect on annual outflow and ET  (Tague and Band 2001); downslope soil moisture reduction up to >50% within 200 m of road  (Tague and Band 2001); ET differences >3 mm near road, >2 mm at >500 m downslope.  (Tague and Band 2001) |
+| Gate 4 | PASS | Multi-year simulations across pre-harvest (1959–1962) and post-harvest (1962–1969) periods; model calibrated (NS = 0.77) and independently validated (NS = 0.70); six scenario combinations run; empirical paired-catchment comparison covers four pre-treatment years.  (Tague and Band 2001) |
+| Gate 5 | PASS | All five scenario dimensions yield clear, quantitative effect directions on outflow, ET, and soil moisture (see Q6 above). Modelled vs. observed discrepancy (observed outflow *decreases* during road-only period) is explicitly acknowledged and discussed as a model gap, not a data-reporting failure — effect direction for all modelled scenarios remains unambiguous.  (Tague and Band 2001) |
+
+---
+
+### Provenance verification
+
+One mild drift flagged:
+
+**A1 → A1+A2 content drift.** The record carries `010-A1-ConnectivityConcepts` only. The paper does use Wemple's road–stream connectivity as its conceptual anchor (A1-consistent). However, the analytical core of the paper is entirely structured around flow path rerouting: the three routing scenarios (to stream / to highest WI / to lowest WI) represent distinct flow path topologies, and the spatial persistence of effects "by distance below the road" is explicitly mapped as a flow path function.  (Tague and Band 2001) (Tague and Band 2001) This A2-FlowPathDescriptors content is substantial and was retrieved under `090-H01` and `090-H03` via an A1 query string, so the provenance is not wrong — but the paper's analytical contribution arguably straddles A1 and A2. **Screener note:** no retagging action is implied; this is noted as a diagnostic signal for synthesis grouping.
+
+No B-block drift: `020-B1-Roads` (roads as primary study object) and `020-B3-Structures` (culverts explicitly parameterized as routing structures) are both substantively present. No C-block applicable (H-queries, not M-queries).
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** Gate 2(b) — screener should confirm that mechanistic operationalization of connectivity as an IV (rather than a reported DV) satisfies the SLR's inclusion criterion. All gate outcomes are otherwise unambiguous.
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — Roads are the primary study object with road cut depth and drainage pattern as the main scenario parameters.  (Tague and Band 2001) Culverts are analyzed as integral components of road drainage design (B3) rather than as structurally independent objects; they do not rise to co-equal B-type status in this paper's framing. If the screener judges culvert routing scenarios to be co-equal, `002-Mixed` is the alternative.
+
+- **003** [Study type]: `003-Modeling` (primary) + `003-PairedCatchment` (secondary) — RHESSys scenario modeling is the dominant method;  (Tague and Band 2001) the paired-catchment comparison (Watershed 3 vs. Watershed 2) is explicitly used to test model performance and interpret model-observation discrepancies.  (Tague and Band 2001) Dual-tag is warranted because the paired-catchment component produces substantive interpretive findings beyond mere calibration.
+
+- **004 primary** [Outcome]: `004-RunoffResponse` — Seasonal outflow volume and annual runoff change are the primary measured outcomes across all scenarios (Table I: annual outflow % change, summer outflow dynamics, cumulative outflow differences).  (Tague and Band 2001)
+
+- **004 secondary 1**: `004-PeakFlow` — Within-season storm response and daily peak outflow dynamics are explicitly reported: cumulative outflow difference shows "a repeated cycle of increase and decrease in outflow differences during the spring and winter periods," with individual storm response analyzed against culvert spacing.  (Tague and Band 2001) The paper cites peak flow effects explicitly as a key motivating outcome.  (Tague and Band 2001)
+
+- **004 secondary 2**: `004-FlowPathInitiation` — The paper explicitly models subsurface→surface flow interception by roads and rerouting to different downslope flow paths, including gully channelization as a connectivity pathway.  (Tague and Band 2001) (Tague and Band 2001) This is borderline: the flow path rerouting is the mechanism, not a formally reported outcome variable. *Screener judgment needed* — if routing topology is considered a co-reported outcome, `004-FlowPathInitiation` applies; if it is classified as mechanism only, drop this tag and cap at two 004 entries.
+
+- **005** [Region]: `005-NorthAmerica` — H.J. Andrews Experimental Forest, Western Oregon Cascades, USA.  (Tague and Band 2001)
+
+---
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** The paper's most distinctive contribution for AquaSilva synthesis is its mechanistic demonstration that culvert drainage configuration (concentrate vs. diffuse) is the critical mediator of road effects on both runoff and downslope soil moisture — a finding that directly informs the Maßnahmenkatalog's culvert/Durchlass design dimension and the hydraulic cascade behavior framework. The model–observation discrepancy (observed annual outflow *decreases* during the road-only period, opposite to model predictions) is an explicit process gap that may signal storage effects or road-terrace behavior not captured by current routing algorithms, worth flagging as an uncertainty anchor for RQ6.
+
+---
+
+### Tag replacements made: none.
+
+## Sources
+
+Tague, C., and L. Band. 2001. “Simulating the Impact of Road Construction and Forest Harvesting on Hydrologic Response.” Earth Surface Processes and Landforms 26 (2): 135–51. Scopus. https://doi.org/10.1002/1096-9837(200102)26:2%253C135::AID-ESP167%253E3.0.CO;2-J.

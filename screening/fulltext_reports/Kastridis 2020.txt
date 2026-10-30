@@ -1,0 +1,55 @@
+Reading: Kastridis 2020
+
+## Stage-2 gate evaluation — Kastridis (2020)
+
+This record is a peer-reviewed narrative review in *Forests* (MDPI) by an anchor author for forest hydrology / runoff modeling. It is evaluated against the R-item pathway (reviews), not the Q-item pathway.
+
+| Gate | Test | Result |
+|---|---|---|
+| 1 | Full text retrievable | Pass — all 12 pp. accessible |
+| 2 | Block-B infrastructure as variable AND connectivity operationalized as outcome | Pass — forest roads and skid trails are the explicit object; an entire section (2.3) is devoted to road-to-stream connectivity |
+| 3 / R1 | Peer-reviewed | Pass — MDPI *Forests*, indexed |
+| 3 / R2 | Topical alignment | Pass — forest roads × hydrological processes × connectivity directly aligned with corpus scope |
+| 3 / R3 | Extractable synthesis content | Pass — quantitative ranges (runoff coefficients, road densities, Ks values, connectivity fractions) and mitigation synthesis are explicitly compiled |
+| 4 | Sufficient sample/scope | Pass — synthesizes ~20 years of primary literature across multiple climates |
+| 5 | Effect direction extractable | Pass — direction consistently reported (roads ↑ runoff, ↑ peak flow, ↑ connectivity; buffers/dispersal ↓ delivery) |
+
+### Recommended terminal tags
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+### Content-coding tag suggestions
+
+Each suggestion below is a proposal for the human screener, with one supporting sentence anchor from the full text.
+
+**`002-` Infrastructure subtype → `002-Mixed`**
+Roads and skid trails are treated as co-equal infrastructural objects throughout: "Comparing the mean runoff from forest roads, harvest tracks and skid trails to the runoff from undisturbed forest soils…" (Kastridis 2020, 3).
+
+**`003-` Study type → `003-Review`**
+Self-declared scope: "The aim of the current review is to summarize the knowledge resulting from the most recently published studies on the topic of forest road network…"  (Kastridis 2020, 2).
+
+**`004-` Hydrological focus → `004-RunoffResponse`, `004-PeakFlow`, `004-SedimentDelivery`, `004-FlowPathInitiation`**
+All four foci are substantively discussed; e.g., peak-flow alteration: forest roads alone can increase the mean annual flood from 2.2% to 9.5% and the 10-year event from 2.9% to 12.2%  (Kastridis 2020, 4); flow-path initiation / channel-network extension via culvert-outlet gullies increased catchment drainage density by ~6–10%  (Kastridis 2020, 7); sediment delivery via direct connectivity is the through-line of Section 2.3  (Kastridis 2020, 7).
+
+**`005-` Region → `005-Global`**
+Synthesis spans Mediterranean Europe, US Pacific Northwest, Caribbean, tropical SE Asia (Thailand, Malaysia), Brazil, and Australia (e.g., dry-tropical Caribbean ephemeral streams: roaded watersheds connect 10–13× per year vs. 4× in unroaded systems)  (Kastridis 2020, 7–8).
+
+**`010-A` Block A → `010-A1-Concepts`, `010-A2-FlowPaths`**
+A1 (concepts): explicit definitional statement — "connectivity is defined as the linkage between runoff locations and the receiving waters"  (Kastridis 2020, 7). A2 (flow paths): cutslope interception of subsurface stormflow as a dominant runoff-generation mechanism  (Kastridis 2020, 5). A3 (metrics) is not formally treated as a methodological topic, so I would not propose it.
+
+**`020-B` Block B → `020-B1-Roads`, `020-B2-SkidSnigTrails`**
+Both subtypes are evaluated as runoff/sediment sources; "Unpaved roads and skid trails could be considered to be the main hydrological active areas in a managed forest ecosystem during low and moderate rainfall events…"  (Kastridis 2020, 7). B3 (structures) is not the focus.
+
+**`030-C` Block C → `030-C1-Retention`, `030-C3-BMPs`, `030-Cany-MitigationControls`**
+C1: riparian buffer reduces sediment concentration by 34–87% during storm events  (Kastridis 2020, 8). C3: explicit BMP enumeration — "Broad-based dips used for runoff control, immediate revegetation of road surfaces, and outsloping of the road base… are practices that should be incorporated in the planning and designing of forest road networks."  (Kastridis 2020, 8). The Cany umbrella tag is justified by the same passage. C2 (infiltration) is discussed mechanistically (Ks recovery on abandoned roads) but not as a mitigation lever per se, so I would leave it off unless the screener decides infiltration-recovery via revegetation qualifies.
+
+### Note on Hydrological-focus multiplicity
+
+The taxonomy as written does not state whether `004-` is single- or multi-value. For a review of this breadth, restricting to one value would lose information; I have therefore proposed four. The screener should decide whether to (a) accept all four, (b) collapse to the dominant focus (`004-RunoffResponse`), or (c) formalize a multi-value rule in the SOP before extraction begins.
+
+## Sources
+
+Kastridis, Aristeidis. 2020. “Impact of Forest Roads on Hydrological Processes.” FORESTS 11 (11): 1201. https://doi.org/10.3390/f11111201.

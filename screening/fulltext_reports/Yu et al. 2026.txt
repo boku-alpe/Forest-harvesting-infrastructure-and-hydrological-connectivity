@@ -1,0 +1,96 @@
+I'll read the full text of the paper to conduct the gate evaluation.
+
+[Reading: Yu et al. 2026, p. 1-13 (13 results)]
+
+Now let me retrieve the item's existing provenance tags to complete the provenance verification.
+
+[Get metadata]
+
+## Stage-2 Gate Report — Yu et al. 2026
+
+**Study type:** `003-FieldMonitoring` (primary) / `003-Modeling` (secondary — graph theory + piecewise SEM co-central)
+**Checklist applied:** Q1–Q7 (primary study)
+**Borderline carry-over from Stage 1:** No — no `90-borderline-*` tag present; record carries `006-Include-Stage1` as clean pass.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | PDF attachment (10-3XNPDAXW) retrieved in full; 13 pages available. |
+| Gate 2(a) — infrastructure as variable | PASS | Forest roads are the explicit independent variable throughout: "we investigated how unpaved forest roads reshape the confluence networks of sediment-laden runoff and identified their contribution to SOC loss" (Yu et al. 2026); road characteristics (length, area proportion, pathway roughness) are systematically measured and entered as predictors in the random forest model and Piecewise SEM.  (Yu et al. 2026) |
+| Gate 2(b) — connectivity operationalized as outcome | PASS | Five distinct connectivity/network indices (Shimbel index Shi, potential flow index Fi, residual flow index RF, integral connectivity index IIC, node importance index dIIC) are formally defined, computed for three scenarios, and compared between road-affected and road-unaffected catchments as primary reported outcomes.  (Yu et al. 2026) |
+| Q1 — study context | PASS | Region: Xiangchagou catchment, Dabie Mountains, central China (31°46′–31°48′N).  (Yu et al. 2026) Climate: subtropical/warm-temperate transition, 15.2°C mean annual temperature, 1,119 mm MAP.  (Yu et al. 2026) Catchment size: six sub-catchments ranging 1,859–41,028 m².  (Yu et al. 2026) Land use: secondary forested catchment, >90% canopy closure, dominated by *Pinus massoniana*.  (Yu et al. 2026) |
+| Q2 — study design | PASS | Control-impact design: three road-affected sub-catchments (C-1, C-2, C-3) vs. three road-unaffected sub-catchments as control (C-4, C-5, C-6), all within the same parent catchment.  (Yu et al. 2026) Field monitoring during the 2023 rainy season augmented by graph theory modeling of three confluence network scenarios (N1 natural, N2 road, N3 actual).  (Yu et al. 2026) Design is classifiable as control-impact field monitoring with a modeling overlay. |
+| Q3 — methods reproducibly described | PASS | Field instruments named: handheld GPS (G138BD), steel ruler, slope meter, soil corer (top 10 cm).  (Yu et al. 2026) SOC quantified by oxidation titration; particle size by Malvern analyzer.  (Yu et al. 2026) Graph theory indices defined with explicit formulas (Eqs. 1–7).  (Yu et al. 2026) Statistical analysis: random forest model and Piecewise SEM in R 4.3.1.  (Yu et al. 2026) Sufficient for reproducibility. |
+| Q4 — infrastructure characterized | PASS | Road constructed 1990, continuously used; soil bulk density ~1.8 g/cm³; average width 2.5 m; average slope 14%.  (Yu et al. 2026) Per sub-catchment: road length (76 m, 75.6 m, 33 m), road area proportion (0.12, 0.02, 0.04), width-to-depth ratio (W/D), pathway roughness (Dr) all reported in Table 1.  (Yu et al. 2026) Pathway typology (gullied G, partially gullied GD, diffuse D) formally classified with morphometric thresholds.  (Yu et al. 2026) |
+| Q5 — connectivity operationalized as metric | PASS | Shi, Fi, RF, IIC, and dIIC each carry explicit mathematical definitions and are computed numerically for N1/N2/N3 scenarios and for road-affected vs. unaffected catchments. Specific numeric values reported (e.g., mean dIIC = 1.73, 1.78, 1.88 for N1/N2/N3; Shi differences significant at p < 0.05).  (Yu et al. 2026) |
+| Q6 — effect direction derivable | PASS | Forest roads unambiguously increase hydrological connectivity: road-affected catchments show significantly lower Shi (higher accessibility), higher Fi, higher RF, and higher dIIC than road-unaffected catchments (all p < 0.05).  (Yu et al. 2026) SOC loss ratio in road-affected catchments (1.02, 0.61, 0.68) significantly exceeds road-unaffected catchments (0.50).  (Yu et al. 2026) Effect direction: road presence → increased connectivity → increased sediment-bound SOC loss. |
+| Q7 — sample/scope adequate | PASS | 36 sediment-laden runoff samples from six sub-catchments across six rainfall events; 33 composite soil samples for background SOC; monitoring conducted throughout the 2023 rainy season (July–August).  (Yu et al. 2026) (Yu et al. 2026) At least one complete investigation iteration fulfilled. |
+| Gate 4 — sample adequacy | PASS | Confirmed by Q7. One full rainy season, six catchments, six rainfall events, adequate replication. |
+| Gate 5 — extractability | PASS | Quantified effect directions are unambiguous for all primary outcomes. Connectivity increase attributable to roads is documented with formal significance levels; SOC loss ratio differences reported with p-values; Piecewise SEM path coefficients reported (road → catchment characteristics: 0.913, p < 0.001; sediment characteristics → SOC loss: 0.448, p < 0.05).  (Yu et al. 2026) |
+
+---
+
+### Provenance verification
+
+The record carries `010-A1-ConnectivityConcepts` + `010-A3-ConnectivityMetrics` + `020-B1-Roads` + `090-H01` + `090-H07`.
+
+- **A1 + A3 dual-tagging** reflects the paper's dual role: it frames hydrological connectivity conceptually (A1) while computing five named graph-theory connectivity indices as quantitative outcomes (A3). Both framing angles are genuinely present and the dual provenance tag is substantively accurate.
+- **020-B1-Roads** matches perfectly; unpaved forest roads are the sole infrastructure type under analysis.
+- No M-query (030-C\*) tag present; none expected.
+
+**Provenance verification: no drift detected.**
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** None — all gate items resolved from full text with explicit numeric evidence.
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — The study's sole infrastructure focus is unpaved forest roads and their induced road-stream pathways (G/GD/D); the pathways are road-generated features, not a co-equal independent infrastructure type.  (Yu et al. 2026)
+
+- **003** [Study type]: `003-FieldMonitoring` (primary) + `003-Modeling` (secondary) — Field measurement of sediment and SOC at catchment outlets across six rainfall events is the primary data source  (Yu et al. 2026); graph theory confluence network construction and piecewise SEM are co-central to the analytical framework and to objectives (i)–(iii).  (Yu et al. 2026) Neither component is merely supplementary.
+
+- **004 primary** [Outcome]: `004-SedimentDelivery` — SOC loss ratio at catchment outlets (sediment-bound organic carbon delivery) is the paper's principal outcome variable, measured at all six catchment outlets per rainfall event and modeled via random forest and Piecewise SEM.  (Yu et al. 2026) (Yu et al. 2026)
+
+- **004 secondary**: `004-FlowPathInitiation` — The study explicitly maps and classifies new flow path types created by roads on road-stream slopes (gullied, partially gullied, diffuse), documents how roads restructure the catchment confluence network by generating new flow path connections, and treats this network restructuring as a core intermediate outcome.  (Yu et al. 2026) (Yu et al. 2026)
+
+- **005** [Region]: `005-Asia` — Xiangchagou catchment, Dabie Mountains, Henan Province, central China.  (Yu et al. 2026)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** This paper's most distinctive contribution is its graph-theory-based quantification of how unpaved forest roads restructure the *entire catchment confluence network* (not just local erosion sites), using five independent connectivity indices to demonstrate significant increases in accessibility, potential flow, and node importance in road-affected vs. control catchments. The Piecewise SEM pathway (road → confluence network → sediment characteristics → SOC loss) provides a rare mechanistic chain linking infrastructure presence to carbon export at catchment scale, making it a strong methodological anchor for RQ4 (mechanisms) and a quantitative data point for RQ5 (direction of connectivity effect: unambiguous increase).
+
+---
+
+### Final tag conformance check
+
+All proposed tag strings verified character-for-character against the permitted taxonomy:
+- `002-B1-Roads` ✓
+- `003-FieldMonitoring` ✓
+- `003-Modeling` ✓
+- `004-SedimentDelivery` ✓
+- `004-FlowPathInitiation` ✓
+- `005-Asia` ✓
+- `006-Include-Stage2` ✓
+- `006-Include-Final` ✓
+
+**Tag replacements made: none.**
+
+## Sources
+
+Yu, Z., Q. Zhao, S. Ding, et al. 2026. “Unpaved Road-Altered Confluence Networks Exacerbate Soil Organic Carbon Loss in Mountainous Forested Catchments.” Journal of Hydrology 664. Scopus. https://doi.org/10.1016/j.jhydrol.2025.134500.

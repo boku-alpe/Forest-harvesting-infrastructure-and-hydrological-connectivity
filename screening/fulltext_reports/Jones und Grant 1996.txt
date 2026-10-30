@@ -1,0 +1,79 @@
+Reading: ⁨Jones⁩ und ⁨Grant⁩ 1996
+
+Now let me retrieve the item's existing tags for the provenance verification step.
+
+[Get metadata]
+
+---
+
+## Stage-2 Gate Report — Jones & Grant 1996
+
+**Study type:** `003-PairedCatchment`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Unknown — the record carries **no tags of any kind** (001, 010, 020, 030, 090, or 006). This is an anomaly that must be resolved by the screener: the paper appears to have been added directly (e.g., by DOI import) rather than through the formal search-string architecture. All provenance information is therefore absent.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attachment present and fully readable (16 pp., *Water Resources Research* 32(4):959–974). |
+| **Gate 2a** (B-infrastructure as study variable) | **PASS** | Road construction is analysed as an isolated treatment variable (Watershed 3, roads-only phase) and as a combined treatment (roads + clear-cut), with peak discharge and hydrograph timing measured separately for each. (Jones and Grant 1996) |
+| **Gate 2b** (connectivity operationalized as outcome) | **PASS** | The paper explicitly separates water-balance mechanisms from flow-routing mechanisms, and attributes peak flow increases primarily to roads integrating with the stream network. Hydrograph begin-time advancement (+10 h after roads alone) is directly measured as a connectivity proxy. Road-stream network connectivity (50–60 % of road network connected; +40 % drainage density) is reported quantitatively, though sourced from companion thesis Wemple (1994). The subsurface→surface flow-path conversion is the paper's central mechanistic finding.  (Jones and Grant 1996)  (Jones and Grant 1996) *Flag for screener: the word "connectivity" is never used; the framing is flow-path routing and drainage network extension — functionally equivalent to hydrological connectivity, but the label is absent. The connectivity metrics themselves (50 %/60 %, 40 % drainage density) are cited from Wemple (1994), not independently measured in this study.* |
+| **Q1** (study context) | **PASS** | Western Cascades, Oregon; catchments 0.6–1.0 km² (small, H.J. Andrews) and 60–600 km² (large); MAP 2300–2500 mm, maritime/Mediterranean; transient snow zone 400–1200 m; forested land with progressive clear-cutting and road construction from ~1950.  (Jones and Grant 1996) |
+| **Q2** (study design) | **PASS** | Small basins: controlled paired-catchment experiment with defined pre-treatment and six ~5-year post-treatment periods. Large basins: paired adjacent basins with contrasting harvest histories; difference in cumulative harvest area as the independent variable.  (Jones and Grant 1996)  (Jones and Grant 1996) |
+| **Q3** (method description) | **PASS** | Continuous hydrograph records from rated gauging stations; storm extraction criteria fully specified (gage-height thresholds, duration rules); ANOVA + Tukey HSD for small basins; linear regression with Bonferroni correction for large basins; event classification by season, size, and rain/rain-on-snow type.  (Jones and Grant 1996)  (Jones and Grant 1996) |
+| **Q4** (infrastructure characterized) | **PASS** | Roads in Watershed 3: 2.7 km constructed 1959, corresponding to 6 % of basin area (25 m right-of-way assumed). Road density in large basins: 1.8 km km⁻² (Lookout Creek) and 1.2 km km⁻² (Blue River) by 1970–1980. GIS-derived road network layers with decade-of-construction assignment.  (Jones and Grant 1996)  (Jones and Grant 1996) |
+| **Q5** (connectivity operationalized) | **PASS** | Two quantified connectivity proxies reported: (1) road-network connectivity fractions (50 % of roads in WS3 connected to stream; 60 % in Lookout Creek/Blue River) and resulting +40 % increase in stream drainage density (cited from Wemple 1994); (2) directly measured hydrograph begin-time advancement of 10 h attributable to roads alone. These go beyond a purely verbal claim.  (Jones and Grant 1996)  (Jones and Grant 1996) *Flag: drainage-density and connectivity-fraction metrics are from Wemple (1994), not independently derived by Jones & Grant. The timing advance is the only directly measured connectivity proxy in this paper.* |
+| **Q6** (effect direction derivable) | **PASS** | Clear positive direction throughout: roads alone → ~+20 % peak discharge (non-significant), +10 h earlier begin time; roads + 25 % clear-cut → +50 % peak discharge (significant, first 5 years), still +25 % after 25 years; large basins → 50–100 % increase over 50 years.  (Jones and Grant 1996)  (Jones and Grant 1996) |
+| **Gate 4** (sample/scope) | **PASS** | Small basins: 352–377 matched storm events over 34 years. Large basins: 148–191 matched events over 50–55 years. Five basin pairs, two treatment types.  (Jones and Grant 1996)  (Jones and Grant 1996) |
+| **Gate 5** (extractability) | **PASS** | Quantitative effect sizes with statistical significance directly readable from Tables 2–4 and regression coefficients (e.g., +0.014 m³ s⁻¹ km⁻² per 1 % difference in area cut). Effect directions unambiguous.  (Jones and Grant 1996)  (Jones and Grant 1996) |
+
+---
+
+### Provenance verification
+
+⚠️ **No provenance tags present on this record** — the item carries zero tags (no 001-*, 010-*, 020-*, 030-*, 090-* entries). The screener must:
+1. Determine the source database and assign the appropriate `001-*` tag.
+2. Identify which query (H## or M##) this paper belongs to and assign the corresponding `090-*` tag.
+3. Assign the appropriate Block-A and Block-B search-architecture tags (`010-A*`, `020-B*`).
+
+Substantive content assessment for the screener's reference: The paper's Block-A framing most closely aligns with **A2** (flow-path descriptors / flow routing, drainage network extension) and secondarily **A1** (connectivity concepts: subsurface→surface conversion mechanism). The Block-B infrastructure focus is clearly **B1-Roads**. There is no Block-C mitigation variable — this would be an H-query record, not an M-query record.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** Gate 2b (connectivity as co-reported outcome vs. mechanistic explanation only; screener should confirm whether the Wemple 1994 metrics, cited here, are sufficient to satisfy the connectivity-operationalization criterion); Q5 (same issue — connectivity metrics from Wemple 1994, not independently computed in this paper).
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — forest roads are the sole B-type infrastructure variable; they are analyzed in isolation (roads-only phase in WS3) and in combination with clear-cutting. Clear-cutting is a treatment variable, not a B-type.  (Jones and Grant 1996)
+- **003** [Study type]: `003-PairedCatchment` (primary, single tag) — both the small-basin experiment (pre/post with control, WS1/2/3) and the large-basin analysis (paired adjacent basins with contrasting harvest history) are paired-catchment designs. No modeling component is co-central; a distributed snow model (MMS) is used only for event classification.  (Jones and Grant 1996)
+- **004 primary** [Outcome]: `004-PeakFlow` — instantaneous peak discharge, hydrograph magnitude, and timing are the primary dependent variables throughout.  (Jones and Grant 1996)
+- **004 secondary #1**: `004-FlowPathInitiation` — subsurface→surface flow-path conversion by road cutbanks and ditches, and the resulting extension of the effective drainage network (+40 % drainage density), are the paper's central mechanistic co-finding and receive explicit quantification.  (Jones and Grant 1996)  (Jones and Grant 1996)
+- **004 secondary #2**: `004-RunoffResponse` — storm volumes (cumulative hydrograph volume) are co-examined as a hydrograph shape descriptor alongside peak timing and magnitude.  (Jones and Grant 1996)
+- **005** [Region]: `005-NorthAmerica` — all study basins are in western Oregon, USA.  (Jones and Grant 1996)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** Jones & Grant (1996) is a landmark paired-catchment study providing one of the longest quantitative records (up to 55 years) of road-driven peak flow amplification across a scale range of four orders of magnitude (0.6–600 km²). Its most distinctive contribution for AquaSilva is the mechanistic decomposition of road effects (flow routing / drainage network extension) from vegetation-removal effects (water balance), with the former dominating at large basin scales — a direct evidence anchor for the connectivity-peak flow linkage in RQ1 and RQ4. The explicit distinction between structural connectivity (road network topology, drainage density) and functional connectivity (realized hydrograph advance) maps onto the SLR's conceptual framing, even though the paper predates the formal connectivity vocabulary.
+
+---
+
+**Tag replacements made:** none.
+
+## Sources
+
+Jones, J. A., and G. E. Grant. 1996. “Peak Flow Responses to Clear‐Cutting and Roads in Small and Large Basins, Western Cascades, Oregon.” Water Resources Research 32 (4): 959–74. https://doi.org/10.1029/95WR03493.

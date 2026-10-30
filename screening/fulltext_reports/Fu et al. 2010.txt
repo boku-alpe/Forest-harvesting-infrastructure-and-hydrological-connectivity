@@ -1,0 +1,40 @@
+[Reading: Fu et al. 2010, p. 1-6 (6 results)]
+
+## Stage-2 screening recommendation — Fu et al. (2010)
+
+**Proposed terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+
+### Gate-by-gate appraisal (R-item track, since this is a review)
+
+**Gate 1 — Full text retrievable.** PDF is available and complete (14 pages). Pass.
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** Block-B infrastructure (B1 unsealed/forest roads) is the explicit object of the review, not contextual mention (Fu et al. 2010, 2). Connectivity is operationalized in two ways consistent with the SLR scope: (i) a flow-pathway typology distinguishing direct road–stream crossings, fully gullied, partially gullied, and diffuse pathways with their relative delivery efficiency  (Fu et al. 2010, 4), and (ii) a road-segment-to-stream sediment delivery ratio $SDR_{R\text{-}S}$ used as a quantitative connectivity metric  (Fu et al. 2010, 5–6). Pass.
+
+**Gate 3 — R-items.**
+- **R1 peer-reviewed:** *Environmental Modelling & Software*, Elsevier, peer-reviewed review article  (Fu et al. 2010, 1). Pass.
+- **R2 topical alignment:** Core scope is surface erosion and sediment **delivery** from unsealed roads to streams, with explicit treatment of road–stream linkage pathways and delivery ratios; cites anchor authors Croke (2005), Hairsine (2002), La Marche (2001), Wemple (2001)  (Fu et al. 2010, 3–4). Pass.
+- **R3 extractable synthesis content:** Synthesizes seven road models against an explicit assessment framework, tabulates reported sediment yields across climates/scales, and identifies systematic gaps (subsurface flow interception, imbalance between erosion vs. delivery representation, lack of uncertainty analysis)  (Fu et al. 2010, 1) (Fu et al. 2010, 4–5). Pass.
+
+**Gate 4 — Sufficient sample/scope.** Seven models, multi-region empirical base (US PNW, US Virgin Islands, SE Australia, Malaysia, Thailand)  (Fu et al. 2010, 4). Pass.
+
+**Gate 5 — Effect direction extractable.** Directional statements are derivable: e.g. delivery ratio declines with road-to-stream distance (100 % / 35 % / 10 % at 0 / 1–100 / 101–200 ft)  (Fu et al. 2010, 6); road–stream crossings deliver effectively all eroded sediment  (Fu et al. 2010, 4); cutslope/contributing-area increases raise runoff and surface erosion  (Fu et al. 2010, 3). Pass.
+
+### Proposed content-coding tags (suggestions for human confirmation)
+
+| Family | Proposed tag | Rationale (supporting sentence) |
+|---|---|---|
+| 002 Infrastructure subtype | `002-B1-Roads` | Review is restricted to unsealed roads and their road features (surface, ditch, cutslope, fillslope)  (Fu et al. 2010, 2) |
+| 003 Study type | `003-Review` | Self-identified review of seven road erosion/delivery models  (Fu et al. 2010, 1) |
+| 004 Hydrological focus | `004-SedimentDelivery` | Primary focus is delivery of road-derived sediment to streams  (Fu et al. 2010, 2) |
+| 004 (secondary) | `004-FlowPathInitiation` | Treatment of gully initiation thresholds below drains/culverts as connectivity mechanism  (Fu et al. 2010, 4) |
+| 005 Region | `005-Global` | Synthesizes studies across US PNW, US Virgin Islands, SE Australia, Malaysia, Thailand  (Fu et al. 2010, 4) |
+| 010-A Block A | `010-A2-FlowPaths` | Diffuse / partially gullied / fully gullied / crossing pathway taxonomy  (Fu et al. 2010, 4) |
+| 010-A Block A | `010-A3-Metrics` | $SDR_{R\text{-}S}$ defined and parameterized as connectivity metric  (Fu et al. 2010, 5–6) |
+| 020-B Block B | `020-B1-Roads` | Unsealed roads are the sole infrastructure class  (Fu et al. 2010, 2) |
+| 030-C Block C | `030-Cany-MitigationControls` | WARSEM explicitly integrates BMP effects for catchment decision-making; mitigation is treated but not the primary lens  (Fu et al. 2010, 5) |
+
+Note on 030-C: the review touches BMPs and drainage-structure placement as mitigation levers but does not provide a dedicated synthesis of retention/infiltration measures; `030-Cany-MitigationControls` is the lighter, more honest assignment than `030-C3-BMPs`. Final choice should rest with the human screener.
+
+## Sources
+
+Fu, Baihua, Lachlan T. H. Newham, and C. E. Ramos-Scharron. 2010. “A Review of Surface Erosion and Sediment Delivery Models for Unsealed Roads.” ENVIRONMENTAL MODELLING & SOFTWARE 25 (1): 1–14. https://doi.org/10.1016/j.envsoft.2009.07.013.

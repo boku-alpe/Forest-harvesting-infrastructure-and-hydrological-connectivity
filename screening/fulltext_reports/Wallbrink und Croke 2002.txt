@@ -1,0 +1,52 @@
+Reading: ⁨Wallbrink⁩ und ⁨Croke⁩ 2002
+
+## Stage-2 Gate Report — Wallbrink & Croke 2002
+
+**Study type:** `003-Experimental` (hybrid design: rainfall-simulator experiments at 12 sites + ¹³⁷Cs tracer-based sediment budget at one 12 ha watershed; the simulator component is the dominant methodological contribution, the tracer budget functions as field-scale corroboration)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (no `90-borderline-*` tag present on the record)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 (a) Infrastructure as variable | PASS | Skid tracks, water bars (cross-banks), log landings, and filter strips are the explicit experimental units; water bar spacing (20–30 m), width (5–6 m) and height (0.5 m) are study variables, and per-element ¹³⁷Cs budgets are computed for each. (Wallbrink and Croke 2002, 4) (Wallbrink and Croke 2002, 11) |
+| Gate 2 (b) Connectivity as outcome | PASS | Connectivity is operationalized as "volume to breakthrough" and discrete "No connection" classification per skid track–GHA segment under three rainfall intensities (Table 2); the discussion frames management as needing to "disconnect flow paths".  (Wallbrink and Croke 2002, 10) (Wallbrink and Croke 2002, 1) |
+| Q1 Study context | PASS | Eden Forest Management Area, NSW, southeastern Australia; ~12 ha closed basin; temperate, 650–900 mm a⁻¹; eucalypt production forest; granite/metasediment soils.  (Wallbrink and Croke 2002, 3) |
+| Q2 Study design classifiable | PASS | Controlled rainfall simulation (3 intensities × 12 sites × 3 age classes × 3 soil types) combined with a before/after ¹³⁷Cs sediment budget.  (Wallbrink and Croke 2002, 6) (Wallbrink and Croke 2002, 6) |
+| Q3 Method reproducibly described | PASS | Simulator geometry (350 m² plot, 10 sprinklers, V-notch flumes), nozzle/intensity combinations and 30-min run duration are specified; gamma spectrometry on HPGe detectors is described, with reference-site protocol.  (Wallbrink and Croke 2002, 5) (Wallbrink and Croke 2002, 6) |
+| Q4 Infrastructure characterized | PASS | Skid tracks: 17% of basin, slopes 8–25°, infiltration ~10 mm h⁻¹; water bars: 5–6 m wide, ~0.5 m high, spacing 20–30 m; filter strips: 20–30 m wide.  (Wallbrink and Croke 2002, 3) (Wallbrink and Croke 2002, 4) |
+| Q5 Connectivity operationalized | PASS | "Volume to breakthrough" reported per site/intensity (Table 2) with explicit "No connection" states for older or low-intensity runs — a mechanistic, quantitative connectivity descriptor rather than a verbal claim.  (Wallbrink and Croke 2002, 10) |
+| Q6 Effect direction derivable | PASS | Water bars produce a mean 60% reduction in sediment load at the outlet (65–94% deposition on recently logged sites); per-unit-area filter strip retention is ~8× the GHA; 5-year sites show loss of connectivity at low/medium intensities.  (Wallbrink and Croke 2002, 7) (Wallbrink and Croke 2002, 13) |
+| Q7 Sample/scope adequate | PASS | 12 simulator sites × 3 intensities + full pre-/post-harvest ¹³⁷Cs budget of a closed 12 ha basin (190+ cores across elements).  (Wallbrink and Croke 2002, 11) |
+| Gate 4 | PASS | Confirms Q7 above. |
+| Gate 5 Extractability | PASS | Multiple quantitative effect sizes are extractable: 60% mean sediment reduction at water bars, 13 ± 4% catchment-scale redistribution, ¹³⁷Cs recovery 97 ± 10%, filter strip 8× GHA per-area retention.  (Wallbrink and Croke 2002, 1) (Wallbrink and Croke 2002, 13) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** (n/a)
+**Confidence:** High
+**Items flagged for human re-read:** None mandatory. Optional screener judgment call — **Study-type label**: the paper is genuinely hybrid (controlled simulator experiments + field tracer budget over a closed catchment). If AquaSilva convention treats whole-catchment ¹³⁷Cs budgeting as field monitoring rather than experimental, the screener may prefer `003-FieldMonitoring` or apply both. Suggestion below uses `003-Experimental` as the dominant axis.
+
+### Content-coding suggestions (Include-Final)
+
+- **002:** `002-Mixed` — paper analyses skid tracks (B2), water bars (B3), filter strips/GHA buffering (C-family BMPs) jointly; "skid tracks, water bars, log landings, GHA, filter strips" are all budgeted as separate elements.  (Wallbrink and Croke 2002, 6)
+- **003:** `003-Experimental` — "The rainfall simulator was designed to produce varying intensities of rainfall over a plot area of 350 m²" with 3 controlled intensities (45/75/110 mm h⁻¹).  (Wallbrink and Croke 2002, 5) (Wallbrink and Croke 2002, 6) *(Optional second tag `003-FieldMonitoring` for the tracer-budget component if dual coding is permitted.)*
+- **004:** `004-A2-FlowPathDescriptors` — "volume to breakthrough" / "No connection" entries quantify the flow-path linkage of skid track → GHA.  (Wallbrink and Croke 2002, 10)
+- **004 (secondary):** `004-RunoffResponse` — runoff volumes per water bar and infiltration rates reported.  (Wallbrink and Croke 2002, 10)
+- **005:** `005-Oceania` — Eden FMA, southeastern NSW, Australia.  (Wallbrink and Croke 2002, 3)
+- **010:** `010-A2-FlowPathDescriptors` — connectivity operationalization via breakthrough volume on the track–water bar–GHA cascade.  (Wallbrink and Croke 2002, 10)
+- **020:** `020-B2-SkidSnigTrails` — "Skid tracks occupy ~17% of the basin".  (Wallbrink and Croke 2002, 3)
+- **020 (second):** `020-B3-Structures` — water bars (cross-banks) are characterized geometrically and tested as a mitigation structure.  (Wallbrink and Croke 2002, 4)
+- **030:** `030-C3-RoadDrainageBMP` — explicitly framed around "the effectiveness of Best Management Practices (BMPs)" for skid track drainage.  (Wallbrink and Croke 2002, 1)
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Delivers a high-value quantitative anchor for RQ6 on cross-drain / water-bar effectiveness: mean 60% sediment-load reduction at water-bar outlets, 65–94% deposition on recently logged sites, decline of skid track–GHA connectivity with stand age (5-year sites: "No connection" at low/medium intensities on light granite & metasediment soils), and ~8× per-area retention efficiency of riparian filter strip vs. GHA. Anchor source for the hypothesis that water bars selectively trap coarse sediment but pass fines — relevant for parameterizing Type B (area modifier) and Type C (channel modifier) elements in the Maßnahmenkatalog v4. Author Croke is one of the AquaSilva-designated anchor authors for skid-trail connectivity.
+
+## Sources
+
+Wallbrink, P. J., and J. Croke. 2002. “A Combined Rainfall Simulator and Tracer Approach to Assess the Role of Best Management Practices in Minimising Sediment Redistribution and Loss in Forests after Harvesting.” Forest Ecology and Management 170 (1–3): 217–32. Scopus. https://doi.org/10.1016/S0378-1127(01)00765-4.

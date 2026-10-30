@@ -1,0 +1,40 @@
+Reading: Baker et al. 2008
+
+## Stage-2 Gate Report — Baker et al. 2008
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7 (Gate 2 failure short-circuits — reported here for transparency only)
+**Borderline carry-over from Stage 1:** Not indicated in the supplied metadata (no `90-borderline-*` tag visible on the record).
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2(a) — Infrastructure as variable | PASS | Drainage ditches (artificial plough-furrow network, ~200 km km⁻², plus paired re-excavated vs. control micro-catchment ditches under forest and moorland) are the explicit study object, compared via v-notch weirs and paired sampling design (p. 2327). |
+| Gate 2(b) — Connectivity operationalized as outcome | **FAIL** | Connectivity appears only as a verbal/interpretive claim in abstract and discussion ("The large extent of this drainage network acts as both a rapid transport network increasing hydrological connectivity and a pool for the storage of DOM", p. 2325, repeated p. 2334). No connectivity index, flow-path metric, or mechanistic quantification of structural or functional connectivity is computed. Measured outcomes are DOC, water colour, UV-Vis absorbance, and fluorescence (peaks A/B/C) — i.e. DOM characterization, not connectivity. |
+| Gate 3 (Q1–Q7) | not evaluated | Sequential failure rule — Gate 2 failed. |
+| Gate 4 | not evaluated | Sequential failure rule. |
+| Gate 5 | not evaluated | Sequential failure rule. |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string:** `connectivity only narrative, not operationalized`
+**Confidence:** High
+**Items flagged for human re-read:** None. The connectivity statement is unambiguously rhetorical/interpretive; the study design contains no connectivity variable. Human screener may nonetheless wish to confirm there is no hidden quantitative connectivity treatment in figures/tables (verified during full-text read: figures cover DOC, pH, conductivity, colour, fluorescence intensities, absorbance ratios — none are connectivity metrics).
+
+### Content-coding suggestions
+
+Not applicable — record excluded at Gate 2.
+
+### Synthesis role
+
+Not applicable — record excluded.
+
+### Note for the screener
+
+This is a connectivity-anchored SLR exclusion of exactly the type the AquaSilva protocol is designed to filter: forest drainage infrastructure is treated rigorously as a variable, but the response variable is DOM biogeochemistry, with "hydrological connectivity" invoked only as a one-line narrative framing. Including it would risk the Type I error the PSALSAR protocol explicitly guards against. If a parallel DOM/water-quality side-corpus is later opened (outside the connectivity core), this paper would be a strong candidate there. (Baker et al. 2008, 2325) (Baker et al. 2008, 2327) (Baker et al. 2008, 2334)
+
+## Sources
+
+Baker, A., L. Bolton, M. Newson, and R. G. M. Spencer. 2008. “Spectrophotometric Properties of Surface Water Dissolved Organic Matter in an Afforested Upland Peat Catchment.” Hydrological Processes 22 (13): 2325–36. Scopus. https://doi.org/10.1002/hyp.6827.

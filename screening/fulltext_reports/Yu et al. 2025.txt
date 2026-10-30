@@ -1,0 +1,48 @@
+Reading: Yu et al. 2025
+
+## Stage-2 Gate Report — Yu et al. 2025
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in the provided metadata (no `90-borderline-*` helper tag visible on the record).
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (9-page PDF available). (Yu et al. 2025, 1) |
+| Gate 2 (a) infrastructure as variable | PASS | 15 forest-road prisms investigated; road surface slope/area/length and three erosion units (upper hillslope, road surface, road-stream slope) treated as study variables.  (Yu et al. 2025, 2–3) |
+| Gate 2 (b) connectivity operationalized as outcome | **FAIL** | Primary outcome is SOC/LOC/IOC concentrations and the Carbon Management Index (CMI); connectivity appears only as a narrative explanation ("G flow paths have higher sediment connectivity than GD and D flow paths") in the Discussion, not as a measured/modeled outcome.  (Yu et al. 2025, 7) Flow paths are characterized morphologically (W/D, roughness, Csa, slope) but linked to carbon loss, not to a connectivity metric/index.  (Yu et al. 2025, 3–4) |
+| Q1 | PASS (not reached) | Xiangchagou catchment, 6.40 km², subtropical/warm-temperate, *Pinus massoniana* forest, 1119 mm annual rainfall.  (Yu et al. 2025, 2–3) |
+| Q2 | PASS (not reached) | Gradient/observational field design across three flow-path types × hillslope positions.  (Yu et al. 2025, 3) |
+| Q3 | PASS (not reached) | Sampling protocol, instruments, lab methods, and piecewise SEM described.  (Yu et al. 2025, 3–4) |
+| Q4 | PASS (not reached) | Road characteristics (slope, length, width, area, surface bulk density) reported per prism.  (Yu et al. 2025, 3) |
+| Q5 | **FAIL** | No connectivity index/metric (e.g., IC) or mechanistic quantification of structural/functional connectivity computed; connectivity is invoked only verbally in the Discussion.  (Yu et al. 2025, 7) |
+| Q6 | PASS (not reached) | Effect directions on SOC/CMI are derivable (e.g., road surfaces lose ~57 % of upper-hillslope SOC; CMI D > GD > G).  (Yu et al. 2025, 4–5) |
+| Q7 | PASS (not reached) | 75 samples across 15 prisms; one complete iteration.  (Yu et al. 2025, 3) |
+| Gate 4 | n/a (gate sequence stops at Gate 2) | — |
+| Gate 5 | n/a (gate sequence stops at Gate 2) | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `connectivity only narrative, not operationalized`
+**Confidence:** Medium
+
+**Rationale (decision-support, not authority):** The paper is methodologically sound and operationalizes forest-road infrastructure rigorously, but the outcome variable is soil organic carbon loss; hydrological/sediment connectivity is invoked only as a discursive explanation in the Discussion ("higher sediment connectivity" in G flow paths) without an operationalized connectivity metric or mechanistic quantification. Per the connectivity-anchored SLR scope (and the explicit Type-I-error guard against pure runoff/erosion-hydrology studies), Gate 2(b) is the first failure.
+
+**Items flagged for human re-read:**
+- Gate 2(b) borderline call. The flow-path typology (G / GD / D) and morphometric descriptors (W/D, Dr, Csa) are *conceptually adjacent* to A2-FlowPathDescriptors, and the paper cites two anchor sources (Takken 2008; Croke & Hairsine 2006). A human screener may wish to verify whether the AquaSilva protocol treats quantified flow-path morphology on road-stream slopes as a sufficient connectivity operationalization, or whether an explicit connectivity index/IC-type metric is required. If the broader reading is adopted, this paper would flip to `006-Include-Stage2`.
+- Q5 (interpretive item) follows the same logic as Gate 2(b) and should be revisited together.
+
+### Content-coding suggestions
+
+Not applicable — record is recommended for exclusion. (Should the screener override to Include based on flow-path-descriptor interpretation, provisional codings would be: `002-B1-Roads`, `003-FieldMonitoring`, `004-A2-FlowPathDescriptors` + `004-RunoffResponse`, `005-Asia`, `010-A2-FlowPathDescriptors`, `020-B1-Roads`, `030-empty`.)
+
+### Synthesis role
+
+Not applicable for excluded records. If overridden to Include: `Study_Type_Synthesis_Role = primary`; would contribute quantitative flow-path morphology × off-road sediment/SOC loss relationships (W/D, Dr thresholds; gully development gradient on road-stream slopes) as supporting evidence for RQ2/RQ3 on flow-path descriptors.
+
+## Sources
+
+Yu, Z., Q. Zhao, Y. Liu, J. Yu, J. Zhou, and S. Ding. 2025. “Soil Organic Carbon Loss from Forest Road Prisms in a Mountainous Catchment.” Catena 253. Scopus. https://doi.org/10.1016/j.catena.2025.108891.

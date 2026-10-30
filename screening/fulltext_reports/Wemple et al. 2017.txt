@@ -1,0 +1,50 @@
+Reading: Wemple et al. 2017
+
+## Stage-2 Gate Report — Wemple et al. 2017
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not indicated in provided metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (14 pages). |
+| Gate 2 | PASS | Unpaved roads, culverts, ditches, and BMPs are the explicit study variables; road–stream connectivity is operationalized via GIS analysis: "we estimated connectivity of the road and stream network using GIS analysis and a set of rules or assumptions based upon field observations" (p. 1656) (Wemple et al. 2017, 5–6). |
+| Q1 | PASS | Winooski River watershed (2753 km²), humid temperate climate, ~72% forested, with road-network statistics (4162 km total, 2509 km unpaved) reported (p. 1654)  (Wemple et al. 2017, 2). |
+| Q2 | PASS | Stratified field inventory (52 segments) combined with GIS analysis and statistical modeling (ANOVA, regression, PCA); classifiable as field monitoring + GIS scaling design (p. 1656–1657)  (Wemple et al. 2017, 5–6). |
+| Q3 | PASS | Methods describe GPS-based feature mapping protocol, soil sampling (bulk density coring, ICP-OES P digest, EPA Method SW846-3051), mass-balance equations, ArcGIS algorithms (FLOW ACCUMULATION, NEAR, topographic index) (p. 1655–1657)  (Wemple et al. 2017, 4–6). |
+| Q4 | PASS | Infrastructure characterized by length, grade, hillslope position, BMP presence/type (turnouts, stone-lined ditches, culverts, water bars), culvert blockage class (Table I, Table III)  (Wemple et al. 2017, 6–8). |
+| Q5 | PASS | Connectivity operationalized as quantitative metric: % of road network discharging to stream-crossing culverts (38%) plus % discharging to cross drains within 50 m of stream (15%), yielding 53% connected fraction (p. 1661)  (Wemple et al. 2017, 10–11). |
+| Q6 | PASS | Clear effect directions: erosion frequency and volume increase exponentially with road grade (R²=0.37); BMP presence reduces erosion frequency; connectivity scales site erosion to ~16% sediment and ~6% P watershed flux (p. 1658, 1662)  (Wemple et al. 2017, 7) (Wemple et al. 2017, 11). |
+| Q7 | PASS | 52 road segments, 98.4 km surveyed, 1940 features mapped, 8 soil sampling sites; complete inventory cycle (p. 1657)  (Wemple et al. 2017, 6). |
+| Gate 4 | PASS | Q7 satisfied (above). |
+| Gate 5 | PASS | Quantitative effect directions extractable (exponential erosion–grade relation; 53% connectivity; ~16% sediment / ~6% P share)  (Wemple et al. 2017, 11). |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** (not applicable)
+**Confidence:** High
+**Items flagged for human re-read:** None. (Optional screener check: Q5 — connectivity here is a binary GIS rule-set rather than an IC-type continuous index; confirm this meets the AquaSilva A3-Metrics threshold versus A2-FlowPathDescriptors.)
+
+### Content-coding suggestions
+
+- 002: `002-B1-Roads` AND `002-C3-RoadDrainageBMP` — unpaved roads and BMPs (turnouts, stone-lined ditches, water bars, check dams) both treated as study variables  (Wemple et al. 2017, 6–8).
+- 003: `003-FieldMonitoring` — field inventory of 52 segments combined with GIS scaling, not a process model  (Wemple et al. 2017, 5–6).
+- 004: `004-A2-FlowPathDescriptors` AND `004-A3-ConnectivityMetrics` — explicit flow-path rules (road→culvert→stream; cross drains within 50 m) and a quantitative connected-fraction metric (53%)  (Wemple et al. 2017, 10–11).
+- 005: `005-NorthAmerica` — Winooski River watershed, Vermont, USA  (Wemple et al. 2017, 2).
+- 010: `010-A2-FlowPathDescriptors` AND `010-A3-ConnectivityMetrics` — same evidence as 004  (Wemple et al. 2017, 10–11).
+- 020: `020-B1-Roads` AND `020-B3-Structures` — unpaved roads plus stream-crossing culverts and cross-drain culverts characterized individually  (Wemple et al. 2017, 3) (Wemple et al. 2017, 6).
+- 030: `030-C3-RoadDrainageBMP` — BMP inventory (turnouts, stone-lined ditches, rock aprons, check dams, water bars) with quantified efficacy on erosion frequency  (Wemple et al. 2017, 8).
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Contributes a catchment-scale quantitative anchor on road–stream connectivity (53% connected road length; ~16% sediment / ~6% P watershed flux attributable to unpaved roads) and a vote-counting datum for RQ6 on BMP effectiveness in reducing erosion frequency. Strong fit as an anchor reference alongside Wemple (1996, 2001) for Block-B Roads × A3-Metrics evidence in northeastern temperate forested terrain — geomorphically and climatically transferable to the Wienerwald context.
+
+## Sources
+
+Wemple, Beverley C., Gordon E. Clark, Donald S. Ross, and Donna M. Rizzo. 2017. “Identifying the Spatial Pattern and Importance of Hydro-Geomorphic Drainage Impairments on Unpaved Roads in the Northeastern USA.” Earth Surface Processes and Landforms 42 (11): 1652–65. https://doi.org/10.1002/esp.4113.

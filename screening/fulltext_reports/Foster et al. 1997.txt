@@ -1,0 +1,40 @@
+[Viewing pages (3 results)]
+
+## Stage-2 gate assessment — Foster et al. (1997)
+
+**Recommendation: `006-Exclude-Quality`**
+**Exclusion-reason note (verbatim): `connectivity not operationalized as outcome`**
+
+### Gate-by-gate reasoning
+
+**Gate 1 — Full text retrievable.** PASS. PDF is image-only (OCR not available to Beaver), but all 13 pages render and are visually inspectable by the human screener. (Foster et al. 1997, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** FAIL.
+
+The paper does contain a Block-B-adjacent infrastructure element: forestry **drainage ditches** dug during ploughing prior to plantation, which "altered the soil hydrology, allowing direct and rapid transport of soil-derived water to the main stream channels."  (Foster et al. 1997, 3) Four first-order drainage ditches (SE1, SE3, Tan N, Tan S) are explicitly sampled alongside the second- and third-order streams to test scaling and felling effects.  (Foster et al. 1997, 3)
+
+However, the operationalized outcome variable is **stream hydrochemistry** (pH, ANC, Al³⁺, base cations, conductivity) during storm events — not a connectivity metric (no IC, no SDR, no flow-path mapping, no sediment/runoff connectivity index, no structural/functional connectivity framing in the AquaSilva sense).  (Foster et al. 1997, 1) (Foster et al. 1997, 2) The ditch network is treated as a sampling stratum and an implicit flow-path mechanism, but connectivity itself is neither defined nor measured. This matches the methodological framing's exclusion criterion: pure runoff/biogeochemical-hydrology study without explicit connectivity operationalization.
+
+Per the sequential-gate rule, Gate 2 is the first failure → stop here; do not evaluate Gates 3–5.
+
+### Tags to apply (verbatim)
+
+- `006-Exclude-Quality`
+
+### Zotero exclusion note (verbatim)
+
+```
+connectivity not operationalized as outcome
+```
+
+### No content-coding tags
+
+Per the protocol, `002-`/`003-`/`004-`/`005-`/`010-A`/`020-B`/`030-C` content-coding suggestions are only generated for Include-Final records and are therefore omitted.
+
+### Note for the human screener (borderline rationale, not for Zotero)
+
+This is a defensible borderline case. If the team later decides to widen the corpus to include studies where **forestry drainage ditches are characterized as flow-path infrastructure even when the outcome is hydrochemistry rather than a connectivity metric**, this record should be re-evaluated. The relevant passages would then be the explicit ditch-as-flow-path statement  (Foster et al. 1997, 3) and the paired forested/clearfelled ditch design on two soil types  (Foster et al. 1997, 3). Under the current connectivity-anchored protocol, however, exclusion at Gate 2 is the consistent call.
+
+## Sources
+
+Foster, Helen J., Sarah Alexander, Tanya Locks, Howard S. Wheater, Matthew J. Lees, and Brian Reynolds. 1997. “Scale Dependence of the Episodic Hydrochemical Response of Nested Catchments at Plynlimon.” HYDROLOGY AND EARTH SYSTEM SCIENCES 1 (3): 639–51. https://doi.org/10.5194/hess-1-639-1997.

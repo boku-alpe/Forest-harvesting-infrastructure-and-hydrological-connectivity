@@ -1,0 +1,31 @@
+[Reading: Chen et al. 2026, p. 1-5 (5 results)]
+
+## Gate Report — Chen et al. 2026
+
+**Study type:** Field (isotope sampling) + Modeling (MixSIAR Bayesian mixing + Spatial Stream Network Models)
+
+**Gate 2:** FAIL — The study examines precipitation, groundwater, and soil-water contributions to streamflow in a 95,200 km² monsoon-mountain basin using stable isotopes and SSNMs; no Block-B forest infrastructure (roads, skid/snig trails, structures) is treated as a study variable, only land-cover classes such as "forest cover" and "cropland extent" as landscape covariates. (Chen et al. 2026, 1) (Chen et al. 2026, 3)
+
+**Gate 3:**
+- Q1: PASS — Region (upper Han River basin, central China), area (~95,200 km²), subtropical monsoon climate with 700–1200 mm precipitation, and mixed forest/cropland land cover are fully reported.  (Chen et al. 2026, 3)
+- Q2: PASS — Classifiable as a cross-seasonal observational field + modeling design (isotope sampling in wet/dry seasons, MixSIAR, SSNMs).  (Chen et al. 2026, 3) (Chen et al. 2026, 5)
+- Q3: PASS — Sampling protocol, isotope analyzer, MixSIAR parameterization (Dirichlet prior, 100,000 iterations, Gelman-Rubin convergence), and SSNM construction in R are reproducibly described.  (Chen et al. 2026, 5)
+- Q4: FAIL — No forest infrastructure (B1/B2/B3) is characterized; no density, length, age, design, condition, or position of roads, skid trails, or structural measures is reported.
+- Q5: UNCLEAR — "Hydrological connectivity" is invoked as an interpretive framework ("connectivity-regulated processes in the dry season") but is not operationalized as a connectivity metric/index (e.g., IC, structural/functional connectivity quantification); SSNM spatial autocorrelation (tail-up, Euclidean) functions as network covariance, not as a connectivity index in the Borselli/Cavalli sense.  (Chen et al. 2026, 1) (Chen et al. 2026, 5)
+- Q6: PASS — Effect directions on source contributions are derivable (e.g., precipitation ≈80.9 % in wet season; groundwater ≈55.9 % in dry season; positive elevation/slope/forest controls in wet season; positive soil-permeability/cropland controls in dry season), but these address recharge sources, not connectivity-mediated infrastructure effects.  (Chen et al. 2026, 1)
+
+**Gate 4:** PASS — Two complete seasonal sampling iterations (August wet, November 2024 dry) with 154 river, 213 soil, 59 groundwater samples.  (Chen et al. 2026, 3)
+
+**Gate 5:** FAIL — No effect direction on connectivity attributable to forest infrastructure can be extracted; the derivable directional results pertain to seasonal source partitioning and broad landscape covariates, not to Block-B drivers of structural or functional connectivity.
+
+**Recommendation:** Exclude-Quality (reason: **"No Block-B infrastructure as study variable"**; secondary: **"Connectivity not operationalized as outcome metric (only verbal/framework use)"**)
+
+**Confidence:** High
+
+**Items flagged for human re-read:** Q5 (whether SSNM tail-up covariance + the explicit "hydrological connectivity framework" framing on p. 1 and p. 3 should be reconsidered as a connectivity operationalization; current assessment: no, because connectivity is not quantified as a metric/index linked to a structural driver in the AquaSilva sense).
+
+**Borderline-Stage-1 carry-over:** Unknown from the materials provided — please verify against the Stage-1 borderline log. The paper's title contains no Block-B terms, and connectivity appears only as an interpretive framework, so a Stage-1 borderline flag would be plausible if it was included on the basis of the "hydrological connectivity" keyword alone.
+
+## Sources
+
+Chen, Y., J. Li, B. Li, et al. 2026. “Precipitation and Groundwater Alternately Dominate Seasonal Streamflow in Mountainous Catchments.” Journal of Hydrology: Regional Studies 63. Scopus. https://doi.org/10.1016/j.ejrh.2025.103039.

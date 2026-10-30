@@ -1,0 +1,31 @@
+[Reading: Cienciala et al. 2021, p. 1-6 (6 results)]
+
+## Gate Report — Cienciala et al. 2021
+
+**Study type:** Field (sediment budget / reservoir survey + repeat LiDAR), with qualitative-historical disturbance interpretation
+
+**Gate 2:** FAIL — The study's primary outcome is specific clastic sediment yield, partitioning (bedload vs. suspended), and sediment sources; hillslope–channel connectivity is invoked only verbally as an interpretive frame ("Legacies of these disturbances appear to … limit … hillslope-channel connectivity"), and forest roads enter only as one of several sediment-budget inputs, not as a study variable whose effect on connectivity is tested. (Cienciala et al. 2021, 1) (Cienciala et al. 2021, 6)
+
+**Gate 3:**
+- Q1: PASS — Region (Selkirk Mts., NE Washington, inland PNW), catchment (Upper Sullivan Creek, 182 km² geomorphically connected), climate (mixed maritime/continental, ~1250–1400 mm a⁻¹, nival regime), and land use (coniferous forest, ~50–66% logged pre-2009, road network, Mill Pond dam) are all reported.  (Cienciala et al. 2021, 2–3)
+- Q2: PASS — Classifiable as a field-based sediment budget / reservoir-sedimentation study with repeat-LiDAR DoD; not BA, CI, gradient, or paired-catchment in the connectivity sense.  (Cienciala et al. 2021, 3–6)
+- Q3: PASS — Methods for reservoir bathymetry/sub-bottom profiling, coring, bulk density and LOI, trap-efficiency correction, partitioning thresholds, bank-erosion DoD, and source inventories are described in reproducible detail.  (Cienciala et al. 2021, 3–6)
+- Q4: UNCLEAR — Roads (B1) appear as a sediment source with per-length erosion rates (paved Sullivan Lake Road 2 Mg km⁻¹ a⁻¹; undisturbed 3.8 Mg km⁻² a⁻¹; heavy-use logged 500 Mg km⁻² a⁻¹), but neither road density, total length, age, surface type, drainage design, nor spatial position relative to channels is characterized for the study basin itself — values are largely transferred from Reid & Dunne and Srivastava et al.  (Cienciala et al. 2021, 4) (Cienciala et al. 2021, 6)
+- Q5: FAIL — Connectivity is not operationalized as a metric or index (no IC, no flow-path mapping, no mechanistic connectivity model); it is treated narratively, with structural disconnection only stated for Sullivan Lake as a sink.  (Cienciala et al. 2021, 1–2)
+- Q6: UNCLEAR — A directional claim is made (disturbance legacy → reduced lateral activity and reduced hillslope–channel connectivity), but it is an interpretive inference, not a quantified effect on a connectivity variable.  (Cienciala et al. 2021, 1)
+
+**Gate 4:** PASS — One complete iteration of the sediment-budget / partitioning / source analysis is reported for the basin over the 1910–2009 reservoir-infilling window, plus a 2012–2016 LiDAR DoD pass.  (Cienciala et al. 2021, 6)
+
+**Gate 5:** FAIL — A clear effect direction on a connectivity outcome is not derivable; the study reports a sediment-yield value (~51 Mg km⁻² a⁻¹) and a qualitative narrative that disturbance legacies have *reduced* hillslope–channel connectivity, but without a quantified connectivity baseline or contrast this cannot be extracted as an effect estimate.  (Cienciala et al. 2021, 1)
+
+**Recommendation:** Exclude-Quality (reason: *connectivity not operationalized as outcome — verbal/interpretive mention only; infrastructure analyzed as sediment source, not as connectivity-relevant variable*) — pending screener review against the exact §4 taxonomy strings in `Stage2_Operationalization.md`, which I do not have in this chat.
+
+**Confidence:** Medium-High — Gate 2 and Q5 are clear fails based on the abstract, introduction, and methods; some residual uncertainty because the discussion (pp. 7–18, not yet read) may contain a more formal connectivity treatment.
+
+**Items flagged for human re-read:** Q4 (road characterization — check whether discussion/Figs. report road density or position), Q6 (effect-direction claim on lateral activity and hillslope–channel connectivity — check Discussion §). Reading recommended: pp. 7–14 (Results/Discussion on sources and disturbance legacy).
+
+**Borderline-Stage-1 carry-over:** Unknown from the metadata provided in this chat — please confirm against the Stage-1 borderline list.
+
+## Sources
+
+Cienciala, P., M. Melendez Bernardo, A. D. Nelson, and A. D. Haas. 2021. “Sediment Yield from a Forested Mountain Basin in Inland Pacific Northwest: Rates, Partitioning, and Sources.” Geomorphology 374. Scopus. https://doi.org/10.1016/j.geomorph.2020.107478.

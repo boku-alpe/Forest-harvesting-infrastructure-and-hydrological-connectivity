@@ -1,0 +1,92 @@
+I'll retrieve the item's metadata (for provenance tags) and begin reading the full text in parallel.
+
+[Get metadata]
+
+[Reading: ⁨Wemple⁩ und ⁨Jones⁩ 2003, p. 1-9 (9 results)]
+
+Now I'll read the remaining pages for the results, discussion, and conclusions.
+
+[Reading: ⁨Wemple⁩ und ⁨Jones⁩ 2003, p. 10-17 (8 results)]
+
+I now have everything needed to write the full Stage-2 gate report.
+
+---
+
+## Stage-2 Gate Report — Wemple & Jones 2003
+
+**Study type:** `003-FieldMonitoring` (primary); `003-Modeling` (secondary — kinematic model co-applied for comparison)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No `90-borderline-*` helper tags found in the Zotero record.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attachment available (10-DB73VBKP), full text retrieved across all 17 pages. |
+| **Gate 2a** | **PASS** | Twelve road segments instrumented with weirs; subcatchment characteristics (hillslope length, cutbank depth, soil depth, slope gradient) analysed as explanatory variables for runoff production. Roads are the explicit study object, not contextual backdrop. (Wemple and Jones 2003) |
+| **Gate 2b** | **PASS** | Hydrological connectivity operationalized through (i) water-table elevation relative to road cut (*h*rc) as a mechanistic threshold for subsurface flow interception, and (ii) timing synchronization of road-segment peaks with the catchment outlet hydrograph — both quantified as primary outcomes.  (Wemple and Jones 2003) (Wemple and Jones 2003) |
+| **Q1** | **PASS** | WS3: 101-ha second-order catchment, H.J. Andrews Experimental Forest, western Oregon Cascades; elevation 480–1080 m; MAP 2300 mm; temperate maritime rain-dominated climate (≈80% Oct–Apr); old-growth forest cover with 25% historic patch cuts.  (Wemple and Jones 2003) |
+| **Q2** | **PASS** | Gradient/comparative field monitoring design: 12 subcatchments draining to road segments with systematically varying morphometric characteristics measured continuously, compared to catchment-outlet response; paired kinematic model applied for prediction. Design is classifiable.  (Wemple and Jones 2003) |
+| **Q3** | **PASS** | Instruments: aluminium V-notch weirs at culvert inlets, 2.5-psi pressure transducers, CR10 dataloggers at 5-minute intervals; rating curve based on 24 stage–discharge measurements; dye tracing for road-surface area delineation; LiDAR-derived 3 m DEM for subcatchment mapping; soil depth by drive-probe at ≈50 m intervals. Kinematic model equations fully reported (eqs. 1–13).  (Wemple and Jones 2003) (Wemple and Jones 2003) (Wemple and Jones 2003) |
+| **Q4** | **PASS** | Each road segment characterized for: road surface area (Ar, 5–123 m²), contributing hillslope area (Ah), hillslope length (X), slope gradient (a), soil depth (Ds), cutbank depth (Drc), period of record (Table 1). Road network: 2.7 km, cut-and-fill design, 1.3% of catchment area; construction year 1959 reported.  (Wemple and Jones 2003) (Wemple and Jones 2003) |
+| **Q5** | **PASS** | Connectivity operationalized mechanistically: *h*rc = Drc − Ds − h₀ (eq. 10) as threshold index for subsurface flow interception (hrc > 0 → interception predicted); unit-area peak runoff ratios relative to WS3; time-difference between road-segment peaks and catchment peak quantified for each storm and road segment.  (Wemple and Jones 2003) (Wemple and Jones 2003) |
+| **Q6** | **PASS** | Clear directional finding: roads with cutbank depth exceeding soil depth intercept subsurface flow and increase hydrological connectivity, routing hillslope subsurface flow directly to streams with timing that contributes to the rising limb of the catchment hydrograph; magnitude several times higher unit-area runoff than the catchment overall during large events.  (Wemple and Jones 2003) (Wemple and Jones 2003) |
+| **Q7** | **PASS** | 12 subcatchments monitored over the complete 1996 water year (Nov 1995–Apr 1996); 33 precipitation events recorded; cross-site comparisons across 9 storms; complete iteration from data collection through model comparison to catchment-scale inference.  (Wemple and Jones 2003) (Wemple and Jones 2003) |
+| **Gate 4** | **PASS** | Confirmed by Q7. |
+| **Gate 5** | **PASS** | Effect direction explicitly extractable: roads with deep cutbanks on short, steep slopes intercepting shallow soils **increase** hydrological connectivity (subsurface-to-surface conversion, shortened effective flow paths, faster delivery to stream channel); road segments on deep soils/slump benches **do not** intercept subsurface flow (no connectivity effect).  (Wemple and Jones 2003) |
+
+---
+
+### Provenance verification
+
+The record carries `010-A1-ConnectivityConcepts` and `010-A2-FlowPathDescriptors` on Block A; `020-B1-Roads` and `020-B3-Structures` on Block B; queries H01, H03, H04, H06.
+
+- **A1 / A2**: The paper substantively uses both connectivity concepts (roads as hydrological short-circuits, catchment-scale connectivity argument) and flow-path descriptors (cutbank depth relative to water table, slope length, subsurface flow interception geometry). Both tags reflect genuine content; no drift.
+- **B1-Roads**: Primary infrastructure object. Match confirmed.
+- **B3-Structures**: Culverts are the measurement points and are characterized (ditch-relief vs. stream-crossing, 18-inch CMP), but they are analysed as integral components of the road drainage system, not as independent structures. The B3 tag is technically accurate though marginally secondary to B1; however this is a provenance-architecture decision, not a content mismatch. No actionable drift.
+
+**Provenance verification: no drift detected.**
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final` *(both already present in the Zotero record — confirms prior screening decision)*
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — Forest roads (12 segments with cut-and-fill design) are the exclusive infrastructure under study; culverts are instrumentation points within the road drainage system, not independent study variables.  (Wemple and Jones 2003)
+
+- **003** [Study type]: `003-FieldMonitoring` (primary) + `003-Modeling` (secondary dual-tag) — Continuous weir-based runoff monitoring from 12 subcatchments is the primary method; the Beven kinematic model is co-applied to predict water table elevation and timing across all road segments and storms, making modeling a co-central analytical pillar.  (Wemple and Jones 2003) (Wemple and Jones 2003)
+
+- **004 primary** [Outcome]: `004-RunoffResponse` — The study's organizing dependent variable is runoff production from road segments: volume, unit-area rates, cumulative runoff, and runoff coefficients partitioned between road surface and subsurface interception.  (Wemple and Jones 2003)
+
+- **004 secondary 1**: `004-PeakFlow` — Peak discharge magnitude, timing synchronization with WS3 peak, and contribution to the rising limb of the catchment hydrograph are explicitly quantified and form a major results section.  (Wemple and Jones 2003)
+
+- **004 secondary 2**: `004-FlowPathInitiation` — The study mechanistically traces subsurface-to-surface flow conversion by road cutbanks and discusses how roads reduce the threshold for channel initiation by intercepting hillslope subsurface flow paths and creating artificial subcatchments.  (Wemple and Jones 2003)
+
+- **005** [Region]: `005-NorthAmerica` — H.J. Andrews Experimental Forest, western Oregon Cascades, USA.  (Wemple and Jones 2003)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** This paper provides one of the most mechanistically explicit field demonstrations that road cutbank depth relative to soil depth is the key site characteristic controlling hydrological connectivity between hillslope subsurface flow and the stream network; the *h*rc metric (eq. 10) is directly extractable as a replicable connectivity index. It also provides a rare subcatchment-scale partitioning of road runoff between surface and subsurface sources (>95% from subsurface interception in this steep, permeable-soil setting), making it a key anchor for any RQ on the mechanisms of road-induced connectivity increase.
+
+---
+
+**Tag replacements made:** none.
+
+## Sources
+
+Wemple, Beverley C., and Julia A. Jones. 2003. “Runoff Production on Forest Roads in a Steep, Mountain Catchment.” Water Resources Research 39 (8): 2002WR001744. https://doi.org/10.1029/2002WR001744.

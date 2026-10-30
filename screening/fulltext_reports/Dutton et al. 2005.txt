@@ -1,0 +1,50 @@
+[Reading: Dutton et al. 2005 (14 results)]
+
+## Stage-2 Gate Report — Dutton, Loague & Wemple 2005
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not indicated in attachment metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (14 pp). (Dutton et al. 2005, 1) |
+| Gate 2 (a) Infrastructure as variable | PASS | The forest road is the explicit study variable: a 6 m wide forest road dissecting catchment C3 is represented as a discrete low-permeability unit (K = 1·0 × 10⁻⁸ m s⁻¹) in the BVP, with road-present vs. baseline conditions compared.  (Dutton et al. 2005, 4) (Dutton et al. 2005, 6) |
+| Gate 2 (b) Connectivity operationalized | PASS | Subsurface flow paths (a flow-path / structural-functional connectivity proxy) are quantitatively simulated: paths are diverted upward to the seepage face and dip beneath the road, with pore-pressure fields and roadcut seepage discharge as flux-based outcomes.  (Dutton et al. 2005, 8) (Dutton et al. 2005, 12) |
+| Q1 Context | PASS | H. J. Andrews Experimental Forest (Western Cascades, Oregon); WS3 = 1·0 km², C3 catchment area = 2 ha; annual precipitation 2·3–3·6 m; steep forested zero-order catchment.  (Dutton et al. 2005, 3–4) |
+| Q2 Design | PASS | Three-phase physics-based modeling design (steady-state saturated → transient variably saturated → infinite-slope stability), driven by observed and hypothetical rainfall events.  (Dutton et al. 2005, 1) (Dutton et al. 2005, 4) |
+| Q3 Method reproducibility | PASS | Governing equations stated; models named (NUM5, VS2D, infinite slope); grid dimensions, time stepping, K values, boundary conditions, retention curve approach, and field measurement protocols (TDR, pressure infiltrometer, Guelph permeameter) all reported.  (Dutton et al. 2005, 4–7) |
+| Q4 Infrastructure characterized | PASS | Road: 6 m wide, established 1959, K = 1·0 × 10⁻⁸ m s⁻¹, depth 0·95 m, spatial position (mid-slope, dissecting C3) given; cutslope treated as seepage face.  (Dutton et al. 2005, 4) (Dutton et al. 2005, 6–7) |
+| Q5 Connectivity operationalized | PASS | Connectivity is operationalized via simulated subsurface flow paths, pore-pressure fields at 6 measurement points, and observed-vs-simulated roadcut seepage discharge as a functional-connectivity flux metric.  (Dutton et al. 2005, 8–9) |
+| Q6 Effect direction | PASS | Clear directional effect: road permeability contrast → diverted slope-parallel subsurface flow → increased up-slope pore pressures → decreased FS (failure predicted for high-intensity event); pore pressures and FS sharply decrease just below the road.  (Dutton et al. 2005, 10) (Dutton et al. 2005, 12) |
+| Q7 / Gate 4 Sample/scope | PASS | Complete model iteration across three observed 1996 rainfall events plus a hypothetical event with two initial-condition scenarios and a ±10 % sensitivity analysis.  (Dutton et al. 2005, 9–11) |
+| Gate 5 Extractability | PASS | Quantitative effect direction extractable: positive pore pressures (10 270–15 543 Pa) up-slope of road vs. negative (−17 738 to −8560 Pa) down-slope; FS < 1·0 above road for hypothetical event.  (Dutton et al. 2005, 9) (Dutton et al. 2005, 10–11) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** Q5 — borderline interpretive point. The paper operationalizes connectivity via subsurface flow paths and roadcut seepage flux, but does not use a named connectivity index/metric (IC, SC, etc.). Whether mechanistic flow-path quantification satisfies the AquaSilva A3 metric threshold or only A2 (flow-path descriptors) is a screener judgment call.
+
+### Content-coding suggestions
+
+- **002:** `002-B1-Roads` — "A 6-m wide forest road (established in 1959) dissects (side to side) the catchment."  (Dutton et al. 2005, 4)
+- **003:** `003-Modeling` — Three-phase simulation effort with NUM5, VS2D, and infinite-slope analysis.  (Dutton et al. 2005, 1)
+- **004:** `004-A2-FlowPathDescriptors` (primary) + `004-RunoffResponse` (co-reported) — flow paths diverted upward toward the seepage face and dipping beneath the road, with seepage discharge at the roadcut.  (Dutton et al. 2005, 8) Consider also `004-A3-ConnectivityMetrics` if the screener treats the quantitative pore-pressure / seepage-flux quantification as a mechanistic connectivity metric.
+- **005:** `005-NorthAmerica` — H. J. Andrews Experimental Forest, Oregon, USA.  (Dutton et al. 2005, 3)
+- **010:** `010-A2-FlowPathDescriptors` — "subsurface flow paths, in the area of the road, are diverted upward toward the seepage face and dip beneath the compacted soil."  (Dutton et al. 2005, 8)
+- **020:** `020-B1-Roads` — Forest road is the sole infrastructure variable analyzed.  (Dutton et al. 2005, 4)
+- **030:** `030-empty` — No mitigation/BMP measure evaluated; study addresses road impact, not retention/infiltration/road-drainage BMPs.  (Dutton et al. 2005, 2)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Anchor modeling study (one of the listed AquaSilva anchor authors: Dutton 2005) providing a process-based, physics-based demonstration that the road-induced near-surface permeability contrast diverts slope-parallel subsurface flow, raises up-slope pore pressures, and can trigger predicted slope failure under high-intensity rainfall — a foundational mechanistic link between forest-road structural connectivity (flow-path diversion) and functional consequences (pore pressure, slope failure) for RQ1/RQ2 evidence mapping and as a mechanistic reference point for RQ6.
+
+## Sources
+
+Dutton, Anona L., Keith Loague, and Beverley C. Wemple. 2005. “Simulated Effect of a Forest Road on Near‐surface Hydrologic Response and Slope Stability.” Earth Surface Processes and Landforms 30 (3): 325–38. https://doi.org/10.1002/esp.1144.

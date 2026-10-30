@@ -1,0 +1,19 @@
+search_id,type,combination,unique,prim_only,both,gs_only,included
+H01,Baseline,A1 + B1 + D,68,49,5,14,31
+H02,Baseline,A1 + B2 + D,13,11,2,0,8
+H03,Baseline,A1 + B3 + D,36,27,1,8,12
+H04,Baseline,A2 + B1 + D,50,37,1,12,21
+H05,Baseline,A2 + B2 + D,13,8,0,5,7
+H06,Baseline,A2 + B3 + D,61,36,1,24,14
+H07,Baseline,A3 + B1 + D,38,1,5,32,6
+H08,Baseline,A3 + B2 + D,5,2,2,1,4
+H09,Baseline,A3 + B3 + D,41,3,3,35,6
+M01,Mitigation,A1 + B1 + D + (C1 OR C2 OR C3),17,4,2,11,6
+M02,Mitigation,A1 + B2 + D + (C1 OR C2 OR C3),11,4,2,5,5
+M03,Mitigation,A1 + B3 + D + (C1 OR C2 OR C3),18,5,2,11,4
+M04,Mitigation,A2 + B1 + D + (C1 OR C2 OR C3),6,4,0,2,2
+M05,Mitigation,A2 + B2 + D + (C1 OR C2 OR C3),8,5,0,3,4
+M06,Mitigation,A2 + B3 + D + (C1 OR C2 OR C3),13,8,0,5,5
+M07,Mitigation,A3 + B1 + D + (C1 OR C2 OR C3),4,0,1,3,1
+M08,Mitigation,A3 + B2 + D + (C1 OR C2 OR C3),2,2,0,0,2
+M09,Mitigation,A3 + B3 + D + (C1 OR C2 OR C3),2,0,1,1,2

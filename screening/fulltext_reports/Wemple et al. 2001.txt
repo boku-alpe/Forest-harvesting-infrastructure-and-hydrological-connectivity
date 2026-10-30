@@ -1,0 +1,78 @@
+Reading: Wemple et al. 2001
+
+Now let me check the existing provenance tags on this item in the AquaSilva library.
+
+[Get metadata]
+
+---
+
+## Stage-2 Gate Report — Wemple, Swanson & Jones 2001
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7 (primary study)
+**Borderline carry-over from Stage 1:** Unknown — the item carries **no tags of any kind** in the AquaSilva library (all tag fields null). This makes it impossible to confirm Stage-1 decisions, provenance, or any borderline flags. Flagged for screener attention.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attachment present, 14 pages, fully readable. |
+| **Gate 2(a)** | **PASS** | Forest roads are the central study variable; 103 mapped geomorphic features are stratified by road age, density, hillslope position, and road prism component (cutslope, ditch, fillslope). Roads are explicitly framed as the agent. (Wemple et al. 2001) |
+| **Gate 2(b)** | **PASS** | Connectivity is operationalized in three ways: (1) the sediment budget partitions production vs. storage vs. export (Equations 1–4), quantifying material flux out of the road zone — a mechanistic functional-connectivity measure; (2) 44% of inventoried features are explicitly categorized as "connected" to other downslope features vs. 56% "solitary" (s160, s164) — a structural-connectivity quantification; (3) "cascading sequences of geomorphic processes" are traced from road initiation sites to stream channels (s113–s114, s231–s234). The term "road network connectivity with the stream network" is cited as explicit framing (s35). This exceeds a purely verbal claim; connectivity is co-reported as an outcome variable.  (Wemple et al. 2001) (Wemple et al. 2001) (Wemple et al. 2001) |
+| **Q1** | **PASS** | Region: western Cascade Range, Oregon. Basin areas: Lookout Creek 62 km², Blue River 119 km² (total 181 km²). Climate: Pacific maritime, 2300–2500 mm/yr, rain-on-snow regime 400–1200 m. Land use: timber harvesting since 1950, ~25% managed stands, road density ~1.9 km km⁻².  (Wemple et al. 2001) |
+| **Q2** | **PASS** | Post-event geomorphic inventory (spatial gradient design) across a single extreme storm. All road network surveyed by vehicle/foot within months of the February 1996 flood; results stratified by hillslope position, road age class, and elevation zone. Design classifiable as post-event field monitoring with spatial gradient.  (Wemple et al. 2001) (Wemple et al. 2001) |
+| **Q3** | **PASS** | Survey protocol: full road-network walkover, 8 feature types defined and illustrated (Figure 1), GIS overlay with topographic maps. Volumes estimated from L×W×D measurements of scar features; specific minimum detection thresholds reported (5 m³ gullies, 10 m³ cutslope slides, 15 m³ plugged culverts). Sediment budget formalized in four equations with clear notation.  (Wemple et al. 2001) (Wemple et al. 2001) |
+| **Q4** | **PASS** | Road network fully characterized: total length (118 km / 230 km), density (1.9 km km⁻²), hillslope position classes (upper/mid-slope/valley floor), road age by construction decade (pre-1960 through 1980–1995), prism components (cutslope, ditch, surface, fillslope). Area of basin in roads: 3.1% (both basins).  (Wemple et al. 2001) (Wemple et al. 2001) |
+| **Q5** | **PASS** | Connectivity operationalized as: (1) sediment export fractions (Ht + Rt) vs. stored fractions — net export 38,715 m³ vs. storage 19,205 m³ across basin total (Table III); (2) explicit count of connected (44%) vs. solitary (56%) features; (3) spatial cascade traces from road initiation sites downslope through the drainage network. These are mechanistic quantifications, not purely verbal assertions.  (Wemple et al. 2001) (Wemple et al. 2001) (Wemple et al. 2001) |
+| **Q6** | **PASS** | Effect direction clearly derivable: roads are a **net source** of >13,000 m³ of sediment during the event (negative ΔS); mid-slope roads produce sediment at 120 m³ km⁻¹; the downslope increase in feature frequency and fluvial-to-mass-wasting ratio indicates increasing connectivity with stream channels at lower elevations.  (Wemple et al. 2001) (Wemple et al. 2001) (Wemple et al. 2001) |
+| **Q7** | **PASS** | 103 features mapped across 348 km of road in two full basins; complete sediment budget; spatial stratification fully reported. One complete investigation iteration (February 1996 storm).  (Wemple et al. 2001) |
+| **Gate 4** | **PASS** | Q7 confirmed above. |
+| **Gate 5** | **PASS** | Quantitative effect directions clearly extractable: roads increase basin-wide sediment production and delivery; specific volumes (m³), rates (m³ km⁻¹), and relative frequencies by hillslope position and road age class all reported in Tables II–V.  (Wemple et al. 2001) |
+
+---
+
+### Provenance verification
+
+**Not performable.** The item carries no provenance tags (001, 010, 020, 030, 090 families are all absent — `tags: null`). It is therefore impossible to verify whether the paper's substantive content matches its import-time search-string assignment. The screener should confirm whether this record was imported outside the standard PSALSAR search pipeline and whether provenance tags need to be retroactively assigned.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** None from Q1–Q7. The missing-provenance situation (all tags null) is the primary anomaly requiring screener attention.
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — The forest road network is the sole study variable. Culverts appear as one of eight feature types within the road prism system, not as standalone B3 structures analyzed independently.  (Wemple et al. 2001)
+
+- **003** [Study type]: `003-FieldMonitoring` — Post-event physical inventory with full road-network walkover, GIS mapping, and volumetric field measurements; no modeling or controlled experiment.  (Wemple et al. 2001)
+
+- **004 primary** [Outcome]: `004-SedimentDelivery` — The central outcome is sediment production, storage, and net export from the road network, quantified via a formal sediment budget (Eqs. 1–4, Table III). Roads produced >32,000 m³ and exported >38,700 m³ as net source during this event.  (Wemple et al. 2001)
+
+- **004 secondary** [Outcome]: `004-FlowPathInitiation` — Culvert plugging leading to surface flow diversions, gullying of road surfaces and hillslopes, and ditch incision by diverted streamflow are explicitly documented (s78, s164–s167). These represent new or rerouted flow paths generated by road-network cascades.  (Wemple et al. 2001) (Wemple et al. 2001)
+
+- **005** [Region]: `005-NorthAmerica` — Western Cascade Range, Oregon, USA.  (Wemple et al. 2001)
+
+---
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** This paper provides one of the foundational quantified sediment-connectivity datasets for forest road networks in steep terrain, directly authored by a core anchor-author (Wemple). Its most distinctive contribution for AquaSilva is the spatially explicit cascade analysis showing that 44% of road-related geomorphic features are functionally connected to downstream features and that mid-slope roads on pre-1960 alignments in unstable geology are disproportionate drivers of sediment delivery during extreme events — a direct input to RQ3 (spatial controls on connectivity) and RQ6 (effectiveness/risk gradients by road type and position).
+
+---
+
+### Tag replacements made: none.
+
+## Sources
+
+Wemple, Beverley C., Frederick J. Swanson, and Julia A. Jones. 2001. “Forest Roads and Geomorphic Process Interactions, Cascade Range, Oregon.” Earth Surface Processes and Landforms 26 (2): 191–204. https://doi.org/10.1002/1096-9837(200102)26:2%253C191::AID-ESP175%253E3.0.CO;2-U.

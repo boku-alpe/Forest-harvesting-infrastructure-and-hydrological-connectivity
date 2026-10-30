@@ -1,0 +1,78 @@
+I'll read the full text of the attached PDF to conduct the Stage-2 screening.
+
+[Reading: Wang et al. 2023, p. 1-12 (12 results)]
+
+I now have the complete full text. Let me compose the Stage-2 Gate Report.
+
+---
+
+## Stage-2 Gate Report — Wang et al. 2023
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Unknown — no `90-borderline-*` helper tag visible in the provided Zotero metadata.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attached and fully readable (10-C8JJWE58, 12 pp.). |
+| **Gate 2(a)** — Infrastructure as variable | **PASS** | The unpaved forest road network (2.55 km, 25 drainage outlets, 3 road-stream crossings) is the generating source of sediment-loaded runoff; road segment slope (Rs), road segment area (Ra), and effective contributing area (Eca, combining upslope catchment and road surface area) are all treated as independent explanatory variables in BLR and RF models. (Wang et al. 2023) (Wang et al. 2023) |
+| **Gate 2(b)** — Connectivity operationalized as outcome | **PASS** | The three delivery pathway types (G = fully gullied road-to-stream connection; GD = partially gullied; D = diffuse, dispersed) constitute a categorical road-stream sediment connectivity classification. Fully gullied pathways are explicitly described as "directly connecting road to stream with high potential for transporting sediment"; diffuse pathways have "lowest sediment delivery efficiency." Pathway type is the primary dependent variable throughout. Quantitative topographic thresholds separating connected (G) from disconnected (D) states are derived as power functions.  (Wang et al. 2023) (Wang et al. 2023) (Wang et al. 2023) |
+| **Q1** — Study context | **PASS** | XCG watershed (6.40 km²), southern slope of Jigong Mountain in the Dabie Mountains, Henan Province, China; hilly topography (157–529 m a.s.l.); north–south climate transition zone (subtropical + warm-temperate), mean annual temp. 15.2 °C, mean annual precip. 1119 mm (April–October peak); horsetail pine and mixed coniferous forest; yellow-brown sandy loam on mixed granites and gneisses.  (Wang et al. 2023) |
+| **Q2** — Study design classifiable | **PASS** | Cross-sectional observational gradient study: 25 delivery pathways surveyed in one field campaign (July–August 2021) and classified into three types; BLR and RF models used to identify drivers. Design is classifiable as `003-FieldMonitoring` with statistical (classification) modelling.  (Wang et al. 2023) (Wang et al. 2023) |
+| **Q3** — Method described | **PASS** | Pathway mapping: handheld GPS + ArcGIS 10.2 digitisation. Morphometry: tape and depth measurements at 25/50/75% cross-section positions, 2 m or 5 m intervals. Topographic variables: laser rangefinder and slope meter. Soil: Malvern particle size analyser (D50), laboratory drying (bulk density), 0–10 cm, two replicates per section. Surface roughness: semi-quantitative composite index (Ld + Cgs + Lo weighted sum). Statistical models: BLR (SPSS 21.0) with VIF/TOL collinearity check; RF (R 3.6.1, 1000 trees, 3 m-try), AUC > 0.85 for all models.  (Wang et al. 2023) (Wang et al. 2023) (Wang et al. 2023) |
+| **Q4** — Infrastructure characterized | **PASS** | Forest road: unpaved, total length 2.55 km; 25 naturally formed drainage outlets; 3 road-stream crossings; constructed for forest conservation/management; severely eroded due to low design standard and lack of maintenance. Road slope gradient (Rs) and road surface area (Ra) measured per segment.  (Wang et al. 2023) |
+| **Q5** — Connectivity operationalized as metric | **PASS** | Pathway type (G/GD/D) is a categorical road-stream sediment connectivity metric (gullied = direct hydraulic link; diffuse = dispersed/broken link). Quantitative morphological measurements (depth, width, cross-sectional area) characterise each type. Topographic threshold equations derived as power functions of Ds and Eca for gully initiation and full gully development — these are quantitative connectivity-state boundaries, not verbal claims. BLR odds ratios quantify each driver's effect on pathway-type transition. Note: no formal named connectivity index (IC, READI, ICR) is computed; the operationalization is through pathway classification and threshold derivation. Marked PASS, but screener may wish to confirm alignment with the SLR's connectivity operationalization standard.  (Wang et al. 2023) (Wang et al. 2023) |
+| **Q6** — Effect direction derivable | **PASS** | Clear directional findings: steeper downslope gradient (Ds) and larger effective contributing area (Eca) increase probability of gullied (connected) pathways (OR Ds = 1.341, OR Eca direction positive); higher surface roughness (Dr) and denser shrub-grass cover (Dshl) suppress gully development (OR Dr = 0.082 for full gully development). Effect direction on road-stream sediment connectivity is unambiguous in both BLR and RF results and threshold curves.  (Wang et al. 2023) (Wang et al. 2023) |
+| **Q7** — Sample/scope adequate | **PASS** | 25 delivery pathways surveyed across the entire forest road network of a 6.40 km² watershed; field campaign completed (July–August 2021); all pathway types represented (G, GD, D); one complete investigation cycle.  (Wang et al. 2023) (Wang et al. 2023) |
+| **Gate 4** | **PASS** | Confirms Q7: one complete field investigation iteration with adequate sample across pathway types. |
+| **Gate 5** | **PASS** | Effect direction extractable: gullied (highly connected) pathways are determined by topographic drivers (Ds, Eca, Us); diffuse (low connectivity) pathways persist where Dr and vegetation cover are high and D50 is low. Power-law threshold equations provide separating boundaries for connectivity-state prediction.  (Wang et al. 2023) |
+
+---
+
+### Provenance verification
+
+The Zotero item metadata provided in this session does not expose the `010-*`, `020-*`, `030-*`, and `090-*` tag fields. **The screener must verify provenance tags directly in Zotero.** Based on substantive content, the expected alignment is:
+
+- **A-block:** The paper's analytical focus is road-to-stream sediment delivery pathway classification and topographic threshold derivation. This aligns primarily with **A2-FlowPathDescriptors** (explicit flow-path types G/GD/D) and secondarily with **A3-Metrics** (threshold equations, BLR odds ratios as quantitative connectivity discriminators). If the record was retrieved only under A1-ConnectivityConcepts without A2, this would represent a minor content-provenance drift, since the study's framing is mechanistic pathway analysis rather than conceptual connectivity discourse.
+- **B-block:** Content aligns squarely with **B1-Roads** (forest road is the sole infrastructure type). No skid trail (B2) or discrete structure (B3) content.
+- **C-block:** No mitigation measures are analyzed; the paper is a diagnostic/descriptive study of pathway formation. If any `030-C*` tag is present, that would be a provenance-content drift.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** Q5 (screener should confirm that the G/GD/D pathway classification meets the SLR's threshold for connectivity operationalization; no formal IC/READI index is used). The threshold exponent values in the power-law equations are not recoverable from text extraction (figure-embedded numerals in Fig. 8) — screener should verify these values from the printed PDF if needed for extraction tables.
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — forest road network is the sole Block-B infrastructure analyzed as study variable; no skid trails or engineered structures examined.  (Wang et al. 2023)
+- **003** [Study type]: `003-FieldMonitoring` — cross-sectional field survey with GPS mapping, soil sampling, and morphometric measurement; BLR and RF are statistical classification models applied to field observations, not hydrological process-simulation models. No dual-tag warranted.  (Wang et al. 2023) (Wang et al. 2023)
+- **004 primary** [Outcome]: `004-SedimentDelivery` — the central outcome is sediment delivery pathway type (G/GD/D), pathway morphology (cross-sectional area, depth), and delivery efficiency from road to stream; sediment yield and transport capacity vary explicitly by pathway class.  (Wang et al. 2023) (Wang et al. 2023)
+- **004 secondary**: `004-FlowPathInitiation` — gully initiation from road drainage outlets constitutes new flow-path formation (road-induced channel network extension); the topographic threshold equations (Ds = 0.35Eca^−[b]) directly define initiation conditions for new gullied pathways on previously unchannelled hillslopes.  (Wang et al. 2023) (Wang et al. 2023)
+- **005** [Region]: `005-Asia` — Xiangchagou watershed, Dabie Mountains, Henan Province, China.  (Wang et al. 2023)
+
+---
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** The paper's most distinctive contribution to AquaSilva is the quantitative Ds–Eca threshold framework for road-to-stream gully connectivity state transitions in a forested East Asian mountain catchment — providing a transferable parametric form (power law) that can be benchmarked against European threshold studies. The three-class pathway typology (G/GD/D) and the finding that road slope (Rs) *negatively* predicts gully formation (because steep road segments retain runoff on-road rather than discharging it laterally) is a counterintuitive result worth flagging in the RQ2 evidence map. Note that the threshold exponent values are figure-embedded and not recoverable from text extraction; physical PDF inspection is required for final quantitative extraction.
+
+---
+
+### Tag replacements made: none.
+
+## Sources
+
+Wang, A., Q. Zhao, Z. Yu, et al. 2023. “Factors and Thresholds Determining Sediment Delivery Pathways between Forest Road and Stream in Mountainous Watershed.” Catena 224. Scopus. https://doi.org/10.1016/j.catena.2023.106976.

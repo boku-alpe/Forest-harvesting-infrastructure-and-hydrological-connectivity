@@ -1,0 +1,90 @@
+I'll read the full text of the attached paper to conduct the Stage-2 gate evaluation.
+
+[Reading: Xu et al. 2024, p. 1-15 (15 results)]
+
+Now let me check the item's existing provenance tags before completing the assessment.
+
+[Get metadata]
+
+## Stage-2 Gate Report — Xu et al. 2024
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No `90-borderline-*` tag detected. Note for screener: the Zotero record already carries `006-Include-Stage2` and `006-Include-Final`, indicating this item may have been processed previously. The present report serves as an independent quality-assurance pass.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attachment fully retrieved (15 pages). |
+| **Gate 2a** | **PASS** ⚠️ | Six roads (paved, petroleum transport, agricultural production ×3, abandoned) are the primary study objects, analyzed across all erosion metrics. Road drainage structures—culverts (Road-1) and intercept ditches (Roads 2–4)—are explicitly tabulated as road characteristics. (Xu et al. 2024) ⚠️ *Flag for screener:* None of the six roads are forest roads; the watershed is a dryland agricultural setting (apple orchards, terraces, petroleum extraction). The screener should confirm that `020-B1-Roads` in this protocol encompasses non-forest unpaved roads before finalizing inclusion. |
+| **Gate 2b** | **PASS** | Hydrological connectivity is the primary explanatory framework. Activated hydrological connections are explicitly defined as the operational representation of connectivity: "the activated hydrological connections represent hydrological connectivity." Effect sizes are reported against connectivity presence/absence as the organizing variable.  (Xu et al. 2024)  (Xu et al. 2024) |
+| **Q1** | **PASS** | Fangta watershed, 10.6 km², Ansai County, Loess Plateau, China; temperate semi-arid climate (505 mm/yr, 8.8 °C); land use = apple orchards, terraces, petroleum road network.  (Xu et al. 2024) |
+| **Q2** | **PASS** | Post-event gradient design: one extreme rainfall event (239.87 mm, 4–6 August 2020) is the treatment. Road erosion and connectivity status are compared across 170 hydrological connections classified into three type groups, plus with/without-connectivity contrasts. Classifiable as field monitoring with control-impact gradient.  (Xu et al. 2024)  (Xu et al. 2024) |
+| **Q3** | **PASS** | UAV (DJI Phantom 4, March 2020), Pix4D Mapper → DTM at 0.36×0.36 m; ArcGIS 10.8 hydrological analysis for channel extraction; road network mapped by visual interpretation; hydrological connections extracted via ArcGIS intersect function + field correction; functional connectivity assessed by 311 gauze-wrapped sticks; erosion dimensions measured by tapeline at 1 m (downslope gullies) and 3 m (road surface gullies) intervals; soil bulk density via 71 cutting-ring samples. Statistics: Spearman correlation, independent t-test, Kruskal-Wallis, stepwise multiple regression.  (Xu et al. 2024)  (Xu et al. 2024)  (Xu et al. 2024) |
+| **Q4** | **PASS** | Six roads individually characterized: length, average width, slope gradient range, presence/absence of drainage measures, drainage type (culvert, intercept ditch, none). Road function type (paved / petroleum transport / agricultural / abandoned) reported.  (Xu et al. 2024) |
+| **Q5** | **PASS** | Connectivity operationalized at two levels: (i) *structural*—count of road–channel intersections (170 total, typed into Upslope-Road-Downslope / Upslope-Road / Road-Downslope) via GIS overlay; (ii) *functional*—activation frequency of connections under the rainstorm (83.3 %, 91.8 %, 100 % respectively), binary coding (0/1) of each erosion feature as connectivity-influenced or not. Spearman correlations computed between connection types and erosion amounts.  (Xu et al. 2024)  (Xu et al. 2024)  (Xu et al. 2024) |
+| **Q6** | **PASS** | Effect direction clearly positive (connectivity increases erosion). Connectivity present → 1.88× higher road surface erosion intensity overall; Upslope-Road connections → landslide erosion 2.16×, collapse erosion 1.78×, scour pit erosion 5.46×, downslope gully 6.98× greater than without. Road-Downslope connections: no significant effect (p > 0.05).  (Xu et al. 2024)  (Xu et al. 2024) |
+| **Gate 4 / Q7** | **PASS** | 170 hydrological connections across 6 roads (≈12 km total) surveyed; 50 landslides, 83 collapses, 38 scour pits, 46 downslope gullies recorded. One complete rainstorm event investigated with full post-event documentation.  (Xu et al. 2024)  (Xu et al. 2024) |
+| **Gate 5** | **PASS** | Multiple quantitative effect sizes reported with significance levels (t-test, Kruskal-Wallis p-values, Spearman ρ with ** / * notation). Direction, magnitude, and road-type differentiation all extractable.  (Xu et al. 2024) |
+
+---
+
+### Provenance verification
+
+`010-A1-ConnectivityConcepts` — The paper grounds itself in the structural/functional connectivity distinction (citing Wainwright et al. 2011, Bracken & Croke 2007) and uses this conceptual apparatus as its organizing framework. A1 is appropriate as the retrieval anchor.  (Xu et al. 2024)
+
+Minor operational note (not a provenance drift): the paper also computes activation frequencies and binary correlation statistics that edge toward A3 (connectivity metrics). However, the conceptual framing remains A1-dominant; no retag is warranted.
+
+`020-B1-Roads` — Substantively confirmed; roads are the exclusive infrastructure focus.
+
+**Provenance verification: no drift detected.**
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High (all gates pass with quantitative evidence; Gate 2a flag is a scope-alignment query, not a substantive failure)
+**Items flagged for human re-read:** Gate 2a — screener should confirm that non-forest agricultural/petroleum transport roads on the Loess Plateau fall within the operational scope of `020-B1-Roads` as defined in the AquaSilva PSALSAR protocol.
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — study analyzes six distinct road types (paved, petroleum transport, agricultural ×3, abandoned) as primary study objects.  (Xu et al. 2024)
+- **003** [Study type]: `003-FieldMonitoring` — post-event field survey and UAV-derived DTM; no simulation model or controlled experimental setup.  (Xu et al. 2024)  (Xu et al. 2024)
+- **004 primary** [Outcome]: `004-SedimentDelivery` — primary reported variables are soil erosion amounts (t) and intensities (t ha⁻¹) for landslides, collapses, scour pits, and gullies, disaggregated by road type and connectivity status.  (Xu et al. 2024)
+- **004 secondary**: `004-FlowPathInitiation` — road-channel intersection activation (including road-surface gully formation and downslope gully initiation linked to Road-Downslope connections) is co-reported as a flow-path outcome.  (Xu et al. 2024)  (Xu et al. 2024)
+- **005** [Region]: `005-Asia` — Fangta watershed, Loess Plateau, Shaanxi Province, China.  (Xu et al. 2024)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** The paper's most distinctive contribution is its empirical, connection-type-resolved quantification of how road–channel hydrological connectivity amplifies erosion by erosion category and road function type (Upslope-Road connections driving +200% landslide erosion on petroleum roads and +99% collapse erosion on agricultural roads), providing one of the few field-monitored datasets distinguishing structural from functional connectivity effects under a single extreme event. The finding that Road-Downslope connections have no significant effect (p > 0.05) is a notable counter-intuitive result for the synthesis.
+
+---
+
+### Final tag conformance check
+
+All proposed tags verified character-for-character against permitted lists:
+
+| Tag proposed | Status |
+|---|---|
+| `002-B1-Roads` | ✓ Exact match |
+| `003-FieldMonitoring` | ✓ Exact match |
+| `004-SedimentDelivery` | ✓ Exact match |
+| `004-FlowPathInitiation` | ✓ Exact match |
+| `005-Asia` | ✓ Exact match |
+
+**Tag replacements made: none.**
+
+## Sources
+
+Xu, Qian, Juying Jiao, Zeng Yan, et al. 2024. “Response of Road Erosion to Hydrological Connectivity under a Heavy Rainstorm in an Agricultural Watershed on the Loess Plateau.” CATENA 240 (May): 107991. https://doi.org/10.1016/j.catena.2024.107991.

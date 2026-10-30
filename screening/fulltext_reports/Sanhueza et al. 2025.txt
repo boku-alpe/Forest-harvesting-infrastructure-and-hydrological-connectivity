@@ -1,0 +1,50 @@
+Reading: Sanhueza et al. 2025
+## Stage-2 Gate Report — Sanhueza et al. 2025
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in the provided metadata (no `90-borderline-*` tag visible); human screener should verify against Stage-1 log.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS (with flag) | Windrows (post-harvest residue mitigation structures) are the explicit study variable — scenarios with vs. without windrows compared on the Index of Connectivity. (Sanhueza et al. 2025, 5) Connectivity operationalized via Cavalli IC computed in SedInConnect using LiDAR DTMs.  (Sanhueza et al. 2025, 5–6) **Flag for screener:** The outcome is *structural sediment* connectivity, not hydrological connectivity in the runoff sense. Per the connectivity-anchored protocol this is in scope (structural connectivity = potential topological linkage), but the Block-B/C classification of windrows is non-trivial (see content-coding section). |
+| Q1 | PASS | Two catchments near Nacimiento, Biobío Region, Chile; 12.6 ha and 14 ha; subtropical Mediterranean climate, ~1381 mm yr⁻¹; Pinus radiata plantations on Luvisol.  (Sanhueza et al. 2025, 3) |
+| Q2 | PASS | Scenario comparison (with-windrow DTMo vs. simulated without-windrow DTMf) — a modeling/before–after design at catchment scale.  (Sanhueza et al. 2025, 5) |
+| Q3 | PASS | UAV-LiDAR at 120 m AGL, DJI Matrice 350 RTK, DTM resolution 0.2 m; DTMf produced by focal-statistics smoothing (20 m moving window); IC via SedInConnect with roughness index (3×3 cell SD of residual topography) as weighting factor; Mann–Whitney U, 10,000-iteration bootstrap.  (Sanhueza et al. 2025, 4–6) |
+| Q4 | PASS | Windrows characterized by count, polygon area, length, width, volume, orientation (PCA-derived azimuth), slope class, and coverage (13.6% N01, 21.9% N02).  (Sanhueza et al. 2025, 5) (Sanhueza et al. 2025, 8) |
+| Q5 | PASS | Connectivity quantified via the Cavalli Index of Connectivity, with explicit roughness-index weighting; pixel-level Δ-IC defined as the effect.  (Sanhueza et al. 2025, 5–6) |
+| Q6 | PASS | Effect direction derivable per catchment: N01 = no significant change (–0.06% mean IC); N02 = significant reduction; effect attenuates beyond 50–60 m from drainage channels.  (Sanhueza et al. 2025, 1) (Sanhueza et al. 2025, 8) |
+| Q7 | PASS | Two catchments, complete with-vs-without iteration, full statistical inference.  (Sanhueza et al. 2025, 6) |
+| Gate 4 | PASS | Q7 satisfied. |
+| Gate 5 | PASS | Quantitative effect on a connectivity metric with explicit direction and spatial gradient (distance-to-channel).  (Sanhueza et al. 2025, 1) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High (for inclusion); Medium on Block-B vs. Block-C content coding.
+**Items flagged for human re-read:**
+- Block-B/C placement of *windrows* (residue piles are a post-harvest BMP, not standard B1/B2/B3 infrastructure). Screener decision needed: B3-Structures vs. C1-RetentionDetention vs. C2-InfiltrationDisconnection.
+- Confirm whether sediment-connectivity-only studies remain in scope per the AquaSilva connectivity anchor, or whether a `90-borderline-Sediment-only` flag should be added for downstream filtering in the flood-risk-focused RQ5 vote count.
+
+### Content-coding suggestions
+
+- 002: `002-C1-RetentionDetention` (primary proposal — windrows act as discrete slope-scale sediment/flow barriers) OR `002-B3-Structures`. Rationale: windrows are engineered post-harvest residue piles whose effect is barrier-type retention/roughness.  (Sanhueza et al. 2025, 2)
+- 003: `003-Modeling` — DTM-based scenario simulation with the IC index.  (Sanhueza et al. 2025, 5)
+- 004: `004-A3-ConnectivityMetrics` — Index of Connectivity used as the core quantitative descriptor.  (Sanhueza et al. 2025, 3)
+- 005: `005-SouthAmerica` — Biobío Region, Chile.  (Sanhueza et al. 2025, 3)
+- 010: `010-A3-ConnectivityMetrics` — IC computation is the principal connectivity operationalization; secondary `010-A2-FlowPathDescriptors` is defensible because IC is built on upslope/downslope flow-path components.  (Sanhueza et al. 2025, 5–6)
+- 020: `020-B3-Structures` (proposed for windrows-as-mitigation-structures); roads/skid trails are only mentioned as harvest context, not analyzed as variables, so `020-B1-Roads` and `020-B2-SkidSnigTrails` are **not** justified.  (Sanhueza et al. 2025, 4)
+- 030: `030-C1-RetentionDetention` (primary) — windrows function as decentralized slope retention; `030-C2-InfiltrationDisconnection` is a defensible alternative given the explicit framing as disconnection of sediment flow paths.  (Sanhueza et al. 2025, 6)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Provides a quantitative effect of a decentralized mitigation measure on structural connectivity in a paired-catchment-like modeling setting: contour-aligned coverage of 21.9% produced a statistically significant IC reduction, whereas 13.6% coverage with weaker contour alignment did not — yielding a configuration-over-coverage anchor and a distance-decay length (≈50–60 m from drainage) usable as a placement-rule heuristic in the Maßnahmenkatalog (Type B area modifier / roughness). Effect is on sediment connectivity, not directly peak flow — appropriate caveat needed when feeding into RQ6 flood-retention synthesis.
+
+## Sources
+
+Sanhueza, Daniel, Lorenzo Martini, Andrés Iroumé, Matías Pincheira, and Lorenzo Picco. 2025. “Effects of a Post-Harvest Management Practice on Structural Connectivity in Catchments with a Mediterranean Climate.” Forests 16 (7): 1171. https://doi.org/10.3390/f16071171.

@@ -1,0 +1,109 @@
+I'll read the full text of the paper to conduct the gate evaluation properly.
+
+[Reading: Soulis et al. 2015, p. 1-11 (11 results)]
+
+Now let me check the existing tags on this item for provenance verification.
+
+[Get metadata]
+
+---
+
+## Stage-2 Gate Report — Soulis et al. 2015
+
+> **Pre-screening notice:** The record already carries `006-Include-Stage2` and `006-Include-Final` in Zotero (visible in metadata), suggesting terminal tags were applied in an earlier pass. The assessment below is conducted independently of those tags; the screener should reconcile.
+
+**Study type:** `003-Modeling` (primary) + `003-FieldMonitoring` (secondary)
+**Checklist applied:** Q1–Q7 (primary study)
+**Borderline carry-over from Stage 1:** No `90-borderline-*` tag found. Unknown whether Stage 1 flagged ambiguity through another mechanism.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attached and fully retrieved (11 pp., *Hydrological Processes* 29(7):1772–1782). |
+| **Gate 2a** (infrastructure as variable) | **PASS** | Forest roads are the sole study variable; the entire study design is built around a two-scenario comparison that isolates road effects on runoff and routing. (Soulis et al. 2015)  (Soulis et al. 2015) |
+| **Gate 2b** (connectivity operationalized as outcome) | **PASS** | The paper quantifies structural connectivity via drainage density (0.006 → 0.012 m⁻¹, ×2) and total network length (49.07 → 92.75 km) under two scenarios; flow-path rerouting through road cutslopes, ditches, and culverts is mechanistically described and quantified via the spatially distributed unit hydrograph (SDUH). Roads acting as channel network extension (Wemple et al. 1996 framework) is the explicit mechanistic anchor.  (Soulis et al. 2015)  (Soulis et al. 2015) Note: the term "connectivity" is not used verbatim; framing is "network extension / routing efficiency." The screener should confirm this satisfies the SLR's connectivity threshold. |
+| **Q1** (study context) | **PASS** | Lykorrema watershed, Penteli Mountain, Attica, Greece; 7.84 km²; Mediterranean semi-arid climate (690 mm/a mean precipitation); mixed shrubland/pasture/pine with coarse soils (Sandy Loam dominant) and dense road network.  (Soulis et al. 2015) |
+| **Q2** (study design classifiable) | **PASS** | Two-scenario numerical modeling (Scenario i: no roads; Scenario ii: roads) with calibration/validation against 30 observed storm events (2004–2008) from instrumented experimental watershed. |
+| **Q3** (method reproducibly described) | **PASS** | HYDRUS-1D (Richards' equation, van Genuchten parameters from Rosetta Lite) for runoff volume; SDUH for routing; 5×5 m DTM with road "burning" (Duke et al. 2006 approach); 10-min rainfall records; runoff coefficient C calibrated and validated against split-sample.  (Soulis et al. 2015)  (Soulis et al. 2015) |
+| **Q4** (infrastructure characterized) | **PASS** | B1-Roads: total road network length 40.15 km, areal coverage 3.4% of watershed (0.267 km²), mapped from orthophotos and field survey. Calibrated runoff coefficient C = 0.95.  (Soulis et al. 2015)  (Soulis et al. 2015) |
+| **Q5** (connectivity operationalized as metric) | **PASS** | Drainage density: 0.006 m⁻¹ (no roads) → 0.012 m⁻¹ (with roads). Total stream length: 49.07 → 92.75 km. Average overland flow path length: 79.36 → 41.66 m. Concentration time: 225 → 170 min. Cumulative area within 1-h travel time: 56% → 94%.  (Soulis et al. 2015)  (Soulis et al. 2015)  (Soulis et al. 2015)  (Soulis et al. 2015) |
+| **Q6** (effect direction derivable) | **PASS** | Roads increase direct runoff volume (41–65%, avg 62% of total from 3.4% of area), double drainage density, shorten concentration time, and increase peak flow rates. Effect direction is consistently positive (increase) across all outcomes.  (Soulis et al. 2015)  (Soulis et al. 2015) |
+| **Q7** (sample/scope adequate) | **PASS** | 30 storm events over 4 hydrological years with split-sample calibration/validation (R² = 95.3% / 93.9%).  (Soulis et al. 2015)  (Soulis et al. 2015) |
+| **Gate 4** | **PASS** | Confirms Q7; complete calibration + validation iterations present. |
+| **Gate 5** (effect direction extractable) | **PASS** | Quantitative effect sizes reported for all outcomes (runoff volume, drainage density, network length, concentration time, peak flow); direction unambiguous across all metrics. |
+
+---
+
+### Provenance verification
+
+Three items require screener attention:
+
+**1. `020-B3-Structures` — minor content drift.**
+The paper was retrieved under `020-B3-Structures`, but culverts, ditches, and road cutslopes are analyzed only as *mechanisms* of the B1-Roads effect, not as independent study variables. No B3 structure is parameterized, characterized, or compared separately. B3 is not co-equal with B1 here. Diagnostic signal: retrieve-by-structure-keyword hit; substantive content is roads-only.
+
+**2. `030-Cany-MitigationControls` — content drift AND non-standard tag string.**
+The paper was retrieved via M-queries (M01, M03, M04, M06), generating this tag. The paper does not analyze any C-block mitigation variable (no retention measures, no BMPs, no infiltration restoration). There is one sentence noting that road design changes *could* reduce adverse effects  (Soulis et al. 2015), but this is a discursive remark, not a study variable or outcome. Additionally, `030-Cany-MitigationControls` is not a valid PSALSAR tag string per the taxonomy — flag for import-tag audit.
+
+**3. `010-A1-ConnectivityConcepts` and `010-A2-FlowPathDescriptors` — no drift detected.**
+The paper operationalizes flow-path rerouting (road cutslope → ditch → culvert → stream) and channel-network extension (structural connectivity concept from Wemple et al. 1996). Both A-block tags are substantively represented.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** Gate 2b — screener should confirm that channel-network extension via drainage density quantification satisfies the SLR's definition of "connectivity operationalized as outcome," given the paper does not use the connectivity vocabulary explicitly.
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — forest roads are the sole study variable; culverts/ditches appear as road-system components only.  (Soulis et al. 2015)
+
+- **003** [Study type]: `003-Modeling` (primary) + `003-FieldMonitoring` (secondary) — the analytical engine is numerical simulation (HYDRUS-1D + SDUH) calibrated/validated against a monitored experimental watershed with 4 years of 10-min hydro-meteorological records. Both components are co-central; modeling drives the scenario comparison; field monitoring provides the data basis.  (Soulis et al. 2015)  (Soulis et al. 2015)
+
+- **004 primary** [Outcome]: `004-RunoffResponse` — direct runoff volume from roads surfaces quantified as 41–65% (avg 62%) of total watershed direct runoff despite covering 3.4% of area; runoff coefficient C = 0.95; total direct runoff depths modeled for 30 events.  (Soulis et al. 2015)
+
+- **004 secondary** [Outcome]: `004-PeakFlow` — SDUH comparison between scenarios demonstrates steeper rising limb, shorter time to peak, and higher peak flow rate when roads are included; combined runoff + routing scenario yields total direct runoff depth 3.45 vs. 5.1 mm.  (Soulis et al. 2015)  (Soulis et al. 2015)
+
+- **004 secondary** [Outcome]: `004-FlowPathInitiation` — channel network extension by roads (drainage network length 49.07 → 92.75 km; drainage density 0.006 → 0.012 m⁻¹; average overland flow length 79.36 → 41.66 m) is quantified as a geomorphological outcome alongside the hydrological response.  (Soulis et al. 2015)  (Soulis et al. 2015)
+
+- **005** [Region]: `005-Europe` — Penteli Mountain, Attica, Greece.  (Soulis et al. 2015)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** The paper's most distinctive contribution is the quantification of roads as the *dominant* direct runoff source in a highly permeable Mediterranean watershed — roads cover 3.4% of area yet generate 41–65% of direct runoff, a contrast driven by near-zero runoff from sandy loam soils. The drainage-density doubling scenario provides a rare numerical anchor for structural connectivity change under a B1-Roads × semi-arid-Europe context, and the HYDRUS-1D + SDUH modeling chain is replicable for AquaSilva parameterization (Type B area modifier for road surface, Type C channel modifier for network extension).
+
+---
+
+### Final tag conformance check
+
+All proposed tag strings verified character-for-character against permitted lists:
+
+| Proposed tag | Status |
+|---|---|
+| `002-B1-Roads` | ✓ exact match |
+| `003-Modeling` | ✓ exact match |
+| `003-FieldMonitoring` | ✓ exact match |
+| `004-RunoffResponse` | ✓ exact match |
+| `004-PeakFlow` | ✓ exact match |
+| `004-FlowPathInitiation` | ✓ exact match |
+| `005-Europe` | ✓ exact match |
+
+**Tag replacements made:** none.
+
+**Existing tag requiring screener audit:** `030-Cany-MitigationControls` — not a permitted PSALSAR string per the taxonomy; flagged for import-tag cleanup, not for re-tagging by Stage-2 screener.
+
+## Sources
+
+Soulis, K. X., N. Dercas, and C. Papadaki. 2015. “Effects of Forest Roads on the Hydrological Response of a Small-Scale Mountain Watershed in Greece.” Hydrological Processes 29 (7): 1772–82. https://doi.org/10.1002/hyp.10301.

@@ -1,0 +1,86 @@
+I'll read the full text of the paper to conduct the Stage-2 gate evaluation.
+
+[Reading: Zhao et al. 2022, p. 1-10 (10 results)]
+
+[Reading: Zhao et al. 2022, p. 10-20 (11 results)]
+
+Now let me retrieve the provenance tags for this item.
+
+[Get metadata]
+
+## Stage-2 Gate Report — Zhao et al. 2022
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7 (primary study)
+**Borderline carry-over from Stage 1:** No — record carries `006-Include-Stage1`, `006-Include-Stage2`, and `006-Include-Final` tags, indicating it was resolved as an inclusion at Stage 1. No `90-borderline-*` helper tag present. The gate evaluation below provides independent confirmation.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attached (10-4HENL2PZ), 23 pages, fully retrieved. |
+| **Gate 2a** — Infrastructure as study variable | **PASS** | Forest roads are operationalized as the treatment variable across three scenarios: S1 (no road effect), S2 (roads as transport pathways), S3 (roads as sinks). The entire analytical design pivots on road presence/role. (Zhao et al. 2022)  (Zhao et al. 2022) |
+| **Gate 2b** — Connectivity as primary outcome | **PASS** | The Borselli Index of Connectivity (IC) is computed for every grid cell in the catchment under all three scenarios and is the central response variable of the study.  (Zhao et al. 2022) |
+| **Q1** — Study context | **PASS** | Xiangchagou catchment (6.40 km²), Jigongshan National Nature Reserve, Henan Province, China; transitional subtropical–warm temperate climate, mean temperature 15.2 °C, annual precipitation 1119 mm; forest land use (deciduous broadleaf and mixed forest, canopy closure >90%).  (Zhao et al. 2022) |
+| **Q2** — Study design | **PASS** | Scenario-based GIS modeling: three explicitly defined scenarios varying road role (no road / pathway / sink) applied to the same catchment. Comparative analysis across scenarios constitutes a clearly classifiable modeling design.  (Zhao et al. 2022) |
+| **Q3** — Method reproducibly described | **PASS** | DEM-based IC calculation following Borselli et al. (Eq. 8–10), with a modified weighting factor (relative-smoothness index RS replacing the C-factor, Eq. 11–13); D8 flow-direction algorithm; ArcGIS 10.2 hydrological tools; buffer analysis at 30 m intervals (7 zones); ERT model (1000 random trees, 6 eigenvalues, R² reported); MGWR model with VIF-based variable selection (VIF threshold 7.5). All equations and software versions given.  (Zhao et al. 2022) |
+| **Q4** — Infrastructure characterized | **PASS** | Forest roads: total length 11.26 km, road density 1.76 km/km², unpaved surface with severe rill erosion. Road-stream crossings and drainage outlets described as distinct spatial features. Extracted from Google Earth imagery (0.5 m resolution, 2018) and validated against reserve road maps.  (Zhao et al. 2022)  (Zhao et al. 2022) |
+| **Q5** — Connectivity operationalized as metric | **PASS** | IC is fully quantified: range −1.7 to +5.0; scenario means 1.02 (S1), 1.04 (S2), 1.12 (S3). Regression coefficients between IC and explanatory variables reported with full spatial distributions (MGWR R² = 0.97 / 0.97 / 0.95).  (Zhao et al. 2022)  (Zhao et al. 2022) |
+| **Q6** — Effect direction derivable | **PASS** | Roads increase sediment connectivity. IC mean increases from S1 (no road) → S2 (road as pathway) → S3 (road as sink), especially on upper hillslopes intercepted by roads and at road–stream crossings.  (Zhao et al. 2022)  (Zhao et al. 2022) |
+| **Q7** — Sample/scope adequate | **PASS** | One complete catchment analyzed in full spatial resolution under three scenarios, with three independent analytical methods (buffer analysis, ERT, MGWR). One complete investigation iteration clearly fulfilled. |
+| **Gate 4** | **PASS** | Confirmed by Q7. |
+| **Gate 5** | **PASS** | Effect direction clearly extractable: roads increase IC, with the strongest effect when roads act as sinks (S3); spatial threshold effects (≤60 m for road influence on IC, ≤180 m for FA/UCA) are quantified.  (Zhao et al. 2022)  (Zhao et al. 2022) |
+
+---
+
+### Provenance verification
+
+Provenance tags: `010-A3-ConnectivityMetrics` | `020-B1-Roads` | `020-B3-Structures` | `090-H07` | `090-H09`
+
+**Potential drift — `020-B3-Structures`:** The paper was retrieved under B3-Structures (culverts, bridges, cross-drains, water bars, mitigation structures), but the study does not characterize any such hydraulic or mitigation structure as an independent variable. Road–stream crossings are analyzed solely as geometric network intersection points via buffer analysis — no culvert type, bridge design, or drain specification is reported or varied. The B3 tag appears to have been triggered by the phrase "road–stream crossing" in the search string, but substantively, roads (B1) are the sole infrastructure variable. **Screener flag:** consider whether `020-B3-Structures` should be noted as a retrieval artifact, but do not retag (provenance is fixed).
+
+`010-A3-ConnectivityMetrics` matches perfectly — the paper is principally a connectivity-metric computation study using the Borselli IC. `020-B1-Roads` matches exactly.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final` *(both already present in Zotero — confirmed correct)*
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — forest roads are the sole infrastructure variable, with road-stream crossings treated as geometric network nodes rather than as characterized hydraulic structures.  (Zhao et al. 2022)
+
+- **003** [Study type]: `003-Modeling` — the study is entirely scenario-based GIS modeling using DEM data, with no field-collected hydrometric or sediment measurements. The IC is computed spatially from topographic and network datasets under three simulated scenarios.  (Zhao et al. 2022)  (Zhao et al. 2022)
+
+- **004 primary** [Outcome]: `004-SedimentDelivery` — the IC (Borselli Index of Connectivity) is the primary response variable, computed across the full catchment and compared between scenarios as a direct measure of sediment transport potential from source to sink.  (Zhao et al. 2022)  (Zhao et al. 2022)
+
+- **004 secondary**: `004-FlowPathInitiation` — a core co-reported outcome is the road-induced change in flow convergence pathways (flow direction, flow length, flow accumulation, upslope contributing area), including drainage network extension to previously unconnected locations.  (Zhao et al. 2022)  (Zhao et al. 2022)
+
+- **005** [Region]: `005-Asia` — Xiangchagou catchment, Jigongshan National Nature Reserve, Henan Province, China.  (Zhao et al. 2022)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+
+**Notes for synthesis phase:** This study provides one of the few spatially explicit, scenario-based quantifications of how forest road role (pathway vs. sink) differentially shifts catchment-scale IC values (+2% to +10% mean increase), making it a strong effect-direction anchor for RQ evidence mapping. Its distinctive contribution is the MGWR-derived spatial decomposition showing that flow length is the dominant mediating variable and that road effects on IC and convergence processes are constrained within a ~60–180 m threshold zone, directly relevant to road-buffer management guidelines.
+
+---
+
+### Tag replacements made
+
+None.
+
+## Sources
+
+Zhao, Qinghe, Yaru Jing, An Wang, et al. 2022. “Response of Sediment Connectivity to Altered Convergence Processes Induced by Forest Roads in Mountainous Watershed.” Remote Sensing 14 (15): 3603.

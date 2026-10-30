@@ -1,0 +1,50 @@
+Reading: Lima Farias et al. 2019
+
+# Stage 2 assessment — Lima Farias et al. (2019)
+
+## Gate evaluation
+
+**Gate 1 — Full text retrievable.** PDF available, 11 pages, fully readable. **Pass.**
+
+**Gate 2 — Stage-1 inclusion confirmed.** Unpaved rural roads and road embankments are the explicit experimental variable (Block B1). Connectivity is operationalized as an outcome: the authors interpret the contrast between vegetated and bare embankments as evidence that vegetation "breaks the connectivity between the sediment flux from unpaved roads to the drainage network of the catchment" (Lima Farias et al. 2019, 10), and frame their results within a wider connectivity/SDR discussion at catchment scale  (Lima Farias et al. 2019, 2). **Pass.**
+
+**Gate 3 — Q-items (primary study).**
+- Q1 (context): Semi-arid Caatinga, Aiuaba Experimental Basin (12 km²) nested in Benguê catchment (933 km²), 550 mm yr⁻¹ average rainfall, Luvisols/Latosols/Argisols on shallow crystalline substrate  (Lima Farias et al. 2019, 2). Pass.
+- Q2 (design): Field monitoring of paired experimental plots (4 plots: PII trafficked road, PIII abandoned road, PI-1 vegetated embankment, PI-2 bare embankment) under natural rainfall, 2013–2014  (Lima Farias et al. 2019, 2). Pass.
+- Q3 (method): Plot dimensions, slopes, gutters/containers, Gerlach traps, filtration method for SSC, automatic 0.254 mm tipping-bucket rain gauge — all reproducibly described  (Lima Farias et al. 2019, 3–4). Pass.
+- Q4 (infrastructure): Road type (unpaved), surface composition, bulk density, K_sat, traffic intensity (<200 veh/day vs abandoned), embankment slope (0.58 m/m), vegetation cover all reported  (Lima Farias et al. 2019, 2) (Lima Farias et al. 2019, 5). Pass.
+- Q5 (connectivity operationalization): Connectivity is treated as functional (sediment delivery being broken by vegetated embankment buffers; transport-limited regime; SDR decreasing with scale)  (Lima Farias et al. 2019, 2) (Lima Farias et al. 2019, 10). Operationalization is qualitative-comparative rather than via an explicit IC-type metric, but direction and mechanism are derivable. Pass.
+- Q6 (effect direction): Direction extractable — traffic ↑ sediment production (×3 normalized for slope), maintenance ↑ SSC peaks (>5000 mg L⁻¹), bare embankment ↑ sediment (~×10 vs vegetated)  (Lima Farias et al. 2019, 6) (Lima Farias et al. 2019, 10). Pass.
+
+**Gate 4 — Sample/scope.** 31 runoff-generating events on roads, 22 on embankments, 2 monitoring years, 4 plots in paired contrast. **Pass.**
+
+**Gate 5 — Effect direction extractable.** Yes (see Q6). **Pass.**
+
+## Recommended terminal tags
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+## Proposed content-coding tags
+
+| Family | Proposed value | Supporting evidence |
+|---|---|---|
+| 002 Infrastructure subtype | `002-B1-Roads` | Unpaved roads + their embankments are the monitored infrastructure  (Lima Farias et al. 2019, 2) |
+| 003 Study type | `003-FieldMonitoring` | Two-year natural-rainfall monitoring of instrumented plots  (Lima Farias et al. 2019, 2) |
+| 004 Hydrological focus | `004-SedimentDelivery` | Primary outcome is sediment production/delivery from road–embankment system to the drainage network  (Lima Farias et al. 2019, 10) |
+| 005 Region | `005-SouthAmerica` | Caatinga Biome, Ceará, Brazil  (Lima Farias et al. 2019, 2) |
+| 010 Block A | `010-A2-FlowPaths` | Roads conceptualized as artificial flow paths conveying water and sediment ("during rainfall events turn into drainage channels")  (Lima Farias et al. 2019, 2) |
+| 020 Block B | `020-B1-Roads` | Same evidence as 002 above  (Lima Farias et al. 2019, 2) |
+| 030 Block C | `030-Cany-MitigationControls` | Natural Caatinga vegetation on embankment evaluated as connectivity-breaking control, reducing sediment production by ~10×  (Lima Farias et al. 2019, 10) |
+
+### Notes for the human screener
+
+- A secondary 004 tag (`004-RunoffResponse`) could be defended, since runoff coefficients are reported alongside sediment metrics  (Lima Farias et al. 2019, 5); current scheme is one-per-family, so I suggest keeping `004-SedimentDelivery` as primary.
+- For 010, `010-A1-Concepts` is also a defensible secondary because the discussion invokes connectivity and SDR at catchment scale conceptually  (Lima Farias et al. 2019, 2); A2 is recommended as the dominant framing since the empirical contrast operates on road-as-flow-path.
+- For 030, `030-C3-BMPs` is narrower (engineered BMPs) and arguably less appropriate here since the "treatment" is retained native vegetation rather than a designed BMP; `030-Cany-MitigationControls` better fits a passive vegetative buffer. If the screener prefers a primary C-axis value, `030-C1-Retention` is a weaker but defensible alternative (vegetative roughness retains sediment on the embankment).
+
+## Sources
+
+Lima Farias, Teresa Raquel, Pedro Henrique Augusto Medeiros, Joaquin Navarro-Hevia, and Jose Carlos de Araujo. 2019. “Unpaved Rural Roads as Source Areas of Sediment in a Watershed of the Brazilian Semi-Arid Region.” INTERNATIONAL JOURNAL OF SEDIMENT RESEARCH 34 (5): 475–85. https://doi.org/10.1016/j.ijsrc.2019.03.002.

@@ -1,0 +1,41 @@
+Reading: Saleh et al. 2004
+
+## Stage-2 Gate Report — Saleh et al. 2004
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7 (not reached past Gate 2)
+**Borderline carry-over from Stage 1:** Not indicated in provided metadata; no `90-borderline-*` tag visible on record.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (16 pp PDF). (Saleh et al. 2004, 1) |
+| Gate 2(a) — Block-B as variable | PASS | Forest roads explicitly varied as a study variable across density (1–3 km/km²) and slope (1–15%) in dedicated APEX simulations on Watershed 4.  (Saleh et al. 2004, 6) (Saleh et al. 2004, 13–14) |
+| Gate 2(b) — Connectivity operationalized | **FAIL** | Outcomes throughout are storm runoff (mm), peak flow (mm/h), sediment loss (kg/ha or t/ha) and nutrient loads (g/ha). No connectivity concept, no flow-path topology, no structural/functional connectivity metric or index is introduced or quantified — neither in the model modifications (canopy interception, litter balance, quick return flow, enrichment ratios) nor in the SMZ/road analyses. SMZ effectiveness is parameterized via a "filter flow fraction" (sheet vs. concentrated flow), which gestures at functional connectivity verbally but is not operationalized as a connectivity variable.  (Saleh et al. 2004, 2–4) (Saleh et al. 2004, 13) |
+| Gate 3 | not evaluated | First failure rule (Gate 2 sequential). |
+| Gate 4 | not evaluated | — |
+| Gate 5 | not evaluated | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string:** `connectivity only narrative, not operationalized`
+**Confidence:** High
+**Items flagged for human re-read:** Gate 2(b) — the "filter flow fraction" partitioning between sheet and concentrated flow (p. 756, p. 763) is the only passage that touches functional-connectivity language. A human screener may wish to confirm this does not qualify as a co-reported connectivity operationalization. In the screener's likely interpretation, this remains a within-model BMP-efficiency parameter, not a connectivity metric in the sense of Wemple/Croke/Takken anchors, so exclusion stands.
+
+### Content-coding suggestions
+
+Not applicable (Exclude).
+
+### Synthesis role
+
+Not applicable (Exclude).
+
+---
+
+**Screener note (optional context, not a tag action):** Despite the exclusion, this paper does provide quantitative road-density × road-slope sensitivities on runoff and sediment yield from a paired-watershed-derived APEX setup. If RQ6 later requires an off-corpus anchor for road-as-source magnitude in forested settings, this record could be cited as supplementary context outside the connectivity-anchored core corpus — at the human screener's discretion.
+
+## Sources
+
+Saleh, A., J. R. Williams, J. C. Wood, L. M. Hauck, and W. H. Blackburn. 2004. “Application of APEX for Forestry.” Transactions of the American Society of Agricultural Engineers 47 (3): 751–65. Scopus.

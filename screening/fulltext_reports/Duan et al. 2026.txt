@@ -1,0 +1,34 @@
+[Reading: Duan et al. 2026, p. 1-8 (8 results)]
+
+## Stage-2 Gate Report — Duan et al. 2026
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not indicated in record)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (15 pp.). |
+| Gate 2(a) — Block-B infrastructure as variable | **FAIL** | The "barriers" analyzed are small hydropower plants, low-head dams, weirs, and bridge piers as in-stream impoundments, not AquaSilva Block-B forest infrastructure (forest road, skid/snig trail, cross-drain, culvert, water bar, mitigation structure): "Data on barriers, which encompass SHPs, low-head dams, weirs, and bridge piers…" (Duan et al. 2026, 3). Road density appears only as a covariate of barrier siting, not as the infrastructure under study  (Duan et al. 2026, 3–4). |
+| Gate 2(b) — Connectivity operationalized | PASS (but ecological, not hydrological-flux) | Six longitudinal connectivity indices computed via the `riverconn` package, framed around fish passability and dispersal, not runoff/sediment flow-path connectivity  (Duan et al. 2026, 4–5). |
+| Gate 2 overall | **FAIL** | Block-B infrastructure not analyzed; connectivity framing is ecological longitudinal connectivity, not the forest-road × hydrological-connectivity scope of AquaSilva. |
+| Gates 3–5 | n/a | Not evaluated (sequential gate logic stops at first failure). |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `infrastructure not analyzed as variable`
+**Confidence:** High
+**Items flagged for human re-read:** None — exclusion is unambiguous on topical grounds. Optional secondary check: confirm that "bridge piers" in this paper refer to in-stream piers of road bridges acting as ecological barriers (Fig. S1) rather than forest-road stream crossings in the Wemple/Croke sense; the methods text and the catchment-scale, hydropower-dominated framing make the latter reading implausible.
+
+### Notes for the screener
+
+This is a catchment-scale network analysis of dam/weir-induced river fragmentation for ecological (fish dispersal) restoration prioritization in a Chinese mountainous catchment. It is methodologically rigorous (Modeling + RF/GLMM) and operationalizes longitudinal connectivity quantitatively, but the connectivity construct is the Cote/Baldan/Rodeles dendritic-connectivity family (passability of in-stream barriers for biota), not the structural/functional hydrological connectivity of hillslope–channel flow paths relevant to forest-road retention. It therefore does not contribute to RQ1–RQ6 of the AquaSilva SLR and should not be carried into the corpus, consistent with the connectivity-anchored scoping rule.
+
+No content-coding or synthesis-role block is generated, as the record is excluded at Gate 2.
+
+## Sources
+
+Duan, Yuke, Naicheng Wu, Zongwei Lin, et al. 2026. “River Fragmentation and Barriers Removal Priority in the Oujiang Catchment: A Longitudinal Connectivity Perspective.” Journal of Hydrology: Regional Studies 64: 103283.

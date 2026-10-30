@@ -1,0 +1,51 @@
+[Reading: Borga et al. 2004 (11 results)]
+
+## Stage-2 Gate Report — Borga, Tonelli & Selleroni 2004
+
+**Study type:** `003-Modeling` (process-based model with field-based parameterisation and qualitative validation against mapped landslide scars at three sites)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not flagged in attached metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (11 pp.). (Borga et al. 2004, 1) |
+| Gate 2 | PASS | (a) Forest roads (cut slope, in-board ditch, cross-road ditches/culverts) are the analytical variable; (b) connectivity is operationalised: subsurface flow interception, rerouting along the road drainage, and routing to either reinfiltration zones or stream channels are coded explicitly as A1/A2/A3 contributing-area components, with a Relative Impact (RI) index quantifying flow-path modification.  (Borga et al. 2004, 3–4) |
+| Q1 (context) | PASS | Three sites in NE Italian Alps (Fondo, Lavazzè, Livo); elevations 700–1450 m a.s.l.; alpine climate, MAP 1100–1300 mm; spruce/larch/conifer forest.  (Borga et al. 2004, 4–5) |
+| Q2 (design) | PASS | Distributed grid-based modelling (SHALSTAB + road interception/rerouting module) with sensitivity analysis across D8/MF/DINF and visual comparison to mapped road-related failures.  (Borga et al. 2004, 6–7) |
+| Q3 (method) | PASS | Equations for cut-slope interception, ditch rerouting, RI metric and iterative secant solution fully specified; 10 m DEM; parameter values (T = 30 m² d⁻¹, φ = 38–42°, ρs/ρw = 1.8, rrc = 0.1) reported.  (Borga et al. 2004, 3–6) |
+| Q4 (infrastructure characterised) | PASS | Roads B1 + drainage structures B3 (in-board ditches, cross-road ditches, culverts) characterised by width (3–6 m), grade (~20 %), cutbank depth (0.1 m to several m), spatial position (lower–middle 1/3 of slope), and a relative road-cut-depth parameter rrc.  (Borga et al. 2004, 5–6) |
+| Q5 (connectivity operationalised) | PASS | Connectivity is mechanistically quantified via the road interception algorithm (A1, A2, A3 partitioning) and the dimensionless RI = 1 − Rr/Rh index; downslope extent of road-modified flow paths and their reach to the channel network are mapped.  (Borga et al. 2004, 4) (Borga et al. 2004, 7) |
+| Q6 (effect direction) | PASS | Positive RI values document increased landsliding/flow-path concentration below road segments; negative RI below intercepting cuts; positive RI patches reach the stream channel in all three sites (debris-flow delivery at Fondo).  (Borga et al. 2004, 7) |
+| Q7 (scope) | PASS | Three independent catchment applications with field-mapped landslide inventories; full modelling iteration completed for each.  (Borga et al. 2004, 5–7) |
+| Gate 4 | PASS | Equivalent to Q7.  (Borga et al. 2004, 5) |
+| Gate 5 | PASS | Clear, signed effect direction extractable from RI maps; sign and spatial extent vary with flow-routing algorithm (D8 under-estimates impacted area / over-estimates local impact; MF reverse; DINF intermediate).  (Borga et al. 2004, 7) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** None mandatory. Optional screener check on **scope alignment**: the connectivity outcome is operationalised in service of *shallow-landslide* hazard, not runoff/flood-peak attenuation. For AquaSilva's flood-retention RQs the paper's primary contribution is the *flow-path rerouting* component (A1/A2/A3, RI) rather than the geomechanical layer — worth confirming this matches the team's RQ1–RQ4 scoping.
+
+### Content-coding suggestions
+
+- 002: `002-B1-Roads` — "Road networks in mountainous forest landscapes have the potential to increase the susceptibility to shallow landsliding by altering subsurface flow paths."  (Borga et al. 2004, 1)
+  Secondary: `002-C3-RoadDrainageBMP` — culvert/cross-ditch spacing and threshold discharge are treated as design variables, with explicit motivation to "define criteria for road design that reduce the effects of roads on geomorphic processes."  (Borga et al. 2004, 1) (Borga et al. 2004, 3)
+- 003: `003-Modeling` — distributed grid-based slope-stability model coupled with road interception/rerouting algorithm.  (Borga et al. 2004, 8)
+- 004: `004-A2-FlowPathDescriptors` (primary, flow-path interception/rerouting) and `004-A3-ConnectivityMetrics` (RI as a connectivity-impact index).  (Borga et al. 2004, 4)
+- 005: `005-Europe` — NE Italian Alps, upper Noce basin.  (Borga et al. 2004, 4)
+- 010: `010-A2-FlowPathDescriptors` and `010-A3-ConnectivityMetrics` — mechanistic flow-path partitioning plus RI metric.  (Borga et al. 2004, 4)
+- 020: `020-B1-Roads` and `020-B3-Structures` (in-board ditches, cross-road ditches, relief culverts as modelled drainage elements).  (Borga et al. 2004, 3) (Borga et al. 2004, 5)
+- 030: `030-C3-RoadDrainageBMP` — model framed as a tool to evaluate cross-ditch threshold discharge, plugging, and culvert spacing as mitigation/design levers.  (Borga et al. 2004, 3)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Strongest contribution is a *mechanistic structural-connectivity formulation* — explicit decomposition of road-influenced contributing area into upslope-of-road (A1), road-intercepted-and-rerouted (A2), and downslope-of-road (A3) components, plus the RI index — directly usable as a conceptual anchor for AquaSilva's structural-vs-functional connectivity distinction. The methodological finding that flow-routing algorithm choice (D8/MF/DINF) materially changes the spatial extent and magnitude of road-induced connectivity is a transferable caveat for ZEMOKOST/Raven preparation in the Wienerwald. Note the *outcome* is landslide hazard, not flood-peak attenuation; cite for RQ1–RQ2 (connectivity concepts / flow-path descriptors) rather than RQ6 (mitigation effectiveness on flood retention).
+
+## Sources
+
+Borga, M., F. Tonelli, and J. Selleroni. 2004. “A Physically Based Model of the Effects of Forest Roads on Slope Stability.” Water Resources Research 40 (12): 1–9. Scopus. https://doi.org/10.1029/2004WR003238.

@@ -1,0 +1,41 @@
+Reading: Rodrigues et al. 2018
+
+[Reading: Rodrigues et al. 2018, p. 10-15 (6 results)]
+
+## Stage-2 Gate Report — Rodrigues et al. 2018
+
+**Study type:** `003-FieldMonitoring` (sediment fingerprinting with geochemical tracers in two nested instrumented watersheds, 0.39 / 0.98 km²)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** None indicated in the attached metadata.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (17 pp). |
+| Gate 2(a) — infrastructure as variable | PASS | Unpaved roads are one of three explicitly evaluated sediment sources: "three main sediment sources were selected … (c) unpaved roads: samples … collected in potential erosion spots … along unpaved roads." (Rodrigues et al. 2018, 4) |
+| Gate 2(b) — connectivity operationalized as outcome | **FAIL** | Connectivity appears only as a narrative post-hoc explanation in the Discussion: "Runoff connectivity … possibly explains the large changes in sediment source contributions observed over very short distances between sampling site."  (Rodrigues et al. 2018, 13) No connectivity index (IC), flow-path model, or connectivity metric is computed; outcomes are source-apportionment percentages, not connectivity. |
+| Q1 — context | PASS | Region (Terra Dura, RS, S Brazil), area (0.98 / 0.39 km²), climate (humid subtropical, 1,440 mm yr⁻¹), land use (eucalyptus + riparian + unpaved roads 2.1%) all reported.  (Rodrigues et al. 2018, 2–3) |
+| Q2 — design | PASS | Nested-catchment field monitoring with sediment fingerprinting (Collins/Walling multivariate mixing model).  (Rodrigues et al. 2018, 5) |
+| Q3 — method reproducibility | PASS | Sampling design, ICP-OES + WD-XRF analytical protocols, Kruskal–Wallis + Wilks' Λ tracer selection, and mixing-model objective function are fully specified.  (Rodrigues et al. 2018, 4–5) |
+| Q4 — infrastructure characterised | PARTIAL/PASS | Unpaved roads characterised by areal share (2.1%), spatial position in watershed, and qualitative condition (low maintenance, no new construction); no density (km km⁻²) or width given.  (Rodrigues et al. 2018, 3) (Rodrigues et al. 2018, 12) |
+| Q5 — connectivity operationalised | **FAIL** | Connectivity is invoked verbally and cited to López-Vicente (2016) and Zimmermann (2014), but not quantified by any index, model, or mechanistic measurement in this study.  (Rodrigues et al. 2018, 13) |
+| Q6 — effect direction derivable | UNCLEAR (for connectivity); PASS only for sediment-source contributions | Direction is derivable for source contributions (banks dominant, eucalyptus low, roads small but proximity-sensitive) but no quantified effect on connectivity itself.  (Rodrigues et al. 2018, 13) |
+| Q7 — sample/scope | PASS | Multi-year sampling (Feb 2011 – Nov 2012), two monitoring sections, multiple SD/S sites, n = 24–54 source samples per class.  (Rodrigues et al. 2018, 4) |
+| Gate 4 — scope adequacy | PASS | See Q7. |
+| Gate 5 — extractability | FAIL | A clear effect direction on **connectivity** (or a connectivity proxy) is not extractable; connectivity claims remain qualitative.  (Rodrigues et al. 2018, 13) |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `connectivity only narrative, not operationalized`
+**Confidence:** Medium-High. The paper is a methodologically solid sediment-fingerprinting field study and does include unpaved roads as an analyzed source (Block B satisfied). However, hydrological connectivity is used exclusively as an interpretive narrative for spatial patterns in source apportionment; no structural or functional connectivity metric, flow-path descriptor, or mechanistic quantification is reported. Under the connectivity-anchored PSALSAR scope, this places it outside the core corpus.
+**Items flagged for human re-read:**
+- Gate 2(b) / Q5 — confirm that the discussion-level invocation of "runoff connectivity" (p. 2249) is not backed elsewhere by a connectivity index or sediment delivery ratio (SDR = 0.71 % is reported on p. 2249 — screener may wish to judge whether SDR counts as a connectivity-related operationalisation; under a strict reading it is a sediment yield ratio, not a connectivity metric).
+- Q6 — whether the proximity-dependent contribution of unpaved roads to fine sediment (p. 2248) can be extracted as an indirect functional-connectivity signal for RQ6 context, even if the paper is excluded from the core corpus.
+
+If the screener decides the SDR + proximity-gradient evidence is sufficient to upgrade Gate 2(b) to PASS, the paper would otherwise meet Q1–Q4 and Q7, and could be re-routed to `006-Include-Stage2` with content coding `002-B1-Roads`, `003-FieldMonitoring`, `004-RunoffResponse`, `005-SouthAmerica`, `020-B1-Roads`. This is flagged as a judgment call, not a unilateral recommendation.
+
+## Sources
+
+Rodrigues, M. F., J. M. Reichert, R. A. Burrow, et al. 2018. “Coarse and Fine Sediment Sources in Nested Watersheds with Eucalyptus Forest.” Land Degradation and Development 29 (8): 2237–53. Scopus. https://doi.org/10.1002/ldr.2977.

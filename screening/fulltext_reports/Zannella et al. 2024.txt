@@ -1,0 +1,33 @@
+Reading: Zannella et al. 2024
+
+## Stage-2 Gate Report — Zannella et al. 2024
+
+**Study type:** `003-PairedCatchment` (synoptic paired-catchment field design; alternatively classifiable as `003-FieldMonitoring`)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (none indicated in attached metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (9 pp., open access). (Zannella et al. 2024, 1) |
+| Gate 2 (a) Block-B as variable | PASS | Ditch cleaning (DC) is the treatment variable across 25 paired DC/REF ditches; ditches are explicit Block-B infrastructure. "Based on a repeated synoptic sampling of a paired catchment design we here evaluated water chemistry and GHG data in ditch waters from 25 cleaned sites … and 25 non-cleaned reference sites (REF)."  (Zannella et al. 2024, 1) |
+| Gate 2 (b) Connectivity operationalized | **FAIL** | Connectivity appears only as a single narrative phrase ("The reduced hydrological connectivity to organic sources should decrease the concentration of organic acids in the ditch waters")  (Zannella et al. 2024, 6). No connectivity metric, index, flow-path descriptor, or mechanistic quantification is computed. Primary outcomes are water chemistry and dissolved GHG concentrations  (Zannella et al. 2024, 2); flow paths are invoked only as an interpretive mechanism for chemistry changes, not measured. |
+| Gate 3–5 | not evaluated | Sequential gate logic — first failure determines outcome. |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string:** `connectivity only narrative, not operationalized`
+**Confidence:** High
+**Items flagged for human re-read:** None — Gate 2(b) failure is clear. The screener may wish to verify by checking the Supplementary Information for any unreported connectivity index, but the main text contains none and the stated research objectives  (Zannella et al. 2024, 2) are explicitly framed around chemistry/GHG differences, not connectivity.
+
+### Rationale note for screener
+
+The paper is methodologically strong (paired design, n = 25 pairs, GLMM, well-characterized catchments, reproducible analytical protocols) and would easily pass Q1–Q7 if connectivity were operationalized. It is a borderline-relevant **runoff-chemistry** study on **ditches** (Block-B), but per the AquaSilva connectivity-anchored protocol, pure runoff-hydrology/water-chemistry studies without explicit connectivity framing are excluded to avoid Type I errors. The phrase "deeper groundwater flow paths" is repeatedly used as a qualitative mechanism but is not measured (no GWT data, no flow-path tracing, no SC/FC metric). This is the canonical Gate 2(b) failure mode.
+
+The paper may still be useful as **secondary context** for the Maßnahmenkatalog (ditch-cleaning side-effects on water quality and GHG), but it does not belong in the connectivity-anchored synthesis corpus.
+
+## Sources
+
+Zannella, A., M. B. Wallin, U. Sikström, E. Arvidsson, and K. Eklöf. 2024. “Ditch Cleaning in Boreal Catchments: Impacts on Water Chemistry and Dissolved Greenhouse Gases in Runoff.” Forest Ecology and Management 569. Scopus. https://doi.org/10.1016/j.foreco.2024.122146.

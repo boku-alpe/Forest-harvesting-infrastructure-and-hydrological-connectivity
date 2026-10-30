@@ -1,0 +1,50 @@
+[Reading: Croke et al. 1999 (16 results)]
+
+## Stage-2 Gate Report — Croke, Hairsine & Fogarty 1999
+
+**Study type:** `003-Experimental`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (none indicated in metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS | (a) Snig tracks (B2) and cross-banks (B3) are the central study variables: "A large rainfall simulator (350 m²) was used to apply rainstorms to a logged hillslope containing a snig track (skid trail) and a general logging or harvesting area (GHA)" — p. 1 (Croke et al. 1999, 1). (b) Functional connectivity is operationalized via sediment delivery ratios, flow-path length and source–sink linkage: "The second aspect of the sediment budget and routing approach relates to sediment storage and linkages between key land elements or sediment sources" — p. 2  (Croke et al. 1999, 2); quantified delivery (15–40 %) and 55 m flow path on p. 10–11  (Croke et al. 1999, 10–11). Note: the term "connectivity" itself is not used; operationalization is sediment-delivery/flow-path based. Flag for screener confirmation. |
+| Q1 | PASS | Region (Eden FMA NSW / East Gippsland Vic.), 10 compartments 160–190 ha, temperate climate 650–900 mm, eucalypt production forest, p. 3  (Croke et al. 1999, 3). |
+| Q2 | PASS | Experimental plot design with rainfall-intensity gradient (2-, 10-, 100-yr 30-min events), p. 5  (Croke et al. 1999, 5). |
+| Q3 | PASS | Simulator configuration, RBC flumes at cross-bank outlet and plot exit, wet-vacuum sampling, aggregate sieving protocol (Kemper & Rosenau), stream-power equation — p. 5–7  (Croke et al. 1999, 5–7). |
+| Q4 | PASS | Snig-track and cross-bank dimensions (5–6 m wide, 0.5 m high), slopes 25–30 %, contact cover, time-since-logging reported per plot — Tables I–II, p. 5–6  (Croke et al. 1999, 5–6). |
+| Q5 | PASS | Connectivity operationalized as sediment delivery ratio at cross-bank outlet, flow-path length and dye-traced surface velocity: "Sediment delivery ranged from 15 to 40 % … cumulative storage of 111 kg" — Table III, p. 10  (Croke et al. 1999, 10); flow-path length 55 m, velocity 0.5–1 m s⁻¹ — p. 11  (Croke et al. 1999, 11). |
+| Q6 | PASS | Clear direction: cross-banks reduce delivery — 50–85 % of eroded snig-track sediment is trapped; >50 % of fines deposit within 55 m of the outlet, p. 1, 10–11  (Croke et al. 1999, 10–11). |
+| Q7 | PASS | Ten compartments × three rainfall intensities; complete iterations across both granite and metasediment lithologies, p. 5–6  (Croke et al. 1999, 5–6). |
+| Gate 4 | PASS | Q7 satisfied. |
+| Gate 5 | PASS | Quantitative effect directions extractable (delivery %, storage %, deposition fraction by grain size, flow-path length) — p. 10–11  (Croke et al. 1999, 10–11). |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High for Gates 1, 3 (Q1, Q2, Q4, Q7), 4, 5; **Medium** for Gate 2(b) and Q5 because the paper operationalizes connectivity *implicitly* via sediment-delivery ratios and flow-path length rather than using an explicit connectivity metric or framework.
+**Items flagged for human re-read:**
+- Gate 2(b) / Q5 — confirm that the AquaSilva protocol accepts sediment-delivery ratio + dye-traced flow-path length as a valid functional-connectivity operationalization (the paper itself does not use the term "connectivity"). This is a typical Croke/Hairsine early-era connectivity proxy and aligns with the anchor-author profile, but is a defensible exclusion under a stricter reading.
+
+### Content-coding suggestions (Include-Final)
+
+- **002:** `002-Mixed` — snig tracks (B2) plus cross-bank erosion-control structures (B3) analysed jointly, p. 5  (Croke et al. 1999, 5).
+- **003:** `003-Experimental` — large rainfall simulator (350 m²) applied to natural logged plots, p. 1  (Croke et al. 1999, 1).
+- **004:** `004-A2-FlowPathDescriptors` — flow-path length (55 m), dye-traced velocities, plume width, p. 11  (Croke et al. 1999, 11). (Consider also `004-RunoffResponse` if a secondary value is permitted — runoff coefficients 50–60 % on snig tracks vs. 10–20 % on GHA, p. 3–4  (Croke et al. 1999, 3–4).)
+- **005:** `005-Oceania` — south-eastern Australia (NSW, Victoria), p. 3  (Croke et al. 1999, 3).
+- **010:** `010-A2-FlowPathDescriptors` — sediment delivery quantified along defined flow paths from snig track through cross-bank to GHA, p. 10–11  (Croke et al. 1999, 10–11).
+- **020:** `020-B2-SkidSnigTrails` AND `020-B3-Structures` — snig tracks plus cross-bank drainage structures, p. 3, 5  (Croke et al. 1999, 3) (Croke et al. 1999, 5).
+- **030:** `030-C3-RoadDrainageBMP` — cross-bank drainage is explicitly evaluated as a mitigation BMP: "the practice of redistributing runoff at cross-banks was found here to be successful in reducing flow velocities and inducing sediment deposition", p. 13  (Croke et al. 1999, 13).
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Provides one of the early quantitative anchors for skid-trail → cross-bank → hillslope sediment disconnection (delivery 15–40 %, storage 50–85 %, >50 % of fines deposited within 55 m). Useful as RQ6 effectiveness datapoint for `C3-RoadDrainageBMP` (cross-bank / water-bar style runoff diversion) in temperate eucalypt forest on steep (25–30 %) granite and metasediment terrain, and as a methodological precedent for using sediment delivery ratio plus flow-path length as a functional-connectivity proxy at the hillslope scale.
+
+## Sources
+
+Croke, J., P. Hairsine, and P. Fogarty. 1999. “Sediment Transport, Redistribution and Storage on Logged Forest Hillslopes in South-Eastern Australia.” Hydrological Processes 13 (17): 2705–20. Scopus. https://doi.org/10.1002/(SICI)1099-1085(19991215)13:17%253C2705::AID-HYP843%253E3.0.CO;2-Y.

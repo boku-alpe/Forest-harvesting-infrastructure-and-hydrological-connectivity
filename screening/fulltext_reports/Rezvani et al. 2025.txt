@@ -1,0 +1,46 @@
+Reading: Rezvani et al. 2025
+
+[Reading: Rezvani et al. 2025, p. 11-17 (7 results)]
+
+## Stage-2 Gate Report — Rezvani et al. 2025
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in provided metadata (no `90-borderline-*` helper tag visible) — please verify in Zotero.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (21 pp.). (Rezvani et al. 2025, 1) |
+| Gate 2(a) — Block-B infrastructure as variable | **FAIL** | The study variable is wetland placement (small artificial waterbodies, detention ponds, constructed wetlands), explicitly framed as NBS at catchment scale. Forest roads / skid trails / culverts / cross-drains are not study variables; culverts appear only as DEM reconditioning context, and roads are mentioned only descriptively in interpreting IC patterns.  (Rezvani et al. 2025, 2) (Rezvani et al. 2025, 6) (Rezvani et al. 2025, 13) |
+| Gate 2(b) — Connectivity operationalized as outcome | PASS | Sediment Index of Connectivity (Borselli/Cavalli IC, structural + functional variant) is computed via SedInConnect with composite weighting (roughness, soil moisture, runoff).  (Rezvani et al. 2025, 6) |
+| Gate 3 (Q1–Q7) | Not evaluated — Gate 2 failed first | — |
+| Gate 4 | Not evaluated | — |
+| Gate 5 | Not evaluated | — |
+
+Sequential-failure rule: Gate 2(a) is the first failed gate; downstream gates not evaluated.
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string** (verbatim): `infrastructure not analyzed as variable`
+**Confidence:** High
+
+**Rationale (for screener):** The paper is a strong connectivity-modeling study (IC fully operationalized, two Swedish catchments, MCDA/AHP/MODA framework), but the engineered features analyzed are wetlands/SAWs in agricultural–mixed lowland catchments. This is Block-C mitigation in a non-forest setting, not Block-B forest infrastructure. Per the AquaSilva connectivity-anchored protocol, Gate 2(a) requires forest road/skid trail/culvert/etc. as a study variable. Wetlands as NBS in agricultural lowlands fall outside the Block-B anchor scope, even though the connectivity operationalization (Gate 2b) is exemplary.
+
+**Items flagged for human re-read:**
+- Verify whether Stage 1 carried any `90-borderline-B-context` tag; if so, this Stage-2 reading resolves the ambiguity decisively against inclusion (the only Block-B-adjacent mentions are descriptive — unpaved roads as sediment conduits on p. 13, culvert layers used only for DEM hydro-reconditioning on p. 6 — neither analyzed as variables).  (Rezvani et al. 2025, 6) (Rezvani et al. 2025, 13)
+- Consider whether to retain the record as a **methodological reference** (outside the core corpus) for IC operationalization, given its high-quality structural+functional IC extension via SedInConnect — this would be a separate corpus, not the connectivity-anchored synthesis.
+
+### Content-coding suggestions
+
+Not applicable — record excluded at Gate 2. No Include-Final content coding generated.
+
+### Synthesis role
+
+Not applicable — record excluded; not entering RQ1–RQ6 synthesis.
+
+## Sources
+
+Rezvani, Amir, Marco Cavalli, Stefano Crema, et al. 2025. “A Holistic Framework for Wetland Placement and Ecosystem Service Delivery by Integrating Landscape Connectivity and Participatory Decision Analysis in Two Swedish Catchments.” Journal of Hydrology: Regional Studies 61 (October): 102669. https://doi.org/10.1016/j.ejrh.2025.102669.

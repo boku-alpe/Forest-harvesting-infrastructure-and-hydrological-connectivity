@@ -1,0 +1,53 @@
+[Reading: Cornish 2001, p. 1-8 (8 results)]
+
+[Reading: Cornish 2001, p. 12-20 (9 results)]
+
+## Stage-2 Gate Report — Cornish 2001
+
+**Study type:** `003-PairedCatchment`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not flagged in attached metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (20 pp.). (Cornish 2001, 1) |
+| Gate 2 | PASS | (a) Roads and stream crossings (culverts) are the explicit treatment variable: "Each treatment was split with one catchment pair permanently roaded and its duplicate left unroaded."  (Cornish 2001, 2) (b) Road–stream connectivity is co-reported as the explanatory mechanism: "Increased turbidity during higher discharges is consistent with roads being a sediment source, and with ready connectivity between road and stream."  (Cornish 2001, 14) |
+| Q1 (context) | PASS | Region (Dungog, NSW, AU), catchment sizes (12.5–97.4 ha), moist eucalypt forest, treatments and periods specified.  (Cornish 2001, 4) |
+| Q2 (design) | PASS | Paired-catchment before–after-control-impact with 8 catchments, 7 pre- + 8 post-treatment years.  (Cornish 2001, 2) (Cornish 2001, 4) |
+| Q3 (method) | PASS | V-notch weirs, GAMET automatic samplers, weekly grab sampling, HACH 2100AN turbidimeter, GLM ANOVA on log-transformed data, double-mass plots, regression residuals, flowgroup analysis.  (Cornish 2001, 2) (Cornish 2001, 6) |
+| Q4 (infrastructure characterization) | PASS | Roads characterized by presence/absence and by number of stream crossings per catchment (e.g., 1 crossing in Crabapple, 4 in Kokata, 5 in Corkwood); all crossings are piped culverts.  (Cornish 2001, 13) (Cornish 2001, 14) |
+| Q5 (connectivity operationalized) | **UNCLEAR** | Connectivity is invoked mechanistically and proxied structurally via *count of road–stream crossings* per catchment, with greater turbidity in the catchment with the most crossings. No formal connectivity index (e.g., IC) is computed. "Direct connectivity between road and stream was almost certainly a factor … with greater effects in the catchment with the most stream crossings."  (Cornish 2001, 18) Borderline between A2-FlowPathDescriptor (structural proxy) and a purely narrative claim — flagged for human re-read. |
+| Q6 (effect direction) | PASS | Effect direction is explicit and quantified: roading increased turbidity, persistently only where stream crossings were numerous; harvesting without roads reduced turbidity.  (Cornish 2001, 18) Table 9 summarizes signed changes and significance for each catchment.  (Cornish 2001, 15) |
+| Q7 (sample/scope) | PASS | 8 catchments × 15 years of paired pre/post sampling; thousands of turbidity observations (Tables 3–5).  (Cornish 2001, 7) |
+| Gate 4 | PASS | Q7 satisfied. |
+| Gate 5 | PASS | Quantitative effect direction extractable per catchment (Table 9; mean NTU differences <22 NTU; persistent increase only in Corkwood with 5 crossings).  (Cornish 2001, 15) (Cornish 2001, 18) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** —
+**Confidence:** Medium (Q5 is the pivot; connectivity is mechanistically argued and structurally proxied via crossing counts, but no formal connectivity metric/index is computed — consistent with pre-Borselli-era paired-catchment literature)
+**Items flagged for human re-read:**
+- **Q5** — Decide whether "number of road–stream crossings" qualifies as A2-FlowPathDescriptor operationalization or only as a narrative claim. If the AquaSilva protocol requires a numeric connectivity index, this paper would drop to Gate 2(b) FAIL with reason `connectivity only narrative, not operationalized`.
+
+### Content-coding suggestions
+
+- **002:** `002-Mixed` — Roads (B1) plus stream-crossing structures/culverts (B3) plus BMPs (C3) co-analyzed.  (Cornish 2001, 2) (Cornish 2001, 13)
+- **003:** `003-PairedCatchment` — Eight paired catchments with roaded/unroaded duplicates per harvest treatment.  (Cornish 2001, 2)
+- **004:** `004-A2-FlowPathDescriptors` (primary, via stream-crossing count as structural proxy) and `004-RunoffResponse` (turbidity/sediment response co-reported).  (Cornish 2001, 14) (Cornish 2001, 18)
+- **005:** `005-Oceania` — Karuah Hydrology Research Area, NSW, Australia.  (Cornish 2001, 2)
+- **010:** `010-A2-FlowPathDescriptors` — road–stream linkage via crossings is the flow-path mechanism invoked; cites Wemple et al. 1996 channel-network-extension framing.  (Cornish 2001, 16)
+- **020:** `020-B1-Roads` AND `020-B3-Structures` — permanent roads plus piped stream crossings characterized per catchment.  (Cornish 2001, 13)
+- **030:** `030-C3-RoadDrainageBMP` — BMPs explicitly studied (20 m stream buffers, snig-track barring, slope limits, road-batter revegetation; later text notes current BMPs intercept road runoff and divert it to vegetated areas — disconnection logic).  (Cornish 2001, 2) (Cornish 2001, 18)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Strong anchor for the road–stream-crossing-as-connectivity-control hypothesis in a paired-catchment design (Wemple/Croke lineage, Southern Hemisphere). Contributes a quantitative effect-direction datapoint (persistent turbidity increase confined to the catchment with ≥5 piped stream crossings; <22 NTU mean differences) and an effectiveness signal for BMPs (riparian buffers + snig-track drainage + rapid revegetation can yield *net reductions* in turbidity post-harvest when permanent roads are absent). Useful for RQ6 as a long-record (15 yr) empirical reference, and as a counter-example showing connectivity dominance over harvest-disturbance intensity.
+
+## Sources
+
+Cornish, P. M. 2001. “The Effects of Roading, Harvesting and Forest Regeneration on Streamwater Turbidity Levels in a Moist Eucalypt Forest.” Forest Ecology and Management 152 (1): 293–312. https://doi.org/10.1016/S0378-1127(00)00611-3.

@@ -1,0 +1,35 @@
+Reading: Mason et al. 2022
+
+## Stage 2 screening — Mason et al. (2022)
+
+**Record:** Mason et al. 2022, *Austral Ecology*, "Monitoring vital signs: Wetland vegetation responses to hydrological resources in the Macquarie Marshes NSW, Australia" (Mason et al. 2022)
+
+### Gate evaluation (sequential)
+
+**Gate 1 — Full text retrievable:** Pass. PDF available (19 pp.).  (Mason et al. 2022, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text:** **FAIL.**
+
+The study addresses connectivity, but exclusively as river–floodplain *hydrological* connectivity governed by flow regulation (dams, weirs, by-pass channels, block banks, levees on the Macquarie River) and its consequences for wetland vegetation in a semi-arid Ramsar floodplain.  (Mason et al. 2022, 2–3) The response variables are vegetation functional-group abundance, species richness and assemblage composition versus water year, time since last inundation, and inundation duration.  (Mason et al. 2022, 3)
+
+Block B in the AquaSilva taxonomy comprises forest roads (B1), skid/snig trails (B2), and forest retention/mitigation structures (B3). None of these are present as variables, predictors, or treatments. The "infrastructure" referenced in the paper is large-scale river-regulation infrastructure used as historical context for the flow regime, not as an analytic variable. Connectivity is treated as a floodplain-ecology concept rather than operationalized along sediment/runoff flow paths from infrastructure in the Wemple/Croke/Takken sense.
+
+Because Gate 2 fails, Gates 3–5 are not evaluated (sequential rule).
+
+### Proposed terminal tags
+
+- `006-Exclude-Quality`
+
+### Proposed exclusion-reason note (verbatim)
+
+- `no Block-B infrastructure as variable`
+
+### Rationale summary
+
+The paper is a high-quality wetland-ecology monitoring study, but it sits outside the connectivity-anchored, forest-infrastructure scope of the AquaSilva SLR. Including it would constitute a Type I error against the methodological framing (river–floodplain hydrological connectivity ≠ forest road/trail structural–functional connectivity). No content-coding tags are proposed, since these apply only to Include-Final records.
+
+Note for the human screener: if a secondary "context/background" shelf is desired later (e.g., for floodplain-connectivity terminology used in the Synthesis chapter), this record could be revisited there, but it should remain excluded from the core corpus.
+
+## Sources
+
+Mason, Tanya J., Joel Honeysett, Rachael F. Thomas, et al. 2022. “Monitoring Vital Signs: Wetland Vegetation Responses to Hydrological Resources in the Macquarie Marshes NSW, Australia.” AUSTRAL ECOLOGY 47 (6): 1296–314. https://doi.org/10.1111/aec.13215.

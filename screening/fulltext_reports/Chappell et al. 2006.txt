@@ -1,0 +1,30 @@
+[Reading: Chappell et al. 2006, p. 1-6 (6 results)]
+
+[Reading: Chappell et al. 2006, p. 15-21 (7 results)]
+
+## Gate Report — Chappell et al. 2006
+
+**Study type:** Modeling (Data-Based Mechanistic time-series modeling + scenario simulation), supported by field instrumentation in a single experimental catchment.
+
+**Gate 2:** UNCLEAR — Block-B infrastructure (B2 skid trails, with B1 haulage/feeder roads) is clearly handled as a study *variable* via density-scenario modeling (RIL vs. conventional vs. clearfell), but hydrological connectivity is not operationalized as an explicit outcome; the outcomes are partitioning of net rainfall between infiltration-excess overland flow and subsurface flow and the resulting stream peak response, with connectivity addressed only verbally (e.g., the observation that local HOF on skid trails often "run-off onto side slopes where it then infiltrates rather than directly enter the stream channels"). (Chappell et al. 2006, 15) (Chappell et al. 2006, 17)
+
+**Gate 3:**
+- Q1: PASS — 0.44 km² Baru Experimental Catchment, Sabah (Malaysian Borneo), equatorial humid rainforest, managed under selective logging (1988/89), modeled for water-year 1995/96.  (Chappell et al. 2006, 4)
+- Q2: PASS — Classifiable as modeling study (DBM transfer-function identification via SRIV) combined with scenario simulation on a single instrumented catchment.  (Chappell et al. 2006, 6)
+- Q3: PASS — Method (SRIV algorithm, BOSM non-linearity sub-model, YIC criterion, transfer-function structure) reproducibly described with equations and parameter tables.  (Chappell et al. 2006, 6) (Chappell et al. 2006, 16)
+- Q4: PASS — Infrastructure characterized by *density* (25 m/ha haulage road, 16 m/ha feeder road, 61 m/ha skid trails), width (≈3–4 m), areal cover (3.3% of catchment), and *condition/age* (7 years post-logging, partial revegetation).  (Chappell et al. 2006, 15)
+- Q5: FAIL — Connectivity is not operationalized as a metric or index; no IC/structural-functional connectivity quantification is computed. The closest proxies are HOF runoff coefficients on skid trails (e.g., 2.4–52.5% of net rainfall) and the catchment-weighted 3.2% overland-flow fraction, plus a qualitative statement that much HOF reinfiltrates on side slopes before reaching channels.  (Chappell et al. 2006, 15)
+- Q6: PASS — Effect direction quantitatively derivable: RIL scenario → −16% peak overland flow but +0.65% stream peak; clearfell scenario → +29% peak overland flow but −1.66% stream peak (i.e., negligible / counter-intuitive effect of skid-trail density on stream peak).  (Chappell et al. 2006, 17)
+
+**Gate 4:** PASS — Full 12-month, 5-min time-series (105,408 values) with multiple storm events analyzed, including a 2-month-return-period reference storm; one complete investigation iteration met.  (Chappell et al. 2006, 4)
+
+**Gate 5:** PASS — Clear, signed effect on the *runoff* outcome (skid-trail density ↑ ⇒ HOF ↑, stream peak ≈ unchanged / marginally ↓). Effect on *connectivity* per se is not extractable as a metric, only inferable as "weak structural→functional linkage" via re-infiltration on side slopes.  (Chappell et al. 2006, 17) (Chappell et al. 2006, 18)
+
+**Recommendation:** Exclude-Quality (reason candidate: *"Connectivity not operationalized as metric/index — runoff-hydrology study without explicit connectivity framing"*; please verify against exact §4 taxonomy string in Stage2_Operationalization.md, which is not in this chat context).
+**Confidence:** Medium — Gate 2 and Q5 hinge on whether implicit pathway-partitioning + qualitative HOF-to-channel discussion qualifies under the AquaSilva connectivity-anchored definition; under a strict reading it does not.
+**Items flagged for human re-read:** Gate 2 (connectivity-as-outcome judgment), Q5 (mechanistic quantification of connectivity vs. of runoff partitioning).
+**Borderline-Stage-1 carry-over:** Unknown from materials in this chat — please cross-check the Stage-1 record for a borderline flag; the paper's Block-B variable treatment is strong, but its connectivity framing is weak, which is a typical borderline profile.
+
+## Sources
+
+Chappell, N. A., W. Tych, A. Chotai, K. Bidin, W. Sinun, and T. H. Chiew. 2006. “BARUMODEL: Combined Data Based Mechanistic Models of Runoff Response in a Managed Rainforest Catchment.” Forest Ecology and Management 224 (1–2): 58–80. Scopus. https://doi.org/10.1016/j.foreco.2005.12.008.

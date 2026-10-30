@@ -1,0 +1,42 @@
+Reading: Lana-Renault et al. 2018
+
+## Stage 2 screening proposal — Lana-Renault et al. (2018)
+
+### Gate-by-gate assessment
+
+**Gate 1 — Full text retrievable:** PASS. The 32-page PDF is accessible and complete (Lana-Renault et al. 2018, 1).
+
+**Gate 2 — Stage-1 inclusion confirmed by full text:** FAIL.
+
+The study has a strong, explicit connectivity framing — the Borselli (2008) IC index with Cavalli (2013, 2015) modifications is applied to three abandoned catchments, computed on 2 m LiDAR DEMs, with W-factor derived from C-RUSLE land-cover categories, and percent IC changes reported per scenario  (Lana-Renault et al. 2018, 9–10) (Lana-Renault et al. 2018, 14). Connectivity is therefore operationalized as an outcome (Borselli/Cavalli/Lane/Reaney literature is explicitly cited as the anchor frame)  (Lana-Renault et al. 2018, 9).
+
+However, **Block-B infrastructure is not treated as an independent variable.** The treatment axis is land-cover scenario after farmland abandonment (natural revegetation vs. afforestation vs. terraced/grazed). Forest roads and trails appear only descriptively in the results — noted as localized hotspots of increased IC alongside main-channel corridors and terrace-wall collapses  (Lana-Renault et al. 2018, 1–2) (Lana-Renault et al. 2018, 13). There is no road-density gradient, no with/without-road contrast, no separate W-factor or roughness parameterization for the road/trail network, and no quantitative attribution of the IC change to the road or trail layer. Terrace walls (potentially B3-Structures) are similarly handled as a topographic backdrop rather than as a manipulated or measured infrastructure variable.
+
+Under the connectivity-anchored SLR logic (Block B as required variable, not context), this is the canonical Type-I-error case the protocol is designed to exclude.
+
+### Proposed terminal tag and reason note
+
+| Field | Value (verbatim) |
+|---|---|
+| Terminal tag | `006-Exclude-Quality` |
+| Exclusion-reason note | `no Block-B infrastructure as variable` |
+
+No `006-Include-Final` content-coding tags are proposed, since the record is recommended for exclusion at Gate 2.
+
+### Note for the human screener
+
+If the screener takes a broader reading — i.e., treating the "new forest roads and trails" and "terrace wall collapses" passages on pp. 1–2 and p. 13 as a sufficient operationalization of Block-B as a co-variable contributing to IC hotspots — then the alternative Gate 2 reason would be `infrastructure mentioned as context only`, and the record would still exit at Gate 2. A reversal to Include would only be defensible if the extraction phase intends to harvest the localized road/trail/terrace-wall IC observations as qualitative evidence; in that case the appropriate Stage-2 outcome would be `006-Include-Stage2` + `006-Include-Final`, with provisional content-coding suggestions:
+
+- `002-Mixed` — roads/trails plus terrace walls co-occur  (Lana-Renault et al. 2018, 13)
+- `003-FieldMonitoring` + `003-Modeling` (paired-catchment-style design with IC modeling)  (Lana-Renault et al. 2018, 7) (Lana-Renault et al. 2018, 9–10)
+- `004-RunoffResponse`, `004-PeakFlow`  (Lana-Renault et al. 2018, 12)
+- `005-Europe` (Spanish Pyrenees / Iberian Range)  (Lana-Renault et al. 2018, 5)
+- `010-A1-Concepts`, `010-A3-Metrics` (IC index used)  (Lana-Renault et al. 2018, 9–10)
+- `020-B1-Roads`, `020-B3-Structures` (forest roads/trails; terrace walls)  (Lana-Renault et al. 2018, 13)
+- `030-empty` (no mitigation design tested)
+
+Recommendation stands at **Exclude — Gate 2, `no Block-B infrastructure as variable`** pending screener confirmation.
+
+## Sources
+
+Lana-Renault, N., M. López-Vicente, E. Nadal-Romero, et al. 2018. “Catchment Based Hydrology under Post Farmland Abandonment Scenarios.” Geographical Research Letters 44 (2): 503–34. Scopus. https://doi.org/10.18172/cig.3475.

@@ -1,0 +1,42 @@
+[Reading: Eastaugh et al. 2008, p. 1-11 (11 results)]
+
+Based on my full-text review, I can now provide the Stage 2 screening assessment.
+
+---
+
+## Stage 2 Screening Assessment: Eastaugh et al. (2008)
+
+### Terminal Tag Recommendation
+**`006-Include-Stage2` AND `006-Include-Final`**
+
+This record passes all five gates. The paper is explicitly connectivity-anchored: it develops and applies a probabilistic "volume to breakthrough" model to quantify road-to-stream hydrologic connectivity, directly addressing the SLR's core inclusion criterion. The study operationalizes connectivity through a derived connectivity index (Equation 16) with confidence intervals, comparing five road network configurations to assess how decommissioning affects hydrologic connection to streams.
+
+---
+
+### Content-Coding Tag Suggestions
+
+| Tag Family | Proposed Tag | Rationale with Supporting Evidence |
+|------------|--------------|-----------------------------------|
+| **002- Infrastructure subtype** | `002-B1-Roads` | The study focuses exclusively on forest roads ("Old Pipeline Road," "New Pipeline Road," "East-West Break"). (Eastaugh et al. 2008, 2439) |
+| **003- Study type** | `003-Modeling` | The study extends the Hairsine et al. (2002) "volume to breakthrough" probabilistic model, develops statistical algorithms (Equations 1–16), and applies them to field-derived morphological data.  (Eastaugh et al. 2008, 2440) |
+| **004- Hydrological focus** | `004-RunoffResponse` | The connectivity index is based on "volume of road generated runoff reaching the stream network," with runoff generation modeled as a function of rainfall amount and road surface area.  (Eastaugh et al. 2008, 2441) |
+| **005- Region** | `005-Oceania` | Study site: Lower Cotter catchment, Australian Capital Territory (southeast Australia).  (Eastaugh et al. 2008, 2439) |
+| **010-A Block A** | `010-A2-FlowPaths` | Core focus on mapping and modeling flow paths from road drainage outlets to streams via diffuse overland flow and incised gullies. Flowpath lengths calculated from 1 m LiDAR DEM using steepest descent algorithm.  (Eastaugh et al. 2008, 2440) |
+| **020-B Block B** | `020-B1-Roads` | Primary infrastructure: plantation access roads, including float roads and sidecut roads. Road segments characterized by area, drainage outlets, and connectivity type (direct vs. diffuse).  (Eastaugh et al. 2008, 2439) |
+| **030-C Block C** | `030-C1-Retention` | Decommissioning works (culvert removal, cross-barring, pavement ripping) intended to increase water retention on the road surface and reduce delivery to streams—though the paper finds this was ineffective.  (Eastaugh et al. 2008, 2439) |
+
+---
+
+### Key Extractable Findings (for Synthesis Phase)
+
+**Connectivity metric**: Connectivity Index (IC) expressed as "equivalent width of directly-connected road surface" (units: metres), with 90% confidence intervals calculated via propagated variance from the volume-to-breakthrough model.  (Eastaugh et al. 2008, 2443)
+
+**Critical finding on decommissioning effectiveness**: The actual decommissioning "was unlikely to reduce runoff to the stream network" and resulted in "a net reduction in stream water quality" relative to the original road configuration. The combined old (decommissioned) and new roads showed *increased* connectivity (6964 ± 514 m²) versus the original road alone (4777 ± 700 m²) for a 2-hour, 1-in-5-year design storm (35.8 mm).  (Eastaugh et al. 2008, 2445)
+
+**Rainfall-dependent behavior**: New sidecut road was less connected than the original valley-floor road under small rainfall events (≤20 mm), but *more* connected under larger events (≥60 mm) due to longer segments and greater total area.  (Eastaugh et al. 2008, 2446)
+
+**Anchor author linkages**: The study explicitly extends Hairsine et al. (2002) and Croke et al. (1999, 2006), confirming this paper belongs to the established connectivity modeling lineage identified in the anchor author framework.  (Eastaugh et al. 2008, 2438)
+
+## Sources
+
+Eastaugh, C. S., P. K. Rustomji, and P. B. Hairsine. 2008. “Quantifying the Altered Hydrologic Connectivity of Forest Roads Resulting from Decommissioning and Relocation.” HYDROLOGICAL PROCESSES 22 (14): 2438–48. https://doi.org/10.1002/hyp.6836.

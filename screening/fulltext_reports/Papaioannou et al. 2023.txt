@@ -1,0 +1,39 @@
+Reading: Papaioannou et al. 2023
+
+## Stage-2 Gate Report — Papaioannou et al. 2023
+
+**Study type:** `003-Review` (narrative review of post-fire erosion and flood protection treatments)
+**Checklist applied:** R1–R3
+**Borderline carry-over from Stage 1:** Not indicated in the attachment metadata; screener to verify against Stage-1 helper tags.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (26 pp.). |
+| Gate 2 (a) Block-B as variable | UNCLEAR | Road/trail treatments (outsloping, rolling dips, culvert modification, overflow structures) appear as one of four PPT categories alongside Land/Channel/Barrier treatments, but roads/culverts are treated as a site of mitigation works, not as the analytical variable. Section 2 / Table 1, p. 4. (Papaioannou et al. 2023, 4) |
+| Gate 2 (b) Connectivity operationalized | **FAIL** | "Hydrological connectivity alteration" is mentioned once in a list of post-fire impacts; connectivity is never defined, measured, indexed, or used as an organizing concept anywhere in the review. p. 2.  (Papaioannou et al. 2023, 2) The review's stated focus is PPT effectiveness on runoff, erosion and sediment yield, not on structural or functional connectivity. p. 2–3.  (Papaioannou et al. 2023, 2–3) |
+| R1 — peer-reviewed venue | PASS | Journal article in GeoHazards (MDPI), edited and peer-reviewed. p. 1.  (Papaioannou et al. 2023, 1) |
+| R2 — forest infrastructure × connectivity | FAIL | Topic is post-fire protection treatments (PPTs) including cover/barrier/channel/road treatments; connectivity is not the synthesis axis. p. 3 ("we provide an overview of the different PPTs").  (Papaioannou et al. 2023, 3) |
+| R3 — synthesis statement extractable | PASS (but not connectivity-relevant) | Clear synthesis claim that cover-based treatments outperform barriers; useful as PPT-effectiveness anchor but not as a connectivity anchor. Abstract / p. 5.  (Papaioannou et al. 2023, 5) |
+| Gate 4 | n/a | Review → auto-pass. |
+| Gate 5 | n/a (sequential — Gate 2 already failed) | Effect direction is derivable for erosion/runoff, but not for connectivity as defined in the AquaSilva protocol. |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string** (verbatim): `connectivity only narrative, not operationalized`
+**Confidence:** High — the review's conceptual framing is outcome-anchored (erosion/runoff/sediment reduction by PPTs), not connectivity-anchored. The single mention of "hydrological connectivity alteration" is a listed post-fire impact, not an operationalized construct.
+**Items flagged for human re-read:** Gate 2(a) marked UNCLEAR — screener should confirm whether road/trail treatments as a sub-category of PPTs warrants treating Block-B as a study variable. Even under a permissive reading of Gate 2(a), Gate 2(b) still fails, so the terminal decision is robust. Screener may additionally consider retaining this record as a **methodological side-reference for the Maßnahmenkatalog (AquaSilva_Katalog_v4)** — its PPT typology (Land / Channel / Barrier / Road & Trail) and case-study table are useful catalog inputs even though the paper exits the connectivity-anchored SLR corpus.
+
+### Content-coding suggestions
+
+Not applicable — record excluded at Gate 2.
+
+### Synthesis role
+
+Not applicable — record excluded at Gate 2.
+
+## Sources
+
+Papaioannou, George, Angelos Alamanos, and Fotios Maris. 2023. “Evaluating Post-Fire Erosion and Flood Protection Techniques: A Narrative Review of Applications.” GeoHazards 4 (4): 380–405. https://doi.org/10.3390/geohazards4040022.

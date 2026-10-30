@@ -1,0 +1,53 @@
+[Reading: Croke et al. 2006 (12 results)]
+
+## Stage-2 Gate Report — Croke et al. 2006
+
+**Study type:** `003-Experimental`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in the metadata supplied; treat as standard Stage-2 case (recommend confirming against Stage 1 log).
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (12 pp.) (Croke et al. 2006, 1) |
+| Gate 2(a) Infrastructure as variable | PASS | The road prism (surface, table-drain, cutslope, drainage structure) is the explicit study object across two road types (ridge-top, cut-and-fill) and two classes (MA, FA)  (Croke et al. 2006, 3) |
+| Gate 2(b) Connectivity operationalized | **FAIL** | The word "connectivity" does not appear in the paper text; the framing is sediment delivery and runoff pathway. Pathways are discussed only narratively ("the runoff pathway… becomes critical in limiting sediment delivery to streams") with no connectivity metric, index, or flow-path topology analysis  (Croke et al. 2006, 11). The connectivity-anchored companion paper is Croke et al. 2005 (Geomorphology 68: 257–268), which is referenced but distinct  (Croke et al. 2006, 12) |
+| Q1 Context | PASS | 57 km² Cuttagee Creek catchment, NSW Australia, ~850 mm yr⁻¹, eucalypt woodland, selective harvesting  (Croke et al. 2006, 2–3) |
+| Q2 Design | PASS | Experimental rainfall-simulator design, 6 segments × 2 intensities (75, 110 mm h⁻¹)  (Croke et al. 2006, 4) |
+| Q3 Method | PASS | Large 200–600 m² simulator, sampling points A–D, RBC flume, vacuum sampler, 36 rain gauges, ANOVA  (Croke et al. 2006, 4–5) |
+| Q4 Infrastructure characterized | PASS | Road class (MA/FA), type (ridge-top/cut-and-fill), slope, length, surface particle size, drain type tabulated  (Croke et al. 2006, 3) |
+| Q5 Connectivity operationalized | FAIL | No connectivity metric/index; source-to-outlet sediment yields quantify within-prism redistribution but are not framed as functional connectivity  (Croke et al. 2006, 8) |
+| Q6 Effect direction | PASS (would be, if Gate 2 passed) | Clear quantitative direction: road surface = dominant source; table-drains act as sinks at low intensity, flush at high intensity  (Croke et al. 2006, 7) (Croke et al. 2006, 11) |
+| Q7 Sample/scope | PASS | 6 segments × 2 runs = 12 complete iterations  (Croke et al. 2006, 8) |
+| Gate 4 | PASS | See Q7 |
+| Gate 5 | PASS for runoff/sediment variables; FAIL for connectivity — no connectivity effect direction extractable as such |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string:** `connectivity only narrative, not operationalized`
+**Confidence:** Medium
+**Items flagged for human re-read:**
+- Gate 2(b) / Q5: Borderline. The paper *does* quantify sediment flux along the road-prism delivery pathway (source → table-drain → drainage outlet), which could be read as a *functional connectivity within the road prism* operationalization, even though the term is absent and the analysis stops at the drain outlet (no road-to-stream link quantified here — that is the companion paper Croke et al. 2005). Recommend the screener decides whether sediment-redistribution-along-pathway evidence (Tables III, Figures 8–9) is sufficient to meet the AquaSilva connectivity-anchored threshold, or whether this paper should instead be retained only as a supporting cite for the Croke et al. 2005 connectivity paper.
+- If the screener reclassifies Gate 2(b) as PASS on the "functional connectivity along delivery pathway" reading, all other Q-items pass and the paper would flip to `006-Include-Stage2` + `006-Include-Final`.
+
+### Content-coding suggestions
+
+Withheld per protocol (only generated for Include-Final records). Provisional codes for screener convenience *if* Gate 2(b) is overturned on re-read:
+
+- 002: `002-B1-Roads` — unsealed forest road segments  (Croke et al. 2006, 3)
+- 003: `003-Experimental` — rainfall-simulator experiments  (Croke et al. 2006, 4)
+- 004: `004-RunoffResponse` (and arguably `004-A2-FlowPathDescriptors` for the source-to-outlet pathway sampling design)  (Croke et al. 2006, 4)
+- 005: `005-Oceania` — NSW, Australia  (Croke et al. 2006, 2)
+- 010: `010-A2-FlowPathDescriptors` (weak — implicit pathway analysis only)
+- 020: `020-B1-Roads`  (Croke et al. 2006, 3)
+- 030: `030-empty` — no mitigation structure tested
+
+### Synthesis role
+
+Not applicable under current recommendation (Exclude-Quality). If overturned: `Study_Type_Synthesis_Role = primary`; contribution would be quantitative source apportionment within the road prism (road surface dominant; table-drains as conditional sinks with threshold-driven flushing at ~110 mm h⁻¹), useful for AP2 Type-B/Type-C parameterization of road-prism elements and as a methodological reference for rainfall-simulator-based pathway studies.
+
+## Sources
+
+Croke, Jacky, Simon Mockler, Peter Hairsine, and Peter Fogarty. 2006. “Relative Contributions of Runoff and Sediment from Sources within a Road Prism and Implications for Total Sediment Delivery.” Earth Surface Processes and Landforms: The Journal of the British Geomorphological Research Group 31 (4): 457–68.

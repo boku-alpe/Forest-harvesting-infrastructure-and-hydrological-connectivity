@@ -1,0 +1,46 @@
+Reading: Leon et al. 2021
+
+# Stage 2 screening — Leon et al. 2021 (Luquillo Experimental Forest)
+
+## Gate assessment
+
+**Gate 1 — Full text retrievable:** PASS. The 11-page MDPI open-access PDF is available and machine-readable. (Leon et al. 2021, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text:** FAIL.
+
+The paper is a *communication* on cartographic densification of the hydrographic network in the LEF using a new vertical datum (PRVD02) and 1 m² LiDAR-derived DEM. Its declared scope is improving map products for watershed/aquatic research, not quantifying how Block-B infrastructure (roads, skid trails, structures) modifies hydrological connectivity.  (Leon et al. 2021, 1)
+
+Roads and culverts do appear, but exclusively as *cartographic constraints* on the GIS workflow — not as explanatory variables, treatments, or outcomes:
+- The abstract frames roads/culverts as "constraining factors … that interrupt water flow and alter runoff pathways," i.e., features to be identified during mapping.  (Leon et al. 2021, 1)
+- In the methods, bridges and unmapped culverts are listed as limitations of the flow-accumulation procedure that the analyst must work around manually.  (Leon et al. 2021, 6)
+- In the results, anthropogenic channels/surfaces are described as requiring "significant investment of time and researcher validation to interpret and correct flow paths," again a workflow problem rather than an empirical analysis of infrastructure-driven flow rerouting.  (Leon et al. 2021, 8)
+
+Connectivity is not operationalized as an outcome. The word "connectivity" appears once in the discussion, generically referring to ridge-to-reef ecological linkages and aquatic-fauna distributions enabled by future work — there is no structural- or functional-connectivity metric, no IC-type index, no event-based flux measurement, no road-to-stream linkage analysis.  (Leon et al. 2021, 9)
+
+Because Gate 2 fails, downstream gates (3–5) are not evaluated (sequential rule).
+
+## Recommended terminal tag
+
+```
+006-Exclude-Quality
+```
+
+## Recommended exclusion-reason note (verbatim)
+
+```
+infrastructure mentioned as context only
+```
+
+Rationale for choosing this string over the two alternative Gate-2 wordings: roads and culverts *are* named in the paper, which makes "no Block-B infrastructure as variable" technically true but less precise; and "connectivity not operationalized as outcome" is also true but secondary — the primary reason this record does not belong in a connectivity-anchored corpus is that the infrastructure references are descriptive context for a mapping exercise, not study variables. Per the taxonomy rule (first failed gate, lowest-numbered failure), the Gate-2 string above is the correct one to apply.
+
+## Content-coding tag suggestions
+
+Not applicable — Include-Final is not reached. No `002-/003-/004-/005-/010-A/020-B/030-C` tags are proposed for this record.
+
+## Note for human screener
+
+If the screener disagrees and judges that the paper's discussion of culvert-induced flow rerouting is substantive enough to count as a connectivity statement, the next-applicable Gate-2 string would be `connectivity not operationalized as outcome`, since even under a generous reading there is no metric, no quantification, and no empirical test of an infrastructure–connectivity relationship in the paper.
+
+## Sources
+
+Leon, M. C., T. Heartsill-Scalley, I. Santiago, and W. H. McDowell. 2021. “Communication Hydrological Mapping in the Luquillo Experimental Forest: New Local Datum Improves Watershed Ecological Knowledge.” Hydrology 8 (1). Scopus. https://doi.org/10.3390/hydrology8010054.

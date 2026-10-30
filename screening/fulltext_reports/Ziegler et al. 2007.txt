@@ -1,0 +1,104 @@
+I'll retrieve the full text and metadata (including provenance tags) in parallel to complete the gate evaluation.
+
+[Reading: Ziegler et al. 2007, p. 1-12 (12 results)]
+
+[Get metadata]
+
+Now let me read the remaining pages for the results, discussion, and conclusions.
+
+[Reading: Ziegler et al. 2007, p. 13-24 (12 results)]
+
+Now I have everything I need. Let me compile the full Stage-2 gate report.
+
+---
+
+## Stage-2 Gate Report — Ziegler et al. 2007
+
+**Study type:** `003-FieldMonitoring` (primary) + `003-Modeling` (secondary — KINEROS2 diagnostic simulations co-central)
+**Checklist applied:** Q1–Q7 (primary study)
+**Borderline carry-over from Stage 1:** No `90-borderline-*` tag detected in provenance metadata; record carried `006-Include-Stage1` at import.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attachment `10-CYD8AIRU` retrieved in full (24 pages). |
+| **Gate 2a** — Infrastructure as study variable | **PASS** | All four road/trail types (main logging road, skid trails, terraces, abandoned skid trail) are explicit, co-compared study objects with Ks, bulk density, dimensions and simulated HOF each measured and reported per type. (Ziegler et al. 2007) Crucially, the paper frames its two research questions directly around infrastructure type and age: *"how does hydrological response vary among roads differing in manner of construction and usage?"* and *"what effect does natural vegetation recovery have on hydrological response on abandoned skid trails?"*  (Ziegler et al. 2007) |
+| **Gate 2b** — Connectivity operationalized as outcome | **PASS** | Three quantified connectivity-related outcomes are reported: (1) ISSF interception at the road cutbank is *measured* and separated from HOF using specific conductance and a timed hydrograph criterion (flow after 20 min post-rain cessation = ISSF), constituting mechanistic flow-path quantification;  (Ziegler et al. 2007) (2) road-network-to-channel-length ratio is explicitly computed ("approximately seven times longer than the BTEC3 stream network");  (Ziegler et al. 2007) (3) contributing-area expansion due to road connectivity is calculated: upslope trail connections increase the effective contributing area from ~260 m² to >6000 m² of hillslope during a large event.  (Ziegler et al. 2007) These go beyond verbal claims; however, they are *co-reported* outcomes alongside HOF generation rather than the declared primary objective. Gate 2b = PASS (co-reported operationalization confirmed). |
+| **Q1** — Study context | **PASS** | Region: Peninsular Malaysia (Selangor, ~60 km NW of Kuala Lumpur); catchment: BTEC3, 14.4 ha; climate: humid tropical monsoon, ~2400 mm annual rainfall; land use: selectively logged dipterocarp forest (1960s and 1999/2003–2004 campaigns).  (Ziegler et al. 2007) |
+| **Q2** — Study design classifiable | **PASS** | Gradient/comparative design: four road/trail types differing in construction method, depth of excavation, traffic level, and age (including a 40-year-old abandoned trail as a long-term recovery control) compared against an undisturbed hillslope reference in adjacent BTEC1. Field monitoring supplemented by calibrated KINEROS2 simulations extrapolated to 17 storms.  (Ziegler et al. 2007) (Ziegler et al. 2007) |
+| **Q3** — Method reproducibly described | **PASS** | Ks measured via two field-based constant-head permeameter procedures (Amoozimeter); equations (Glover solution for 0.25 m depth; Darcy's law for 0–0.05 m cores) fully stated.  (Ziegler et al. 2007) Road HOF monitored with v-notch weirs and WT-HR water-level sensors at 2–3 min intervals; ISSF separated by 20-min post-rain criterion + specific conductance shift.  (Ziegler et al. 2007) KINEROS2 parameterization fully tabulated (Table IV), including two-layer soil profile, CvKs, Manning's n, calibration-evaluation split (5+5 storms), and three error indices.  (Ziegler et al. 2007) |
+| **Q4** — Infrastructure characterized | **PASS** | All four types are characterized by: running surface Ks (two depths), bulk density, slope, width, depth of lowering (dL), and cutbank depth (dCB) with sample sizes (Table II). Road lengths and network density (33 km km⁻²) are GPS-mapped. Age of construction is specified (1960s main road; 1999 skid trails; 2003/04 terraces; 40-year-old abandoned skid trail in BTEC1).  (Ziegler et al. 2007) (Ziegler et al. 2007) |
+| **Q5** — Connectivity operationalized as metric/mechanistic quantification | **PASS** | ISSF interception quantified via hydrograph and conductance separation (mechanistic flow-path conversion: subsurface → road surface).  (Ziegler et al. 2007) Contributing-area connectivity quantified: connected road network expands effective source area from 260 m² to >6000 m² for a single event.  (Ziegler et al. 2007) Road-to-channel network length ratio computed at 7:1, directly describing spatial connectivity of the road system.  (Ziegler et al. 2007) These are numerical, not purely verbal. |
+| **Q6** — Effect direction derivable | **PASS** | Roads strongly *increase* surface runoff generation and hydrological connectivity: near-surface Ks reduced 91–99% vs. undisturbed (Table V); median measured ROC = 0.53 on main road; simulated ROC 0.82–0.86 for 17 events.  (Ziegler et al. 2007) (Ziegler et al. 2007) (Ziegler et al. 2007) ISSF interception augments road runoff at all road types. After 40 years of recovery, Ks still 90% below undisturbed reference; HOF still generated on abandoned skid trail for storms >25 mm.  (Ziegler et al. 2007) Basin-wide HOF declines by ~50% in a full-recovery scenario (5326 → 2729 m³), giving a counterfactual effect size.  (Ziegler et al. 2007) |
+| **Q7** — Sample/scope adequate | **PASS** | Ks measured at 58 locations across four road types; HOF monitored over >90 storms; model calibrated on 5 storms and evaluated on 5 independent storms before application to 17 additional events.  (Ziegler et al. 2007) (Ziegler et al. 2007) (Ziegler et al. 2007) At least one complete investigation iteration is unambiguously present. |
+| **Gate 4** | **PASS** | Q7 confirmed above. |
+| **Gate 5** | **PASS** | Quantitative effect directions fully extractable: ROC values by road type, Ks reduction percentages, ISSF identification, basin-wide HOF volumes, contributing-area expansion, and a modelled recovery scenario with explicit % reduction. All values are numeric and direction-signed. |
+
+---
+
+### Provenance verification
+
+**One mismatch flagged — `030-Cany-MitigationControls`:**
+
+The record is assigned to M01 and M02 collections and carries the provenance tag `030-Cany-MitigationControls`, implying it was retrieved under a Block-C mitigation query. However, the paper explicitly states that *"no type of road was designed to mitigate potential runoff or erosion impacts"* and that inboard ditches and gravel surfaces were absent.  (Ziegler et al. 2007) The impact-reduction section (s409–s423) discusses planning principles qualitatively as forward-looking recommendations rather than analyzing any implemented mitigation structure as a study variable. No Block-C mitigation control (retention/detention, infiltration disconnection, road drainage BMP) is measured or manipulated in this study. **Provenance-content drift: this paper was retrieved under a mitigation query but does not substantively analyze a Block-C variable.** Flag for screener as a false-positive retrieval under M-queries; does not affect inclusion decision.
+
+No drift detected for `010-A1-ConnectivityConcepts` (road-network connectivity and ISSF flow-path interception are discussed as hydrological-connectivity concepts throughout, including the concluding recommendation to minimize road-network length and connectivity) or for `020-B1-Roads` + `020-B2-SkidSnigTrails` (both infrastructure subtypes are co-equal study variables).
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None — all gates passed on clear textual evidence. The screener may wish to verify the Gate 2b / Q5 judgment that ISSF interception + contributing-area quantification constitute sufficient operationalization of connectivity as a co-reported outcome (rather than purely a runoff-generation paper), but the numerical evidence in s138–141 and s416 is explicit.
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+- **002** [Infrastructure subtype]: `002-Mixed` — Main logging road (B1, 690 m), skid trails (B2, 2300 m), terraces (B2, 1806 m), and an abandoned skid trail (B2) are all co-equal study variables with independent Ks, bulk density, and HOF simulation results.  (Ziegler et al. 2007) (Ziegler et al. 2007)
+
+- **003** [Study type]: `003-FieldMonitoring` (primary) + `003-Modeling` (secondary) — Field Ks and runoff measurements drive conclusions; KINEROS2 is used diagnostically to extend results to all road types and 17 storms, making both methods co-central.  (Ziegler et al. 2007) (Ziegler et al. 2007) (Ziegler et al. 2007)
+
+- **004 primary** [Outcome]: `004-RunoffResponse` — The core outcome is HOF generation: runoff volumes, runoff coefficients per road type (measured ROC = 0.53 on main road; simulated ROC 0.69–0.94 for large events), and the persistence of runoff generation across road types and recovery states.  (Ziegler et al. 2007) (Ziegler et al. 2007)
+
+- **004 secondary**: `004-FlowPathInitiation` — ISSF interception at road cutbanks (subsurface flow converted to road surface flow, measured via conductance and hydrograph timing) and contributing-area connectivity expansion (260 m² → >6000 m²) constitute quantified flow-path conversion outcomes co-reported alongside HOF.  (Ziegler et al. 2007) (Ziegler et al. 2007) (Ziegler et al. 2007)
+
+- **005** [Region]: `005-Asia` — Study site: Bukit Tarek Experimental Catchment, Selangor, Peninsular Malaysia.  (Ziegler et al. 2007)
+
+> **Note on existing content-coding tags:** The record already carries `002-Mixed`, `003-FieldMonitoring`, `004-FlowPathInitiation`, and `005-Asia` in Zotero. The present assessment concurs with those assignments but recommends adding `004-RunoffResponse` as the **primary** outcome tag (currently absent) and `003-Modeling` as a secondary study-type tag, as the KINEROS2 simulations are substantively co-central to the conclusions.
+
+---
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** This study's most distinctive contribution is the *persistence* quantification: despite 40 years of vegetation recovery, near-surface Ks on an abandoned skid trail remains ~90% below undisturbed reference values, and HOF is still generated for storms >25 mm — providing a rare long-term data point on hydrological legacy effects of road excavation depth vs. surface compaction. The modelled recovery scenario (49% reduction in basin-wide HOF if all roads recover to abandoned-trail condition) gives an extractable effect-size estimate for RQ6 effectiveness analysis. The ISSF interception mechanism (quantified via conductance separation) anchors the flow-path-initiation co-outcome.  (Ziegler et al. 2007) (Ziegler et al. 2007)
+
+---
+
+### Final tag conformance check
+
+All proposed tags verified character-for-character against the permitted taxonomy:
+
+| Proposed tag | Permitted? |
+|---|---|
+| `006-Include-Stage2` | ✓ |
+| `006-Include-Final` | ✓ |
+| `002-Mixed` | ✓ |
+| `003-FieldMonitoring` | ✓ |
+| `003-Modeling` | ✓ |
+| `004-RunoffResponse` | ✓ |
+| `004-FlowPathInitiation` | ✓ |
+| `005-Asia` | ✓ |
+
+**Tag replacements made: none.**
+
+## Sources
+
+Ziegler, Alan D., Junjiro N. Negishi, Roy C. Sidle, Takashi Gomi, Shoji Noguchi, and Abdul Rahim Nik. 2007. “Persistence of Road Runoff Generation in a Logged Catchment in Peninsular Malaysia.” EARTH SURFACE PROCESSES AND LANDFORMS 32 (13): 1947–70. https://doi.org/10.1002/esp.1508.

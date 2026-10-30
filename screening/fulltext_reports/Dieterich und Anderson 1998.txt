@@ -1,0 +1,28 @@
+[Reading: ⁨Dieterich⁩ und ⁨Anderson⁩ 1998, p. 1-15 (15 results)]
+
+## Gate Report — Dieterich & Anderson 1998
+
+**Study type:** Field (descriptive + small-scale solute injection experiments)
+
+**Gate 2:** FAIL — The forest road appears only as a sediment *source* for assessing in-stream retention by ephemeral channels, not as a Block-B infrastructure variable that is characterized and varied; "connectivity" is invoked verbally (terrestrial–aquatic interface, surface–subsurface exchange) but the operationalized outcomes are sediment retention efficiency, nitrate uptake length $S_w$, and groundwater exchange rate per meter — not connectivity metrics. (Dieterich and Anderson 1998, 1) (Dieterich and Anderson 1998, 2)
+
+**Gate 3:**
+- Q1: PASS — Region (McDonald Forest, western Oregon Coast Range), catchment sizes (<1 km² temporary, <0.25 km² ephemeral), climate (Mediterranean, 1000 mm yr⁻¹, summer-dry), and land use (Douglas-fir forest plus meadow) are all reported.  (Dieterich and Anderson 1998, 2)
+- Q2: PASS — Classifiable as a multi-site comparative field study with embedded BACI-like core sampling (pre/post road construction at FE1) and tracer-injection experiments in two reaches.  (Dieterich and Anderson 1998, 2) (Dieterich and Anderson 1998, 4)
+- Q3: PASS — Sediment fractionation, filtration, leaf-pack sediment trapping, NO₃ analysis (Cd-reduction), and the Stream Solute Workshop uptake-length formulation are reproducibly described.  (Dieterich and Anderson 1998, 4–5)
+- Q4: FAIL — The forest road is only minimally characterized (newly built, used by logging trucks, 20–30 passes/day during peak); no density, length, gradient, drainage design, culvert specs, or connectivity-relevant geometric attributes are given.  (Dieterich and Anderson 1998, 2) (Dieterich and Anderson 1998, 6)
+- Q5: FAIL — Connectivity is not operationalized as a metric or index of road–stream linkage; the quantitative measures (sediment % removed over 75 m; groundwater exchange 0.75–0.8% m⁻¹; $S_w$) describe in-stream retention and stream–subsurface exchange, not infrastructure-driven flow path connectivity.  (Dieterich and Anderson 1998, 1) (Dieterich and Anderson 1998, 9) (Dieterich and Anderson 1998, 12)
+- Q6: PASS (for sediment delivery from road) — Direction is derivable: road construction increased suspended sediment up to 100-fold below the culvert and reduced mayfly emergence from ~10 000 to 1 450 m⁻², while ephemeral channels retained 60–80% of suspended sediment over 75 m.  (Dieterich and Anderson 1998, 6) (Dieterich and Anderson 1998, 7)
+
+**Gate 4:** PASS — Two flow seasons (1989/90, plus pre-/post-road 1988 vs 1990 cores) and replicated injection trials provide ≥1 complete investigation iteration.  (Dieterich and Anderson 1998, 5)
+
+**Gate 5:** UNCLEAR — A clear effect direction is derivable for *sediment delivery from a forest road into an ephemeral channel* and for *in-stream retention*, but not for connectivity in the SLR-relevant sense (road→channel structural/functional linkage as a metric).  (Dieterich and Anderson 1998, 6) (Dieterich and Anderson 1998, 9)
+
+**Recommendation:** Exclude-Quality (reason: *Connectivity not operationalized — verbal/conceptual only; Block-B infrastructure treated as sediment source context, not as characterized study variable*)
+**Confidence:** High
+**Items flagged for human re-read:** Q5 (whether the 0.75–0.8% m⁻¹ stream–subsurface exchange rate qualifies as a functional-connectivity metric under a broader reading); Gate 5 (sediment-delivery direction is clean and could be retained as an ancillary anchor for road→ephemeral-channel coupling even if the paper is excluded from the core corpus).
+**Borderline-Stage-1 carry-over:** Unknown — not indicated in the provided metadata; please confirm against the Stage-1 log.
+
+## Sources
+
+Dieterich, M., and N. H. Anderson. 1998. “Dynamics of Abiotic Parameters, Solute Removal and Sediment Retention in Summer-Dry Headwater Streams of Western Oregon.” Hydrobiologia 379 (1–3): 1–15. Scopus. https://doi.org/10.1023/a:1003423016125.

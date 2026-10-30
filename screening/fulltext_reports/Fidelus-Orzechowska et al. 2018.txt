@@ -1,0 +1,51 @@
+[Reading: Fidelus-Orzechowska et al. 2018 (17 results)]
+
+# Stage 2 Screening — Fidelus-Orzechowska et al. (2018)
+
+## Gate-by-gate assessment
+
+**Gate 1 (full text):** Pass. Full 17-page PDF retrievable.
+
+**Gate 2 (Stage-1 inclusion confirmed):** Pass. Block-B infrastructure (forest roads) is the explicit independent variable across 6.2 km mapped in three Tatra valleys, with 116 morphogenetically homogeneous sections parameterised. (Fidelus-Orzechowska et al. 2018, 5) Connectivity is operationalised through the *intercepted subsurface flow* (ISSF) feature count and ratio at the cutslope, combined with a SAGA-GIS Convergence Index overlay that links structural slope topology (convergent hollows) to the functional flow-path initiation on the road prism.  (Fidelus-Orzechowska et al. 2018, 5–6) The anchor literature for forest-road connectivity (Wemple & Jones 2003; Wemple et al. 2001; Dutton et al. 2005) is explicitly invoked as the conceptual frame for the ISSF analysis.  (Fidelus-Orzechowska et al. 2018, 12)
+
+**Gate 3 (Q-items, primary study):**
+- Q1 context: Pass — climate, geology, precipitation, land use reported.  (Fidelus-Orzechowska et al. 2018, 4)
+- Q2 design: Pass — classifiable as field monitoring (geomorphological mapping + repeated CSA cross-sections + PCA + t-test).  (Fidelus-Orzechowska et al. 2018, 5–6)
+- Q3 method reproducibility: Pass — CSA formula, parameter definitions, statistical workflow, software versions all stated.  (Fidelus-Orzechowska et al. 2018, 6)
+- Q4 infrastructure characterisation: Pass — width 3.1 m mean, depth 0.85 m mean, inclination 15° mean, age (post-2014 construction), bedrock class.  (Fidelus-Orzechowska et al. 2018, 7)
+- Q5 connectivity operationalisation: Pass — ISSF ratio, landslide ratio, and Convergence Index used as spatial connectivity proxies.  (Fidelus-Orzechowska et al. 2018, 9)
+- Q6 effect direction: Pass — F1 of PCA isolates ISSF as dominant driver of geomorphic activity; quantitative deepening rates derivable (mean 4.5 cm yr⁻¹, max 10 cm yr⁻¹).  (Fidelus-Orzechowska et al. 2018, 9) (Fidelus-Orzechowska et al. 2018, 12)
+
+**Gate 4 (sample/scope):** Pass. 6.2 km roads, 1.1 km erosion scars, 116 sections, 7 repeated profiles over the 2016 summer.  (Fidelus-Orzechowska et al. 2018, 7)
+
+**Gate 5 (effect direction):** Pass. Directional, signed effects reported for ISSF, bedrock strength, and convergent topography; cross-section erosion/accumulation rates quantified per profile.  (Fidelus-Orzechowska et al. 2018, 9)
+
+## Proposed terminal tags
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+## Proposed content-coding tags (suggestions for screener confirmation)
+
+| Family | Proposed value | Supporting evidence |
+|---|---|---|
+| 002 Infrastructure subtype | `002-B1-Roads` | 6.2 km of forest roads are the unit of analysis; linear erosion scars from cable-crane logging are reported separately and are not the primary variable.  (Fidelus-Orzechowska et al. 2018, 7) |
+| 003 Study type | `003-FieldMonitoring` | Geomorphological mapping plus repeated cross-section profile re-measurements across the 2016 summer season.  (Fidelus-Orzechowska et al. 2018, 6) |
+| 004 Hydrological focus | `004-FlowPathInitiation` (primary); secondary candidate `004-SedimentDelivery` | ISSF features at cutslopes and their link to convergent terrain are the dominant outcome; sediment delivery to the valley floor (1088 m² accumulation fan) is documented but anecdotal at one site.  (Fidelus-Orzechowska et al. 2018, 7) (Fidelus-Orzechowska et al. 2018, 12) |
+| 005 Region | `005-Europe` | Western Tatra Mountains, Poland (Tatra National Park).  (Fidelus-Orzechowska et al. 2018, 4) |
+| 010-A Block A | `010-A2-FlowPaths` | Subsurface flow interception by cutslopes, road-as-flow-path concept, Convergence Index overlay link structural topology to functional flow paths.  (Fidelus-Orzechowska et al. 2018, 9) |
+| 020-B Block B | `020-B1-Roads` | Forest roads as the infrastructure category.  (Fidelus-Orzechowska et al. 2018, 5) |
+| 030-C Block C | `030-empty` | Drainage channels and anti-erosion treatments are cited in the introduction/discussion but no mitigation measure is implemented or tested in the study design.  (Fidelus-Orzechowska et al. 2018, 3) |
+
+## Notes for the human screener
+
+Two caveats worth flagging before final tag application:
+
+1. The connectivity framing is implicit rather than lexical — the word "connectivity" does not appear, and the study does not compute a sediment delivery ratio or Index of Connectivity. The operationalisation rests on ISSF features as functional flow-path indicators and the Convergence Index as a structural proxy. If the synthesis protocol requires explicit IC/SDR-type metrics, this record may warrant re-evaluation against Gate 2 with reason `connectivity not operationalized as outcome`.
+2. Quantitative anchors for the AquaSilva measures catalog (Field study, montane carbonate/flysch Tatras, road scale): mean annual road deepening 4.5 cm yr⁻¹, maximum 10 cm yr⁻¹; deepest evorsion kettle 1.9 m; accumulation fan 1088 m² triggered by a 112 mm / 3-day rainfall. These are useful for Type C (channel modifier) parameterisation of incised road segments.  (Fidelus-Orzechowska et al. 2018, 7) (Fidelus-Orzechowska et al. 2018, 9)
+
+## Sources
+
+Fidelus-Orzechowska, Joanna, Dariusz Strzyzowski, and Miroslaw Zelazny. 2018. “The Geomorphic Activity of Forest Roads and Its Dependencies in the Tatra Mountains.” GEOGRAFISKA ANNALER SERIES A-PHYSICAL GEOGRAPHY 100 (1): 59–74. https://doi.org/10.1080/04353676.2017.1376585.

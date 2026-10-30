@@ -1,0 +1,51 @@
+[Reading: Cochand et al. 2020, p. 1-14 (14 results)]
+
+## Stage-2 Gate Report — Cochand et al. 2020
+
+**Study type:** `003-Modeling` (with integrated `003-FieldMonitoring` tracer-test component — flag for screener; the synthesis-relevant generalization comes from the numerical sensitivity analysis, while four field sites provide qualitative validation)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in the attached metadata; screener to verify against Stage-1 tags
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS | (a) Three road structures (no-excavation, L-drain, wood-log) are the explicit independent variable across 90 numerical scenarios and four field sites (Cochand et al. 2020, 2); (b) hydraulic connection across the road is operationalized via EC tracer fronts downslope and via simulated groundwater flow rates at observation sections — i.e., functional connectivity is quantified, not merely asserted  (Cochand et al. 2020, 4) (Cochand et al. 2020, 8) |
+| Q1 | PASS | Four sloping-fen sites in alpine/peri-alpine Switzerland, slopes 13–27 %, organic topsoil over impermeable clay/flysch, fen-wetland land cover (Table 1)  (Cochand et al. 2020, 5) |
+| Q2 | PASS | Mixed design: tracer-test field experiments (gradient/before-after EC) plus generic 3-D physically-based HGS sensitivity modeling across slope × K_soil × K_drain  (Cochand et al. 2020, 4) |
+| Q3 | PASS | Tracer protocol (sprinkler rate, NaCl concentration, piezometer network, EC sampling at t0/t+, t+24h) and HGS configuration (mesh, BCs, van Genuchten parameters, 27-year spin-up) are reproducibly described  (Cochand et al. 2020, 4) (Cochand et al. 2020, 5) (Cochand et al. 2020, 8) |
+| Q4 | PASS | Each road type characterized by depth, materials, drain geometry, hydraulic conductivity range (no-excavation 0.16 m concrete on Misapor gravel; L-drain 0.4 m trench with coarse-gravel L-band; wood-log 0.4 m logged trench)  (Cochand et al. 2020, 2) |
+| Q5 | PASS | Connectivity quantified by (i) EC delta maps before/24 h after injection and (ii) groundwater flow rates m³ d⁻¹ at observation sections C–G plus a max/min flow-rate ratio along the L-drain transect  (Cochand et al. 2020, 8) (Cochand et al. 2020, 11) |
+| Q6 | PASS | Clear direction: L-drain concentrates flow (up to 10× base case at section G, ~10× lower in C/D, triggers surface runoff and gully-erosion risk); no-excavation and wood-log show negligible perturbation  (Cochand et al. 2020, 11) (Cochand et al. 2020, 12–13) |
+| Q7 | PASS | 4 field sites × full tracer iteration + 90 model runs (27 per road type, 9 base case) covering 3 slopes × 3 K_soil × 3 K_drain  (Cochand et al. 2020, 8) |
+| Gate 4 | PASS | Confirmed via Q7 |
+| Gate 5 | PASS | Effect direction and approximate magnitude (factor ~10) extractable for vote-counting  (Cochand et al. 2020, 11) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:**
+- Study-type assignment: paper is genuinely mixed Modeling + FieldMonitoring; screener may wish to apply both `003-Modeling` and `003-FieldMonitoring` rather than a single category.
+- Scope-fit caveat: study object is *fen access roads in protected wetlands*, not classic forest haul roads. Domain transfer to Wienerwald forest-road context is plausible but should be flagged in the synthesis (RQ6 effectiveness data is mitigation-design–specific, not climate- or land-use–transferable without qualification).
+
+### Content-coding suggestions
+
+- 002: `002-B1-Roads` and `002-C3-RoadDrainageBMP` — three explicit road-drainage designs (no-excavation, L-drain, wood-log) compared as mitigation alternatives  (Cochand et al. 2020, 2)
+- 003: `003-Modeling` (primary) — 90-run HGS sensitivity analysis is the generalization vehicle; co-tag `003-FieldMonitoring` for the tracer component  (Cochand et al. 2020, 4)
+- 004: `004-A2-FlowPathDescriptors` (EC tracer fronts, preferential pathways) plus `004-A3-ConnectivityMetrics` (max/min flow-rate ratio along transect)  (Cochand et al. 2020, 9) (Cochand et al. 2020, 11)
+- 005: `005-Europe` — Swiss northern Prealps  (Cochand et al. 2020, 2)
+- 010: `010-A2-FlowPathDescriptors` and `010-A3-ConnectivityMetrics` — flow-path characterization plus quantitative ratio metric  (Cochand et al. 2020, 11)
+- 020: `020-B1-Roads` and `020-B3-Structures` — roads as Block B plus drain/culvert-type sub-surface drainage structures embedded in road design  (Cochand et al. 2020, 2)
+- 030: `030-C3-RoadDrainageBMP` — no-excavation and wood-log are explicitly engineered mitigation BMPs developed to reduce road impacts  (Cochand et al. 2020, 2)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Strongest contribution is a quantitative effect-size anchor for **road-drainage design effect on subsurface connectivity**: L-drain induces ~10× flow concentration at the outlet and ~10× depletion in adjacent sections relative to base case, while distributed-permeability designs (wood-log, no-excavation) preserve near-natural flow fields  (Cochand et al. 2020, 11). Useful for the Maßnahmenkatalog as a Type C (channel/cross-section modifier) cautionary anchor: concentrated point-discharge culvert/L-drain outlets generate the cascade trigger (threshold → fill → overflow → new flow path) the AquaSilva Durchlass/Überlauf column groups are designed to capture. Domain (sloping fens, not forest hillslopes) should be reported with the effect size in RQ6.
+
+## Sources
+
+Cochand, Fabien, Daniel Kaeser, Philippe Grosvernier, Daniel Hunkeler, and Philip Brunner. 2020. “Assessing the Perturbations of the Hydrogeological Regime in Sloping Fens Due to Roads.” HYDROLOGY AND EARTH SYSTEM SCIENCES 24 (1): 213–26. https://doi.org/10.5194/hess-24-213-2020.

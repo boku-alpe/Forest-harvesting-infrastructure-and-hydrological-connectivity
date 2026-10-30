@@ -1,0 +1,80 @@
+I'll read the full text of the Takken et al. (2008) paper to apply the gate logic.
+
+[Reading: Takken et al. 2008, p. 1-11 (11 results)]
+
+Now let me retrieve the item metadata to check its existing provenance tags.
+
+[Get metadata]
+
+## Stage-2 Gate Report — Takken et al. 2008
+
+**Study type:** `003-FieldMonitoring` (primary) + `003-Modeling` (secondary)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No — no `90-borderline-*` helper tag detected in item metadata.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** — Full text retrievable | **PASS** | PDF attached (10-I53TEA3K, 11 pp., `fulltext_status="available"`). |
+| **Gate 2(a)** — Infrastructure as study variable | **PASS** | "The specific objective of this paper is to assemble a methodology to assess the road-to-stream connectivity and evaluate its use for three different forested catchments with contrasting road densities." Road density, drain spacing, road slope position, and drain type are all explicit analytical variables throughout. (Takken et al. 2008) |
+| **Gate 2(b)** — Connectivity operationalized as primary outcome | **PASS** | Hydrological connectivity is operationalized via the Vbt5 model (Hairsine et al. 2002), classifying each drain into one of three delivery pathway types (stream crossings, gullied, diffuse) and estimating runoff volumes reaching the stream per km of road and per km² of catchment area.  (Takken et al. 2008) |
+| **Q1** — Study context reportable | **PASS** | Three catchments in southeastern Australia: Albert River (82 km², plantation), Sandy Creek (48 km² forestry area, plantation), Tyers River (274 km², native hardwood). Annual rainfall 1215–1450 mm, slopes 10–60%.  (Takken et al. 2008) |
+| **Q2** — Study design classifiable | **PASS** | Multi-catchment observational field survey combined with deterministic model application; gradient design comparing three catchments of contrasting road density and forest type. Classifiable as `003-FieldMonitoring` + `003-Modeling` (hybrid).  (Takken et al. 2008) |
+| **Q3** — Method reproducibly described | **PASS** | Drain locations mapped by dGPS; contributing road area measured with trundle wheel; slope gradients measured with clinometer; slope position classified via ArcInfo Slope Position model; Vbt5 model equations given explicitly (Equations 1–3); design rainfall intensities from Pilgrim (1987) stated per catchment.  (Takken et al. 2008) (Takken et al. 2008) |
+| **Q4** — Infrastructure characterized | **PASS** | Road density tabulated (4.2, 5.9, 1.8 km km⁻²); road lengths by class and slope position; drain types (culverts, mitre drains, cross banks, push-outs, stream crossings) with counts per catchment; drain spacing and contributing road area measured.  (Takken et al. 2008) (Takken et al. 2008) |
+| **Q5** — Connectivity operationalized as metric | **PASS** | Connectivity expressed as: (i) percentage of drains connected per delivery pathway type, (ii) runoff volume (m³) reaching streams per km of road and per km² of catchment area for a 1-in-10-year, 30-min event, and (iii) number of stream crossings per km of road and per km² of catchment.  (Takken et al. 2008) (Takken et al. 2008) |
+| **Q6** — Effect direction derivable | **PASS** | Addition of 94 drains (drain-spacing scenario) would reduce diffuse overland flow delivery by 86%. Road relocation of the Albert River Road would reduce total catchment runoff delivery by 21–29%.  (Takken et al. 2008) (Takken et al. 2008) |
+| **Gate 4** — Sample/scope adequate | **PASS** | Three complete catchments surveyed; 640 drains across all sites; full quantitative results reported. Q7 confirmed.  (Takken et al. 2008) (Takken et al. 2008) |
+| **Gate 5** — Extractability | **PASS** | Clear quantitative effect directions extractable for both infrastructure characteristics (road density, drain spacing, road slope position) and management interventions (drain addition, road relocation) on connectivity-related outcome variables.  (Takken et al. 2008) |
+
+---
+
+### Provenance verification
+
+**One drift detected — B-block mismatch:**
+
+The record carries `020-B3-Structures` as its sole Block-B provenance tag (from queries H03 and H06). However, the paper's primary infrastructure focus is unambiguously forest **roads** (B1): road density, road slope position, road design, and road drain spacing are the central study variables, and the stated objective is "road-to-stream connectivity." Drainage structures (culverts, mitre drains, cross banks) are characterized as road drainage components and are analyzed in detail as sub-variables, but they are attributes of the road network rather than independent infrastructure objects. The absence of a `020-B1-Roads` provenance tag is a **content-provenance drift** (B3 retrieved, B1 is the substantive focus). This is flagged as a diagnostic signal for the screener; it does not affect the gate decision.
+
+No A-block drift detected: `010-A1-ConnectivityConcepts` and `010-A2-FlowPathDescriptors` both match the paper's substantive framing (connectivity as organizing principle; delivery pathway classification as the analytical instrument).
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final` (both already present in the library; this report confirms the prior decision)
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None — all gate items resolved unambiguously from full text.
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — Roads are the declared primary study object throughout; drain structures (B3) are analyzed as road drainage components. *Screener note: if the co-equal treatment of drain types (Table III, Equations 1–3) is judged to elevate B3 to co-equal status, `002-Mixed` is defensible.*  (Takken et al. 2008) (Takken et al. 2008)
+
+- **003** [Study type]: `003-FieldMonitoring` (primary) + `003-Modeling` (secondary) — Field drain surveys with dGPS, clinometer, and trundle wheel generate the core dataset; the Vbt5 volumetric model and GIS extrapolation are integral to the connectivity quantification but downstream of the empirical data collection.  (Takken et al. 2008) (Takken et al. 2008)
+
+- **004 primary** [Outcome]: `004-RunoffResponse` — The primary reported outcome is volume of road-derived runoff reaching the stream (m³ per km of road, m³ per km² of catchment) during a design event.  (Takken et al. 2008) (Takken et al. 2008)
+
+- **004 secondary**: `004-FlowPathInitiation` — The three delivery pathway types (stream crossings, gullied pathways, diffuse pathways) operationalize flow path topology; gully occurrence at drain outlets is explicitly quantified per catchment as a connectivity pathway.  (Takken et al. 2008) (Takken et al. 2008)
+
+- **005** [Region]: `005-Oceania` — All three study catchments are located in southeastern Australia (Victoria and New South Wales).  (Takken et al. 2008)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** This paper is the primary methodological anchor for volume-based road-to-stream hydrological connectivity assessment in forested catchments; it directly instantiates the Hairsine et al. (2002) Vbt5 model at catchment scale across three contrasting forest types and provides quantified effect sizes for both drain-spacing optimization (86% reduction in diffuse overland-flow delivery) and road relocation (21–29% reduction in total delivery), making it directly relevant to AquaSilva AP2 parameterization of Type-B (road drainage modification) and Type-C (channel/flow-path modification) measures.
+
+---
+
+### Tag replacements made: none.
+
+## Sources
+
+Takken, I., J. Croke, and P. Lane. 2008. “A Methodology to Assess the Delivery of Road Runoff in Forestry Environments.” Hydrological Processes 22 (2): 254–64. https://doi.org/10.1002/hyp.6581.

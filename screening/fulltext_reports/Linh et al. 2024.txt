@@ -1,0 +1,38 @@
+Reading Linh et al. 2024
+
+[Reading: Linh et al. 2024, p. 10-14 (5 results)]
+
+# Stage-2 screening — Linh et al. (2024), Northern Vietnam unpaved roads
+
+## Gate-by-gate assessment
+
+**Gate 1 — Full text retrievable:** PASS. The 14-page PDF is available and machine-readable. (Linh et al. 2024, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text:** FAIL.
+
+Block-B infrastructure (unpaved forest roads, B1) is clearly the primary variable of interest: three 10-m road segments plus their adjacent cutslopes were instrumented for runoff and sediment, so the infrastructure criterion is satisfied.  (Linh et al. 2024, 3–4)
+
+However, **connectivity is not operationalized as an outcome**. The measurement design captures runoff and sediment yield *at the base of the road plot* and *at the base of the cutslope* — i.e., on-segment production. There is no road–stream linkage variable, no mapping of flow paths from the road prism to receiving channels, no connected length / drainage-spacing analysis, no IC-type metric, and no plot-to-stream sediment delivery ratio. The "topographic convergence" treatment refers to the upslope hillslope geometry feeding the cutslope, not to downslope structural or functional linkage between the road and the stream network.  (Linh et al. 2024, 4) (Linh et al. 2024, 11–12)
+
+The conclusion frames implications generically as "adverse impacts of unpaved roads on downstream aquatic resources," but downstream connectivity is invoked as motivation, not measured.  (Linh et al. 2024, 13) The terms "road–stream connectivity" appear only in cited reference titles (Sosa-Pérez & MacDonald 2017b, 2017c), not in the study's own methods or results.  (Linh et al. 2024, 14)
+
+This places the paper in the "pure runoff-hydrology, no explicit connectivity framing" category flagged in the AquaSilva PSALSAR protocol as a Type-I-error risk for the connectivity-anchored core corpus.
+
+Gates 3–5 are not evaluated since gate order requires reporting the first failed gate.
+
+## Recommended terminal tagging
+
+| Field | Value |
+|---|---|
+| Terminal tag | `006-Exclude-Quality` |
+| Exclusion-reason note (verbatim) | `connectivity not operationalized as outcome` |
+
+## Note on potential alternative use
+
+Although excluded from the connectivity core corpus, the paper remains a strong candidate for a **secondary "context / parameter source" pool** within AquaSilva — specifically as an empirical reference for road-surface runoff coefficients (24–33 %), road-surface erosion rates (≈20 kg m⁻² yr⁻¹ extrapolated annual; Field study, humid subtropical montane, plot scale 30 m²), and cutslope sediment contributions (52–97 % of road-surface sediment mass) usable to constrain Type B (area modifier: roughness/CN/infiltration on compacted road surfaces) parameterization in ZEMOKOST/Raven.  (Linh et al. 2024, 11) (Linh et al. 2024, 12) (Linh et al. 2024, 10) If desired, a dedicated non-core tag (e.g., a `006-Exclude-Quality` record additionally flagged for parameter mining) could be discussed with the team — but per the current taxonomy this would require a separate tag family beyond the Stage-2 terminal set.
+
+No content-coding (`002-…030-`) tags are proposed, since these apply only to `006-Include-Final` records.
+
+## Sources
+
+Linh, Nguyen Thi My, Lee H. MacDonald, Takashi Gomi, and Bui Xuan Dung. 2024. “Runoff and Erosion from Three Unpaved Road Segments in Northern Vietnam.” JOURNAL OF HYDROLOGY-REGIONAL STUDIES 51 (February): 101625. https://doi.org/10.1016/j.ejrh.2023.101625.

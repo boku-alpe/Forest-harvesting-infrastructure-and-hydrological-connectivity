@@ -1,0 +1,37 @@
+Reading: Jiao et al. 2020
+
+## Stage 2 screening — Jiao et al. (2020)
+
+### Gate-by-gate evaluation
+
+**Gate 1 — Full text retrievable:** Pass. Full PDF (17 pp.) accessible. (Jiao et al. 2020, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text:** **FAIL.**
+
+The study operationalizes hydrological connectivity as an outcome (modified Borselli IC → MIC, validated against a field connectivity index), so the connectivity-as-outcome criterion is met.  (Jiao et al. 2020, 3) However, Block-B infrastructure is **not treated as a variable**:
+
+- Roads and residential land appear only as two of eight LULC categories used to populate the W weighting factor; they are not isolated, parameterized, or analytically contrasted.  (Jiao et al. 2020, 6)
+- Critically, the methodology explicitly **masks rivers and roads out** of the IC computation ("a mask is applied to rivers and roads").  (Jiao et al. 2020, 5)
+- Roads/dams are mentioned only descriptively as causing blank areas on the MIC map ("the HC is affected by impervious surface including the construction of roads, residentials and dams, so there is no MIC value in the blank area").  (Jiao et al. 2020, 11)
+- The independent variables of interest are soil moisture and soil specific gravity (the MIC modification); the framing throughout is forest hydrological services and conservation prioritization, not forest infrastructure.  (Jiao et al. 2020, 3) (Jiao et al. 2020, 5)
+
+This is the canonical "infrastructure mentioned as context only" pattern — roads appear in the land-cover legend and in a masking step but are not a predictor, treatment, or analytical contrast in the connectivity assessment.
+
+Gates 3–5 not evaluated (sequential first-failure rule).
+
+### Proposed terminal tagging
+
+| Field | Value |
+|---|---|
+| Terminal tag | `006-Exclude-Quality` |
+| Exclusion-reason note (verbatim) | `infrastructure mentioned as context only` |
+
+No content-coding tags proposed (record is not Include-Final).
+
+### Note for the screener
+
+Borderline cases like this one are worth flagging in the PRISMA log: the paper would *appear* relevant on a keyword screen (connectivity index, forest, roads in LULC), but the connectivity-anchored, infrastructure-as-variable criterion fails because roads enter only as a mask and as a land-cover class without isolated analysis. If the corpus later needs a sensitivity check on Gate 2 strictness, this record is a good candidate for re-review.
+
+## Sources
+
+Jiao, Yuanmei, Dongmei Zhao, Qiue Xu, et al. 2020. “Mapping Lateral and Longitudinal Hydrological Connectivity to Identify Conservation Priority Areas in the Water-Holding Forest in Honghe Hani Rice Terraces World Heritage Site.” Landscape Ecology 35 (3): 709–25.

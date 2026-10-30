@@ -1,0 +1,91 @@
+I'll read the full text of the Pechenick et al. (2014) paper first, then apply the gate logic.
+
+[Reading: Pechenick et al. 2014, p. 1-12 (12 results)]
+
+Now let me retrieve the existing Zotero tags to enable the provenance verification step.
+
+[Get metadata]
+
+## Stage-2 Gate Report — Pechenick et al. 2014
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (no `90-borderline-*` tag found in metadata)
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** — Full text retrievable | **PASS** | PDF attachment 10-IDGIRCJ2 retrieved in full (12 pp.) |
+| **Gate 2a** — Infrastructure as study variable | **PASS** | Road network analyzed via three families of quantitative metrics (density, proximity, orientation) as the primary predictor variable throughout: "we developed and assessed a new set of connectivity metrics applicable to rural road networks and tested the efficacy of these metrics in predicting the geomorphic condition of downstream channels at multiple spatial scales." (Pechenick et al. 2014) |
+| **Gate 2b** — Connectivity operationalized as primary outcome | **PASS** | Road–stream connectivity is both the conceptual frame and the operational target: "we evaluated traditional and newly developed connectivity metrics that utilized features of landscape position and delivery pathway to characterize road–stream connectivity in upland settings."  (Pechenick et al. 2014) Connectivity metrics are the explanatory variables; channel geomorphic condition is the downstream effect variable. |
+| **Q1** — Study context reportable | **PASS** | Region: Vermont, northeastern USA  (Pechenick et al. 2014); climate: humid continental  (Pechenick et al. 2014); catchment size: direct drainage 0.01–28.7 km², full catchment 0.4–128.6 km²  (Pechenick et al. 2014); land use: 73% forest, 13% agriculture, 6% developed  (Pechenick et al. 2014). |
+| **Q2** — Study design classifiable | **PASS** | Cross-sectional gradient design: 101 forested upland stream reaches selected to isolate road impacts from other anthropogenic influences  (Pechenick et al. 2014), with logistic regression and discriminant function analysis. |
+| **Q3** — Method reproducibly described | **PASS** | Road metrics (density, proximity sum, orientation sum/mean/percent) derived from GIS at four spatial scales fully specified  (Pechenick et al. 2014); statistical methods (ordinal logistic regression, discriminant analysis) described with software (JMP Pro 11.0.0, ArcGIS 10, MATLAB R2013a)  (Pechenick et al. 2014); VTANR RGA assessment protocol described and referenced  (Pechenick et al. 2014). |
+| **Q4** — Infrastructure characterized | **PASS** | Road class distribution reported (Table I)  (Pechenick et al. 2014); >80% of road length is gravel/native surface  (Pechenick et al. 2014); road density range at reach corridor: up to 18.8 km/km²; crossing counts 0–7 per reach  (Pechenick et al. 2014). |
+| **Q5** — Connectivity operationalized as metric | **PASS** | Multiple quantitative connectivity metrics computed at four geographic scales: road density (km/km²), road-stream crossing density (km⁻²), proximity sum (m/m), road-stream crossing density per stream length (m⁻¹), and six orientation metrics (sum/mean/percent parallel and perpendicular).  (Pechenick et al. 2014) |
+| **Q6** — Effect direction derivable | **PASS** | Clear directional results: (a) more road–stream crossings per drainage area → worse geomorphic condition  (Pechenick et al. 2014); (b) greater road-to-stream distance (proximity sum) → better condition  (Pechenick et al. 2014); (c) road orientation (parallel/perpendicular) metrics predict aggradation/degradation at reach and catchment scales  (Pechenick et al. 2014). |
+| **Q7** — Sample/scope adequate | **PASS** | n = 101 study reaches; complete analysis cycles with both logistic regression (Table V) and discriminant function analysis (Tables VI–VIII) reported.  (Pechenick et al. 2014) |
+| **Gate 4** — Sample/scope adequacy | **PASS** | Confirms Q7. |
+| **Gate 5** — Extractability | **PASS** | Effect directions clearly extractable from quantitative results: road proximity (Proximity Sum at reach corridor scale) is significant predictor at p = 0.007–0.003  (Pechenick et al. 2014); combined Inherent + Orientation metrics classify 71.7% of reaches correctly  (Pechenick et al. 2014). |
+
+---
+
+### Provenance verification
+
+Three mismatches to flag for screener attention:
+
+**1. A1 → A3 drift (substantive).**
+The record carries `010-A1-ConnectivityConcepts`. The paper does engage connectivity concepts in its introduction, but its primary analytical contribution is the *development and quantitative testing of road-stream connectivity metrics* (density, proximity, orientation) as predictors of channel condition at multiple scales.  (Pechenick et al. 2014) (Pechenick et al. 2014) This is structurally A3 (metrics development and comparison) work, not primarily A1 (conceptual framing). Both dimensions are present, but the dominant substantive angle is A3. The screener may wish to note this as a diagnostic signal regarding the H01 search-string match logic.
+
+**2. B3 presence without B3 study content (minor).**
+The record carries `020-B3-Structures`. Road–stream crossings are counted as a road density proxy (RoadXStream_km²), but individual structures (culverts, bridges) are never characterized independently by type, design, condition, or hydraulic properties.  (Pechenick et al. 2014) The B3 signal appears to arise from the search-string crossing-structure keywords rather than from substantive structure-level analysis.
+
+**3. `030-Cany-MitigationControls` — non-permitted tag string + content mismatch.**
+This tag was assigned at import under query M03. Two issues:
+- The tag string `030-Cany-MitigationControls` is explicitly listed in the PSALSAR protocol's tag-conformance rules as a drift pattern to avoid; it is not a canonical value in the 030 family.
+- Substantively, the paper does not analyze any Block-C mitigation variable. Restoration/mitigation is mentioned in passing as a potential application of the results  (Pechenick et al. 2014), but no mitigation measure is studied as a variable. The M03 retrieval appears to have been a false positive. **Flag for screener:** the `030-Cany-MitigationControls` tag should be reviewed for correction/removal as it is both a non-canonical string and substantively unsupported.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None — all gates resolved clearly from full text.
+
+> **Additional flag for screener:** The existing Zotero record carries `006-Include-Final-primary` as a tag. This suffix `-primary` is not part of the canonical terminal tag taxonomy (which specifies `006-Include-Final` without suffix). The screener should verify whether `006-Include-Final-primary` is an approved local extension of the taxonomy or a drift from the canonical string, and apply/correct accordingly.
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — roads are the sole infrastructure variable analyzed; road classes, density, proximity and orientation derived exclusively from road network GIS layers.  (Pechenick et al. 2014) Existing tag confirmed correct.
+
+- **003** [Study type]: `003-FieldMonitoring` — gradient observational design using field-based geomorphic assessments (VTANR RGA) across 101 reaches with GIS-derived road metrics; no experimental manipulation, no process-based simulation model.  (Pechenick et al. 2014) Existing tag confirmed correct.
+
+- **004 primary** [Outcome]: `004-SedimentDelivery` — the primary outcome variable throughout is the VTANR Rapid Geomorphic Assessment (RGA) score and its four sub-processes (aggradation, degradation, widening, planform adjustment), which are geomorphic expressions of sediment delivery imbalance driven by road connectivity.  (Pechenick et al. 2014) (Pechenick et al. 2014)
+  > **Screener note:** The existing tags `004-FlowPathInitiation` and `004-RunoffResponse` appear to code for *mechanisms* invoked in the introduction and discussion (road-generated runoff, subsurface-flow interception, drainage-network extension  (Pechenick et al. 2014)), not for measured outcome variables. The 004 family is defined as capturing the outcome — what the paper *measures as the effect of Block-B infrastructure*. Neither runoff volume nor new flow path formation is directly measured here; only geomorphic channel condition is quantified. The screener should evaluate whether to replace the existing 004 tags with `004-SedimentDelivery` as the single primary outcome, or retain them with explicit recognition that they code for mechanism rather than measured outcome.
+
+- **005** [Region]: `005-NorthAmerica` — 101 stream reaches distributed across the state of Vermont, northeastern USA.  (Pechenick et al. 2014) Existing tag confirmed correct.
+
+---
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** This paper's primary contribution for AquaSilva is a rigorously scaled, GIS-based metric framework (road density, proximity, and orientation at four spatial scales) that quantitatively links road–stream structural connectivity to downstream channel geomorphic condition across 101 forested, upland reaches — providing a transferable template for connectivity-metric development applicable to the Wienerwald pilot area and to RQ3 (which metrics best characterize road-stream connectivity). The result that proximity and orientation metrics outperform simple density metrics at larger catchment scales is directly relevant to RQ4 evidence on scale-dependent connectivity effects.
+
+---
+
+### Tag replacements made
+
+One replacement performed in the conformance check: the initial candidate `004-RunoffResponse` and `004-FlowPathInitiation` (carried over from existing Zotero tags as points of discussion) are *not proposed* as new content-coding suggestions because they represent mechanism rather than measured outcome; `004-SedimentDelivery` is substituted as the analytically correct 004 value. The string `030-Cany-MitigationControls` was identified in the existing record as a non-permitted tag string (flagged for screener action, not proposed as a new value). All other tag strings proposed above are exact character-for-character matches of permitted taxonomy values.
+
+## Sources
+
+Pechenick, Alison M., Donna M. Rizzo, Leslie A. Morrissey, Kerrie M. Garvey, Kristen L. Underwood, and Beverley C. Wemple. 2014. “A Multi-Scale Statistical Approach to Assess the Effects of Connectivity of Road and Stream Networks on Geomorphic Channel Condition.” Earth Surface Processes and Landforms 39 (11): 1538–49. https://doi.org/10.1002/esp.3611.

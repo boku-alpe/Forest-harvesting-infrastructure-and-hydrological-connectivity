@@ -1,0 +1,31 @@
+[Reading: Dąbrowska et al. 2018 (11 results)]
+
+## Gate Report — Dąbrowska et al. 2018
+
+**Study type:** Modeling (GIS/LiDAR DTM-based flow-pathway delineation, agricultural lowland catchment)
+
+**Gate 2:** FAIL — The study variable is land use / agricultural management in a 980 ha reservoir catchment (79% arable, 7% forest); forest roads appear only as an incidental observation in one sub-area (DP2, 194 ha forested), not as a Block-B variable, and connectivity is operationalized only as topographic flow accumulation toward a reservoir, not as a connectivity outcome in the forest-infrastructure sense. (Dąbrowska et al. 2018, 6–9)
+
+**Gate 3:**
+- Q1: PASS — Region (Gołuchów Reservoir, central-western Poland), catchment size (Trzemna 119.2 km²; direct catchment 980 ha; reservoir 51.5 ha), climate (lowland, <500 mm/yr, 8.8 °C), and land use (79% arable, 7% forest, 4% grassland) are fully reported.  (Dąbrowska et al. 2018, 3–4)
+- Q2: PASS — Classifiable as GIS/DTM modeling study (D8 flow routing on 1 m LiDAR DTM, ArcHydro).  (Dąbrowska et al. 2018, 2–3)
+- Q3: PASS — Method reproducibly described (LiDAR 4 pts/m², 1 m grid DTM, fill-sink, D8 single-flow-direction algorithm, CLC2012 land cover overlay).  (Dąbrowska et al. 2018, 2–3)
+- Q4: FAIL — Forest roads (B1) are mentioned qualitatively ("improper location in relation to local relief") with no density, length, age, design, or condition data; no quantitative infrastructure characterization.  (Dąbrowska et al. 2018, 9)
+- Q5: UNCLEAR — Connectivity is operationalized via structural flow-accumulation metrics (delivery points DP1–DP4, delivery edges DE1–DE2, accumulation areas in ha) but not labeled as a connectivity index and not linked mechanistically to forest infrastructure as the variable.  (Dąbrowska et al. 2018, 8)
+- Q6: UNCLEAR — Effect direction is qualitative ("forest roads influence concentration of runoff and erosion"; "some surface runoff pathways overlap with forest roads") with no quantified increase/decrease.  (Dąbrowska et al. 2018, 9)
+
+**Gate 4:** PASS — Complete single-catchment GIS investigation iteration with delineated catchment, slope, land cover, flow accumulation, and mitigation proposals.
+
+**Gate 5:** FAIL — No quantitative effect of forest infrastructure on connectivity is derivable; only a verbal statement that forest roads coincide with flow pathways and "influence" concentration.  (Dąbrowska et al. 2018, 9)
+
+**Recommendation:** Exclude-Quality (reason: *Block-B infrastructure not analyzed as study variable; forest roads only incidental context in an agriculture-anchored runoff/eutrophication study*)
+
+**Confidence:** High
+
+**Items flagged for human re-read:** Q5, Q6 (forest-road / flow-pathway overlap in the DP2 sub-area on Fig. 8 and Table 3 — if the screener wishes to harvest this as a qualitative anchor only, not as primary evidence)
+
+**Borderline-Stage-1 carry-over:** Unknown from metadata — recommend the screener check the Stage-1 record; the abstract's closing mention of "erosion control techniques (including forest roads)" is the most likely trigger and would justify a borderline flag.
+
+## Sources
+
+Dąbrowska, J., P. B. Dąbek, and I. Lejcuś. 2018. “A GIS Based Approach for the Mitigation of Surface Runoff to a Shallow Lowland Reservoir.” Ecohydrology and Hydrobiology 18 (4): 420–30. Scopus. https://doi.org/10.1016/j.ecohyd.2018.07.002.

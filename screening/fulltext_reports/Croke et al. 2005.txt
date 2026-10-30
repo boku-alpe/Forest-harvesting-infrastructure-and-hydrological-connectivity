@@ -1,0 +1,108 @@
+I'll read the full text of the PDF to support the gate evaluation.
+
+[Reading: Croke et al. 2005, p. 1-12 (12 results)]
+
+Now let me retrieve the item's existing tags to verify provenance.
+
+[Get metadata]
+
+## Stage-2 Gate Report — Croke et al. 2005
+
+**Study type:** `003-FieldMonitoring` + `003-Experimental` + `003-Modeling` (all three co-central; see content-coding discussion)
+**Checklist applied:** Q1–Q7 (primary study)
+**Borderline carry-over from Stage 1:** No — no `90-borderline-*` helper tag is present. The record carries `006-Include-Stage1`, indicating a clean Stage-1 inclusion decision.
+
+> ⚠️ **Pre-screening flag for human screener:** The record already carries several content-coding tags (`002-B1-Roads`, `002-B3-Structures`, `003-FieldMonitoring`, `003-Modeling`, `003-Experimental`, `004-A1-ConnectivityConcepts`, `004-A2-FlowPathDescriptors`, `004-A3-ConnectivityMetrics`, `005-Oceania`) and a non-standard terminal tag `006-Include-Final-primary` (not a permitted terminal tag string — see Tag Conformance Check). These appear to have been applied in a prior pass. This report provides a fresh Stage-2 assessment; the screener should reconcile existing tags against the proposals below.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attachment `10-N92AM5U3` fully retrieved (12 pages). |
+| **Gate 2(a)** — infrastructure as study variable | **PASS** | Forest road network is the explicit study object from first aim to conclusion. "We use a forest road network as an example of a landscape element with a high RSS and examine the potential impact of redistributing this runoff via selected delivery pathways." (Croke et al. 2005) Road drainage structures (culverts, mitre drains, push-outs, stream crossings) are independently classified and analyzed as determining pathway type.  (Croke et al. 2005) |
+| **Gate 2(b)** — connectivity as primary outcome | **PASS** | Connectivity is the explicit framing concept from abstract to conclusion. Two types defined and operationalized: "we identify two types of connectivity: direct connectivity via new channels or gullies, and diffuse connectivity as surface runoff reaches the stream network via overland flow pathways."  (Croke et al. 2005) Each of the 218 drain outlets is classified as fully connected, partially connected, or unconnected; AHL is measured per outlet; Vbt5 model determines stream-reaching pathways.  (Croke et al. 2005) |
+| **Q1** — study context | **PASS** | Region: southeastern NSW, Australia. Study area: 37 km² forested portion of the 57 km² Cuttagee Creek catchment, coastal lowlands. Land use: managed timber forest (eucalypt). Road network: 75 km unsealed roads, density 1.99 km km⁻².  (Croke et al. 2005) |
+| **Q2** — study design classifiable | **PASS** | Gradient/cross-sectional field survey (218 outlets classified and measured) + controlled rainfall simulation (7 sites, two storm intensities) + applied empirical modeling (Vbt5 and exponential decay fitting). Three components explicitly delineated as Sections 3.1–3.3.  (Croke et al. 2005) |
+| **Q3** — method reproducibly described | **PASS** | Field: DGPS drain mapping, GIS overlay, modified Wemple et al. (1996) full/partial/none protocol, AHL from GIS contour layers.  (Croke et al. 2005) Experimental: large rainfall simulator (300–600 m² plots), two events (75 mm h⁻¹ = 10-yr; 110 mm h⁻¹ = 100-yr), RBC flume, wet-vacuum sampler, fluorescent dye velocity timing, particle size analysis.  (Croke et al. 2005) Modeling: Vbt5 (Hairsine et al., 2002) applied to all 177 dispersive drains; exponential decay fitted to normalized concentration-distance data.  (Croke et al. 2005) |
+| **Q4** — infrastructure characterized | **PASS** | Road network: total length 75 km, density 1.99 km km⁻², ~1% of catchment area, three classes (MA/FA/DA), two types (ridge-top, cut-and-fill), construction decade recorded.  (Croke et al. 2005) Structures: five types enumerated and counted from population of 1302 total (218 surveyed); culverts, mitre drains, push-outs, cross-banks, stream crossings each analyzed for pathway-type association.  (Croke et al. 2005) |
+| **Q5** — connectivity operationalized | **PASS** | Four distinct quantitative operationalizations: (1) binary full/partial/none classification from modified Wemple et al. (1996) protocol; (2) AHL measured per outlet (mean 120 m, range 0–310 m); (3) Vbt5 model predicts plume length relative to AHL — connection occurs when predicted plume length exceeds AHL; (4) summary: 32 gullied outlets fully connected, 11 dispersive outlets predicted connected for 10-yr event.  (Croke et al. 2005) (Croke et al. 2005) (Croke et al. 2005) |
+| **Q6** — effect direction derivable | **PASS** | Direction clear and positive: forest road network **increases** connectivity. 32/41 gullied pathways fully connected to stream; road construction has increased catchment drainage density by 6–10% since the early 1970s via gully formation at culverts.  (Croke et al. 2005) Of 177 dispersive drains, only 11 (6%) are predicted to connect for the 10-yr event, but the stream crossing contributes ~50% of total connected dispersive runoff.  (Croke et al. 2005) (Croke et al. 2005) |
+| **Q7** — sample/scope adequate | **PASS** | 218 outlet field surveys (~16.7% of the 1302-drain network), 7 rainfall simulator experiments across all three road classes and both road types, Vbt5 applied to all 177 dispersive drains. Full investigation iterations for each of the three method components.  (Croke et al. 2005) (Croke et al. 2005) (Croke et al. 2005) |
+| **Gate 4** | **PASS** | Confirmed by Q7. |
+| **Gate 5** — extractability | **PASS** | Quantitative effect magnitudes throughout: 32 fully connected gullied pathways; 47.8 km (71%) of stream network potentially affected by gullied pathway runoff, 3.3 km (5%) by connected dispersive pathways; mean gully length 89 m; runoff volumes 41–15,571 l for 10-yr event; sediment delivered ~1 ton for 10-yr event.  (Croke et al. 2005) |
+
+---
+
+### Provenance verification
+
+Provenance tags: `010-A1-ConnectivityConcepts`, `010-A2-FlowPathDescriptors`, `020-B1-Roads`, `020-B3-Structures`, `090-H01`, `090-H03`, `090-H04`, `090-H06`.
+
+All four substantive tags (A1, A2, B1, B3) are validated by paper content. The A3-Metrics territory is approached through the Vbt5 connectivity predictions and drainage-density quantification, but the paper's primary conceptual frame remains A1+A2 and the A3 absence from provenance is consistent with the paper not computing a stand-alone connectivity index as its principal output.
+
+**Provenance verification: no drift detected.**
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+- **002** [Infrastructure subtype]: `002-Mixed` — Forest roads (B1) and their drainage structures — culverts, mitre drains, push-outs, cross-banks, stream crossings (B3) — are co-equal study variables. Drain type statistically determines pathway type: 90% of gullied pathways co-locate with culverts; stream crossings account for ~50% of total connected dispersive runoff volume. Both infrastructure types are independently characterized with population counts, classifications, and spatial positions.  (Croke et al. 2005) (Croke et al. 2005) → The record currently carries separate `002-B1-Roads` and `002-B3-Structures` tags; the rule ("Use `002-Mixed` when two or more B-types are co-equal study variables") indicates `002-Mixed` as the single correct tag. Screener to review.
+
+- **003** [Study type]: `003-FieldMonitoring` (primary) + `003-Experimental` (secondary) + `003-Modeling` (secondary) — Field monitoring: 218 drain outlets surveyed, classified, AHL measured.  (Croke et al. 2005) Experimental: 7 large rainfall simulator sites generating empirical sediment concentration data.  (Croke et al. 2005) Modeling: Vbt5 model applied to 177 dispersive drains; exponential decay functions fitted.  (Croke et al. 2005) → **Note for screener:** The dual-tagging rule ("dual-tag only when both methods are co-central") does not explicitly accommodate three co-equal methods. All three components contribute distinct results sections (§4.1, §4.2–4.3, §4.4) with equal weight. Screener to decide whether to apply all three or collapse to the two most dominant.
+
+- **004 primary** [Outcome]: `004-FlowPathInitiation` — The topological question "which road outlets are connected to the stream network?" drives the study design. Gully formation at culverts is classified as direct connectivity; dispersive pathways are classified by whether their predicted plume length exceeds AHL. Road construction produced a 6–10% increase in catchment drainage density.  (Croke et al. 2005) (Croke et al. 2005)
+
+- **004 secondary**: `004-SedimentDelivery` — Sediment concentration decay modelled for both pathway types (exponential functions, r² = 0.74–0.80); particle size fractionation reported; sediment budget ~1 ton delivered for 10-yr event.  (Croke et al. 2005) (Croke et al. 2005)
+
+- **004 tertiary**: `004-RunoffResponse` — Vbt5 model predicts runoff volumes reaching stream edge (41–15,571 l for 10-yr event) and plume lengths for all 177 dispersive drains; only 11 (6%) predicted to connect.  (Croke et al. 2005)
+
+- **005** [Region]: `005-Oceania` — Cuttagee Creek catchment, southeastern NSW, Australia.  (Croke et al. 2005)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Croke et al. (2005) is an anchor reference (187 citations as of May 2026) that provides the definitive two-pathway classification framework (gullied vs. dispersive connectivity) together with empirical exponential decay functions and the Vbt5 application framework. It is a rare source of spatially explicit, quantified connectivity outcomes at the catchment scale (37 km²), making it directly usable for RQ3 (connectivity metrics) and RQ4 (effect magnitudes) evidence mapping in the AquaSilva synthesis.
+
+---
+
+### Final tag conformance check
+
+All tags proposed in this report have been verified against the permitted value lists:
+
+| Proposed tag | Status |
+|---|---|
+| `002-Mixed` | ✓ exact match |
+| `003-FieldMonitoring` | ✓ exact match |
+| `003-Experimental` | ✓ exact match |
+| `003-Modeling` | ✓ exact match |
+| `004-FlowPathInitiation` | ✓ exact match |
+| `004-SedimentDelivery` | ✓ exact match |
+| `004-RunoffResponse` | ✓ exact match |
+| `005-Oceania` | ✓ exact match |
+| `006-Include-Stage2` | ✓ exact match |
+| `006-Include-Final` | ✓ exact match |
+
+**Tag replacements made:** None in this report's proposals.
+
+**Tags flagged for screener review (existing tags not proposed here):**
+
+1. `004-A1-ConnectivityConcepts`, `004-A2-FlowPathDescriptors`, `004-A3-ConnectivityMetrics` — These A-prefixed values are applied in the 004 family in the existing record, which violates the conformance rule: "004-A1/A2/A3-\* belongs in family 010 only; never propose A-prefixed values in family 004." These are already correctly captured in provenance as `010-A1-ConnectivityConcepts` and `010-A2-FlowPathDescriptors`. Screener should consider removing the erroneous 004 instances.
+
+2. `006-Include-Final-primary` — Not a permitted terminal tag string. The standard strings are `006-Include-Stage2` and `006-Include-Final`. The `-primary` suffix appears non-standard (possibly a prior experimental tag). Screener should review and replace with `006-Include-Final` if not already present.
+
+## Sources
+
+Croke, Jacky, Simon Mockler, Peter Fogarty, and Ingrid Takken. 2005. “Sediment Concentration Changes in Runoff Pathways from a Forest Road Network and the Resultant Spatial Pattern of Catchment Connectivity.” Geomorphology 68 (3): 257–68. https://doi.org/10.1016/j.geomorph.2004.11.020.

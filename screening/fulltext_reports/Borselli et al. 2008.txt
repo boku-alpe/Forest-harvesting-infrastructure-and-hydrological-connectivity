@@ -1,0 +1,33 @@
+[Reading: Borselli et al. 2008 (10 results)]
+
+## Gate Report — Borselli, Cassi & Torri 2008
+
+**Study type:** Modeling + Field (GIS index development with field validation; medium-size watershed application, Bilancino, Tuscany, ~150 km²)
+
+**Gate 2:** FAIL — Hydrological/sediment connectivity is the primary outcome (the IC and FIC indices are explicitly defined as connectivity metrics) (Borselli et al. 2008, 1), but Block-B forest infrastructure is NOT analyzed as a study variable: roads and urban areas enter the analysis only as a binary mask defining local sinks ("Road/urban mask: masking obliges the connectivity calculation to close at the border with the masked area"), with no characterization of road density, length, surface, drainage design, or condition  (Borselli et al. 2008, 7) (Borselli et al. 2008, 9). Forest land use enters only via the USLE C-factor weighting (W = C) for mixed/discontinuous forests, not as infrastructure  (Borselli et al. 2008, 4).
+
+**Gate 3 (Q1–Q6, primary study):**
+- Q1: PASS — Bilancino watershed, ~150 km², 225–1094 m a.s.l., Köppen Cfa–Cfb, land use mosaic of coppice/coniferous forest, pasture, crops, abandoned land fully reported  (Borselli et al. 2008, 7).
+- Q2: PASS — Design classifiable as GIS modeling + field validation (FIC vs. IC scatter, n = 18 hot spots, autumn–winter 2003–2004, 2-year return-period events)  (Borselli et al. 2008, 7).
+- Q3: PASS — Equations (2)–(12) plus full ArcGIS 8.3 Appendix A make the method reproducible  (Borselli et al. 2008, 9–10).
+- Q4: FAIL — No Block-B infrastructure characterization (no density/length/age/design/condition/position of roads, skid trails, or structures); roads are a topological mask only  (Borselli et al. 2008, 7).
+- Q5: PASS — Connectivity is operationalized as two quantitative indices: IC (log-ratio of $D_{up}/D_{dn}$, range [−∞, +∞], observed −3 to 10) and FIC (scored 0–100)  (Borselli et al. 2008, 3) (Borselli et al. 2008, 7).
+- Q6: UNCLEAR — Effect direction in the connectivity-vs-driver sense is derivable for land-use/vegetation gradients (denser vegetation/forest → lower IC via C-factor) but NOT for any infrastructure variable, since none is tested  (Borselli et al. 2008, 4).
+
+**Gate 4:** PASS — Complete iteration: 18 field hot spots surveyed after two autumn events (~30 mm/day, 2-yr RP), with paired IC/FIC values reported and a watershed-scale IC map produced  (Borselli et al. 2008, 7).
+
+**Gate 5:** UNCLEAR — A clear effect direction on connectivity is derivable for land-cover/vegetation (forest disconnects, bare/cropped land connects) and a quantitative IC–FIC correspondence is given (FIC > 75 ↔ IC ≥ −0.5)  (Borselli et al. 2008, 8), but no effect direction attributable to forest roads or skid trails can be extracted.
+
+---
+
+**Recommendation:** Exclude-Quality — proposed reason: *"Block-B infrastructure not analyzed as study variable (roads enter only as topological sink mask; no road/trail/structure characteristic tested)"*. The exact taxonomy string from §4 of Stage2_Operationalization.md should be applied by the screener; closest expected category is along the lines of *"Connectivity-anchored but infrastructure-absent"* or *"Stage-1 infrastructure criterion not confirmed at full text"*.
+
+**Confidence:** High (on the Gate 2 infrastructure failure); the paper's methodological substance is unambiguous.
+
+**Items flagged for human re-read:** Q6, Gate 5 — both UNCLEAR only because the question is mis-fitted to a methods paper. The human screener may wish to consider whether to retain this record as a **methodological anchor / IC-metric reference** outside the core corpus (e.g., for the A3-Metrics block) rather than as a primary evidence study, given that IC (Borselli et al. 2008) is the canonical sediment-connectivity index later adapted by Cavalli, Crema, and the broader connectivity-metrics literature relevant to AquaSilva AP2.
+
+**Borderline-Stage-1 carry-over:** Unknown — not indicated in the provided metadata; screener to verify against the Stage-1 log.
+
+## Sources
+
+Borselli, Lorenzo, Paola Cassi, and Dino Torri. 2008. “Prolegomena to Sediment and Flow Connectivity in the Landscape: A GIS and Field Numerical Assessment.” Catena 75 (3): 268–77.

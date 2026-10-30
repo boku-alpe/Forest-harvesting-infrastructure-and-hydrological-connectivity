@@ -1,0 +1,51 @@
+[Reading: Borga et al. 2005, p. 1-14 (14 results)]
+
+## Stage-2 Gate Report — Borga et al. 2005
+
+**Study type:** `003-Modeling` (distributed hydro-geomechanical model with field validation at four sites)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (none indicated in attached metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (14 pp.). (Borga et al. 2005, 1) |
+| Gate 2 | PASS | Forest roads are the explicit study variable; the model operationalizes road cutslope interception and ditch rerouting of subsurface flow as a flow-path modification, with the Relative Impact (RI) statistic quantifying altered connectivity to downslope hillsides and to the stream network.  (Borga et al. 2005, 2) (Borga et al. 2005, 10) |
+| Q1 (context) | PASS | Four sites in NE Italy with elevation, slope, 10-yr/12-h rainfall, climate (alpine vs. sub-Mediterranean), vegetation and lithology reported in Table 1 and §3.1.  (Borga et al. 2005, 6–7) |
+| Q2 (design) | PASS | Distributed modeling (steady-state hydrology + infinite-slope stability) with independent two-step field validation against non-road and road-related landslide inventories.  (Borga et al. 2005, 8) |
+| Q3 (method) | PASS | Governing equations (Eqs. 1–12), algorithmic steps, 10 m DEM (Tarboton 1997), parameter values (T = 30 m² day⁻¹, φ = 38–42°, ρs/ρw = 1.8) and field protocol (road/drainage mapping, post-event surveys) reported.  (Borga et al. 2005, 5) (Borga et al. 2005, 8) |
+| Q4 (infrastructure characterized) | PASS | Road width 3–6 m, max road slope ~20%, cut-and-fill geometry, cutbank depth 0 to several m, in-board ditches and cross-road ditches; relative road-cut depth rrc = drc/h enters the model explicitly.  (Borga et al. 2005, 3) (Borga et al. 2005, 7) |
+| Q5 (connectivity operationalized) | PASS | Flow-path interception/rerouting formalized via weighting coefficients λ1, λ2 (Eq. 6) partitioning the upslope contributing area into non-intercepted vs. intercepted-and-rerouted fractions; RI = (Rh−Rr)/Rh (Eq. 12) is a dimensionless connectivity-impact metric.  (Borga et al. 2005, 5) (Borga et al. 2005, 6) |
+| Q6 (effect direction) | PASS | RI > 0 (increased connectivity → reduced critical rainfall → higher landslide hazard) observed below roads at all four sites; in three of four sites positive RI extends to the stream channel, indicating potential debris-flow delivery; some hillslopes show RI < 0 (decreased hazard).  (Borga et al. 2005, 11) |
+| Q7 / Gate 4 (scope) | PASS | Full iteration completed: model build, calibration parameters from field, validation on 53 non-road scars in the 41 km² Rio Lavazzè basin plus road-related landslides across four sites.  (Borga et al. 2005, 8) |
+| Gate 5 (extractability) | PASS | Quantitative effect direction extractable from RI maps (Figs. 3–6) and from Table 2 (74% of landslide area falls in <100 mm day⁻¹ critical-rainfall classes vs. 31.3% of catchment area).  (Borga et al. 2005, 8) (Borga et al. 2005, 11) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** — (none; all gates pass)
+**Confidence:** High
+**Items flagged for human re-read:** None. Optional second look at Q5 only if the screener wishes to verify that RI is accepted as a connectivity metric in the AquaSilva taxonomy (it is a flow-path-redistribution impact statistic, closest to A2-FlowPathDescriptors rather than a formal A3 index such as Borselli IC).
+
+### Content-coding suggestions
+
+- **002:** `002-B1-Roads` — Forest roads are the sole infrastructure class modeled and surveyed.  (Borga et al. 2005, 1)
+- **003:** `003-Modeling` — Distributed hydro-geomechanical model is the primary methodology; field data used for evaluation, not for paired-catchment or experimental design.  (Borga et al. 2005, 13)
+- **004:** `004-A2-FlowPathDescriptors` — Core focus is alteration of subsurface flow paths by road interception/rerouting, quantified per pixel via λ1/λ2 partitioning of contributing area.  (Borga et al. 2005, 5)
+- **005:** `005-Europe` — All four study areas in north-eastern Italy (Trentino-Alto Adige and Euganean Hills).  (Borga et al. 2005, 6)
+- **010:** `010-A2-FlowPathDescriptors` — Block-A coverage centers on flow-path topology and rerouting rather than connectivity indices or pure concept work.  (Borga et al. 2005, 3)
+- **020:** `020-B1-Roads` — Forest roads (cut-and-fill, with cross-road ditches and culverts) are the Block-B element.  (Borga et al. 2005, 7)
+- **030:** `030-empty` — No mitigation/BMP intervention is tested; the paper only notes in the conclusions that the approach "may be useful for defining criteria for road design", which is not an evaluated mitigation.  (Borga et al. 2005, 1)
+
+Optional human consideration: if the screener treats culverts and cross-road ditches as a distinct B3 element (cf. Wemple/Croke convention), a second tag `020-B3-Structures` could be defended on the basis of the explicit cross-ditch / relief-culvert representation. Proposal only; not assigned.
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Strongest contribution is a mechanistic, GIS-distributed operationalization of road-induced flow-path rerouting (λ1/λ2 partition of contributing area, RI statistic) with cross-site validation, suitable as an RQ1/RQ2 anchor for structural→functional connectivity translation and as a quantitative reference for RQ6 effect direction (road-induced increases in downslope wetness and landslide susceptibility, with site-dependent magnitude and occasional negative RI where roads divert flow away).
+
+## Sources
+
+Borga, M., F. Tonelli, G. Dalla Fontana, and F. Cazorzi. 2005. “Evaluating the Influence of Forest Roads on Shallow Landsliding.” Ecol. Model. 187 (1 SPEC. ISS.): 85–98. Scopus. https://doi.org/10.1016/j.ecolmodel.2005.01.055.

@@ -1,0 +1,43 @@
+Reading: Tigabu et al. 2025
+
+[Reading: Tigabu et al. 2025, p. 7-14 (8 results)]
+
+## Stage-2 Gate Report — Tigabu et al. 2025
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in attached metadata — screener should verify Zotero tags for any `90-borderline-*` helper.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (10-P7LCUPS4, 18 pp.). |
+| Gate 2 (a) Infrastructure as variable | PASS | Skid trail system (Scenario-1) and permanent pathway/road infrastructure (Scenario-2) are the explicit treatment variables, parameterised via BD, K, AWC and CN2 changes (p. 7–9). (Tigabu et al. 2025, 7) |
+| Gate 2 (b) Connectivity as primary/co-reported outcome | **FAIL** | Outcomes are catchment-scale water balance components (surface runoff, lateral flow, water yield, percolation, ET); no connectivity concept, flow-path topology, or connectivity metric is operationalized. The only use of the word "connected" refers to river-network topology for parameter transfer ("river networks that are not hydrologically connected", p. 10), not to a connectivity analysis of road/skid-trail flow paths.  (Tigabu et al. 2025, 2) (Tigabu et al. 2025, 10) (Tigabu et al. 2025, 12) |
+| Q1–Q7 | n/a (not evaluated; Gate 2 sequential failure) | — |
+| Gate 4 | n/a | — |
+| Gate 5 | n/a | — |
+
+Note on Q-items (for screener context only, not gate-deciding): Q1, Q2, Q3, Q4, Q6, Q7 would clearly pass (German Palatinate Forest, ~1810 km², temperate, beech/pine; SWAT+ Rev. 2020.60.5 reproducibly described; B1 roads + B2 skid trails characterised by spatial coverage 11% and 13%, BD/K/AWC changes tabulated; effect directions explicit: +74% / +125% annual surface runoff). Only **Q5 (connectivity operationalization)** is the binding failure — which is exactly what Gate 2(b) tests.
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string** (verbatim): `connectivity only narrative, not operationalized`
+**Confidence:** High — the paper is a methodologically strong runoff-hydrology / soil-compaction modeling study, but it sits outside the connectivity-anchored corpus by design. Per the AquaSilva methodological framing, this is the prototypical Type-I-error candidate the connectivity anchoring is meant to exclude.
+**Items flagged for human re-read:**
+- Verify no Stage-1 `90-borderline-*` carry-over tag was applied (not visible in attachment metadata). If `90-borderline-A-implicit` was applied at Stage 1, the screener should confirm that the Scenario-2 result "forest roads typically lack water retention capacity" (p. 14, citing Gupta 2009; Bott 2002) and the discussion of path density / drainage modifications do not retroactively count as an implicit functional-connectivity argument. In the present reviewer's reading they do not — the discussion remains at the water-balance level without flow-path or sediment/runoff connectivity quantification — but this is the one passage that could warrant `/q-item-deepdive` on Q5.
+- Consider whether the paper should nonetheless be retained as a **methodological reference** for AP2 ZEMOKOST/Raven parameterisation (BD/K/AWC/CN2 change values for skid trails vs. pathway system in Table 3 and Table 4 are directly transferable as Type-B area-modifier parameters). This is a separate decision from SLR-corpus inclusion and would be handled outside Stage 2.
+
+### Content-coding suggestions
+
+Not applicable — record is excluded at Gate 2.
+
+### Synthesis role
+
+Not applicable — record is excluded at Gate 2. If the screener overrides on Q5 deep-dive, the role would be `primary` (`003-Modeling`, RQ5 vote-counting included).
+
+## Sources
+
+Tigabu, T. B., E. V. Müller, M. B. Meles, et al. 2025. “Effects of Forest Harvesting Operations on Hydrology: Experiences From the Palatinate Forest Biosphere Reserve.” Hydrological Processes 39 (4). Scopus. https://doi.org/10.1002/hyp.70115.

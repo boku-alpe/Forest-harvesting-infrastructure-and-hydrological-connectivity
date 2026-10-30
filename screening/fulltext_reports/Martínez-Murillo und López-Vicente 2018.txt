@@ -1,0 +1,54 @@
+Reading: ⁨Martínez-Murillo⁩ und ⁨López-Vicente⁩ 2018
+
+# Stage 2 screening — Martínez-Murillo & López-Vicente (2018)
+
+## Gate assessment
+
+**Gate 1 — Full-text retrievable:** PASS. Full PDF accessible (12 pages). (Martínez-Murillo and López-Vicente 2018, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed:** PASS. Block-B infrastructure is operationalized as a model variable across eight scenarios — salvage-logging skid trails, 23 check dams (12 wood, 11 concrete), and linear landscape elements (roads, trails, streets) are explicitly varied between scenarios.  (Martínez-Murillo and López-Vicente 2018, 704) (Martínez-Murillo and López-Vicente 2018, 705) Connectivity is the explicit outcome, computed as the Borselli/Cavalli IC index.  (Martínez-Murillo and López-Vicente 2018, 704)
+
+**Gate 3 — Q-items (primary study, modeling with field validation):**
+- Q1 context: Mediterranean Spain, 330 ha, 11 sub-catchments, MAP 600 mm, slopes >30%, Leptosols/Regosols, parent material marbles — reportable.  (Martínez-Murillo and López-Vicente 2018, 703)
+- Q2 design: GIS-based connectivity modeling with photo-interpretation and field-survey validation — classifiable as Modeling.  (Martínez-Murillo and López-Vicente 2018, 706)
+- Q3 method reproducibility: IC formulation, D-infinity flow routing, 2.5 m LiDAR DEM, W-factor parameterization with burn-severity weights (1.10/2.25/3.75/5.25) all reported.  (Martínez-Murillo and López-Vicente 2018, 704) (Martínez-Murillo and López-Vicente 2018, 706)
+- Q4 infrastructure characterized: skid-trail emergence, 23 check dams with siltation states (empty / partially / fully silted), LLE composition documented.  (Martínez-Murillo and López-Vicente 2018, 705)
+- Q5 connectivity operationalized: IC mean, SD, and δ-values per scenario tabulated.  (Martínez-Murillo and López-Vicente 2018, 708)
+- Q6 effect direction derivable: explicit signed percentage changes per sub-catchment type.  (Martínez-Murillo and López-Vicente 2018, 707)
+All Q-items pass.
+
+**Gate 4 — Sample/scope:** PASS. 11 sub-catchments × 8 scenarios with both within-burned-area and whole-catchment aggregation.  (Martínez-Murillo and López-Vicente 2018, 707–708)
+
+**Gate 5 — Effect direction extractable:** PASS. Skid trails + salvage logging raise IC by +18.2 % in forestry-with-check-dam sub-catchments and by +43.2 % within the LLE themselves; check dams produce a short-distance reduction insufficient to reverse the overall trend; vegetation recovery progressively lowers IC.  (Martínez-Murillo and López-Vicente 2018, 707–708) (Martínez-Murillo and López-Vicente 2018, 710)
+
+## Recommended terminal tags
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+## Suggested content-coding tags (for human confirmation)
+
+| Family | Proposed tag | Supporting evidence |
+|---|---|---|
+| 002 Infrastructure subtype | `002-Mixed` | Skid trails, check dams, and roads/streets all enter the model jointly as LLE and stream-mask variables.  (Martínez-Murillo and López-Vicente 2018, 705) |
+| 003 Study type | `003-Modeling` | IC-index simulation with photo-interpretation and field validation, no instrumented gauging.  (Martínez-Murillo and López-Vicente 2018, 706) |
+| 004 Hydrological focus | `004-SedimentDelivery` | IC is the Borselli runoff-and-sediment connectivity index; outputs discussed in terms of hillslope-to-channel sediment delivery and off-site flooding/sediment effects.  (Martínez-Murillo and López-Vicente 2018, 704) (Martínez-Murillo and López-Vicente 2018, 710) |
+| 004 (secondary, if multi-tag allowed) | `004-FlowPathInitiation` | New skid trails and post-fire rill/gully networks create new flow paths that drive the IC increase.  (Martínez-Murillo and López-Vicente 2018, 707) |
+| 005 Region | `005-Europe` | Province of Málaga, southern Spain.  (Martínez-Murillo and López-Vicente 2018, 703) |
+| 010-A Block A | `010-A3-Metrics` | Borselli IC with Cavalli modifications used as the quantitative connectivity metric.  (Martínez-Murillo and López-Vicente 2018, 704) |
+| 010-A Block A (secondary) | `010-A2-FlowPaths` | D-infinity flow-path routing and stream-mask updates form the structural backbone of the analysis.  (Martínez-Murillo and López-Vicente 2018, 704) |
+| 020-B Block B | `020-B2-SkidSnigTrails` | New skid trails from salvage logging are an explicit scenario variable and the dominant driver of the +18.2 % IC change.  (Martínez-Murillo and López-Vicente 2018, 707) |
+| 020-B Block B | `020-B3-Structures` | 23 check dams (wood + concrete) modeled across non-silted / partially / fully silted states.  (Martínez-Murillo and López-Vicente 2018, 705) |
+| 020-B Block B | `020-B1-Roads` | Roads, trails and urban streets enter as LLE in the flow-direction mask.  (Martínez-Murillo and López-Vicente 2018, 706) |
+| 030-C Block C | `030-C1-Retention` | Check dams analyzed as retention structures reducing connectivity at short distance.  (Martínez-Murillo and López-Vicente 2018, 710) |
+| 030-C Block C (secondary) | `030-Cany-MitigationControls` | Authors frame salvage logging + check-dam combination as a (partial) post-fire mitigation strategy.  (Martínez-Murillo and López-Vicente 2018, 710) |
+
+## Note for AquaSilva relevance
+
+This record is methodologically aligned with the connectivity-anchored corpus (Borselli/Cavalli IC, D-infinity, explicit structural/functional distinction following Turnbull et al. 2008 and Wainwright et al. 2011).  (Martínez-Murillo and López-Vicente 2018, 701) (Martínez-Murillo and López-Vicente 2018, 704) Although the setting is post-fire Mediterranean rather than Wienerwald forest hydrology, the check-dam parameterization via stream-mask updates with siltation states is directly transferable to Type-A discrete-storage and Type-C channel-modifier coding in AquaSilva_Katalog_v4. No tags are applied here — the screener confirms and assigns in Zotero.
+
+## Sources
+
+Martínez-Murillo, J. F., and M. López-Vicente. 2018. “Effect of Salvage Logging and Check Dams on Simulated Hydrological Connectivity in a Burned Area.” Land Degradation and Development 29 (3): 701–12. Scopus. https://doi.org/10.1002/ldr.2735.

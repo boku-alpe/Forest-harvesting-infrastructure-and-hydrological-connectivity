@@ -1,0 +1,49 @@
+Reading: ⁨Ondrackova⁩ und ⁨Macka⁩ 2019
+
+# Stage 2 Screening — Ondrackova & Macka (2019)
+
+## Gate-by-gate assessment
+
+**Gate 1 — Full text retrieval.** Pass. The 13-page PDF was retrieved in full. (Ondrackova and Macka 2019, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** Pass. Block-B infrastructure is treated as a variable controlling connectivity, not merely as context: the authors enumerate 145 anthropogenic in-channel structures (concrete and gabion check dams, boulder sluices, wood steps, weirs), 5.3 km of bank revetments along the trunk channel, and 84 forest-road crossings, and they explicitly evaluate their role as barriers in the sediment cascade.  (Ondrackova and Macka 2019, 8) (Ondrackova and Macka 2019, 6) Connectivity is operationalized as the outcome through effective catchment area delimitation at three slope thresholds (5°, 10°, 15°) and through mapping of buffers/barriers/blankets sensu Fryirs et al. (2007a).  (Ondrackova and Macka 2019, 3) (Ondrackova and Macka 2019, 5)
+
+**Gate 3 — Q-items (primary study).**
+- Q1 Context reportable: Černá Opava catchment, Sudetes, Czech Republic; 58.9 km²; mean Q = 0.86 m³/s; MAP = 1,064 mm; 82% coniferous forest cover.  (Ondrackova and Macka 2019, 2)
+- Q2 Design classifiable: field-based geomorphological mapping combined with LiDAR-DEM GIS analysis and Wolman pebble counts.  (Ondrackova and Macka 2019, 2) (Ondrackova and Macka 2019, 4)
+- Q3 Method reproducible: DEM (0.3 m vertical accuracy bare ground); effective-catchment delineation by slope thresholds; bankfull width/depth every 100 m; Wolman counts at 25 plane-bed sites ≥500 m apart.  (Ondrackova and Macka 2019, 3) (Ondrackova and Macka 2019, 4)
+- Q4 Infrastructure characterized: typology, count, and longitudinal distribution of B3 structures and B1 road crossings provided.  (Ondrackova and Macka 2019, 6) (Ondrackova and Macka 2019, 8)
+- Q5 Connectivity operationalized: structural slope–channel coupling via effective catchment areas; functional dimension addressed via in-channel barrier inventory and sediment-store/sink mapping.  (Ondrackova and Macka 2019, 5)
+- Q6 Effect direction derivable: anthropogenic interventions (afforestation, revetments, check dams, dredging) most likely decreased sediment flux, but the catchment shows no "hungry water" signature.  (Ondrackova and Macka 2019, 10) (Ondrackova and Macka 2019, 11)
+
+All Q-items pass.
+
+**Gate 4 — Sample/scope.** Pass. Whole 18.6 km trunk stream plus tributary network mapped; effective catchment area assessed across the full 58.9 km² basin.  (Ondrackova and Macka 2019, 2)
+
+**Gate 5 — Effect direction extractable.** Pass. The paper derives qualitative direction for each intervention class — bank revetments and dredging suppress lateral and longitudinal connectivity more strongly than transverse structures; afforestation reduces hillslope sediment supply; forest roads contribute negligibly (<10% of road length eroded).  (Ondrackova and Macka 2019, 10)
+
+## Terminal tag recommendation
+
+`006-Include-Stage2` AND `006-Include-Final`
+
+No exclusion-reason note required.
+
+## Content-coding tag suggestions (Include-Final)
+
+| Family | Proposed value | Supporting sentence |
+|---|---|---|
+| 002 Infrastructure subtype | `002-Mixed` | B1 forest-road crossings (84) and B3 in-channel structures (145 + 5.3 km revetments) are both inventoried as variables.  (Ondrackova and Macka 2019, 6) (Ondrackova and Macka 2019, 8) |
+| 003 Study type | `003-FieldMonitoring` | "A field-based approach combining GIS analysis and geomorphological mapping was adopted."  (Ondrackova and Macka 2019, 1) |
+| 004 Hydrological focus | `004-SedimentDelivery` | Explicit framing as sediment cascade and slope–channel sediment delivery.  (Ondrackova and Macka 2019, 1) |
+| 005 Region | `005-Europe` | Czech Republic, eastern Sudetes.  (Ondrackova and Macka 2019, 2) |
+| 010-A Block A | `010-A1-Concepts` (primary) and `010-A2-FlowPaths` (secondary) | Buffers/barriers/blankets framework applied; sediment pathways from sources via stores to sinks mapped.  (Ondrackova and Macka 2019, 1) (Ondrackova and Macka 2019, 5) |
+| 020-B Block B | `020-B3-Structures` (primary) and `020-B1-Roads` (secondary) | Check dams, weirs, sluices, revetments quantified as barriers; road crossings recorded but found non-significant as sediment sources.  (Ondrackova and Macka 2019, 8) (Ondrackova and Macka 2019, 10) |
+| 030-C Block C | `030-empty` | Mitigation framing is incidental: in-channel structures function as sediment-trapping barriers but are not evaluated as flood-retention BMPs. If a sediment-retention reading is preferred, `030-C1-Retention` could be considered, supported by: "check dams and sluices … block the whole width of the channel and retain sediment wedges behind them."  (Ondrackova and Macka 2019, 10) |
+
+## Note for the human screener
+
+The paper is borderline with respect to AquaSilva's primary outcome axis: connectivity is operationalized for **sediment** flux, not for **runoff/peak-flow** generation. It is methodologically rigorous and Block-B-heavy, so it qualifies for Include-Final under the connectivity-anchored protocol, but it should be flagged at the synthesis stage as a sediment-connectivity contribution rather than a runoff/peak-flow contribution — relevant for Block-A concepts and for the structural-vs-functional distinction, less directly transferable to ZEMOKOST/Raven parameterization.
+
+## Sources
+
+Ondrackova, Lenka, and Zdenek Macka. 2019. “Geomorphic (Dis)Connectivity in a Middle-Mountain Context: Human Interventions in the Landscape Modify Catchment-Scale Sediment Cascades.” AREA 51 (1): 113–25. https://doi.org/10.1111/area.12424.

@@ -1,0 +1,51 @@
+[Reading: Bowker et al. 2020 (12 results)]
+
+## Stage-2 Gate Report — Bowker et al. 2020
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** None indicated in attached metadata.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS | (a) Skid trails (B2) and water control structures (B3) analyzed as core explanatory variables; (b) connectivity operationalized as count/width of sediment paths reaching the stream and explicitly framed as "sediment path connectivity with the stream." (Bowker et al. 2020, 3) (Bowker et al. 2020, 8) |
+| Q1 | PASS | Robinson Forest, eastern Kentucky, Cumberland Plateau; 6070 ha; slopes 40–80%; 117.6 cm annual precipitation; mixed mesophytic/oak-hickory.  (Bowker et al. 2020, 2–3) |
+| Q2 | PASS | Replicated treatment-gradient field design: 6 harvested + 2 control watersheds, six SMZ width × overstory-retention variants, post-harvest sediment-path survey.  (Bowker et al. 2020, 3) |
+| Q3 | PASS | MultiDAT GPS loggers (30 s interval), Trimble GeoXM with differential correction, ArcGIS analysis, 10 m DEM-derived slope/aspect, Beers moisture index, point-sampling prism for basal area, Tukey–Kramer HSD and least-squares linear models at α = 0.05.  (Bowker et al. 2020, 3–5) |
+| Q4 | PASS | Skid trails characterized by class (primary/secondary/tertiary), length, density, distance to stream; water control structures characterized by type (waterbar, dip, berm cut) and microtopographic position (flat/sloping/low point).  (Bowker et al. 2020, 5) (Bowker et al. 2020, 7) |
+| Q5 | PASS | Connectivity quantified as number of sediment paths per 305 m of stream and total path width; 72 paths catalogued with source class, slope, length, width.  (Bowker et al. 2020, 5) (Bowker et al. 2020, 7) |
+| Q6 | PASS | Effect directions explicit: mesic aspect (+), trail-to-stream distance (−), coarse debris (−), low-point water-bar siting (+), equipment-traffic intensity (n.s.).  (Bowker et al. 2020, 8) |
+| Q7 | PASS | One complete harvest-and-survey iteration (June 2008–March 2009 + 1 yr post-harvest survey) across 6 SMZ variants and controls, n = 72 paths, 479 structures.  (Bowker et al. 2020, 3) (Bowker et al. 2020, 7) |
+| Gate 4 | PASS | Same as Q7. |
+| Gate 5 | PASS | Quantitative effect sizes derivable: e.g., low-point waterbars 83.3% path-producing vs. 8.3% on flat trails; 33.5 m SMZ → 0.4 paths/305 m vs. 10.0 at 7.6 m/0%.  (Bowker et al. 2020, 7) (Bowker et al. 2020, 8) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** None. Note for screener: connectivity is operationalized mechanistically (path counts, source attribution, distance) rather than via a formal IC/index — confirm this is acceptable under the AquaSilva Q5 operationalization rule (mechanistic quantification ≠ purely verbal).
+
+### Content-coding suggestions
+
+- 002: `002-B2-ExtractionTrails` AND `002-B3-Structures` — "All of the 72 sediment paths were associated with a water control structure installed during skid trail retirement."  (Bowker et al. 2020, 7)
+- 003: `003-FieldMonitoring` — post-harvest GPS-based field census of sediment paths and structures.  (Bowker et al. 2020, 3–5)
+- 004: `004-A2-FlowPathDescriptors` — sediment paths characterized by source, length, width, slope and linkage to stream.  (Bowker et al. 2020, 5) (Bowker et al. 2020, 7)
+- 005: `005-NorthAmerica` — Robinson Forest, eastern Kentucky, Appalachia.  (Bowker et al. 2020, 2)
+- 010: `010-A2-FlowPathDescriptors` — operationalization of sediment delivery pathways from skid trail to stream.  (Bowker et al. 2020, 4) (Bowker et al. 2020, 7)
+- 020: `020-B2-SkidSnigTrails` AND `020-B3-Structures` — skid trail class/density and water control structure type/position both treated as variables.  (Bowker et al. 2020, 5) (Bowker et al. 2020, 7)
+- 030: `030-C3-RoadDrainageBMP` — waterbars, broad-based dips, berm cuts and SMZ buffers evaluated as mitigation BMPs.  (Bowker et al. 2020, 7) (Bowker et al. 2020, 10)
+
+(Screener note: a secondary `030-C1-RetentionDetention` tag may be defensible if SMZ buffers are categorized under retention/buffering rather than road-drainage BMPs in the Maßnahmenkatalog convention — flagged for human decision.)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Strong primary contribution for RQ5/RQ6 vote-counting on mitigation effectiveness: (i) quantitative anchor that 100% of observed sediment paths originated at water control structures on skid trails adjacent to the SMZ, identifying the cross-drain outlet as the dominant functional-connectivity node; (ii) effect-size data on SMZ width × debris × trail-distance interactions (e.g., 33.5 m buffer → 0.4 paths/305 m), directly transferable to AP2 parameterization of Type B (area modifier — SMZ buffer roughness/infiltration) and Type C (channel modifier where cross-drain outlets discharge).  (Bowker et al. 2020, 7) (Bowker et al. 2020, 8)
+
+## Sources
+
+Bowker, Daniel, Jeffrey Stringer, and Christopher Barton. 2020. “Influence of Timber Harvesting Operations and Streamside Management Zone Effectiveness on Sediment Delivery to Headwater Streams in Appalachia.” Forests 11 (6): 623. https://doi.org/10.3390/f11060623.

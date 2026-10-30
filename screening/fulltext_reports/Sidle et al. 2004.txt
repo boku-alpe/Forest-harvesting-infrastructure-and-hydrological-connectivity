@@ -1,0 +1,89 @@
+I'll read the full text of the Sidle et al. (2004) paper to conduct the Stage-2 gate evaluation.
+
+[Reading: Sidle et al. 2004, p. 1-18 (18 results)]
+
+Now let me check the item's existing provenance tags before writing the report.
+
+[Get metadata]
+
+---
+
+## Stage-2 Gate Report — Sidle et al. 2004
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No — item carries `006-Include-Stage1` at import and no `90-borderline-*` helper tag is present.
+
+> **⚠ Screener note:** This record already carries `006-Include-Stage2` and `006-Include-Final` in Zotero (visible in current tags). The gate evaluation below has been conducted independently from those existing tags and reaches the same conclusion. If Stage-2 screening was completed by a prior pass, this report can serve as the verification record.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | Full-text PDF attached and fully retrieved (18 pp.). |
+| **Gate 2(a)** | **PASS** | Both logging roads and skid trails are explicit study variables: erosion rates, discharge-node characteristics, and sediment delivery are measured separately for each infrastructure type throughout. (Sidle et al. 2004) |
+| **Gate 2(b)** | **PASS** | Sediment connectivity from discharge nodes to the stream is operationalized as a primary outcome using a three-level categorical metric (fully/moderately/unconnected), supported by a quantitative sediment budget per node.  (Sidle et al. 2004) (Sidle et al. 2004) |
+| **Q1** | **PASS** | Catchment: C3, Bukit Tarek Experimental Watershed, Peninsular Malaysia; 13 ha second-order headwater; lowland tropical rainforest; selectively logged late 1999.  (Sidle et al. 2004) (Sidle et al. 2004) |
+| **Q2** | **PASS** | Design classifiable as post-disturbance field monitoring with internal gradient comparison (connected vs. unconnected nodes; road vs. skid trail). Statistical comparisons via t-tests at α = 0.05.  (Sidle et al. 2004) |
+| **Q3** | **PASS** | Methods reproducibly described: laser rangefinder + tape survey of all rills/gullies every 5 m (s188–s190); replicated soil-pedestal plots (3 slope classes × 3 plots × 100 measurements each) (s208–s209); discharge-node documentation protocol (s200–s202); sediment-budget construction with volumetric deposition probing (s203–s217). Measurement error estimated at ±7.5%.  (Sidle et al. 2004) (Sidle et al. 2004) |
+| **Q4** | **PASS** | Road: 690 m, 53 m ha⁻¹, midslope position, unsurfaced, no drainage system, active Nov 1999–Jan 2000. Skid trails: 2300 m, 177 m ha⁻¹, avg. width 3.7 m, crawler-tractor built, unsurfaced. 25 road nodes and 34 skid-trail nodes identified.  (Sidle et al. 2004) (Sidle et al. 2004) (Sidle et al. 2004) |
+| **Q5** | **PASS** | Connectivity operationalized using explicit criteria: (i) categorical classification (fully/moderately/unconnected) with defined thresholds for continuous erosion evidence, sediment travel distance, and deposit count (s305–s322); (ii) node-level sediment budget comparing erosion inputs with hillslope deposition and actual stream delivery (s215–s217); (iii) catchment-level delivery ratio (78% for road, ~21% for skid trails).  (Sidle et al. 2004) (Sidle et al. 2004) (Sidle et al. 2004) |
+| **Q6** | **PASS** | Clear effect direction: roads substantially more connected to streams than skid trails (64% of road nodes connected vs. 26% of skid-trail nodes; 78% vs. ~21% sediment delivery to stream). Quantitative t-test comparisons confirm significantly higher soil loss and deposition at connected vs. unconnected nodes.  (Sidle et al. 2004) (Sidle et al. 2004) (Sidle et al. 2004) |
+| **Q7** | **PASS** | Complete investigation over 16-month post-logging period; full census of 690 m road (25 nodes) and 2300 m skid trails (34 nodes); complete sediment budget for road system.  (Sidle et al. 2004) |
+| **Gate 4** | **PASS** | Confirms Q7. Full investigation cycle complete. |
+| **Gate 5** | **PASS** | Effect direction unambiguously extractable: roads generate high sediment connectivity (78% delivery); skid trails generate low connectivity (21% delivery) but amplify road connectivity via runoff routing.  (Sidle et al. 2004) |
+
+---
+
+### Provenance verification
+
+One mild drift to flag:
+
+The record carries `010-A2-FlowPathDescriptors` — the paper's title, keywords (*flow pathways*, *sediment pathways*, *discharge nodes*) and core framing do match A2. However, the study also explicitly operationalizes sediment connectivity as a quantitative metric (node-level delivery ratios, percentage of connected nodes), which is substantively characteristic of **A3** (connectivity concepts/metric operationalization). This secondary A3 framing is not captured in the provenance tags. The paper was retrieved under H04 and H05 (both `010-A2`), so the A3 dimension represents content that was incidentally retrieved rather than targeted. The screener may wish to note this as an A2-primary / A3-secondary dual-framing paper during synthesis.
+
+No drift detected on `020-B1-Roads` or `020-B2-SkidSnigTrails` — both infrastructure types are co-equal study variables throughout.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** None — all gate items resolved clearly from full text.
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-Mixed` — roads and skid trails are co-equal study variables with separate erosion estimates, discharge-node inventories, and connectivity assessments throughout the paper.  (Sidle et al. 2004) (Sidle et al. 2004)
+
+- **003** [Study type]: `003-FieldMonitoring` — post-disturbance field survey with instrument-based measurements and sediment budget construction in a real catchment; no modelling component and no manipulative experiment.  (Sidle et al. 2004)
+
+- **004 primary** [Outcome]: `004-SedimentDelivery` — the primary outcome is sediment delivery from infrastructure to stream, quantified via node-level sediment budgets and delivery ratios (78% for road, ~21% for skid trails).  (Sidle et al. 2004) (Sidle et al. 2004)
+
+- **004 secondary**: `004-FlowPathInitiation` — a prominent secondary outcome is the extension of the effective channel network via discharge nodes and gully development, interception of subsurface flow producing new surface pathways, and road–skid trail junctions creating new overland flow corridors.  (Sidle et al. 2004) (Sidle et al. 2004)
+
+- **004 secondary**: `004-RunoffResponse` — Hortonian overland flow generation on compacted road/skid trail surfaces (Ksat measurements, s111–s112) and subsurface flow interception at road cuts are reported as runoff-generation mechanisms underpinning sediment connectivity.  (Sidle et al. 2004) (Sidle et al. 2004)
+
+- **005** [Region]: `005-Asia` — study site is Bukit Tarek Experimental Watershed, Peninsular Malaysia.  (Sidle et al. 2004)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** This study provides one of the most detailed node-level quantitative sediment delivery contrasts between logging roads and skid trails in a tropical setting (roads: 78% delivery; skid trails: ~21%), making it a strong primary-data anchor for RQ6 effectiveness analysis. Its explicit connectivity-classification framework (fully/moderately/unconnected nodes with defined criteria) also makes it a methodological reference point for operationalization discussions in RQ2.
+
+---
+
+### Tag replacements made
+
+None. All proposed tag strings verified character-for-character against the permitted taxonomy: `002-Mixed`, `003-FieldMonitoring`, `004-SedimentDelivery`, `004-FlowPathInitiation`, `004-RunoffResponse`, `005-Asia`.
+
+## Sources
+
+Sidle, R. C., S. Sasaki, M. Otsuki, S. Noguchi, and N. Abdul Rahim. 2004. “Sediment Pathways in a Tropical Forest: Effects of Logging Roads and Skid Trails.” Hydrological Processes 18 (4): 703–20. Scopus. https://doi.org/10.1002/hyp.1364.

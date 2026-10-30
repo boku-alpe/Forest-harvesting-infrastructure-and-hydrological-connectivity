@@ -1,0 +1,53 @@
+Reading: Orfánus et al. 2017
+
+# Stage-2 Gate Assessment: Orfánus et al. 2017
+
+## Gate-by-gate evaluation
+
+**Gate 1 — Full text retrievable.** Pass. The 15-page PDF is fully accessible.
+
+**Gate 2 — Stage-1 inclusion confirmed.** Pass. Forest roads and logging lines are the explicit independent variable (density up to 10 km/km², ~25 % incised to less-permeable subsoil), and connectivity is operationalised as an outcome via integration of the road network into the catchment drainage network and via simulated subsurface→surface flow conversion at road incisions. (Orfánus et al. 2017, 1) (Orfánus et al. 2017, 6) (Orfánus et al. 2017, 9)
+
+**Gate 3 — Q-items (primary study: modelling + field mapping).**
+- Q1 context: Gidra catchment (32 km², >95 % forested, 850 mm MAP, Cambisols on Variscan/Mesozoic units), 7 June 2011 event (104 mm/3 h).  (Orfánus et al. 2017, 6–7)
+- Q2 design: HYDRUS-2D vadose-zone modelling coupled with GRASS-GIS terrain/road analysis and field soil survey along five transects.  (Orfánus et al. 2017, 6) (Orfánus et al. 2017, 9)
+- Q3 reproducibility: 10-step methodology, BCs, rain forcing, antecedent state (−100/−200 cm), and soil hydraulic parameters (θr, θs, α, n, Ks) are tabulated.  (Orfánus et al. 2017, 6) (Orfánus et al. 2017, 8–9)
+- Q4 infrastructure: width 4 m, total length ~160 km, density up to 24 km/km² locally, ~25 % deepened into the C-horizon.  (Orfánus et al. 2017, 8) (Orfánus et al. 2017, 13)
+- Q5 connectivity operationalised: ridge-top roads excluded from drainage network; integrated "final catchment drainage network density" combining natural channels and runoff-active roads (Fig. 7).  (Orfánus et al. 2017, 9)
+- Q6 effect direction derivable: roads contribute 60,000–70,000 m³ (≈20 % of direct runoff) to the flood, split into ~54,000 m³ infiltration-excess on surfaces and 5,638–15,392 m³ from subsurface capture.  (Orfánus et al. 2017, 13)
+
+All Q-items pass.
+
+**Gate 4 — Sufficient sample/scope.** Pass. Single catchment, single event, but with field-based parameterisation, distributed GIS analysis, and multi-scenario simulations across slope length × inclination classes.
+
+**Gate 5 — Effect direction extractable.** Pass. Direction is unambiguously positive (roads increase peak/direct runoff) with quantified ranges.  (Orfánus et al. 2017, 13–14)
+
+## Terminal tag proposal
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+## Proposed content-coding tags
+
+| Family | Proposed value | Rationale (supporting sentence) |
+|---|---|---|
+| 002 Infrastructure subtype | `002-Mixed` | Both forest roads and "logging lines …formed by transits of heavy harvesters and tractors on the forest floor" are mapped and modelled.  (Orfánus et al. 2017, 6) |
+| 003 Study type | `003-Modeling` | Core analysis is HYDRUS-2D vadose-zone simulation across slope length/inclination scenarios, supported by GIS and field mapping.  (Orfánus et al. 2017, 9) |
+| 004 Hydrological focus | `004-FlowPathInitiation` (primary) | The novelty is quantifying the transformation of subsurface flow to surface runoff at road incisions via seepage-face BCs.  (Orfánus et al. 2017, 9) (Orfánus et al. 2017, 11) |
+| 004 Hydrological focus (secondary) | `004-RunoffResponse` | Outputs are runoff volumes (m³, mm) contributed to the flood hydrograph.  (Orfánus et al. 2017, 13) |
+| 005 Region | `005-Europe` | Gidra catchment, Malé Karpaty Mts, Slovakia.  (Orfánus et al. 2017, 6) |
+| 010-A Block A | `010-A2-FlowPaths` | Central mechanism is replacement of subsurface flow paths with surface flow paths via road cuts (Bowling & Lettenmaier framing operationalised).  (Orfánus et al. 2017, 2) (Orfánus et al. 2017, 5) |
+| 010-A Block A (secondary) | `010-A3-Metrics` | Drainage-density integration of natural channels + runoff-active roads, plus a "critical slope length" metric for road-network configuration.  (Orfánus et al. 2017, 9) (Orfánus et al. 2017, 14) |
+| 020-B Block B | `020-B1-Roads` | Forest roads are the primary infrastructure object (160 km network, 4 m width).  (Orfánus et al. 2017, 13) |
+| 020-B Block B (secondary) | `020-B2-SkidSnigTrails` | Logging lines / skid trails created by harvester transits are explicitly included in the compacted-linear-surface population.  (Orfánus et al. 2017, 8) |
+| 030-C Block C | `030-empty` | The paper diagnoses the impact of existing roads; no mitigation measure is evaluated as a treatment in the simulations. The infiltration-experiment reference (Orfánus 2011) is cited only for an infiltration parameter, not as a mitigation evaluation.  (Orfánus et al. 2017, 6) |
+
+## Notes for the human screener
+
+The `004` family arguably warrants a multi-value assignment (`FlowPathInitiation` + `RunoffResponse`) because the paper's contribution sits between mechanism initiation and volumetric runoff accounting; if the scheme requires a single value, `004-FlowPathInitiation` is the more distinctive descriptor. Similarly, `010-A2-FlowPaths` is the primary Block-A anchor with `010-A3-Metrics` as a defensible secondary if multi-tagging is permitted within Block A. These remain suggestions pending screener confirmation.
+
+## Sources
+
+Orfánus, T., M. Jenčo, J. Bebej, and M. Benko. 2017. “Simulation of the Effects of Forest Roads on Stormflow Generation Using GIS and 2D Vadose Zone Hydrological Model.” Ekologia Bratislava 36 (1): 25–39. Scopus. https://doi.org/10.1515/eko-2017-0003.

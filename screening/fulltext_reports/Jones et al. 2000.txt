@@ -1,0 +1,56 @@
+Reading: Jones et al. 2000
+
+I've read the full text. One important caveat up front: the metadata lookup for this record returned **no tags** (`tags: null`), so I could not retrieve the fixed provenance tags (`010-*`, `020-*`, `030-*`, `090-*`) to run the provenance-drift comparison against actual import values. I flag this for the screener below and base the provenance section on the paper's substantive content only.
+
+## Stage-2 Gate Report — Jones et al. 2000
+
+**Study type:** `003-Review` (conceptual framework / synthesis paper; the authors explicitly state they set out a framework rather than test it with new data (Jones et al. 2000), drawing evidence from a body of prior H. J. Andrews studies)
+**Checklist applied:** R1–R3 (Gate 4 auto-passes)
+**Borderline carry-over from Stage 1:** Unknown — record tags were not returned by the metadata lookup, so any `90-borderline-*` helper tag could not be confirmed. Screener should check manually.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS | (a) Forest road networks are the central study variable, not context: the paper analyzes road–stream interactions, road drainage, road-stream crossings, and cut-and-fill road failure  (Jones et al. 2000). (b) Hydrologic connectivity is the primary framing: "the road network is significantly hydrologically connected to the stream network"  (Jones et al. 2000), with road segments acting as extensions of the stream drainage network  (Jones et al. 2000). |
+| R1 (peer-reviewed venue) | PASS | Published in *Conservation Biology* 14(1):76–85  (Jones et al. 2000). |
+| R2 (forest infrastructure × connectivity) | PASS | Directly addresses forest roads as hydrologic/geomorphic connectors to stream networks, including channel-network extension via ditches, culverts, and gullies  (Jones et al. 2000) (Jones et al. 2000). |
+| R3 (synthesis-level anchor extractable) | PASS | Multiple synthesis statements, e.g. road density ~2 km/km² in the Andrews and significant portions of the road network capable of acting as stream-network extensions  (Jones et al. 2000) (Jones et al. 2000); one of three midslope road-crossed channels associated with debris-flow initiation  (Jones et al. 2000). |
+| Gate 4 | PASS (auto, review) | — |
+| Gate 5 | PASS | Clear effect direction derivable: roads **increase** hydrologic connectivity (synchronization of flow to the peak, channel-network extension) and **increase** the frequency/extent of debris-flow disturbance — debris-flow tracks 14× more frequent per unit area of road than of undisturbed forest  (Jones et al. 2000) (Jones et al. 2000). |
+
+### Provenance verification
+
+Provenance verification **could not be completed**: the record's `010-*`, `020-*`, `030-*`, and `090-*` tags were not returned by the metadata lookup (the item returned a null tag set). I therefore cannot compare the paper's substantive A/B/C-block content against its import provenance. **Flag for screener:** confirm tags are present/synced on this record, then verify manually. For reference, the paper's substantive content centers on: Block-A connectivity framing as flow-path / structural-to-functional routing and channel-network extension (closest to A2 flow-path descriptors, with strong A1 conceptual content); Block-B focus squarely on **forest roads** (B1), not skid trails or engineered mitigation structures; no Block-C mitigation variable is analyzed, so an M-query provenance with a `030-C*` tag would itself be a drift signal.
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a (included)
+**Confidence:** Medium-High — gate logic is robust; the only judgment call is the Review vs. primary-study classification. This is a conceptual-model/synthesis paper that re-reports prior field results rather than presenting an original investigation, which is why R1–R3 (not Q1–Q7) were applied.
+**Items flagged for human re-read:** Study-type assignment (`003-Review` vs. possible dual-tag) — see note below; Borderline carry-over status (tags not visible); Provenance tags (not retrievable in this session).
+
+### Content-coding suggestions (only if Include-Final)
+
+- **002** Infrastructure subtype: `002-B1-Roads` — forest roads (cut-and-fill roads, ditches, culverts, road-stream crossings) are the sole co-equal infrastructure focus; no skid/snig trails or engineered retention structures are analyzed as variables  (Jones et al. 2000).
+- **003** Study type: `003-Review` — "We have not attempted to prove... but rather to set out a framework"  (Jones et al. 2000); evidence is compiled from prior studies (Jones & Grant 1996; Wemple 1996/1998; Snyder 2000) rather than newly generated  (Jones et al. 2000). No dual-tag warranted, as the authors report no original dataset of their own.
+- **004 primary** Outcome: `004-FlowPathInitiation` — the connectivity-anchored core outcome is channel-network extension / new flow paths created where roads route water to streams via ditches, culverts, and gullies  (Jones et al. 2000) (Jones et al. 2000).
+- **004 secondary**: `004-PeakFlow` — roads increase the height/magnitude of flood peaks by synchronizing routed water with the peak  (Jones et al. 2000).
+- **004 secondary**: `004-SedimentDelivery` — debris-flow initiation and sediment delivery from road fillslopes, with quantified track frequency 14× higher per unit road area  (Jones et al. 2000) (Jones et al. 2000).
+- **005** Region: `005-NorthAmerica` — H. J. Andrews Experimental Forest, western Cascade Range, Oregon, U.S.A.  (Jones et al. 2000).
+
+### Synthesis role (only if Include-Final)
+
+**Study_Type_Synthesis_Role:** `review`
+**RQ5 vote-counting:** excluded (prevents double-counting; cite as consensus/gap-identification anchor)
+**Notes for synthesis phase:** This is a foundational conceptual anchor for the road–stream connectivity framing — it formalizes road networks as structural/functional extensions of the stream drainage network and supplies the road-stream-crossing density construct as a connectivity proxy. Distinctive quantitative anchors usable in narrative synthesis: road density ~2 km/km², ~1 in 3 midslope road-crossed low-order channels linked to debris-flow initiation, and debris-flow track frequency 14× higher per unit road area than undisturbed forest. Also a useful gap-identification anchor (authors note no studies had then linked riparian/benthic patch dynamics directly to road-network distribution  (Jones et al. 2000)).
+
+---
+
+**Tag replacements made:** none.
+
+One process note: because this record's provenance tags were not visible to me, I'd recommend resyncing/checking the item in Zotero before you finalize the provenance-drift call — that is the one part of this protocol I could not execute.
+
+## Sources
+
+Jones, Julia A., Frederick J. Swanson, Beverley C. Wemple, and Kai U. Snyder. 2000. “Effects of Roads on Hydrology, Geomorphology, and Disturbance Patches in Stream Networks.” Conservation Biology 14 (1): 76–85. https://doi.org/10.1046/j.1523-1739.2000.99083.x.

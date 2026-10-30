@@ -1,0 +1,55 @@
+Reading: Woldie et al. 2009
+
+## Stage-2 Gate Report — Woldie, Sidle & Gomi 2009
+
+**Study type:** `003-PairedCatchment` (zero-order paired catchment, roaded C1 vs. unroaded C2, 24 storm events — also has strong `003-FieldMonitoring` character)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in the attached record (no `90-borderline-*` tag visible in metadata) — but the case itself is borderline on connectivity framing; treat as if `90-borderline-A-implicit` applied.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (8 pp.). (Woldie et al. 2009, 1) |
+| Gate 2 (a) Block-B as variable | PASS | Forest road is the explicit treatment variable — C1 roaded vs. C2 unroaded paired design; road surface, cut slope, ditches characterized in Table I.  (Woldie et al. 2009, 2–3) |
+| Gate 2 (b) Connectivity operationalized | **FAIL (borderline)** | The paper never uses "connectivity" terminology and does not cite any of the AquaSilva anchor authors (Wemple, Croke, Takken, Hairsine, La Marche, Dutton). Flow pathways are described mechanistically (road→ditch→outlet vs. subsurface in C2) and the road's % contribution to peak/total flow is quantified, but framing is runoff-hydrology, not connectivity.  (Woldie et al. 2009, 5) |
+| Q1 Context | PASS | Tanakami Mts., SE Shiga, Japan; humid temperate; 1712 mm MAP; 10.9 °C MAT; mixed Chamaecyparis/Quercus forest on Cambisols over Tanakami granite.  (Woldie et al. 2009, 2) |
+| Q2 Design | PASS | Paired-catchment design (C1 roaded 0.5 ha vs. C2 unroaded 0.2 ha), space-for-time substitute for missing pre-road data.  (Woldie et al. 2009, 2) |
+| Q3 Method | PASS | 60° V-notch weirs at both outlets sealed to bedrock, drop-box V-notch weirs on planar/concave road segments, 5-min stage logging (Tru-track WT-HR500), tipping-bucket gauge, May 2006–July 2007.  (Woldie et al. 2009, 3) |
+| Q4 Infrastructure characterized | PASS | Unpaved mountain road, planar (47.7 m) and concave (46 m) segments, cut-slope height 0.85–1.80 m, ditch system, gradients tabulated in Table I; road sub-catchments capture 33% / 50% of planar / concave lengths.  (Woldie et al. 2009, 3) (Woldie et al. 2009, 5) |
+| Q5 Connectivity operationalized | **UNCLEAR** | Mechanistic flow-path quantification exists (road runoff → ditch → outlet routing, % contribution to peak/total Q, lag-time differential road=~0 h vs. unroaded 0–4 h) — substantively this is functional connectivity, but it is not labelled, indexed, or framed as such.  (Woldie et al. 2009, 6–7) |
+| Q6 Effect direction | PASS | Direction derivable: road increases drainage efficiency / shortens lag time / increases peak flow under dry-moderate antecedent conditions (≈50–80% of peak flow from road segments); effect attenuates and reverses under wet conditions (road contribution 5.4%).  (Woldie et al. 2009, 8) |
+| Q7 / Gate 4 Scope | PASS | 24 storm events, 14-month continuous monitoring, full antecedent-moisture gradient sampled.  (Woldie et al. 2009, 3–4) |
+| Gate 5 Extractability | PASS (conditional on Gate 2) | Quantitative effect sizes extractable: road = 50% total Q and 70% peak Q (dry); 5.4% total Q (wet); ROC differential C1 vs. C2 by API class.  (Woldie et al. 2009, 5) (Woldie et al. 2009, 6) |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality` *(borderline — flagged for human re-read)*
+**Exclusion-reason string:** `connectivity only narrative, not operationalized`
+**Confidence:** Low–Medium
+
+**Rationale.** Methodologically the paper is strong and the substantive findings (rapid road-to-outlet flow routing, contrast with slow subsurface pathways in the unroaded basin) describe functional road–stream linkage in everything but name. However, by the PSALSAR connectivity-anchored design rule ("pure runoff-hydrology studies without explicit connectivity framing are excluded"), this paper sits on the runoff-hydrology side of the boundary: it never invokes connectivity concepts, defines no connectivity metric, and does not engage the Wemple/Croke/Takken/La Marche literature. It would be a textbook Type I admission if included on substantive grounds while ignoring the framing rule.
+
+**Items flagged for human re-read:**
+- **Gate 2 (b) / Q5** — screener should decide whether the quantified road→outlet routing (Tables III–IV, lag-time contrast) is sufficient to count as "mechanistic quantification of connectivity" under the protocol's operational definition, or whether the absence of connectivity vocabulary and anchor-author engagement is decisive.
+- If the screener overrides toward Include, the paper would be a useful RQ5/RQ6 anchor for quantified road-segment contribution to peak flow under varying antecedent moisture (Japan / humid temperate / zero-order scale).
+
+### Content-coding suggestions (provisional — apply only if human screener overrides to Include-Final)
+
+- 002: `002-B1-Roads` — unpaved mountain road bisecting C1 is the treatment variable.  (Woldie et al. 2009, 2)
+- 003: `003-PairedCatchment` — adjacent roaded/unroaded zero-order basins compared over 24 storms.  (Woldie et al. 2009, 2)
+- 004: `004-RunoffResponse` (primary); `004-A2-FlowPathDescriptors` (secondary, on the override scenario) — flow pathway contrast (surface road runoff vs. subsurface) and runoff-coefficient analysis.  (Woldie et al. 2009, 6–7)
+- 005: `005-Asia` — Tanakami Mountains, Shiga Prefecture, Japan.  (Woldie et al. 2009, 2)
+- 010: `010-A2-FlowPathDescriptors` — qualitative-mechanistic flow-path comparison; no metric/index, so `010-A3-ConnectivityMetrics` would NOT apply.  (Woldie et al. 2009, 6)
+- 020: `020-B1-Roads` — sole Block-B infrastructure analyzed.  (Woldie et al. 2009, 2)
+- 030: `030-empty` — no mitigation measure evaluated (ditches described as part of the road, not as a BMP intervention).  (Woldie et al. 2009, 2)
+
+### Synthesis role (provisional — applies only on override to Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Quantitative effect-size anchor for road-segment contribution to peak flow at the zero-order scale, with explicit antecedent-moisture dependence (≈70% of peak flow under dry AMC → ≈5% under wet AMC; lag-time collapse from 0–4 h to ≈0 h in the roaded basin). Useful as a humid-temperate, small-scale counterpart to the Wemple/Croke/Takken corpus, even though the paper itself is not connectivity-framed.
+
+## Sources
+
+Woldie, D. W., R. C. Sidle, and T. Gomi. 2009. “Impact of Road-Generated Storm Runoff on a Small Catchment Response.” Hydrological Processes 23 (25): 3631–38. Scopus. https://doi.org/10.1002/hyp.7440.

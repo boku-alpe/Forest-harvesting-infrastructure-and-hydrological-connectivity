@@ -1,0 +1,35 @@
+[Reading: Crampe et al. 2021, p. 1-5 (5 results)]
+
+[Reading: Crampe et al. 2021, p. 10-14 (5 results)]
+
+## Gate Report — Crampe et al. 2021
+
+**Study type:** Paired catchment (long-term BA, 50-yr record, 5 treated × 3 reference watersheds; 1222 events)
+
+**Gate 2:** UNCLEAR — Block-B infrastructure (B1-Roads) is treated as a study variable (road density 1.5–4.6 km/km² explicitly compared across WS 03/06/07 vs road-free WS 01/10), but connectivity is invoked only as a verbal/mechanistic interpretation of flow-routing changes ("road-related changes in flow routing and debris flows … increased network connectivity"), not as a primary measured outcome. (Crampe et al. 2021, 1) (Crampe et al. 2021, 2)
+
+**Gate 3:**
+- Q1: PASS — H. J. Andrews, W. Cascades OR; WS areas 9.0–101.2 ha, elevation 424–1182 m; MAP 2350 mm, MAT 9 °C; rain / transient-snow / seasonal-snow zones; old-growth vs planted Douglas-fir.  (Crampe et al. 2021, 3–4)
+- Q2: PASS — Paired-watershed design with pre-/post-treatment runoff-coefficient ratios and decadal comparisons, plus Mann-Kendall trend tests.  (Crampe et al. 2021, 5)
+- Q3: PASS — Event definition (>20 mm after >24 h dry), hydrograph separation tested against H&H and C&M, statistical envelope (RP25/RP75) reproducibly described.  (Crampe et al. 2021, 4–5)
+- Q4: PASS — Roads (B1) characterized by density (km/km²), construction year, watershed position, and interaction with debris-flow scour history (WS 03: 1961, 1964–65, 1996).  (Crampe et al. 2021, 3)
+- Q5: **FAIL** — Connectivity is not operationalized via any metric or index (no IC, no flow-path mapping, no road-stream junction inventory in this study); it is asserted verbally and supported by external references to Wemple et al. (1996, 2001, 2003).  (Crampe et al. 2021, 11)
+- Q6: PASS — Direction of effect derivable per decade × season (QF +99 % fall decade 1 → −15 % by decade 3–5; winter/spring QF persistently +12–70 %; road × debris-flow watershed WS 03 shows divergent intensification).  (Crampe et al. 2021, 11–12)
+
+**Gate 4:** PASS — 50-yr record, 1222 events analyzed, multiple complete paired comparisons by season × decade.
+
+**Gate 5:** UNCLEAR for connectivity — runoff direction is unambiguous, but the connectivity inference (roads → enhanced network connectivity → sustained elevated QF in WS 03) is indirect and derived from co-located prior work, not from a quantification within this paper.
+
+**Recommendation:** Exclude-Quality (reason: *"Connectivity not operationalized — verbal/mechanistic claim only, no metric, index, or direct quantification (Q5 fail); primary outcome is runoff coefficients, connectivity invoked as interpretive mechanism citing Wemple 1996/2001/2003"*).
+
+Caveat for the human screener: although it fails Q5, the paper is methodologically strong, infrastructure-explicit, and tightly linked to the Wemple anchor set. It may still be valuable as a **secondary/contextual** source supporting Wemple-anchored synthesis statements on long-term road legacy effects, even if excluded from the connectivity-anchored core corpus.
+
+**Confidence:** Medium
+
+**Items flagged for human re-read:** Gate 2 (connectivity-as-outcome judgment), Q5, Gate 5 (connectivity direction)
+
+**Borderline-Stage-1 carry-over:** Unknown — not indicated in the provided record; recommend checking the Stage-1 tag set (006 selection status) before finalizing.
+
+## Sources
+
+Crampe, E. A., C. Segura, and J. A. Jones. 2021. “Fifty Years of Runoff Response to Conversion of Old-Growth Forest to Planted Forest in the H. J. Andrews Forest, Oregon, USA.” Hydrological Processes 35 (5). Scopus. https://doi.org/10.1002/hyp.14168.

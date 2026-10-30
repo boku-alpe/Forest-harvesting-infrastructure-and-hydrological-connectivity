@@ -1,0 +1,50 @@
+Reading: López-Vicente et al. 2020
+
+[Reading: López-Vicente et al. 2020, p. 6-8 (3 results)]
+
+## Stage-2 Screening — López-Vicente et al. (2020)
+
+### Gate evaluation
+
+**Gate 1 — Full text retrievable.** PASS. Open-access PDF (CC BY) is in the library and fully readable. (López-Vicente et al. 2020, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** PASS. Block-B infrastructure is treated as a variable, not as context: skid trails are explicitly enumerated per scenario (3 trails Pre-Fire/Fire, 4 trails Post-Fire) and parameterised in the LULC maps with their own C-RUSLE and Manning's n values, while check-dams are parameterised as effective sediment sinks (with height, width, storage volume and trap efficiency) and serve as the SC outlet target.  (López-Vicente et al. 2020, 6) (López-Vicente et al. 2020, 7) Sediment connectivity is operationalised as the primary outcome through four indices (IC-Borselli/B2019, IC-Cavalli/C2016, IC-Persichillo, AIC) yielding 66 SC maps at 2 m resolution.  (López-Vicente et al. 2020, 1) (López-Vicente et al. 2020, 4)
+
+**Gate 3 — Q-items (primary study).** PASS on all six:
+- Q1 (context): semi-arid Mediterranean, ~320 mm yr⁻¹, three headwater sub-catchments 66–194 ha, slopes 38–47%, Sierra de Los Donceles (SE Spain).  (López-Vicente et al. 2020, 2) (López-Vicente et al. 2020, 3)
+- Q2 (design): GIS-based indices evaluation under a Pre-Fire / Fire / Post-Fire temporal design, validated against measured SSY at three check-dams — classifiable as Modeling with field validation.  (López-Vicente et al. 2020, 2) (López-Vicente et al. 2020, 6)
+- Q3 (reproducibility): all four index equations given (Eq. 3–9), input layers (LiDAR DEM 2009/2016, SIOSE LULC, IGME permeability, Cenajo 5-min rainfall), software (SAGA 2.1.2, ArcGIS 10.3) and flow-routing choices (D-infinity, Planchon-Darboux) explicitly stated.  (López-Vicente et al. 2020, 4–5) (López-Vicente et al. 2020, 6)
+- Q4 (infrastructure characterisation): check-dam geometry, trap efficiency and SSY are tabulated; skid trails are integrated via LULC, Manning's n and C-factor.  (López-Vicente et al. 2020, 6–7)
+- Q5 (connectivity operationalisation): four IC variants plus two computation targets (SC_STREAM, SC_OUTLET).  (López-Vicente et al. 2020, 6)
+- Q6 (effect direction): mean SC values per scenario × index × target are reported with Tukey significance letters.  (López-Vicente et al. 2020, 8)
+
+**Gate 4 — Sample/scope.** PASS. Three sub-catchments × three scenarios × four indices × two targets (66 SC maps), with independent SSY validation at three check-dams over ~70 months.  (López-Vicente et al. 2020, 6) (López-Vicente et al. 2020, 7)
+
+**Gate 5 — Effect direction extractable.** PASS. Quantitative directions reported: SC_STREAM increased on average +35 % (IC-B2019) and +42 % (AIC) in the Fire scenario relative to Pre-Fire, and partially reversed in the Post-Fire scenario (e.g. −11 % with IC-B2019; +5 % with AIC).  (López-Vicente et al. 2020, 8)
+
+### Terminal-tag recommendation
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+### Proposed content-coding tags (for human screener confirmation)
+
+| Family | Proposed tag | Rationale (supporting sentence) |
+|---|---|---|
+| 002 Infrastructure subtype | `002-Mixed` | Post-Fire scenario jointly parameterises salvage logging, skid trails (B2) and check-dams (B3).  (López-Vicente et al. 2020, 2) |
+| 003 Study type | `003-Modeling` | Performance evaluation of four GIS-based SC indices over three temporal scenarios; field SSY used as external validation rather than as primary design.  (López-Vicente et al. 2020, 1) (López-Vicente et al. 2020, 6) |
+| 004 Hydrological focus | `004-SedimentDelivery` | Outcome variables are SC indices plus measured specific sediment yield at outlets.  (López-Vicente et al. 2020, 1) (López-Vicente et al. 2020, 6) |
+| 005 Region | `005-Europe` | Study area: Sierra de Los Donceles, Albacete/Murcia, SE Spain.  (López-Vicente et al. 2020, 2) |
+| 010-A Block A | `010-A3-Metrics` | Core contribution is a comparative evaluation of four connectivity indices.  (López-Vicente et al. 2020, 4) |
+| 020-B Block B | `020-B2-SkidSnigTrails` + `020-B3-Structures` | Trails added to LULC layer; non-silted check-dams treated as effective sediment sinks at the outlet target.  (López-Vicente et al. 2020, 5) (López-Vicente et al. 2020, 6) |
+| 030-C Block C | `030-C1-Retention` + `030-Cany-MitigationControls` | Check-dams act as discrete sediment-retention structures within a post-fire mitigation programme.  (López-Vicente et al. 2020, 2) (López-Vicente et al. 2020, 6) |
+
+Note on Block A: a secondary `010-A2-FlowPaths` tag is defensible because the downslope module D_dn explicitly aggregates flow-path length and weighting, but A3 captures the primary contribution. Flagged as an optional addition for the screener.
+
+Note on AquaSilva relevance: the check-dam parameterisation (height, width, storage volume, trap efficiency) maps cleanly to Maßnahmenkatalog Type A (discrete storage), and the trail/Manning's-n treatment to Type B (area modifier) — useful as a parameterisation precedent for AP2, independent of the connectivity-focused inclusion decision.
+
+## Sources
+
+López-Vicente, M., J. González-Romero, and M. E. Lucas-Borja. 2020. “Forest Fire Effects on Sediment Connectivity in Headwater Sub-Catchments: Evaluation of Indices Performance.” Science of The Total Environment 732 (August): 139206. https://doi.org/10.1016/j.scitotenv.2020.139206.

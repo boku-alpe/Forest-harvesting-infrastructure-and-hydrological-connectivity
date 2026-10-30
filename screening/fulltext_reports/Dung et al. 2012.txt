@@ -1,0 +1,36 @@
+[Reading: Dung et al. 2012 (6 results)]
+
+## Stage-2 Gate Report — Dung et al. 2012
+
+**Study type:** `003-PairedCatchment`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in record metadata; assumed No.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached and readable (6 pp.). |
+| Gate 2 (a) Infrastructure as variable | **FAIL** | The treatment is stem removal only; "Thinning was conducted by forest workers using chainsaws with very little disturbance of the soil surface" and "our study site was affected only by the removal of trees." (Dung et al. 2012, 5) Roads/skid trails appear only as contrast cited from other studies (Jones & Grant 1996; Guillemette et al. 2005), not as variables in M4/M5.  (Dung et al. 2012, 5) |
+| Gate 2 (b) Connectivity operationalized | **FAIL** | Connectivity is mentioned narratively once — "increases in peak flow were attributed to the hydrological connectivity of overland flow via skid trails and roads" (paraphrasing Guillemette et al. 2005) — but no connectivity metric, index, or flow-path topology analysis is conducted for the study catchments.  (Dung et al. 2012, 5) The outcome variables are peak flow, recession time T, and recession constant K.  (Dung et al. 2012, 1) |
+| Q1–Q7 | n/a | Not evaluated — Gate 2 failed (sequential stop rule). |
+| Gate 4 | n/a | Not evaluated. |
+| Gate 5 | n/a | Not evaluated. |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string** (verbatim, first failed gate): `infrastructure not analyzed as variable`
+(Secondary, same gate: `connectivity only narrative, not operationalized`. Per the "first failed gate" rule, use the (a) string above.)
+**Confidence:** High
+**Items flagged for human re-read:** None. The paper is a clean thinning paired-catchment study; Block-B infrastructure is explicitly absent by experimental design ("minimal soil disturbance during thinning," timber placed parallel to contours, no roads/skid trails in M4/M5).  (Dung et al. 2012, 5)
+
+### Note for screener
+
+The paper is methodologically strong and would be a high-quality entry in a runoff-hydrology corpus, but the AquaSilva SLR is connectivity-anchored and requires Block-B infrastructure as a study variable. Dung et al. (2012) deliberately isolated the *vegetation-removal* signal from the *infrastructure* signal — making it the inverse of what the connectivity corpus targets. It may, however, be useful as a **contextual/contrast reference** in narrative synthesis (RQ6 framing: thinning without roads ≠ harvesting with roads), and could be retained outside the core corpus with a `99-context-reference` style tag if the screener wishes (proposal only, not a unilateral assignment).
+
+No content-coding suggestions or synthesis-role assignment are provided, as the record is not Include-Final.
+
+## Sources
+
+Dung, Bui Xuan, Takashi Gomi, Shusuke Miyata, and Roy C. Sidle. 2012. “Peak Flow Responses and Recession Flow Characteristics after Thinning of Japanese Cypress Forest in a Headwater Catchment.” Hydrological Research Letters 6: 35–40. https://doi.org/10.3178/HRL.6.35.

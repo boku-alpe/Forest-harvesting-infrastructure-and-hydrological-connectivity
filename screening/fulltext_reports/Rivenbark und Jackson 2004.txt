@@ -1,0 +1,51 @@
+Reading: ⁨Rivenbark⁩ und ⁨Jackson⁩ 2004
+
+## Stage-2 Gate Report — Rivenbark & Jackson 2004
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (no `90-borderline-*` helper tag visible in the attached metadata; flag for screener verification against Stage-1 log).
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (10 pp.). |
+| Gate 2(a) — Block-B/C as variable | PASS | SMZ (riparian buffer BMP) is the primary study variable; roads/skid trails are explicitly recorded as a topographic source class: "25 percent of all breakthroughs originated from drainage from roads and/or skid trails" (Rivenbark and Jackson 2004, 5). |
+| Gate 2(b) — Connectivity operationalized | PASS | Connectivity is operationalized as hillslope–channel "breakthrough" — a quantified flow path from clearcut to stream — with spatial frequency, contributing area, and SMZ travel distance as metrics  (Rivenbark and Jackson 2004, 2) (Rivenbark and Jackson 2004, 4). |
+| Q1 — Study context | PASS | Georgia Piedmont, 30 sites, 34–292 ac, Ultisols, clearcut ± mechanical site prep  (Rivenbark and Jackson 2004, 2). |
+| Q2 — Design classifiable | PASS | Observational/gradient field survey across 30 sites (n=187 breakthroughs vs. successes), one-way ANOVA classification  (Rivenbark and Jackson 2004, 4). |
+| Q3 — Method reproducible | PASS | Walking SMZ perimeter; clinometer slope, densiometer canopy, paced widths/travel distances; six Situation classes defined; log-transform ANOVA  (Rivenbark and Jackson 2004, 2–4). |
+| Q4 — Infrastructure characterized | PASS | SMZ width (mean 75 ft, 0–260 ft), litter cover (90%), canopy cover (75%) reported; roads/skid trails identified as a discrete contributing class  (Rivenbark and Jackson 2004, 7). |
+| Q5 — Connectivity metric/mechanistic | PASS | Quantified: 0.05 breakthroughs ac⁻¹; hydrologic contributing area per breakthrough (mean 1 ac); CA·BG and CA·BG·S as flow-path/erosive-power proxies with classification thresholds  (Rivenbark and Jackson 2004, 5–7). |
+| Q6 — Effect direction | PASS | SMZs reduce but do not eliminate connectivity (75 % of potential breakthroughs stopped within 20 ft; 14 % of breakthroughs traveled >100 ft); road/skid trail drainage increases breakthrough probability (25 % of cases)  (Rivenbark and Jackson 2004, 5) (Rivenbark and Jackson 2004, 8). |
+| Q7 — Sample/scope | PASS | 30 sites, 3,773 ac, 187 breakthroughs — multiple complete iterations  (Rivenbark and Jackson 2004, 1). |
+| Gate 4 | PASS | Q7 satisfied. |
+| Gate 5 | PASS | Direction and magnitude derivable: SMZs effective at 95 % of clearcut area; ~5 % of clearcut area connects via concentrated flow paths; roads/skid trails amplify connectivity  (Rivenbark and Jackson 2004, 9). |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** — (not applicable)
+**Confidence:** High
+**Items flagged for human re-read:** None mandatory. Optional screener check on Q4: roads/skid trails are characterized only by *presence as flow source class*, not by independent design attributes (gradient, surface, drainage spacing). If Stage-2 requires Block-B infrastructure attributes per se, Q4 could be downgraded to UNCLEAR; under current wording (≥1 characteristic, including spatial position), it passes.
+
+### Content-coding suggestions
+
+- **002:** `002-Mixed` — Streamside Management Zone (C3 buffer BMP) is the primary variable while roads/skid trails (B1/B2) are co-analyzed as breakthrough-source class  (Rivenbark and Jackson 2004, 5).
+- **003:** `003-FieldMonitoring` — "aerially extensive semiquantitative field surveys" of 30 operational sites  (Rivenbark and Jackson 2004, 1).
+- **004:** `004-A2-FlowPathDescriptors` — concentrated flow path frequency, contributing area, and travel distance are the core descriptors  (Rivenbark and Jackson 2004, 5).
+- **005:** `005-NorthAmerica` — southeastern Georgia Piedmont, USA  (Rivenbark and Jackson 2004, 2).
+- **010:** `010-A2-FlowPathDescriptors` — breakthrough is defined as a discrete hillslope–stream flow path  (Rivenbark and Jackson 2004, 2).
+- **020:** `020-B1-Roads` AND `020-B2-SkidSnigTrails` — both grouped as the source of 25 % of breakthroughs; also "12 permanent stream crossings... each resulted in sediment entering the stream" supports B3 as secondary  (Rivenbark and Jackson 2004, 5) (Rivenbark and Jackson 2004, 8). (Screener may add `020-B3-Structures` for the stream-crossing finding.)
+- **030:** `030-C3-RoadDrainageBMP` — SMZs evaluated as the BMP whose efficacy in disconnecting hillslope runoff is the study focus  (Rivenbark and Jackson 2004, 1).
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Strong quantitative anchor for RQ5/RQ6: provides a regional-scale effectiveness estimate for riparian buffer BMPs (breakthrough density 0.05 ac⁻¹; ~0.33–0.4 % of commercial forest land actively connecting at any time over a rotation) and identifies roads/skid trails as a dominant non-topographic driver of residual connectivity (25 % of breakthroughs). Useful as a field-derived threshold reference (CA·BG·S as a stream-power-analogue connectivity index) for parameterising Type B area modifiers in the AquaSilva Maßnahmenkatalog where buffer/litter cover is the mitigation lever.
+
+## Sources
+
+Rivenbark, B. L., and C. R. Jackson. 2004. “Concentrated Flow Breakthroughs Moving through Silvicultural Streamside Management Zones: Southeastern Piedmont, USA.” Journal of the American Water Resources Association 40 (4): 1043–52. Scopus. https://doi.org/10.1111/j.1752-1688.2004.tb01065.x.

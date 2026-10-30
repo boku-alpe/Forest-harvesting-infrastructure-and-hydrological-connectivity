@@ -1,0 +1,37 @@
+Reading: Tonina et al. 2008
+
+## Stage-2 Gate Report — Tonina et al. 2008
+
+**Study type:** `003-Modeling` (framed by the authors as a "model-assisted paired watershed analysis", but lacking a pre-treatment calibration period; physically based snowmelt + HEC-1 routing is the core method)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Unknown — no `90-borderline-*` helper tag visible in the provided metadata. If Stage 1 flagged this record as borderline-B-context, the full text resolves the ambiguity unambiguously against inclusion (see Gate 2 evidence).
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (13 pp.). (Tonina et al. 2008, 1) |
+| Gate 2 (a) Infrastructure as variable | **FAIL** | Forest roads appear only as a cited confound, not as a manipulated/analyzed variable: "Logging roads can influence drainage density … However, sensitivity testing for the 1990 event in these basins showed almost no sensitivity to roughness parameter changes in our model … so we did not model routing differences in the basins."  (Tonina et al. 2008, 4) The single manipulated variable is forest canopy cover (74% vs 95%), not Block-B infrastructure.  (Tonina et al. 2008, 6) |
+| Gate 2 (b) Connectivity operationalized | FAIL | No connectivity concept, flow-path descriptor, or connectivity metric is operationalized. Outcomes are peak discharge, flood frequency, and bed-scour depth; the word "connectivity" does not appear, and road–stream linkage is acknowledged as a known mechanism but explicitly set aside.  (Tonina et al. 2008, 4) (Tonina et al. 2008, 9) |
+| Q1–Q7 | not assessed | Sequential gate logic stops at first failed gate. |
+| Gate 4 | not assessed | — |
+| Gate 5 | not assessed | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string** (verbatim): `infrastructure not analyzed as variable`
+**Confidence:** High
+**Items flagged for human re-read:** None. The paper's own statement that routing (and therefore road-network effects on drainage density) was deliberately not modeled is unambiguous; the manipulated variable is canopy cover, which falls outside Block B and outside the connectivity-anchored scope. A secondary Gate 2(b) failure (`connectivity only narrative, not operationalized`) is also present and would be the appropriate reason if the human screener judges that the brief road-confound discussion is sufficient to satisfy Gate 2(a) — but per the connectivity-anchored protocol this is a clear exclude.
+
+### Content-coding suggestions
+
+Not applicable (excluded record).
+
+### Synthesis role
+
+Not applicable. The paper is, however, a potentially useful **context citation** for AquaSilva narrative framing on rain-on-snow peak-flow amplification by canopy removal in maritime snow climates (25% peak-flow increase at the ~30 km² scale, shifting a 9-yr event to a 3.6-yr event)  (Tonina et al. 2008, 9) — but it does not contribute to RQ1–RQ6 evidence mapping under the connectivity-anchored corpus rules.
+
+## Sources
+
+Tonina, Daniele, Charles H. Luce, Bruce Rieman, et al. 2008. “Hydrological Response to Timber Harvest in Northern Idaho:: Implications for Channel Scour and Persistence of Salmonids.” HYDROLOGICAL PROCESSES 22 (17): 3223–35. https://doi.org/10.1002/hyp.6918.

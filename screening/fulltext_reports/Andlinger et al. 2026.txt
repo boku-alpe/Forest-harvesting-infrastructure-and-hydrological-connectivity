@@ -1,0 +1,42 @@
+Reading: Andlinger et al. 2026
+
+[Reading: Andlinger et al. 2026, p. 15-25 (11 results)]
+
+## Stage-2 Gate Report — Andlinger et al. 2026
+
+**Study type:** `003-Modeling` (with field-mapping support; primary method is IC/ECA + RAMMS:Debrisflow modeling, not a paired-catchment or monitoring design)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Unknown (no `90-borderline-*` helper tag visible in attached metadata; screener should verify against Stage-1 record)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 (a) infrastructure as variable | **FAIL** | Check dams, a dam, and a forest road appear only as field-mapped features in the ECA validation (Figure 3b, 3f, 3g) — "Several small barriers, in the form of check dams […] hindering or temporarily retaining material" and "a highly connected area along a forest road in a tributary of the Prielgraben" (Andlinger et al. 2026, 15–16). They are catalogued as buffers/barriers but never analyzed as study variables (no density, length, drainage characterization, or systematic effect quantification). The study's variables are IC, ECA, and RAMMS-derived flow height/velocity. |
+| Gate 2 (b) connectivity operationalized | PASS (but note: SEDIMENT connectivity, not hydrological connectivity for flood retention) | IC and ECA are explicitly operationalized as metrics: "IC values range from −6.75 to 4.42" and ECAs are computed via flow accumulation thresholds in ArcGIS  (Andlinger et al. 2026, 9–10) (Andlinger et al. 2026, 16). |
+| Q1–Q7 | not evaluated | Gate 2 failed; sequential rule applies. |
+| Gate 4 | not evaluated | — |
+| Gate 5 | not evaluated | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string** (verbatim): `infrastructure not analyzed as variable`
+**Confidence:** High
+**Items flagged for human re-read:**
+- Verify Stage-1 borderline status. If the record carried `90-borderline-B-context`, this Stage-2 assessment confirms the Stage-1 ambiguity: Block-B elements (check dams, one forest road segment) appear only as context/field features, not as variables.
+- Conceptual scope: The paper's "connectivity" is **sediment connectivity** in the geomorphological sense (Borselli, Cavalli, Fryirs tradition), not hydrological connectivity for flood retention as anchored in AquaSilva (Wemple, Croke, Takken). Screener should confirm whether sediment-connectivity-only studies are in or out of the connectivity-anchored core corpus — current protocol framing (Block B × hydrological connectivity) suggests OUT, but this is a recurring boundary case worth a calibration note.
+
+### Content-coding suggestions
+
+Not applicable — record excluded at Gate 2. (For information only, were it included it would code as `003-Modeling`, `005-Europe`, `004-A3-ConnectivityMetrics`, `010-A3-ConnectivityMetrics`; no `020-` value cleanly applies because infrastructure is not a study variable — which is precisely why it fails Gate 2.)
+
+### Synthesis role
+
+Not applicable — excluded.
+
+**Note for protocol calibration:** This paper is a candidate anchor for a brief methodological footnote distinguishing sediment connectivity (IC/ECA, structural, source–sink for sediment) from hydrological connectivity (runoff flow paths, road–stream linkage) in the AquaSilva synthesis. It may also be worth retaining in a separate "adjacent/excluded" log if the team plans a sensitivity check on the core-corpus boundary.
+
+## Sources
+
+Andlinger, Hannah, Johannes Thomas Weidinger, Edoardo Carraro, Christian Pürstinger, and Ronald Pöppl. 2026. “Combining Sediment Connectivity and Debris-Flow Hazard Assessment in the Roßalpen-Prielgraben Catchment (Austrian Alps).” Physical Geography, 1–33.

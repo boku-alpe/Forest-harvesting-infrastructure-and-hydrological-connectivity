@@ -1,0 +1,39 @@
+Reading: Wilson et al. 2021
+
+## Stage-2 Gate Report — Wilson et al. 2021
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7 (only items up to first failed gate evaluated in detail)
+**Borderline carry-over from Stage 1:** No (none reported in record metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (17 pp PDF). (Wilson et al. 2021, 1) |
+| Gate 2 (a) Block-B infrastructure as variable | **FAIL** | The study variables are post-fire burn severity, rainfall intensity, antecedent precipitation, hillslope contributing area, and unconfined channel length; no forest road, skid trail, culvert, bridge, ditch, cross-drain, water bar, or engineered mitigation structure is analyzed as a study variable. The only management treatment is BAER hillslope mulch cover (a soil-surface BMP, not Block-B infrastructure), and it is reported descriptively (% area targeted) rather than tested as an explanatory variable on connectivity.  (Wilson et al. 2021, 2) (Wilson et al. 2021, 4) |
+| Gate 2 (b) Connectivity operationalized as primary outcome | PASS | Connectivity is the framing concept and is operationalized via hillslope-to-stream and upstream-to-downstream sediment delivery ratios (SDRs) plus area-normalized cross-sectional channel change.  (Wilson et al. 2021, 5) (Wilson et al. 2021, 1) |
+| Gate 3 | not evaluated (sequential stop) | — |
+| Gate 4 | not evaluated | — |
+| Gate 5 | not evaluated | — |
+
+Gate 2 fails because criterion (a) is not satisfied: the paper is a wildfire-disturbance connectivity study, not a forest-infrastructure connectivity study. Mulch is the closest candidate but does not map onto B1/B2/B3, and the paper does not isolate its effect on connectivity (mulch coverage is tabulated as a catchment descriptor; the reported drivers of SDR and channel change are high-burn-severity fraction and unconfined channel length).
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string:** `infrastructure not analyzed as variable`
+**Confidence:** High
+**Items flagged for human re-read:** None. One judgement call worth confirming: whether AquaSilva's scope treats post-fire BAER mulch as a C-block mitigation worth retaining despite the absence of B-block forest infrastructure. If the screener decides mulch qualifies as `030-C2-InfiltrationDisconnection` and the SLR scope admits C-only studies, this record could be reconsidered — but under the stated Stage-1/Stage-2 rule (Block-B variable required), exclusion stands.
+
+### Content-coding suggestions
+
+Not applicable (excluded record).
+
+### Synthesis role
+
+Not applicable (excluded record).
+
+## Sources
+
+Wilson, Codie, Stephanie K. Kampf, Sandra Ryan, Tim Covino, Lee H. MacDonald, and Hunter Gleason. 2021. “Connectivity of Post-Fire Runoff and Sediment from Nested Hillslopes and Watersheds.” Hydrological Processes 35 (1): e13975. https://doi.org/10.1002/hyp.13975.

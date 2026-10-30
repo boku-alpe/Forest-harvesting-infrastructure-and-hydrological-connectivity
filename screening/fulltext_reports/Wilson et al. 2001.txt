@@ -1,0 +1,41 @@
+Reading: Wilson et al. 2001
+
+## Stage-2 Gate Report — Wilson et al. 2001
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not indicated in record)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (16 pp.). (Wilson et al. 2001, 1) |
+| Gate 2(a) — Infrastructure as variable | **FAIL** | Roads and culverts appear only as downstream assets at risk ("road culverts, flood retention structures and facilities"), not as variables modulating runoff or connectivity. Burn severity, cover, soil erodibility, and topography are the modelled variables; no forest road density, drainage spacing, ditch geometry, water bar, or cross-drain parameter enters the model.  (Wilson et al. 2001, 4) (Wilson et al. 2001, 2) |
+| Gate 2(b) — Connectivity operationalized | PASS | Sediment connectivity is operationalized via DEM-derived flow paths with profile-based routing through changing cover/gradient/erodibility, with sediment deposition where ground cover increases.  (Wilson et al. 2001, 5) (Wilson et al. 2001, 12) |
+| Gate 3 | not assessed | First failure determines exclusion (Gate 2a). |
+| Gate 4 | not assessed | — |
+| Gate 5 | not assessed | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string:** `infrastructure not analyzed as variable`
+**Confidence:** High
+**Items flagged for human re-read:** None. The Block-B failure is unambiguous — infrastructure is the *protected target* of the model, not a *predictor* in it. If the screener interprets Gate 2(a) more permissively (e.g., culvert blockage as endpoint), this could be re-evaluated, but under the AquaSilva connectivity-anchored scope (anchor authors Wemple, Croke, Takken — roads/trails as connectivity-modifying infrastructure), this paper does not qualify.
+
+### Content-coding suggestions
+
+Not applicable (not Include-Final).
+
+### Synthesis role
+
+Not applicable (excluded at Gate 2).
+
+---
+
+**Note for screener:** The paper has high methodological quality and explicitly invokes "connectivity of sediment transport pathways" as a keyword and conceptual frame  (Wilson et al. 2001, 1) (Wilson et al. 2001, 15), which may have driven Stage-1 inclusion. However, the connectivity that is modelled is *post-fire hillslope-to-stream sediment connectivity controlled by burn severity and cover* — there is no analysis of forest roads, skid trails, culverts, or BMPs as connectivity-modifying features. If retained anywhere, it could serve as a **methodological reference** for flow-path-based sediment routing in Raven/ZEMOKOST parameterization discussions, but not as evidence in the connectivity-anchored corpus.
+
+## Sources
+
+Wilson, Cathy J., J. William Carey, Peter C. Beeson, Marvin O. Gard, and Leonard J. Lane. 2001. “A GIS‐based Hillslope Erosion and Sediment Delivery Model and Its Application in the Cerro Grande Burn Area.” Hydrological Processes 15 (15): 2995–3010.

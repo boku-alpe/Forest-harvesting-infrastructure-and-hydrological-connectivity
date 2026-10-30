@@ -1,0 +1,36 @@
+Reading: Muller et al. 2015
+
+## Stage 2 screening — Muller et al. (2015)
+
+**Proposed terminal tag:** `006-Exclude-Quality`
+**Proposed exclusion-reason note (verbatim):** `no Block-B infrastructure as variable`
+
+### Gate-by-gate rationale
+
+**Gate 1 — Full text retrievable.** Pass. The 20-page PDF is available and readable. (Muller et al. 2015, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** Fail (first failure → determines exclusion reason).
+
+The stated aim is to quantify the effects of *temperature, rainfall and conifer felling practices* on surface-water concentrations of C, Si, P, Fe, Al, K, Na, Ca, Mg, Mn in a peat-dominated headwater catchment of the Flow Country.  (Muller et al. 2015, 1) The independent variables manipulated/observed are (i) seasonal climate drivers, (ii) felling-to-waste vs. mulching as restoration practice, and (iii) water-table depth.  (Muller et al. 2015, 2–3)
+
+Forestry drainage ditches appear in the sampling design (Sites 1–3, 5) but only as *sampling locations* in a forest-to-bog restoration context; they are not treated as a manipulated or characterised Block-B variable (no road/skid-trail/check-dam typology, no geometry, no hydraulic-connectivity attributes).  (Muller et al. 2015, 3–4) The Block-B-relevant features (drains/ furrows) are described as ground-preparation residues that influence biogeochemistry, not as infrastructure whose connectivity behaviour is the object of study.  (Muller et al. 2015, 3)
+
+Connectivity is also *not* operationalized as an outcome: outcomes are solute concentrations, DOC fluxes, ultrafiltration size fractions and concentration–flow regressions — i.e. hydrochemistry, not structural or functional connectivity metrics.  (Muller et al. 2015, 1) (Muller et al. 2015, 5)
+
+Per the sequential-gate rule, the first listed Gate-2 reason that applies is reported. Block-B infrastructure is not a variable in the design; therefore:
+
+→ **`no Block-B infrastructure as variable`**
+
+(Note: `connectivity not operationalized as outcome` would also apply, but Gate-2 reasons are reported in list order and the Block-B failure precedes it.)
+
+**Gates 3–5.** Not evaluated; sequential gating stops at the first failure.
+
+### Notes for the human screener
+
+- The paper is methodologically strong but sits in the *biogeochemistry of peatland restoration* literature (forest-to-bog), not in the connectivity-anchored forest-infrastructure corpus that the AquaSilva PSALSAR review targets. Excluding it protects against Type I synthesis errors as specified in the project framing.
+- If a future extension of the corpus addresses *drainage ditches as Block-B retention/connectivity features* (e.g. ditch blocking as a mitigation measure), this record could be reconsidered under a separate query string and would then need re-screening against Gates 2–5.
+- No content-coding tags are proposed, since Include-Final was not reached.
+
+## Sources
+
+Muller, Francois L. L., Kuei-Chen Chang, Chon-Lin Lee, and Stephen J. Chapman. 2015. “Effects of Temperature, Rainfall and Conifer Felling Practices on the Surface Water Chemistry of Northern Peatlands.” BIOGEOCHEMISTRY 126 (3): 343–62. https://doi.org/10.1007/s10533-015-0162-8.

@@ -1,0 +1,56 @@
+Reading: Benda et al. 2019
+
+## Stage-2 Gate Report — Benda et al. 2019
+
+**Study type:** `003-Modeling` (with supporting field calibration data; primary methodological contribution is a GIS model)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not indicated in attached metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (26 pp.). (Benda et al. 2019, 1) |
+| Gate 2 | PASS | (a) Roads, culverts, drains, surfacing, and rocking are the explicit study variables: "READI quantifies the effectiveness of existing road surfacing and drain placements in reducing road sediment delivery." (b) Connectivity is a primary operationalized outcome: "The model illustrates how the spatial relationships between road and stream networks … influence patterns of road–stream connectivity," reported via proportion of roads hydrologically connected and plume-based delivery.  (Benda et al. 2019, 1) (Benda et al. 2019, 10) |
+| Q1 (context) | PASS | Seven small basins in northern California, 26–109 km², Mediterranean climate, mixed-conifer industrial forest land; full table of area, elevation, slope, drainage density, road density, precipitation, geology.  (Benda et al. 2019, 7–8) |
+| Q2 (design) | PASS | Modeling study with scenario comparison (baseline → current → optimized), plus burn-scenario application and sensitivity analysis.  (Benda et al. 2019, 10) |
+| Q3 (method) | PASS | Model equations 1–14 fully specified (kinematic wave runoff, plume infiltration, USLE-based erodibility); parameterization, DEM source, field-calibration of plume widths and infiltration rates explicit.  (Benda et al. 2019, 4–7) (Benda et al. 2019, 9–10) |
+| Q4 (infrastructure characterized) | PASS | Road density 3.1–4.3 km/km², width 5 m, drain spacing min. 30 m, surface types (paved/gravel/native) and engineered drain classes (bridge, culvert, lead-out, rolling dip, water-bar, ford) reported per segment.  (Benda et al. 2019, 8) (Benda et al. 2019, 9) |
+| Q5 (connectivity operationalized) | PASS | Mechanistic quantification: plume length $L_p$ from drain to stream (Eq. 6/10), proportion of roads with sediment delivery > 0, and dimensionless sediment delivery index used as connectivity metrics.  (Benda et al. 2019, 6) (Benda et al. 2019, 10) |
+| Q6 (effect direction) | PASS | Direction explicit: BMPs (new drains, rocking) decrease delivery; fire-reduced infiltration increases connectivity and delivery. "only a small proportion of new drains and new surfacing results in the majority of sediment delivery reductions."  (Benda et al. 2019, 1) (Benda et al. 2019, 10) |
+| Q7 (scope) | PASS | Seven basins, 112 measured plumes for calibration, full model runs per basin plus fire scenario and storm-frequency sensitivity.  (Benda et al. 2019, 9) |
+| Gate 4 | PASS | Multi-basin application with field-data anchoring.  (Benda et al. 2019, 7–9) |
+| Gate 5 | PASS | Quantitative effect directions extractable for both BMP placement and post-fire infiltration loss.  (Benda et al. 2019, 10) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** — (n/a)
+**Confidence:** High
+**Items flagged for human re-read:** None mandatory. Optional second look at Q5 only to confirm whether the human screener wishes to classify the READI delivery index under A3-Metrics (formal metric) vs. A2-FlowPathDescriptors (flow-path mechanistic).
+
+### Content-coding suggestions
+
+- 002: `002-B1-Roads` — Forest road network is the primary infrastructure variable.  (Benda et al. 2019, 1)
+- 002: `002-B3-Structures` — Engineered drainage structures (culverts, water-bars, rolling dips, lead-outs, bridges) are explicitly parameterized.  (Benda et al. 2019, 9)
+- 002: `002-C3-RoadDrainageBMP` — BMP optimization (drain placement, rocking) is a central output.  (Benda et al. 2019, 7)
+- 003: `003-Modeling` — GIS-based model with kinematic-wave runoff and empirical sediment delivery.  (Benda et al. 2019, 3)
+- 004: `004-A2-FlowPathDescriptors` — Hillslope plume length and road–stream flow path are explicitly traced.  (Benda et al. 2019, 5–6)
+- 004: `004-A3-ConnectivityMetrics` — Dimensionless sediment delivery index and "proportion of roads hydrologically connected" reported as metrics.  (Benda et al. 2019, 10)
+- 005: `005-NorthAmerica` — Seven basins in northern California.  (Benda et al. 2019, 7)
+- 010: `010-A2-FlowPathDescriptors` — Mechanistic flow-path tracing from drain to stream.  (Benda et al. 2019, 6)
+- 010: `010-A3-ConnectivityMetrics` — Quantitative connectivity index.  (Benda et al. 2019, 10)
+- 020: `020-B1-Roads` — Unpaved forest roads as primary unit of analysis.  (Benda et al. 2019, 1)
+- 020: `020-B3-Structures` — Engineered drainage structures parsed and optimized.  (Benda et al. 2019, 4)
+- 030: `030-C2-InfiltrationDisconnection` — Plume attenuation by soil infiltration; hydrologic disconnection from streams is the management goal.  (Benda et al. 2019, 2)
+- 030: `030-C3-RoadDrainageBMP` — Optimization of drain locations and road surfacing rocking.  (Benda et al. 2019, 7)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Strong methodological anchor for modeling road–stream connectivity at the network scale; supplies quantitative evidence that a small proportion of strategically placed drains/surfacing yields the majority of sediment-delivery (i.e., connectivity) reductions, and demonstrates fire-driven infiltration loss as an amplifier of connectivity — directly relevant to RQ6 effectiveness ranking and to Type-B / Type-C parameterization in the Maßnahmenkatalog (infiltration capacity, drain spacing).
+
+## Sources
+
+Benda, L., C. James, D. Miller, and K. Andras. 2019. “Road Erosion and Delivery Index (READI): A Model for Evaluating Unpaved Road Erosion and Stream Sediment Delivery.” Journal of the American Water Resources Association 55 (2): 459–84. Scopus. https://doi.org/10.1111/1752-1688.12729.

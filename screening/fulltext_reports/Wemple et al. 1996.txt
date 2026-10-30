@@ -1,0 +1,89 @@
+I'll read the full text of the attached paper to conduct the Stage-2 gate assessment.
+
+[Reading: Wemple et al. 1996, p. 1-13 (13 results)]
+
+Now let me check the item's existing provenance tags.
+
+[Get metadata]
+
+## Stage-2 Gate Report — Wemple, Jones & Grant 1996
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7 (primary study)
+**Borderline carry-over from Stage 1:** No — no `90-borderline-*` helper tag present in the record; Stage-1 inclusion tags (`006-Include-Stage1`) are already applied without qualification.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF fully retrieved (13 pages); attachment `10-CTM2E42X`. |
+| **Gate 2a** (infrastructure as variable) | **PASS** | The 350 km logging-road network and 436 culverts are the primary objects of investigation, not mere contextual mention: "we examined the type and extent of hydrologic flow paths linking road segments to stream channels." (Wemple et al. 1996) |
+| **Gate 2b** (connectivity operationalized as outcome) | **PASS** | Hydrologic connectivity is quantified as road-stream connectivity percentage (57% of surveyed road length) and as drainage-density increase (21–50%): "57 percent of the surveyed road length is connected to the stream network… increasing drainage density by 21 to 50 percent."  (Wemple et al. 1996) |
+| **Q1** (study context reportable) | **PASS** | Lookout Creek (62 km²) and Blue River (119 km²), Western Cascades, Oregon; temperate maritime climate (~225 cm/yr precipitation, rain-dominated lower elevations, snow at higher); managed forest (22–25% clearcut, road density 1.9 km km⁻²).  (Wemple et al. 1996) |
+| **Q2** (study design classifiable) | **PASS** | Field monitoring / gradient-observational study: stratified random field survey of road-drainage structures combined with GIS-based spatial analysis of two adjacent basins. Classification is unambiguous (field monitoring + GIS).  (Wemple et al. 1996) |
+| **Q3** (method reproducibly described) | **PASS** | Stratified random sample of 20% of road network, 31 × 2-km transects, culvert classification protocol with 3 outlet categories, storm resurvey with classification-error quantification (±4.6–7.1%), logistic regression on 275 ditch-relief culverts, GIS DEM delineation with 2-ha source-area threshold — all described in sufficient operational detail to replicate.  (Wemple et al. 1996) |
+| **Q4** (infrastructure characterized) | **PASS** | Roads (B1): total length (119 km / 230 km per basin), density (1.9 km km⁻²), decade of construction, hillslope position. Culverts (B3): 436 examined, classified by outlet type, culvert spacing measured.  (Wemple et al. 1996) (Wemple et al. 1996) |
+| **Q5** (connectivity operationalized as metric) | **PASS** | Two quantitative connectivity metrics deployed: (i) proportion of surveyed road length hydrologically connected (57% overall; 34% direct-to-stream + 24% via gullied culverts); (ii) drainage density (Dd) as a flow-routing index, reported for four assumption scenarios (21–50% increase).  (Wemple et al. 1996) |
+| **Q6** (effect direction derivable) | **PASS** | Roads unambiguously *increase* drainage density and thus hydrological connectivity. Quantified direction is consistent across all four sensitivity scenarios (positive direction, 21–50% increase).  (Wemple et al. 1996) |
+| **Gate 4** (sample/scope adequate) | **PASS** | Two complete basins surveyed; 436 culverts classified; logistic regression on n = 275; storm resurvey on 120 culverts; GIS analysis of full 350 km road network. One full investigation iteration clearly completed.  (Wemple et al. 1996) |
+| **Gate 5** (effect extractable) | **PASS** | Quantitative effect on drainage density (21–50% increase under alternative connectivity assumptions) is directly extractable. Effect direction is unambiguous.  (Wemple et al. 1996) |
+
+---
+
+### Provenance verification
+
+Tags present: `010-A1-ConnectivityConcepts`, `010-A2-FlowPathDescriptors`, `020-B1-Roads`, `020-B3-Structures`, `090-H01/H03/H04/H06`.
+
+- **A1 (ConnectivityConcepts):** The paper explicitly proposes a conceptual model of road hydrologic function framing roads as agents of hydrologic integration with the stream network. A1 is substantively matched.  (Wemple et al. 1996)
+- **A2 (FlowPathDescriptors):** Flow-path classification (ditch-to-stream vs. culvert-with-gully vs. reinfiltrating) is the operational core of the field survey. A2 is substantively matched.  (Wemple et al. 1996)
+- **B1 (Roads):** Primary infrastructure. Matched.
+- **B3 (Structures):** 436 culverts are explicitly classified and subjected to logistic regression — structures are co-analyzed as variables, not just counted. Matched.  (Wemple et al. 1996)
+- No `030-C*` tags present; the paper does not analyze mitigation variables. Consistent with H-query (not M-query) provenance.
+
+**Provenance verification: no drift detected.**
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final` (both already applied in Zotero; assessment confirms they are correct)
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-Mixed` — Logging roads (B1) are the primary unit of analysis, but culverts (B3) are co-equal study variables, subjected to independent logistic regression analysis and classified into three outlet types. The provenance `020-B3-Structures` reflects genuine variable-level analysis, not mere contextual mention.  (Wemple et al. 1996)
+
+- **003** [Study type]: `003-FieldMonitoring` — Stratified random field survey of road-drainage structures (July–August 1992 + storm resurvey winter 1993) combined with GIS spatial analysis. No experimental manipulation, no before–after design; both basins observed as they exist.  (Wemple et al. 1996)
+
+- **004 primary** [Outcome]: `004-FlowPathInitiation` — The paper's central focus is channel-network extension: quantification of new and extended surface flowpaths (road-ditch-to-stream connections and gully-mediated connections) and the resulting increase in effective drainage density. This is topological change in the flowpath network, not volumetric response.  (Wemple et al. 1996)
+
+- **004 secondary** [Outcome]: `004-RunoffResponse` — The paper includes measurements of unit-area road-ditch discharge during storms (subsurface-to-surface conversion; quickflow volume contribution), and the conceptual model explicitly frames a "volumetric effect" of roads as a co-reported dimension, though quantification is limited.  (Wemple et al. 1996)
+
+- **005** [Region]: `005-NorthAmerica` — Study conducted in the western Cascades of Oregon, USA.  (Wemple et al. 1996)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** This is a foundational study for RQ1/RQ2 — it provides one of the earliest quantitative estimates of road-stream connectivity as drainage-density increase (21–50%) in large forested catchments, and introduces the dual volumetric/timing conceptual model that has since structured much of the field. The sensitivity analysis across four connectivity-assumption scenarios is a distinctive methodological contribution worth flagging for reviewers examining effect-size variability.
+
+---
+
+### Final tag conformance check
+
+All proposed tag strings verified character-for-character against the permitted taxonomy:
+`002-Mixed` ✓ | `003-FieldMonitoring` ✓ | `004-FlowPathInitiation` ✓ | `004-RunoffResponse` ✓ | `005-NorthAmerica` ✓
+
+**Tag replacements made: none.**
+
+## Sources
+
+Wemple, Beverley C., Julia A. Jones, and Gordon E. Grant. 1996. “Channel Network Extension by Logging Roads in Two Basins, Western Cascades, Oregon.” JAWRA Journal of the American Water Resources Association 32 (6): 1195–207. https://doi.org/10.1111/j.1752-1688.1996.tb03490.x.

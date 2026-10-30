@@ -1,0 +1,33 @@
+Reading: Åström et al. 2001
+
+## Stage-2 Gate Report — Åström et al. 2001
+
+**Study type:** `003-PairedCatchment` (BACI design with reference + impact catchment, field monitoring of stream chemistry)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Unknown — no Stage-1 helper tag is visible on the attached record; screener should verify.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (18 pp.). |
+| Gate 2(a) — Block-B infrastructure as variable | PASS | Ditching (cleaning of 17,472 m old ditches + 14,373 m new supplementary ditches) is the explicit treatment in a paired-catchment design. (Åström et al. 2001, 2) |
+| Gate 2(b) — Connectivity operationalized as outcome | **FAIL** | Outcomes are hydrochemical (SM, TOC, pH, Fe, Mn, Al, Ca, Mg). Flow paths are invoked only narratively ("related to changes in hydrological flow paths… most likely to immobilisation… in the near neutral till horizon"); the hydrograph itself was explicitly unchanged, and no connectivity metric, index, or mechanistic quantification of structural/functional linkage is reported.  (Åström et al. 2001, 1) (Åström et al. 2001, 4) |
+| Gate 3 | not evaluated (Gate 2 failed) | — |
+| Gate 4 | not evaluated | — |
+| Gate 5 | not evaluated | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string:** `connectivity only narrative, not operationalized`
+**Confidence:** High — the paper is a well-designed paired-catchment BACI study, but its outcome set is water-quality / hydrochemistry. The single qualitative reference to "hydrological flow paths" in the abstract is a mechanistic hypothesis for chemical shifts, not an operationalized connectivity variable. The authors themselves note ditching did not change the hydrograph pattern, which further weakens any connectivity-outcome reading.
+**Items flagged for human re-read:** Gate 2(b) — screener should confirm that the flow-path language in the Discussion (pp. 9–15, not yet read) does not contain an operationalized connectivity treatment. If the Discussion stays at the level of the abstract's narrative ("changes in hydrological flow paths… most likely…"), exclusion stands. If a flow-path metric or quantified ditch-stream linkage is presented later, re-evaluate.
+
+### Note for synthesis phase
+
+Even though excluded from the connectivity-anchored core corpus, this study could be retained as **contextual background** for AquaSilva discussions of ditch networks as a Block-B infrastructure analogue: it provides quantitative field evidence (mid-western Finland, ~1.6–2.1 km² catchments, boreal climate, ~500 mm/yr precipitation, peat-over-till) that artificial drainage produces a >40× increase in suspended-material concentration and a ~1 pH-unit shift without changing the hydrograph — a useful counterpoint to studies that conflate ditching effects on water quality with effects on runoff connectivity.
+
+## Sources
+
+Åström, M., E. K. Aaltonen, and J. Koivusaari. 2001. “Impact of Ditching in a Small Forested Catchment on Concentrations of Suspended Material, Organic Carbon, Hydrogen Ions and Metals in Stream Water.” Aquatic Geochemistry 7 (1): 57–73. Scopus. https://doi.org/10.1023/A:1011337225681.

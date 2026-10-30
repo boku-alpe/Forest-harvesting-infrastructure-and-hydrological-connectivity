@@ -1,0 +1,45 @@
+Reading: Sidle 2010
+
+## Stage-2 Gate Report — Sidle 2010
+
+**Study type:** `003-Review` (narrative review synthesizing hydrogeomorphic processes across temperate and tropical forests)
+**Checklist applied:** R1–R3
+**Borderline carry-over from Stage 1:** No (no `90-borderline-*` helper tag visible in record metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS | (a) Roads/trails analyzed as a study variable: "unpaved roads and trails, while occupying a small portion of catchments, are often responsible for the bulk of the sediment production and transport… and affect the timing and amount of water delivery to streams" (p. 14). (b) Connectivity operationalized as a co-reported outcome with dedicated sections "Connectivity of sediment sources with receiving waters" in both temperate (p. 6) and tropical (p. 11) syntheses, plus Type 1 / Type 2 connectivity classification (Fig. 1, p. 6). |
+| R1 | PASS | Published in *Geography Compass* (Wiley peer-reviewed journal), DOI 10.1111/j.1749-8198.2010.00350.x. |
+| R2 | PASS | Explicitly addresses forest infrastructure × connectivity: "The connectivity of sediment sources with flow pathways in catchments can be greatly enhanced by land uses (particularly unpaved roads and trails)" (abstract, p. 1); dedicated treatment of road/skid-trail networks as connectors (pp. 8, 12). |
+| R3 | PASS | Multiple extractable synthesis-level anchors: (i) classification scheme — Type 1 (rapidly mobilized landslide→debris flow) vs. Type 2 (deposited, later remobilized) connectivity (p. 7, Fig. 1); (ii) consensus claim — 58–77 % of landslide sediment directly reaches channels in steep forested sites (p. 7); (iii) gap statement — "Assessing how spatially distributed land uses affect erosion processes… as well as their connectivity of sediment to streams is an important area for future research" (p. 14). |
+| Gate 4 | PASS | Auto-pass for review. |
+| Gate 5 | PASS | Clear effect direction derivable: roads and trails *increase* connectivity of hillslope sediment sources to stream channels in both biomes; effect is stronger for surface-erosion linkage in tropics and mass-wasting linkage in temperate forests (p. 14). |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** None. (Note for screener: connectivity in this paper is operationalized largely as a *conceptual/typological* construct — Type 1/Type 2 linkage classes and qualitative source-to-channel pathway descriptions — rather than via a numerical connectivity index (IC, etc.). This is appropriate for a review and satisfies R3, but should be flagged in extraction as "conceptual / flow-path descriptor" rather than "metric.")
+
+### Content-coding suggestions
+
+- **002:** `002-Mixed` — paper treats roads and skid/extraction trails jointly as the infrastructure variable: "unpaved roads and trails in these forests generate more intense runoff… they are chronic sources of eroded soil which can easily enter channels if road networks are interconnected" (p. 8); "Sediment pathways in a tropical forest: effects of logging roads and skid trails" framing reiterated for SE Asia (pp. 12–13).
+- **003:** `003-Review` — narrative review synthesizing examples from circum-Pacific temperate and SE-Asian tropical forests; no new empirical dataset of its own (structure of paper, pp. 1–14).
+- **004:** `004-A1-ConnectivityConcepts` AND `004-A2-FlowPathDescriptors` — Type 1/Type 2 functional linkages (p. 7) are conceptual connectivity constructs; hillslope→hollow→channel→debris-flow pathways are flow-path descriptors (pp. 6–7, 11).
+- **005:** `005-NorthAmerica` AND `005-Asia` — "Specific examples for temperate forests are drawn from the circum-Pacific region, particularly western North America and Japan" (p. 5); tropical examples "largely from humid tropical forests in Southeast Asia" (p. 10).
+- **010:** `010-A1-ConnectivityConcepts` AND `010-A2-FlowPathDescriptors` — same evidence as 004; no quantitative connectivity index is computed, so `010-A3-ConnectivityMetrics` is NOT proposed.
+- **020:** `020-B1-Roads` AND `020-B2-SkidSnigTrails` — roads as cutslope/fillslope destabilizers and runoff concentrators (p. 8, Fig. 4); skid trails and footpaths as connected sediment delivery networks in SE Asia (pp. 12–13, Fig. 5). `020-B3-Structures` NOT proposed — culverts/cross-drains/water bars are not analyzed as discrete variables.
+- **030:** `030-empty` — paper does not analyze mitigation/BMP measures as a variable; riparian buffers are mentioned only briefly and noted to be ineffective in largest storms (p. 12), which is insufficient for a C-block assignment.
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `review`
+**RQ5 vote-counting:** excluded (review — would double-count underlying primary studies, notably Sidle et al. 2004, Ziegler et al. 2004/2006, Megahan et al. 1978, Luce & Black 1999)
+**Notes for synthesis phase:** Strongest contribution is the **Type 1 / Type 2 connectivity typology** (rapid landslide→debris-flow vs. stored-then-remobilized sediment), usable as a classification anchor for RQ1/RQ2 and as a conceptual bridge between mass-wasting and fluvial connectivity frames. Also provides a citable consensus range (58–77 % of landslide sediment directly reaching channels in steep forested sites) and a clearly stated gap on spatially distributed land-use effects on connectivity — useful as RQ6 framing context. (Sidle 2010, 7) (Sidle 2010, 14)
+
+## Sources
+
+Sidle, R. C. 2010. “Hydrogeomorphic Processes in Temperate and Tropical Forests: Effects of Land Use and Scale.” Geography Compass 4 (8): 1115–32. Scopus. https://doi.org/10.1111/j.1749-8198.2010.00350.x.

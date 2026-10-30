@@ -1,0 +1,32 @@
+Reading: Mirus et al. 2011
+
+## Stage-2 gate evaluation — Mirus et al. (2011)
+
+**Gate 1 (full text):** Pass. Full-text PDF (18 pp.) is available. (Mirus et al. 2011, 1)
+
+**Gate 2 (Stage-1 inclusion confirmed by full text):** **Fail.**
+
+The stated objective is to evaluate how boundary-value-problem complexity affects the simulated representation of runoff-generation mechanisms (subsurface stormflow, Horton, Dunne) across four catchments using the InHM model — not to analyze forest-road, skid-trail, or in-stream structure effects on hydrological connectivity.  (Mirus et al. 2011, 2) Block-B infrastructure appears only as incidental site description: the C3 catchment is "intersected along its downstream boundary by a forest road, which is drained by a culvert", and the road is referenced as a feature of a prior slope-stability study (Mirus et al. 2007), but it is neither a treatment variable nor a parameter varied in the reduced-case comparisons of this paper.  (Mirus et al. 2011, 4) Connectivity (structural or functional) is not operationalized as an outcome metric; the response variables are integrated discharge and distributed runoff patterns under different parameterization detail.
+
+Because gates are sequential and Gate 2 fails on the first applicable string, later gates (3–5) are not evaluated.
+
+### Recommended terminal tagging
+
+| Field | Value |
+|---|---|
+| Terminal tag | `006-Exclude-Quality` |
+| Exclusion-reason note (verbatim) | `infrastructure mentioned as context only` |
+
+Rationale for choosing this string over `no Block-B infrastructure as variable`: a forest road + culvert is explicitly present at the C3 site, so the paper is not entirely devoid of Block-B infrastructure — it is present but treated as static catchment context rather than as an analytical variable. If the screener prefers the stricter reading (infrastructure not used as a variable at all in the analysis), `no Block-B infrastructure as variable` would be the alternative; both fall under Gate 2.
+
+### Content-coding tags
+
+Not applicable — content-coding tags are proposed only for `006-Include-Final` records. No `002-`/`003-`/`004-`/`005-`/`010-A`/`020-B`/`030-C` tags are suggested for this record.
+
+### Note for the screener
+
+This is a representative borderline case for the connectivity anchor: the C3 sub-study lineage (Wemple 1998; Dutton et al. 2005; Mirus et al. 2007) *is* connectivity-relevant and those upstream references should be screened on their own merits, but the 2011 synthesis paper itself operates at the level of generic rainfall–runoff process representation and therefore falls outside the connectivity-anchored core corpus.
+
+## Sources
+
+Mirus, Benjamin B., Brian A. Ebel, Christopher S. Heppner, and Keith Loague. 2011. “Assessing the Detail Needed to Capture Rainfall-Runoff Dynamics with Physics-Based Hydrologic Response Simulation.” WATER RESOURCES RESEARCH 47 (June): W00H10. https://doi.org/10.1029/2010WR009906.

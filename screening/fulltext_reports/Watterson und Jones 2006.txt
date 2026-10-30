@@ -1,0 +1,54 @@
+I'll read the full text of the paper to conduct the Stage-2 gate evaluation.
+
+[Reading: ⁨Watterson⁩ und ⁨Jones⁩ 2006, p. 1-17 (17 results)]
+
+## Stage-2 Gate Report — Watterson & Jones 2006
+
+**Study type:** `003-FieldMonitoring` (primary) + `003-Experimental` (secondary — laboratory seed germination trials)
+**Checklist applied:** Q1–Q7 (primary study)
+**Borderline carry-over from Stage 1:** Unknown — no tag metadata was provided with the imported record; screener should verify whether any `90-borderline-*` helper tag exists in Zotero.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** — Full text retrievable | **PASS** | PDF attached and fully retrieved (17 pp.). |
+| **Gate 2(a)** — Infrastructure as study variable | **PASS** | The road network, road ditches, and culverts are explicitly analyzed as the source and transport conduit for invasive seeds. Three mechanistic transport routes involving road infrastructure are identified and mapped: ditch fluvial transport, debris-flow entrainment of road fill, and hybrid debris-flow/ditch routing through blocked culverts. (Watterson and Jones 2006) |
+| **Gate 2(b)** — Connectivity operationalized as primary or co-reported outcome | **FAIL** | Hydrological connectivity between road and stream networks is invoked as the explanatory conceptual frame ("connectivity between road and stream networks provided by geomorphic processes"  (Watterson and Jones 2006)), but it is never quantified or reported as a measured/modeled variable. The operationalized outcome throughout is exotic plant distribution (patch counts, species frequencies by reach).  (Watterson and Jones 2006) Flow-path mapping (Fig. 3, 4, 7) documents *which* flow paths connected road sources to the stream during the 1996 event, but this mapping serves as supporting causal narrative for the plant distribution results, not as an outcome reported independently. No connectivity index, metric, or quantified connectivity variable appears in any results table or section. The research question is explicitly framed around plant distribution, not connectivity:  (Watterson and Jones 2006) Gate 2 therefore FAILS; subsequent gates not evaluated. |
+
+---
+
+### Provenance verification
+
+Not applicable — paper fails Gate 2. Provenance verification is reserved for Include-Stage2 candidates.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string:** `connectivity only narrative, not operationalized`
+**Confidence:** High
+**Items flagged for human re-read:** Gate 2(b) — The screener may wish to confirm whether the GIS-based mapping of debris-flow paths and ditch drainage routes in Figures 3, 4, and 7 constitutes sufficient "flow-path analysis as co-reported outcome" to satisfy criterion (b). The present assessment is that those figures serve instrumentally (as causal explanation) rather than as standalone connectivity results, and that the absence of any connectivity metric or index settles the question in favour of FAIL. If the screener disagrees, Gate 3 Q5 ("connectivity not operationalized") would likely produce the same terminal outcome.
+
+---
+
+### Content-coding suggestions
+
+*Not applicable — record excluded.*
+
+---
+
+### Synthesis role
+
+*Not applicable — record excluded.*
+
+---
+
+### Tag replacements made: none.
+
+## Sources
+
+Watterson, N. A., and J. A. Jones. 2006. “Flood and Debris Flow Interactions with Roads Promote the Invasion of Exotic Plants along Steep Mountain Streams, Western Oregon.” Geomorphology 78 (1–2): 107–23. Scopus. https://doi.org/10.1016/j.geomorph.2006.01.019.

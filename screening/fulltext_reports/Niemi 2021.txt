@@ -1,0 +1,42 @@
+Reading: Niemi 2021
+
+# Stage 2 screening — Niemi (2021)
+
+## Gate-by-gate assessment
+
+**Gate 1 — Full text retrievable.** Pass. The 14-page article was fully accessible. (Niemi 2021, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** Fail.
+
+The paper is a methodological case study on hydrologically conditioned DEM generation from airborne LiDAR (5 vs. 0.5 pulses m⁻²) for stream extraction and TWI mapping in a 20 km² ditched peatland-forest catchment near Parkano, Finland. The stated objective is "to refine best practices related to the acquisition and processing of 3D point data for overland flow routing within a forested catchment."  (Niemi 2021, 3)
+
+Against the connectivity-anchored inclusion logic, two issues arise:
+
+1. **No Block-B infrastructure treated as a variable.** Forest roads appear only as a parameter constraint for breach search distance ("20 meters, which was long enough for finding all channels through the widest main road").  (Niemi 2021, 6) Anthropogenic features are noted as a general motivation for DEM conditioning ("roads and ditches… manipulate natural flow paths and may create artificial sinks") but are not manipulated, contrasted, or parameterized as a study factor.  (Niemi 2021, 2) The drainage ditches in the catchment are the *target* of the extraction procedure (i.e. features to be detected), not predictor variables whose connectivity effect is quantified. Skid/snigging trails (B2) and decentralized retention structures (B3) are absent.
+
+2. **Connectivity is not operationalized as an outcome.** The outcomes are DEM-derived stream-network overlap with the NLS topographical database under four channelization thresholds, detection rates of 40 selected flow paths (20 culverts + 20 ditches), and pairwise TWI differences across LiDAR density / interpolation method.  (Niemi 2021, 6–8) These are accuracy metrics for terrain-based flow routing, not structural or functional connectivity metrics (no IC index, no sediment/runoff delivery ratio, no event-based linkage, no road–stream connection counts à la Wemple). TWI is a topographic wetness proxy, not a connectivity outcome.
+
+Per the sequential-gate rule (Gate 2 sub-reasons ordered by the user's list), the first applicable reason is:
+
+> **`no Block-B infrastructure as variable`**
+
+(Secondary observation, recorded only for screener context: `connectivity not operationalized as outcome` would also apply.)
+
+Gates 3–5 are not evaluated because Gate 2 fails.
+
+## Recommended Stage-2 terminal tagging
+
+| Field | Value |
+|---|---|
+| Terminal tag | `006-Exclude-Quality` |
+| Reason note (verbatim) | `no Block-B infrastructure as variable` |
+
+No content-coding (`002-`, `003-`, `004-`, `005-`, `010-A`, `020-B`, `030-C`) is proposed, since these are reserved for Include-Final records.
+
+## Rationale note for the human screener
+
+The paper is methodologically rigorous and relevant to *adjacent* AquaSilva workstreams — specifically, to AP2 input-data preparation (LiDAR-derived DEM conditioning, stream extraction, TWI as a wetness covariate for ZEMOKOST/Raven parameterization). It could be worth retaining outside the connectivity corpus as a **methods reference** (e.g. via a separate tag such as `methods-DEM-LiDAR` or placement in a methods collection), but it does not belong in the connectivity-anchored synthesis corpus because neither Block-B infrastructure nor connectivity is treated as a study variable. Excluding it here protects against Type I drift toward general forest-hydrology / remote-sensing literature.
+
+## Sources
+
+Niemi, M. T. 2021. “Improvements to Stream Extraction and Soil Wetness Mapping within a Forested Catchment by Increasing Airborne LiDAR Data Density – a Case Study in Parkano, Western Finland.” Silva Fennica 55 (5). Scopus. https://doi.org/10.14214/sf.10557.

@@ -1,0 +1,102 @@
+I'll read the full text of the paper to conduct the Stage-2 gate assessment.
+
+[Reading: ⁨Croke⁩ und ⁨Mockler⁩ 2001, p. 1-13 (13 results)]
+
+Now let me retrieve the item's existing tags to check provenance.
+
+[Get metadata]
+
+## Stage-2 Gate Report — Croke & Mockler 2001
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (no `90-borderline-*` helper tag detected in existing tag set)
+
+> **⚠ Pre-existing Stage-2 tags detected.** This record already carries `006-Include-Stage2`, `006-Include-Final-primary`, `002-B1-Roads`, `002-B3-Structures`, `003-FieldMonitoring`, `004-A2-FlowPathDescriptors`, `004-A3-ConnectivityMetrics`, and `005-Oceania`. The assessment below proceeds as a fresh independent evaluation. Discrepancies between this report and the already-applied tags are flagged explicitly for screener review.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | PDF attachment (10-S3YIAZXR) fully retrieved, 13 pages. |
+| Gate 2(a) | PASS | Forest roads (B1) and drainage structures — mitre drains, relief culverts, bridges, fords (B3) — are the explicit study variables; road class, drain type, contributing road length, and hillslope gradient are all measured per outlet. (Croke and Mockler 2001) |
+| Gate 2(b) | PASS | Road-to-stream linkage is operationalized as the primary outcome using four discrete linkage classes (None / Partial / Full / Direct), drainage density increase, and a discriminant function separating channelled from non-channelled flow pathways.  (Croke and Mockler 2001) (Croke and Mockler 2001) |
+| Q1 | PASS | Region: southeastern NSW, Australia. Catchment: Cuttagee Creek, 57 km² total (37 km² managed); elevation 0–364 m a.s.l.; rainfall ~850 mm/yr, humid temperate. Land use: managed eucalyptus hardwood forest.  (Croke and Mockler 2001) |
+| Q2 | PASS | Stratified random field survey of road segments (20% of 75 km network, n = 224 drainage outlets), GIS-assisted flow routing, Fisher's linear discriminant analysis. Design is classifiable as a gradient/comparative field-monitoring study.  (Croke and Mockler 2001) |
+| Q3 | PASS | Instruments and protocol described: DGPS (Sokkia 1600 Rover) for drain locations, clinometer (±0.5°) for slope, metric tape for flow-path dimensions, ArcView FLOWLINES algorithm for non-channelled path routing, DEM with 3 ha constant-source-area threshold for channel-head delineation, Fisher linear discriminant function (Equation 2).  (Croke and Mockler 2001) |
+| Q4 | PASS | B1: road classes IV–VI described with formation widths and maintenance standards; road density 1.99 km/km²; 95% constructed 1965–1975; topographic position strata (ridgetop / mid-valley / streamside). B3: relief culverts (450 mm cement pipe, n = 45), mitre drains (n = 770), push-outs, bridges, fords — all characterized by type, contributing road length, and hillslope gradient.  (Croke and Mockler 2001) (Croke and Mockler 2001) |
+| Q5 | PASS | Connectivity quantified as: (i) proportion of drains per linkage class (e.g., 83% of culverts fully linked;  (Croke and Mockler 2001)); (ii) drainage density increase (+6% measured, +9.3% projected;  (Croke and Mockler 2001)); (iii) threshold contributing road length function Lt = 25m/sin θ, correctly segregating 93% of channelled/non-channelled outlets ( (Croke and Mockler 2001)); (iv) 31% of natural stream network receiving road-derived runoff ( (Croke and Mockler 2001)). Operationalization is quantitative throughout. |
+| Q6 | PASS | Effect direction unambiguously derivable: road drainage structures — especially relief culverts draining cut-and-fill roads — increase structural and functional connectivity between the road network and the natural stream network, raising drainage density.  (Croke and Mockler 2001) (Croke and Mockler 2001) |
+| Q7 | PASS | 224 drainage outlets across 14 km of road surveyed to completion; statistical analysis carried out on the full sample; results reported with significance tests.  (Croke and Mockler 2001) |
+| Gate 4 | PASS | Confirmed by Q7; ≥1 complete investigation iteration with adequate n. |
+| Gate 5 | PASS | Effect size and direction clearly extractable: 18% of road drains fully linked, 6% drainage density increase, culverts 3× longer contributing road lengths and 2× steeper discharge hillslopes than mitre drains.  (Croke and Mockler 2001) |
+
+---
+
+### Provenance verification
+
+Provenance tags: `010-A2-FlowPathDescriptors`, `020-B1-Roads`, `020-B3-Structures`, `090-H04`, `090-H06`.
+
+- **010-A2 ↔ content**: A2 (flow-path description / channel-network extension) is indeed the paper's primary conceptual framing — linkage classes, gully-mediated path extension, drainage density. ✓
+- **020-B1 + B3 ↔ content**: Roads (B1) and drainage structures / culverts (B3) are both studied as co-equal variables. ✓
+- **Partial drift — A3 not in provenance**: The paper also substantially deploys a connectivity-threshold metric (discriminant function, drainage density as quantitative index), which is characteristic of A3-ConnectivityMetrics framing. This A3 dimension is absent from the provenance tags. The drift is moderate; the A2 framing remains primary but A3 co-occurs. Flagged for screener awareness as a diagnostic signal only — no retag action implied.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** None
+
+> **⚠ Tagging irregularities in existing record — screener action required:**
+>
+> 1. **`004-A2-FlowPathDescriptors` and `004-A3-ConnectivityMetrics`** are currently applied as 004-family tags on this record. These are **invalid 004 values**: the permitted 004 family covers hydrological outcome variables (`004-PeakFlow`, `004-RunoffResponse`, `004-SedimentDelivery`, `004-FlowPathInitiation`). A-block framing belongs exclusively in the 010 family. These two tags should be removed and replaced with the correct 004 values proposed below.
+>
+> 2. **`006-Include-Final-primary`** is not a permitted terminal tag in the taxonomy. Permitted terminal tags are `006-Include-Stage2` and `006-Include-Final` (with synthesis role recorded separately in a note or extraction sheet, not as a Zotero tag suffix). The screener should verify whether this tag was added intentionally outside the protocol and replace it with `006-Include-Final` if conformance is required.
+>
+> 3. **`002-B1-Roads` + `002-B3-Structures` applied as two separate 002 tags.** Per the protocol rule ("use `002-Mixed` when two or more B-types are co-equal study variables"), a single `002-Mixed` tag is the correct encoding. The screener may wish to consolidate.
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-Mixed` — roads (B1) and drainage structures (B3: relief culverts, mitre drains, bridges, fords) are analyzed jointly and equally as study variables throughout.  (Croke and Mockler 2001) (Croke and Mockler 2001) *(Note: supersedes the two separate `002-B1-Roads` + `002-B3-Structures` tags currently on the record.)*
+
+- **003** [Study type]: `003-FieldMonitoring` — dominant method is stratified random field survey with GIS-assisted analysis; no secondary modeling or experimental design rises to co-equal status.  (Croke and Mockler 2001)
+
+- **004 primary** [Outcome]: `004-FlowPathInitiation` — the paper's central outcome is the initiation and extent of new channelled flow paths (gully development) from road drains to the stream network, measured as drainage density increase and linkage-class proportions.  (Croke and Mockler 2001) (Croke and Mockler 2001)
+
+- **004 secondary** [Outcome]: `004-SedimentDelivery` — sediment delivery to the stream network is co-reported as evidence of functional connectivity (turbid pools, sediment slugs, silty plumes at direct crossings) and underlies the management motivation throughout.  (Croke and Mockler 2001) (Croke and Mockler 2001)
+
+- **005** [Region]: `005-Oceania` — study conducted in NSW, southeastern Australia.  (Croke and Mockler 2001)
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** This study provides the first replication of the Wemple et al. (1996) / Montgomery (1994) road-to-stream linkage methodology in an Australian eucalyptus forest, deriving a threshold road-length function (Lt = 25 m/sin θ) and a 6–9.3% drainage density increase under a relatively low-culvert regime. Its most distinctive contribution for AquaSilva synthesis is the quantitative infrastructure type × connectivity direction pairing: relief culverts on cut-and-fill mid-valley roads are disproportionately responsible for full channel linkage (83% of culverts linked vs. 8% of mitre drains), providing a strong structural-connectivity classification anchor for the Maßnahmenkatalog drain-type differentiation.  (Croke and Mockler 2001) (Croke and Mockler 2001)
+
+---
+
+### Tag replacements made
+
+The following conformance corrections were applied during drafting of this report (not to the Zotero record — screener applies all changes manually):
+
+| Generated value | Status | Action |
+|---|---|---|
+| `004-A2-FlowPathDescriptors` (existing on record) | **Invalid in 004 family** | Flagged for removal; replaced by `004-FlowPathInitiation` |
+| `004-A3-ConnectivityMetrics` (existing on record) | **Invalid in 004 family** | Flagged for removal; no separate replacement needed (A3 already in 010 provenance) |
+| `006-Include-Final-primary` (existing on record) | **Not a permitted terminal tag** | Flagged for replacement with `006-Include-Final` |
+| `002-B1-Roads` + `002-B3-Structures` (two separate tags) | Individually valid but violate co-equal B-type rule | Flagged for consolidation into `002-Mixed` |
+
+All proposed content-coding tags in this report (`002-Mixed`, `003-FieldMonitoring`, `004-FlowPathInitiation`, `004-SedimentDelivery`, `005-Oceania`) are exact character-for-character matches of permitted values. No further replacements required.
+
+## Sources
+
+Croke, Jacky, and Simon Mockler. 2001. “Gully Initiation and Road-to-Stream Linkage in a Forested Catchment, Southeastern Australia.” Earth Surface Processes and Landforms 26 (2): 205–17. https://doi.org/10.1002/1096-9837(200102)26:2%253C205::AID-ESP168%253E3.0.CO;2-G.

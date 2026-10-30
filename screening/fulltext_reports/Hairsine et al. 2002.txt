@@ -1,0 +1,53 @@
+[Reading: Hairsine et al. 2002, p. 1-17 (17 results)]
+
+## Stage 2 screening — Hairsine et al. (2002)
+
+### Gate evaluation
+
+**Gate 1 — Full text:** PASS. The 17-page PDF is fully retrievable and machine-readable.
+
+**Gate 2 — Stage-1 inclusion confirmed:** PASS. Block-B infrastructure (snig tracks / skid trails plus cross-banks) is the explicit independent variable, and connectivity is operationalized as an outcome through the *volume-to-breakthrough* concept, which is defined as "the volume of runoff that may enter an area before a discharge is observed at the downslope boundary of that area" — i.e., the threshold for establishing surface connection from cross-bank outlet to stream. (Hairsine et al. 2002, 4) The stated objective is to predict track-to-stream linkage, not merely runoff or sediment yield.  (Hairsine et al. 2002, 2–3)
+
+**Gate 3 — Q-items (primary study; modeling with empirical input):**
+- Q1 context reportable: Eden Forest Management Area, SE New South Wales, Australia; three 160 ha compartments on light-granite, red-granite, and metasediment lithologies; nine instrumented hillslopes across three age classes. PASS.  (Hairsine et al. 2002, 3)
+- Q2 design classifiable: Modeling study (probabilistic plume-length model) parameterized with rainfall-simulator field data and GIS-derived track/stream geometry. PASS.  (Hairsine et al. 2002, 3)
+- Q3 method reproducibly described: Governing equations (1)–(8), assumption set, distributional parameters of vbt5 (μ = 336 L, σ² = 35 600), and DGPS/GIS workflow are all reported. PASS.  (Hairsine et al. 2002, 5) (Hairsine et al. 2002, 8)
+- Q4 infrastructure characterized: Snig tracks ~5 m wide, ⊥-to-contour on slopes ≤ 30 %; cross-banks 5–6 m wide, ~0.5 m high; networks occupy 4–6 % of compartment area. PASS.  (Hairsine et al. 2002, 3) (Hairsine et al. 2002, 8)
+- Q5 connectivity operationalized: Plume mean length vs. available hillslope length (1:1 criterion) plus summed PDF of stream-delivered runoff volume. PASS.  (Hairsine et al. 2002, 10)
+- Q6 effect direction derivable: Rainfall intensity ↑ → connection probability ↑ (0.5 %, 2 %, 16 % of plumes exceed available hillslope at low/medium/high intensity, MS compartment); time since logging ↑ → connection ↓; shorter delivery-path landscapes (MS, dendritic) → connection probability differs systematically from granite compartments. PASS.  (Hairsine et al. 2002, 12) (Hairsine et al. 2002, 14)
+
+**Gate 4 — Sample/scope:** PASS. 9 hillslope plots × 3 intensities + 193 / 604 / 368 modeled cross-bank plumes across the three compartments.  (Hairsine et al. 2002, 13)
+
+**Gate 5 — Effect direction extractable:** PASS (see Q6).
+
+### Terminal tag proposal
+
+| Tag | Apply? |
+|---|---|
+| `006-Include-Stage2` | yes |
+| `006-Include-Final` | yes |
+
+No exclusion-reason note required.
+
+### Content-coding tag proposals (suggestions for human screener)
+
+- **`002-Mixed`** — primary infrastructure is snig tracks (B2), but cross-banks (B3 structures) are the actual control variable studied; both are co-equal in the analysis.  (Hairsine et al. 2002, 2)
+  - Alternative if single-value preferred: `002-B2-ExtractionTrails`.
+- **`003-Modeling`** — probabilistic plume-length model derived analytically, parameterized from prior field rainfall-simulator data.  (Hairsine et al. 2002, 7–8)
+- **`004-FlowPathInitiation`** — primary outcome is whether overland-flow plumes establish surface connection from cross-bank outlet to stream.  (Hairsine et al. 2002, 4)
+  - Secondary candidate: `004-RunoffResponse` (volume delivered to stream is also reported).  (Hairsine et al. 2002, 10)
+- **`005-Oceania`** — Eden Forest Management Area, southeastern NSW, Australia.  (Hairsine et al. 2002, 3)
+- **`010-A2-FlowPaths`** — analysis is structured around delivery paths from cross-bank outlets to drainage lines.  (Hairsine et al. 2002, 3)
+  - Also `010-A3-Metrics` — volume-to-breakthrough (vbt5) and predicted plume length are explicit connectivity metrics.  (Hairsine et al. 2002, 5)
+- **`020-B2-SkidSnigTrails`** — focal infrastructure is the snig/skid-trail network.  (Hairsine et al. 2002, 2)
+  - Co-tag `020-B3-Structures` — cross-banks (water bars) are the engineered mitigation structure modeled.  (Hairsine et al. 2002, 2)
+- **`030-C3-BMPs`** — paper explicitly frames cross-banks within BMP design and derives revised guideline equations (Eq. 7–8, Fig. 11).  (Hairsine et al. 2002, 15–16)
+  - Co-tag `030-C2-Infiltration` — mitigation mechanism is plume infiltration across the general-harvesting-area buffer.  (Hairsine et al. 2002, 2–3)
+
+### Note for the SLR record
+
+This record is one of the anchor citations on the AquaSilva connectivity-axis (Hairsine 2002, listed under forest-road/skid-trail connectivity anchors). It is methodologically distinctive in that it bridges structural connectivity (track-network topology, intercross-bank vs. available hillslope length) with a probabilistic representation of functional connectivity (plume-length distribution conditional on rainfall intensity and stand age), and supplies generic design equations directly relevant to the Maßnahmenkatalog Bauweise "Querablauf / Wasserableiter" under a Type B (area modifier: infiltration capacity of GHA buffer) parameterization.
+
+## Sources
+
+Hairsine, P. B., J. C. Croke, H. Mathews, P. Fogarty, and S. P. Mockler. 2002. “Modelling Plumes of Overland Flow from Logging Tracks.” Hydrological Processes 16 (12): 2311–27. https://doi.org/10.1002/hyp.1002.

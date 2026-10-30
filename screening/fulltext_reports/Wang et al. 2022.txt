@@ -1,0 +1,35 @@
+Reading: Wang et al. 2022
+
+## Stage-2 Gate Report — Wang et al. 2022
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in attached metadata (no `90-borderline-*` tag visible) — screener should verify.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (9 pp.) (Wang et al. 2022, 1) |
+| Gate 2(a) — infrastructure as variable | PASS | Unpaved roads are the explicit study object; road segments (n = 70, 3.42 km) sampled by stratified design and characterized by gradient, drainage area, ditch presence, vegetation cover.  (Wang et al. 2022, 3) |
+| Gate 2(b) — connectivity operationalized | **FAIL** | Connectivity appears only as a verbal claim ("unpaved roads become an important water flow path"  (Wang et al. 2022, 2)) and as an indirect proxy (drainage area per unit road length, Cl). No IC/connectivity metric, no flow-path topology analysis, no structural/functional connectivity distinction is computed. Primary outcome is erosion amount (t ha⁻¹), not connectivity.  (Wang et al. 2022, 3) (Wang et al. 2022, 5) |
+| Q1–Q7 | Not evaluated (Gate 2 failed; sequential rule) | — |
+| Gate 4 | Not evaluated | — |
+| Gate 5 | Not evaluated | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `connectivity only narrative, not operationalized`
+**Confidence:** Medium
+**Items flagged for human re-read:**
+- Gate 2(b) is the principal judgment call. A screener could argue that Cl (drainage area per unit road length) plus the quantified terrace-induced reduction of effective contributing area to roads (Cl drops from 143.56 to 34.06 m² m⁻¹; road erosion −85 % under terraces  (Wang et al. 2022, 6)) functions as a functional-connectivity proxy (hillslope→road disconnection by structural BMPs). If the protocol admits implicit-connectivity proxies, this paper could be reclassified as a borderline Include with `004-A2-FlowPathDescriptors` and `030-C1-RetentionDetention` / `030-C3-RoadDrainageBMP` coding.
+- The framing is forest-road / cropland-road erosion in an agricultural-forest watershed (forest cover 52 %, roads draining mixed land use), so it sits at the edge of the Block-B "forest road / skid trail" anchor literature (Wemple, Croke, Takken). Screener should decide whether the agricultural-road context disqualifies it independently of Gate 2.
+
+### Note for screener
+
+If you accept the implicit-connectivity reading on re-read, the relevant content-coding skeleton would be: `002-B1-Roads` + `002-C3-RoadDrainageBMP`; `003-FieldMonitoring`; `004-A2-FlowPathDescriptors` (or `004-RunoffResponse` if connectivity remains insufficiently operationalized); `005-Asia`; `020-B1-Roads`; `030-C1-RetentionDetention` + `030-C3-RoadDrainageBMP`. Not applied here, since under strict connectivity-anchored screening the paper is recommended Exclude.
+
+## Sources
+
+Wang, C., B. Liu, Q. Yang, et al. 2022. “Unpaved Road Erosion after Heavy Storms in Mountain Areas of Northern China.” International Soil and Water Conservation Research 10 (1): 29–37. Scopus. https://doi.org/10.1016/j.iswcr.2021.04.012.

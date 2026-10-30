@@ -1,0 +1,52 @@
+Reading: Ziegler et al. 2006
+
+[Reading: Ziegler et al. 2006, p. 11-16 (6 results)]
+
+## Stage-2 Gate Report — Ziegler et al. 2006
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in attached metadata (no `90-borderline-*` tag visible); if Stage 1 flagged this record as B-context borderline (skid trails / terraces mentioned but Ks-focused), the full text resolves it toward exclusion — see Gate 2 below.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (16 pp.). (Ziegler et al. 2006, 1) |
+| Gate 2(a) — infrastructure as variable | UNCLEAR / weak PASS | Skid trails and terraces enter only as a post-hoc add-on: Ks measured at three skid-trail and two terrace locations within ZOB3-POST; the main "treatments" are logging intensity classes, not infrastructure classes. "We also measured Ks at three locations on skid trails and at two additional terrace locations to characterize these additional logging disturbances."  (Ziegler et al. 2006, 4) |
+| Gate 2(b) — connectivity operationalized as primary/co-reported outcome | **FAIL** | Authors explicitly state connectivity was invoked but not quantified: "the connectivity of zones of low Ks in the harvest area with dense networks of skid trails and terraces was identified as one of the most important consequences of timber harvesting, although this phenomenon was not quantified."  (Ziegler et al. 2006, 1) Reinforced in §5.6: connectivity discussed only verbally ("continuity and connectiveness of these overland flow source areas… provide linked corridors").  (Ziegler et al. 2006, 12) |
+| Q1 (context) | PASS | BTEC, Peninsular Malaysia, 32.8 ha + 14.4 ha catchments, ~2400 mm yr⁻¹, tropical Ultisols, managed forest.  (Ziegler et al. 2006, 2) |
+| Q2 (design) | PASS | Space-for-time gradient across three disturbance levels (low / moderate / high) on non-roaded hillslopes, plus a recent before–after on ZOB3 (ZOB3 → ZOB3-POST).  (Ziegler et al. 2006, 4) |
+| Q3 (method) | PASS | Constant-head permeameter (Amoozemeter), depths 0.1/0.25/0.5/0.75/1.0 m, Glover solution, knocking-pole penetrometer, 10–12 replicates per site.  (Ziegler et al. 2006, 4) |
+| Q4 (infrastructure characterised) | UNCLEAR | Skid-trail density reported for BTEC3 (~170 m ha⁻¹, citing Sidle et al. 2004); terraces described qualitatively; no per-trail age/width/condition for the Ks-measured trails themselves.  (Ziegler et al. 2006, 4) |
+| Q5 (connectivity operationalised) | **FAIL** | Connectivity is purely verbal — no index, no flow-path mapping, no mechanistic quantification. Authors themselves write that it "was not quantified."  (Ziegler et al. 2006, 1) (Ziegler et al. 2006, 12) |
+| Q6 (effect direction) | PASS (on Ks, not connectivity) | Direction derivable for the operationalised variable (Ks): increased variability at 0.1 m post-clearcut; median Ks on skid trails ≤5 mm h⁻¹ at 0.1 and 0.25 m.  (Ziegler et al. 2006, 12) |
+| Q7 (scope) | PASS | Multiple complete iterations (≥3 sites × 10–12 replicates).  (Ziegler et al. 2006, 4) |
+| Gate 4 | PASS | Q7 satisfied. |
+| Gate 5 — extractability on connectivity | **FAIL** | No quantitative effect on a connectivity variable extractable; only narrative claim that skid trails and roads form "linked corridors."  (Ziegler et al. 2006, 12) |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string** (verbatim): `connectivity only narrative, not operationalized`
+**Confidence:** High — the authors explicitly disclose that connectivity was identified conceptually but not quantified  (Ziegler et al. 2006, 1), and the §5.6 treatment remains qualitative  (Ziegler et al. 2006, 12).
+**Items flagged for human re-read:**
+- Gate 2(a) borderline: skid-trail and terrace Ks measurements (Table 5, p. 100) do constitute infrastructure-as-variable in a narrow sense; screener may wish to confirm exclusion is on Gate 2(b)/Q5 rather than Gate 2(a).
+- Q4: infrastructure characterisation is partial (density only at catchment scale).
+- Cross-reference: Sidle et al. 2004 (Hydrol. Process. 18, 703–720), cited repeatedly here, is the upstream paper that may carry the operationalised flow-path / sediment-pathway analysis — recommend prioritising that record for the corpus if not already screened.
+
+### Content-coding suggestions
+
+Not applicable — record excluded at Gate 2.
+
+### Synthesis role
+
+Not applicable — record excluded.
+
+---
+
+**Note for screener:** This is a methodologically solid Ks/infiltration study that is connectivity-*adjacent* (anchor authors Sidle, Croke, Wemple are all cited) but does not itself operationalise connectivity. It would be a legitimate citation in the narrative framing of RQ1 (concept history) or as an effect-size source for road/skid-trail Ks in a runoff-hydrology corpus, but per the AquaSilva connectivity-anchored protocol it falls outside the core SLR. The upstream companion paper Sidle et al. 2004 ("Sediment pathways in a tropical forest: effects of logging roads and skid trails") is the more probable Include candidate from this research group.
+
+## Sources
+
+Ziegler, A. D., J. N. Negishi, R. C. Sidle, S. Noguchi, and A. R. Nik. 2006. “Impacts of Logging Disturbance on Hillslope Saturated Hydraulic Conductivity in a Tropical Forest in Peninsular Malaysia.” Catena 67 (2): 89–104. Scopus. https://doi.org/10.1016/j.catena.2006.02.008.

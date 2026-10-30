@@ -1,0 +1,34 @@
+Reading: Klaus et al. 2015
+
+# Stage-2 Gate Assessment — Klaus et al. (2015)
+
+## Sequential gate evaluation
+
+**Gate 1 — Full text retrievable:** PASS. The 15-page PDF is fully accessible. (Klaus et al. 2015, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text:** FAIL.
+
+The study operationalizes hydrological connectivity as its explicit outcome (fast flow path connectivity in the hillslope–riparian–stream continuum, traced via diatom community signatures across a nested catchment of 0.45–247 km²).  (Klaus et al. 2015, 2) The design variables, however, are catchment scale and lithology/land-use (schist, sandstone, marls; forest/grassland/cropland mixes) — not Block-B infrastructure.  (Klaus et al. 2015, 4)
+
+Forest roads appear only twice in the discussion, and in both cases as a speculative auxiliary contributor invoked to explain residual diatom mobilisation in the Huewelerbach sub-catchment ("Eventually, we expect minor contributions from roads or some preferential flow to have caused this effect" and "preferential flow (including runoff from roads) that connects the soil surface to the stream").  (Klaus et al. 2015, 11) Roads are neither characterised (length, density, surface, drainage architecture), instrumented, nor used as an independent variable; no skid/snig trails or structural BMPs are mentioned at all.
+
+This matches Gate-2 failure mode **"infrastructure mentioned as context only"**, not "no Block-B infrastructure as variable" (because roads are explicitly named) and not "connectivity not operationalized as outcome" (connectivity is the central outcome).
+
+Gates 3–5 are not evaluated, per the sequential first-failure rule.
+
+## Proposed Zotero tagging (for screener confirmation)
+
+| Field | Proposed value |
+|---|---|
+| Terminal tag | `006-Exclude-Quality` |
+| Exclusion-reason note (verbatim) | `infrastructure mentioned as context only` |
+
+No content-coding tags are proposed, since these apply only to `006-Include-Final` records.
+
+## Rationale summary
+
+Klaus et al. (2015) is methodologically a high-quality connectivity study and would be highly relevant to the **A-block** (connectivity concepts, flow paths, tracer-based operationalisation of structural vs. functional connectivity in the HRS continuum)  (Klaus et al. 2015, 1), but it carries no Block-B infrastructural variable. Including it in the connectivity-anchored core corpus would introduce a Type I error against the project's methodological framing (B × connectivity intersection required). If the team later opens a secondary corpus for "connectivity-method / tracer-methodology" references — useful for the AP2 conceptualisation of structural vs. functional connectivity — this record would be a strong candidate there; that decision is outside Stage-2 scope.
+
+## Sources
+
+Klaus, J., C. E. Wetzel, N. Martínez-Carreras, L. Ector, and L. Pfister. 2015. “A Tracer to Bridge the Scales: On the Value of Diatoms for Tracing Fast Flow Path Connectivity from Headwaters to Meso-Scale Catchments.” Hydrological Processes 29 (25): 5275–89. Scopus. https://doi.org/10.1002/hyp.10628.

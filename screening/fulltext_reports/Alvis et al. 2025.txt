@@ -1,0 +1,49 @@
+Reading: Alvis et al. 2025
+
+## Stage-2 Gate Report — Alvis et al. 2025
+
+**Study type:** `003-FieldMonitoring` (with experimental design elements; primary classification field monitoring of two instrumented road segments over three seasons)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not indicated in provided metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS | (a) Forest roads (mainline logging roads, ruts) analyzed as the central study variable: "examine how wheel ruts evolve on mainline logging roads following road grading" (Alvis et al. 2025, 3). (b) Connectivity operationalized as flow-pathway / drainage-network analysis: "a basic flow routing model to assess their impacts on the road segment's drainage system and surface runoff relative transport potential"  (Alvis et al. 2025, 3). |
+| Q1 | PASS | Region (SW Washington, two lithologies), climate (1560 mm and 2400 mm annual precipitation), segment length (80 m), gradients (6%, 10%), land use (mainline logging roads) all reported  (Alvis et al. 2025, 3–4). |
+| Q2 | PASS | Repeat UAV-SfM/TLS field monitoring design across three seasons with TLS baselines per season — classifiable as before-after / time-series field monitoring  (Alvis et al. 2025, 4–5). |
+| Q3 | PASS | Instruments (Phantom 4 Pro DJI, Trimble SX10), survey geometry, GCP layout, post-processing (CloudCompare, Pix4DMapper, high-pass Gaussian filter, DEM differencing) reported in reproducible detail  (Alvis et al. 2025, 5–6). |
+| Q4 | PASS | Roads characterized by gradient, length, aggregate quality (degradation resistance 5 vs 66), traffic intensity (≥5 trucks/day vs light), age since grading  (Alvis et al. 2025, 4). |
+| Q5 | PASS | Connectivity quantified via dedicated drainage metrics — centre-of-mass drainage metric CMa, relative rut drainage metric Ra, and relative transport potential εi  (Alvis et al. 2025, 3). |
+| Q6 | PASS | Direction explicit: "drainage system metrics reveal a threshold rut incision depth for increased transport potential and flow network change" — ruts increase transport potential and alter flow pathways  (Alvis et al. 2025, 1). |
+| Q7 | PASS | Multi-season, multi-survey iterations at two contrasting sites (lithology, traffic, climate)  (Alvis et al. 2025, 5). |
+| Gate 4 | PASS | Q7 satisfied. |
+| Gate 5 | PASS | Clear quantitative effect direction extractable: rut incision → altered flow network → increased transport potential, with threshold behavior  (Alvis et al. 2025, 1). |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** (n/a)
+**Confidence:** High
+**Items flagged for human re-read:** None — recommend screener nonetheless verify Q5 interpretation: CMa/Ra/εi are road-segment-scale drainage descriptors (structural connectivity of the road surface itself), not catchment-scale road-to-stream connectivity. This is in-scope for Block A2 but the screener should confirm alignment with the SLR's connectivity definition before extraction.
+
+### Content-coding suggestions
+
+- 002: `002-B1-Roads` — Mainline logging roads are the studied infrastructure  (Alvis et al. 2025, 3).
+- 003: `003-FieldMonitoring` — Repeat UAV/TLS field surveys across three seasons at two sites  (Alvis et al. 2025, 4–5). (Screener may also consider `003-Experimental` given the "small-scale experiment" framing on p. 1.)
+- 004: `004-A2-FlowPathDescriptors` — Primary focus on flow-pathway evolution and drainage-network descriptors derived from DEMs  (Alvis et al. 2025, 3). Secondary: `004-RunoffResponse` (transport potential is a runoff-derived metric).
+- 005: `005-NorthAmerica` — Washington state, USA  (Alvis et al. 2025, 3).
+- 010: `010-A2-FlowPathDescriptors` — Flow routing on road-surface DEMs to derive drainage metrics  (Alvis et al. 2025, 3). Also `010-A3-ConnectivityMetrics` (CMa, Ra, εi as quantitative metrics).
+- 020: `020-B1-Roads` — Mainline forest roads as the studied infrastructure class  (Alvis et al. 2025, 3).
+- 030: `030-empty` — No mitigation/BMP treatment is tested experimentally; ditch-line BMPs and grading are discussed only as context/implications, not as the manipulated variable  (Alvis et al. 2025, 2).
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Strongest contribution is a quantitative within-road-segment effect: rut incision past a threshold depth measurably alters surface flow networks and increases relative sediment transport potential, with explicit drainage metrics (CMa, Ra, εi) suitable as anchors for A2/A3 operationalization of structural connectivity on the road prism. Also useful as a methodological anchor for UAV-SfM DEM differencing in forest-road connectivity studies, complementing Kastridis (2020) and Wemple/Croke road-erosion lineage.
+
+## Sources
+
+Alvis, Amanda D., Charles H. Luce, Erkan Istanbulluoglu, et al. 2025. “Spatiotemporal Evolution of Forest Road Rutting and Flow Pathways Examined Using Unoccupied Aerial Vehicles (Uavs).” HYDROLOGICAL PROCESSES 39 (3): e70105. https://doi.org/10.1002/hyp.70105.

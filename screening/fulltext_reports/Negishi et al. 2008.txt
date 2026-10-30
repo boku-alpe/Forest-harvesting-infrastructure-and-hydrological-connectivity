@@ -1,0 +1,41 @@
+Reading: Negishi et al. 2008
+
+## Stage 2 screening — Negishi et al. (2008)
+
+**Recommended terminal tag: `006-Include-Stage2` AND `006-Include-Final`**
+
+### Gate-by-gate appraisal
+
+**Gate 1 — Full-text retrieval.** PDF accessible (18 pp.). Pass.
+
+**Gate 2 — Confirmation of Stage-1 inclusion.** Block B infrastructure (a 51.5 m logging-road section, plus 690 m road network with skid trails and landings in catchment C3) is the central manipulated variable, not background context. (Negishi et al. 2008, 3) Connectivity is operationalized as flow-path interception: the road cut excavated into saprolite/bedrock truncates a hillslope (0.42 ha) containing a nested zero-order basin (0.14 ha), converting shallow subsurface flow into surface runoff that is routed via two discharge nodes through gullies directly into the stream.  (Negishi et al. 2008, 4) Pass.
+
+**Gate 3 — Primary-study Q-items.**
+- Q1 (context): Bukit Tarek Experimental Watershed, Peninsular Malaysia (3°31′N, 101°35′E); MAP ≈ 2862 mm; tropical headwater; slopes 40–45 %; 1-yr monitoring 24 Nov 2002 – 23 Nov 2003.  (Negishi et al. 2008, 2)
+- Q2 (design): paired-/single-catchment field monitoring with event-based hydrograph and sediment sampling at three nested scales (road weirs, ZOB weir, catchment outlets C3 and undisturbed reference C1).  (Negishi et al. 2008, 4)
+- Q3 (method reproducibility): v-notch weirs, WT-HR loggers at 2–3 min, ISCO automatic samplers, turbidity calibration, hydrograph separation per Negishi (2005), HOF/ISSF separation procedure explicitly described.  (Negishi et al. 2008, 4–6)
+- Q4 (infrastructure characterization): road geometry (length 51.5 m, width 3.6 m, area 183 m², gradient 11.4 %), surface composition (subsoil/saprolite/bedrock fractions), Ks < 2 mm h⁻¹, bulk density > 1.58 Mg m⁻³, age 3 yr.  (Negishi et al. 2008, 3–4)
+- Q5 (connectivity operationalized): explicit quantitative separation of ISSF into ISSF_hillslope (planar cutslope) and ISSF_ZOB (convergent zero-order basin), plus routing to stream via gullies.  (Negishi et al. 2008, 5)
+- Q6 (effect direction): ISSF reaches >90 % of total road runoff in large storms; on average 79 % of runoff and 28 % of sediment export from the road section attributable to ISSF; road-surface sediment yield 170 t ha⁻¹ yr⁻¹; catchment suspended yield 4 t ha⁻¹ yr⁻¹.  (Negishi et al. 2008, 1) Pass.
+
+**Gate 4 — Sample/scope.** 132 storms over 1 yr; 11 event-based sediment campaigns; paired reference catchment. Sufficient. Pass.
+
+**Gate 5 — Effect direction extractable.** Quantitative directional effects reported with units (see Q6). Pass.
+
+### Suggested content-coding tags (for human confirmation)
+
+| Family | Proposed value | Supporting sentence |
+|---|---|---|
+| 002 Infrastructure subtype | `002-B1-Roads` | Logging road is the focal infrastructure; skid trails/landings only as catchment context.  (Negishi et al. 2008, 3) |
+| 003 Study type | `003-FieldMonitoring` | 1-yr instrumented monitoring at weirs and catchment outlets.  (Negishi et al. 2008, 4) |
+| 004 Hydrological focus | `004-FlowPathInitiation` (primary) + `004-SedimentDelivery` (secondary) | ISSF interception transforms subsurface to surface flow and drives road-to-stream gully connectivity and sediment export.  (Negishi et al. 2008, 2) (Negishi et al. 2008, 4) |
+| 005 Region | `005-Asia` | Peninsular Malaysia, Bukit Tarek.  (Negishi et al. 2008, 2) |
+| 010-A Block A | `010-A2-FlowPaths` | ISSF generation and HOF/ISSF partitioning along the road cut.  (Negishi et al. 2008, 2) |
+| 020-B Block B | `020-B1-Roads` | Unpaved logging road as treatment feature.  (Negishi et al. 2008, 3) |
+| 030-C Block C | `030-empty` | No mitigation/BMP treatment evaluated; study is diagnostic of impact.  (Negishi et al. 2008, 2) |
+
+No exclusion-reason note required. Two existing duplicate child notes ("Export Date: 12 May 2026; Cited By: 50", note IDs `10-BQVIYL76` and `10-KXQI66GC`) appear redundant and may warrant cleanup in a separate pass — flagging only, no unilateral action.
+
+## Sources
+
+Negishi, J. N., R. C. Sidle, A. D. Ziegler, S. Noguchi, and N. A. Rahim. 2008. “Contribution of Intercepted Subsurface Flow to Road Runoff and Sediment Transport in a Logging-Disturbed Tropical Catchment.” Earth Surface Processes and Landforms 33 (8): 1174–91. Scopus. https://doi.org/10.1002/esp.1606.

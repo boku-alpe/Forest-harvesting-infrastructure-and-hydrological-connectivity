@@ -1,0 +1,48 @@
+[Reading: Du et al. 2024 (12 results)]
+
+## Stage-2 Gate Report — Du et al. 2024
+
+**Study type:** `003-Modeling` (algorithmic / remote-sensing methods study; DL + RF classification with comparative evaluation against D8, GeoNet, NHD HR)
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Not indicated in the attached metadata. Recommend the human screener verify whether a `90-borderline-*` helper tag was applied at Stage 1, because the paper is topically adjacent (agricultural drainage in a 60 % cropland / 26 % forest watershed) rather than forest infrastructure proper.
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 (a) Infrastructure as variable | PASS | Drainage ditches are the explicit study object: classified, characterized, and mapped from lidar features (Du et al. 2024, 3). |
+| Gate 2 (b) Connectivity as primary/co-reported outcome | **FAIL** | Hydrological connectivity is invoked narratively as motivation ("drainage ditch networks can alter hydrologic connectivity at large scales")  (Du et al. 2024, 1), but the operationalized outcomes are *mapping* accuracy of the extracted network (Precision, Recall, F1, IoU, distance error), not a connectivity metric or a flux/linkage variable  (Du et al. 2024, 6–7). The "connectivity improvement" step is a network-topology post-processing of the classification, evaluated against a reference label set rather than against a hydrological connectivity outcome  (Du et al. 2024, 6). |
+| Q1 Context | PASS | Upper Choptank watershed, Delmarva Peninsula; mean elevation ~16 m, slope < 2°; humid temperate, ~1200 mm/yr; 60 % cropland / 26 % forest  (Du et al. 2024, 3–4). |
+| Q2 Design | PASS | Comparative modeling/classification design (DL vs RF; connected network vs D8 / GeoNet / NHD HR)  (Du et al. 2024, 3). |
+| Q3 Method reproducibility | PASS | U-Net architecture, training/validation split, loss function, hardware, and post-processing (minimum-cost + FA) are described in detail  (Du et al. 2024, 5–6). |
+| Q4 Infrastructure characterized | PASS (partial) | Ditches are characterized by length (160 km label, 163 km DL), spatial position, and 3-m channel width buffer; type identifiers (perennial/intermittent) reported  (Du et al. 2024, 5) (Du et al. 2024, 7). |
+| Q5 Connectivity operationalized | **UNCLEAR → effectively FAIL** | A "connection" algorithm is implemented and evaluated, but the quantity reported is mapping concordance with a reference network, not a connectivity index (e.g., IC), structural-functional connectivity decomposition, or flux response. No A3-Metrics-type quantification of connectivity per se  (Du et al. 2024, 6). |
+| Q6 Effect direction on connectivity | **FAIL** | The paper does not derive an effect of infrastructure on hydrological connectivity; it derives an effect of *methods* on *ditch extraction accuracy*. No increase/decrease/no-effect statement on a connectivity-related hydrological variable is recoverable  (Du et al. 2024, 7). |
+| Q7 Sample/scope | PASS | One complete iteration over a defined study area with full classification + connection + evaluation pipeline  (Du et al. 2024, 7). |
+| Gate 4 Sample/scope adequacy | PASS | Single-watershed but complete pipeline. |
+| Gate 5 Extractability of effect direction | **FAIL** | Only methodological effect directions (DL > RF; DL connected network > D8/GeoNet/NHD HR in Precision/Recall/distance error) are derivable; no infrastructure → connectivity effect direction  (Du et al. 2024, 7). |
+
+Per the sequential first-failure rule, the binding failure is **Gate 2 (b)**.
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `connectivity only narrative, not operationalized`
+**Confidence:** Medium-High. The exclusion logic is robust because the paper's outcome space is mapping accuracy, not connectivity. The Medium component reflects the borderline character: ditches *are* a Block-B infrastructure type, the paper *does* discuss hydrological connectivity conceptually, and a screener could plausibly argue Q5 as a pass given that the "minimum-cost connection" step is a structural-connectivity operation. If the human screener wishes to retain the paper as a methodological anchor for ditch-network extraction (rather than as effect evidence), that would be a defensible alternative outcome and should be documented as such.
+
+**Items flagged for human re-read:**
+- Q5 (connectivity operationalization): consider whether the minimum-cost + FA connection procedure qualifies as a structural-connectivity operationalization in the A2-FlowPathDescriptors sense, even though no connectivity index is reported.
+- Gate 2 (b): re-verify against the Stage 1 inclusion rationale; if Stage 1 admitted this paper specifically as a methods/mapping anchor, the human may prefer to record it as an out-of-scope methodological reference rather than as a Gate-2 quality exclusion.
+- Topical fit: agricultural drainage in a predominantly cropland watershed — limited transferability to AquaSilva's forest-infrastructure focus in the Wienerwald pilot.
+
+### Content-coding suggestions
+
+Not applicable (record is recommended for exclusion). If the human screener overrides to Include-Final on methods-anchor grounds, candidate tags would be `002-B3-Structures` (ditch as Block-B structure), `003-Modeling`, `004-A2-FlowPathDescriptors`, `005-NorthAmerica`, `010-A2-FlowPathDescriptors`, `020-B3-Structures`, `030-empty` — but these should be confirmed manually.
+
+### Synthesis role
+
+Not applicable under the recommended exclusion. If overridden to include, the paper would enter as a **methodological/mapping reference** only; it contributes no quantitative effect size to RQ5 vote-counting and no infrastructure-effectiveness data to RQ6. Its synthesis value, if retained, is as a citation for lidar-based ditch detectability and connected-network reconstruction methods relevant to characterizing forest-road drainage features in the AquaSilva measures catalog (Type B/C parameterization context).
+
+## Sources
+
+Du, L., G. W. McCarty, X. Li, et al. 2024. “Drainage Ditch Network Extraction from Lidar Data Using Deep Convolutional Neural Networks in a Low Relief Landscape.” Journal of Hydrology 628. Scopus. https://doi.org/10.1016/j.jhydrol.2023.130591.

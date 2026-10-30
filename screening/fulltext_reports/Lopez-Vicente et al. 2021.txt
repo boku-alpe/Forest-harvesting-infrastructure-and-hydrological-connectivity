@@ -1,0 +1,48 @@
+Reading: Lopez-Vicente et al. 2021
+
+## Stage-2 Screening: López-Vicente et al. (2021)
+
+**Recommendation: `006-Include-Stage2` AND `006-Include-Final`**
+
+### Gate-by-gate assessment
+
+**Gate 1 (Full text):** Pass. 17-page PDF available.
+
+**Gate 2 (Stage-1 inclusion confirmed):** Pass. Block-B infrastructure is operationalized as the treatment variable: four sub-sites differ explicitly by presence/absence and dimensions of log erosion barriers (LEBs) — long LEBs (Pinet-1: 16.5 LEBs/ha, mean length 20.5 m), no PFP (Pinet-2, Pinet-4), short LEBs (Pinet-3: 21.2 LEBs/ha, mean length 5.8 m), plus unburnt control. (Lopez-Vicente et al. 2021, 3) Connectivity is the primary outcome, computed via the Aggregated Index of Connectivity (AICv2) of López-Vicente et al. with explicit Dup/Ddn formulation.  (Lopez-Vicente et al. 2021, 5)
+
+**Gate 3 (Q-items, primary study):** Pass on all six.
+- Q1 context: Mediterranean, eastern Spain (Pinet, Valencia), Cambisol/Leptosol, 22% mean slope, scrubland-dominated, Llutxent 2018 wildfire (3270 ha).  (Lopez-Vicente et al. 2021, 3)
+- Q2 design: paired/parallel sub-site comparison with pre-fire baseline + two post-fire drone scenarios (5.5 and 13 months APFP); unburnt control.  (Lopez-Vicente et al. 2021, 3)
+- Q3 method reproducibility: documented SfM/LiDAR DEM workflow (Pix4D → LAStools → ArcGIS Pro → resample 0.1 m → sink-fill), RGB→PCT vegetation classification, AICv2 equations given.  (Lopez-Vicente et al. 2021, 4–5)
+- Q4 infrastructure characterized: LEB density, length, occupied area per ha quantified per sub-site.  (Lopez-Vicente et al. 2021, 3)
+- Q5 connectivity operationalized: AICv2 with weighting factors (Rt, RT, Ct, KP, S) — structural-functional hybrid index.  (Lopez-Vicente et al. 2021, 5)
+- Q6 effect direction derivable: Δconnectivity reported per sub-site; LEB sub-sites showed 36% lower SC increase than no-PFP sub-sites; long LEBs −32% / −45% vs short LEBs across scenarios.  (Lopez-Vicente et al. 2021, 1)
+
+**Gate 4 (sample/scope):** Pass. Five sub-sites, total intersected working-area ≈ 163,120 m², two repeated UAV surveys.
+
+**Gate 5 (effect direction extractable):** Pass. Direction and magnitude both quantified (see Q6).
+
+### Suggested content-coding tags (with anchor sentences)
+
+| Family | Proposed tag | Rationale (anchor) |
+|---|---|---|
+| 002- | `002-B3-Structures` | LEBs as the variable infrastructure; forest roads (3.6%) excluded from analysis area.  (Lopez-Vicente et al. 2021, 1) |
+| 003- | `003-FieldMonitoring` | UAV-based repeated surveys with SfM/LiDAR DEM differencing; not a controlled rainfall experiment, no rainfall-runoff modeling.  (Lopez-Vicente et al. 2021, 4) |
+| 004- | `004-SedimentDelivery` | Primary outcome = sediment connectivity (AICv2), framed around sediment transfer through the hydrological unit.  (Lopez-Vicente et al. 2021, 3) |
+| 004- | `004-FlowPathInitiation` (secondary) | Topographic changes analyzed in terms of flow-length pathways and runoff velocity/detachment.  (Lopez-Vicente et al. 2021, 1) |
+| 005- | `005-Europe` | Valencia province, eastern Spain.  (Lopez-Vicente et al. 2021, 3) |
+| 010-A | `010-A3-Metrics` | Use and refinement of AICv2 as a connectivity metric.  (Lopez-Vicente et al. 2021, 5) |
+| 010-A | `010-A2-FlowPaths` (secondary) | Flow-length and flow-path effects of LEBs explicitly evaluated.  (Lopez-Vicente et al. 2021, 1) |
+| 020-B | `020-B3-Structures` | LEBs are linear hillslope retention structures.  (Lopez-Vicente et al. 2021, 2) |
+| 030-C | `030-C1-Retention` | LEBs explicitly designed to retain sediment / lengthen flow paths; results show reduced SC increase.  (Lopez-Vicente et al. 2021, 1) |
+| 030-C | `030-Cany-MitigationControls` | Paper's comparative frame is PFP-vs-no-PFP mitigation efficacy.  (Lopez-Vicente et al. 2021, 3) |
+
+### Notes for the human screener
+
+- The paper sits at the boundary of Block B and Block C: the LEBs are simultaneously the **infrastructure variable** (B3) and a **mitigation control** (C1/Cany). Both blocks should be retained — this is one of the few records where post-fire structural mitigation is treated as the manipulated infrastructure within a connectivity-anchored design.
+- Forest roads exist in the landscape (3.6% of total surface) but are explicitly **excluded** from the analytical mask, so `020-B1-Roads` is **not** recommended despite their physical presence.  (Lopez-Vicente et al. 2021, 1)
+- No exclusion-reason note required.
+
+## Sources
+
+Lopez-Vicente, Manuel, Artemi Cerda, Henk Kramer, and Saskia Keesstra. 2021. “Post-Fire Practices Benefits on Vegetation Recovery and Soil Conservation in a Mediterranean Area.” LAND USE POLICY 111 (December): 105776. https://doi.org/10.1016/j.landusepol.2021.105776.

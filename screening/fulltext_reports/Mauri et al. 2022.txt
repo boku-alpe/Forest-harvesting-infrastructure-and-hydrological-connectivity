@@ -1,0 +1,91 @@
+I'll read the full text of the paper to conduct the Stage-2 gate evaluation.
+
+[Reading: Mauri et al. 2022, p. 1-8 (8 results)]
+
+[Reading: Mauri et al. 2022, p. 9-16 (8 results)]
+
+Now let me check the existing provenance tags on this Zotero item.
+
+[Get metadata]
+
+Full text retrieved (16 pages). Provenance tags also retrieved from Zotero metadata. Proceeding to full gate evaluation.
+
+---
+
+## Stage-2 Gate Report — Mauri et al. 2022
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No — record carries `006-Include-Stage1` and no `90-borderline-*` helper tag.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attachment fully accessible (10-RYEXQLY5, 16 pages). |
+| **Gate 2a** | **PASS** | Road is an explicit study variable: "The road role in altering snowmelt runoff was investigated both considering its presence and assuming its absence." (Mauri et al. 2022) Two parallel DEM scenarios (YesRoad / NoRoad) constructed and run through all three models.  (Mauri et al. 2022) |
+| **Gate 2b** | **PASS** | SIMWE applied to "detect spatial directions of snowmelt overflow"  (Mauri et al. 2022); quantitative flow-path outcomes (discharge, flow depth at landslide trigger point) co-reported in dedicated results sections §4.3 and §4.4.1.  (Mauri et al. 2022) Flow-path analysis is operationalized as a co-reported outcome, satisfying the A2 criterion. **Note for screener:** the word "connectivity" does not appear anywhere in the text; the paper frames the phenomenon as "runoff pathway alteration" leading to landslide triggering. Screener should confirm this qualifies within the SLR's A2 / flow-path-analysis operationalization before final acceptance. |
+| **Q1** | **PASS** | Region: Trentino Alto Adige, northern Italy, near Pordoi pass.  (Mauri et al. 2022) Watershed sizes: 1.22 km² (RESS) / 0.08 km² (SRM sub-basin).  (Mauri et al. 2022) Climate: high alpine (avg. 2350 m a.s.l., snow-dominated). Land use: mountain grassland + paved road.  (Mauri et al. 2022) |
+| **Q2** | **PASS** | Predictive scenario-comparison modeling: YesRoad vs. NoRoad on pre-event ALS DEM, validated with post-event field observations via AUC-ROC and Cohen's kappa.  (Mauri et al. 2022) Study design is classifiable as comparative simulation. |
+| **Q3** | **PASS** | All three models parameterized in Tables 2–4; ALS acquisition parameters in Table 1; road-removal DEM interpolation procedure described step-by-step.  (Mauri et al. 2022) Supplementary documentation A provides full model equations. |
+| **Q4** | **PASS** | Paved road; length ~900 m; avg. slope 5.0°; width 4 m; relative road cut depth 0.5 m; drainage diversion coefficient *p* = 60%; concrete manholes with 0.8–1.4 m square section.  (Mauri et al. 2022) (Mauri et al. 2022) Infrastructure = B1-Roads. |
+| **Q5** | **PASS** | SIMWE quantifies Sr discharge (1.06 m³/s) and flow depth (0.33 m) at the manhole/trigger point;  (Mauri et al. 2022) YesRoad vs. NoRoad cross-sections at 30 control points extract Sr discharge and depth profiles.  (Mauri et al. 2022) RESS produces spatially distributed critical Sr and Rr maps, validated with AUC 0.94 / 0.92 and kappa 0.58 / 0.55.  (Mauri et al. 2022) This constitutes mechanistic quantification of road-induced flow-path alteration. **Note for screener:** no structural connectivity index (IC, READI, ICR) is computed; quantification is via routing-model outputs, not a dedicated connectivity metric. |
+| **Q6** | **PASS** | Road presence **increases** Sr deviation toward landslide zone: lower critical Sr in YesRoad vs. NoRoad inside the landslide area  (Mauri et al. 2022); higher discharge and depth in YesRoad cross-sections.  (Mauri et al. 2022) Road is confirmed as a key contributor to shallow landslide activation.  (Mauri et al. 2022) |
+| **Q7** | **PASS** | Complete workflow applied to one watershed; one documented landslide event; full statistical validation executed.  (Mauri et al. 2022) |
+| **Gate 4** | **PASS** | Q7 confirmed above. |
+| **Gate 5** | **PASS** | Quantitative effect extractable: road-deviated Sr discharge = 1.06 m³/s at critical point  (Mauri et al. 2022); AUC ~ 0.94 for Sr-induced instability prediction under YesRoad scenario.  (Mauri et al. 2022) Clear increase in flow-path connectivity toward landslide zone attributable to road presence. |
+
+---
+
+### Provenance verification
+
+`010-A2-FlowPathDescriptors`: The paper applies SIMWE to spatially map snowmelt flow-path directions and quantifies how the road deviates them — consistent with a flow-path-descriptor framing. No drift.
+
+`020-B1-Roads`: Primary infrastructure is a paved mountain road with associated concrete manholes. Consistent.
+
+`001-WoS` / `090-H04`: Provenance is fixed; no content check required.
+
+**Provenance verification: no drift detected.**
+
+**Administrative flag for screener:** The existing Zotero record carries the tag `006-Include-Final-primary`, which does not match the protocol-mandated verbatim terminal tag string `006-Include-Final`. This may be an intentional local extension or a tagging error. The screener should verify. Per the protocol taxonomy as stated in the screening instructions, the correct pair of terminal tags is `006-Include-Stage2` + `006-Include-Final`.
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` AND `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** Gate 2b and Q5 (both hinge on whether routing-model-based flow-path analysis, absent explicit "connectivity" terminology, satisfies the SLR's A2 / connectivity-anchored inclusion criterion)
+
+---
+
+### Content-coding suggestions
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — sole study infrastructure is a paved mountain road with drainage manholes.  (Mauri et al. 2022) *Consistent with existing Zotero tag.*
+
+- **003** [Study type]: `003-Modeling` — three coupled models (SRM, RESS, SIMWE) driven by ALS-derived DEM; post-event field survey serves statistical validation only.  (Mauri et al. 2022) (Mauri et al. 2022) *Consistent with existing Zotero tag.*
+
+- **004 primary** [Outcome]: `004-FlowPathInitiation` — SIMWE maps road-induced rerouting of snowmelt overland flows toward the landslide zone; manhole overload creates effective new flow path across the road toward the trigger area.  (Mauri et al. 2022) *Consistent with existing Zotero tag.*
+
+- **004 secondary** [Outcome]: `004-RunoffResponse` — RESS model computes spatially distributed critical snowmelt and rainfall runoff thresholds for slope destabilization under YesRoad vs. NoRoad scenarios; peak Sr = 11.3 mm/h and peak Rr = 62.8 mm/h used as inputs.  (Mauri et al. 2022) (Mauri et al. 2022) This threshold-based runoff response is a co-reported outcome distinct from the flow-path direction component. *This tag is not currently present in the Zotero record — recommend screener evaluate addition.*
+
+- **005** [Region]: `005-Europe` — Trentino Alto Adige, northern Italy.  (Mauri et al. 2022) *Consistent with existing Zotero tag.*
+
+---
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** The paper's most distinctive contribution is the paired YesRoad/NoRoad DEM-scenario method (road removed by ALS-DEM interpolation), which isolates road effects on surface flow-path routing with full quantitative model validation (AUC 0.94, kappa 0.58).  (Mauri et al. 2022) (Mauri et al. 2022) For the AquaSilva synthesis, it can serve as a **Type-C channel-modifier anchor** in the Maßnahmenkatalog (road alters effective cross-section and drainage routing). Two contextual constraints the synthesis phase should flag: (1) the triggering input is snowmelt-dominated rather than rainfall-event-dominated, limiting direct generalizability to rain-fed Wienerwald settings; (2) the study catchment is a high-alpine mountain grassland (no forest), so forest-specific infiltration and root-cohesion parameters are absent.
+
+---
+
+### Tag replacements made: none.
+
+## Sources
+
+Mauri, Luca, Sara Cucchiaro, Stefano Grigolato, Giancarlo Dalla Fontana, and Paolo Tarolli. 2022. “Evaluating the Interaction between Snowmelt Runoff and Road in the Occurrence of Hillslope Instabilities Affecting a Landslide-Prone Mountain Basin: A Multi-Modeling Approach.” Journal of Hydrology 612 (September): 128200. https://doi.org/10.1016/j.jhydrol.2022.128200.

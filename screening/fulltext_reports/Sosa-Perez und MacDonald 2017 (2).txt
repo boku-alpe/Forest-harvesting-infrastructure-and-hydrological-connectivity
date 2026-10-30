@@ -1,0 +1,85 @@
+I'll read the full text of the paper to conduct the Stage-2 evaluation.
+
+[Reading: ⁨Sosa-Perez⁩ und ⁨MacDonald⁩ 2017, p. 1-14 (14 results)]
+
+Now I have the complete text. Let me compose the gate report.
+
+---
+
+## Stage-2 Gate Report — Sosa-Pérez & MacDonald 2017
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** Unknown — provenance tags were not accessible from item metadata supplied to this session. The screener should verify whether any `90-borderline-*` helper tag is present in Zotero before finalizing.
+
+---
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| **Gate 1** | **PASS** | PDF attachment `10-NHHPX4M9` retrieved in full (14 pp.). |
+| **Gate 2** | **PASS** | Both (a) and (b) hold — see below. |
+| Gate 2(a) — infrastructure as variable | PASS | 12.3 km of forest roads constitutes the explicit study object; 27 road segments are instrumented with sediment fences; roads are analyzed for segment characteristics, traffic, drainage design, and treatment effects — not merely cited as background. (Sosa-Perez and MacDonald 2017) |
+| Gate 2(b) — connectivity operationalized | PASS | Road-stream connectivity is an explicit co-primary objective, operationalized via a 4-class categorical scheme (Table 1, classes defined by drainage-feature presence, length, and proximity to stream) and reported quantitatively as percent of total road length connected (12 % before, 2 % after decommissioning).  (Sosa-Perez and MacDonald 2017)   (Sosa-Perez and MacDonald 2017) |
+| **Q1** — study context | **PASS** | Region: Arapaho-Roosevelt National Forest, northcentral Colorado, ~6 km SW of Red Feather Lakes.  (Sosa-Perez and MacDonald 2017) Elevation 2630–2850 m, previously glaciated granitic terrain.  (Sosa-Perez and MacDonald 2017) Climate: semi-arid, mean annual precipitation 460 mm, ~36 % as snow, summer convective thunderstorms.  (Sosa-Perez and MacDonald 2017) Study area ≈ 16 km²; 12.3 km of National Forest roads decommissioned.  (Sosa-Perez and MacDonald 2017) Land use: lodgepole pine forest with some prior clearcut/thinning.  (Sosa-Perez and MacDonald 2017) |
+| **Q2** — study design | **PASS** | Before-after, control-impact (BACI) design: one pre-treatment field season (summer 2013), two post-treatment years (2014, 2015); 9 untreated control segments retained in parallel; two decommissioning arms (ripping only, ripping + mulching).  (Sosa-Perez and MacDonald 2017) Full 12.3 km road survey conducted in June 2013, early fall 2014, and early fall 2015.  (Sosa-Perez and MacDonald 2017) |
+| **Q3** — method reproducibility | **PASS** | Sediment fences: geotextile fabric on 1.2 m rebar, sediment excavated into 20 L buckets, weighed with hanging scale, subsampled and oven-dried for moisture correction.  (Sosa-Perez and MacDonald 2017) Precipitation: five tipping-bucket rain gauges (0.254 mm resolution); storm metrics computed in RIST 3.94; individual storms separated by ≥ 1 h with < 1.27 mm.  (Sosa-Perez and MacDonald 2017) Connectivity survey: each of 185 hydrologically distinct segments characterized for drainage design, rill/plume presence, drainage feature length, hillslope roughness class (1–4), and proximity to stream; connectivity class assigned per Table 1.  (Sosa-Perez and MacDonald 2017) Statistics: Wilcoxon rank sum/signed rank tests, repeated measures PROC MIXED, stepwise multiple regression.  (Sosa-Perez and MacDonald 2017) |
+| **Q4** — infrastructure characterized | **PASS** | Segment-level data reported: length, total and active width, active area, slope %, bare soil %, traffic level (high/low/none), drainage design (planar vs. outsloped), rill presence and length, surface cover by category.  (Sosa-Perez and MacDonald 2017) Aggregate characteristics for 185 surveyed segments and the 27 sampled segments summarized in Table 2.  (Sosa-Perez and MacDonald 2017) Decommissioning treatment described with ripping depth (≈ 0.4 m), implement type, mulch species, application rates.  (Sosa-Perez and MacDonald 2017) |
+| **Q5** — connectivity operationalized as metric | **PASS** | Connectivity is not purely verbal: a defined 4-class categorical metric assigns each segment to a connectivity class based on measurable criteria (drainage feature present/absent, < 10 m or > 10 m long, extends to within 5 m of stream).  (Sosa-Perez and MacDonald 2017) Aggregate connectivity reported as % of total road length (12 % → 2 %).  (Sosa-Perez and MacDonald 2017)  (Sosa-Perez and MacDonald 2017) Drainage feature length analyzed by multivariate regression (R² = 0.21).  (Sosa-Perez and MacDonald 2017) |
+| **Q6** — effect direction derivable | **PASS** | Both outcomes decrease after decommissioning. Sediment production: median drops from 0.30 kg m⁻² (pre-treatment) to 0.00 kg m⁻² in year 1 and year 2 post-treatment, significant at p < 0.0001.  (Sosa-Perez and MacDonald 2017) Road-stream connectivity: drops from 12 % to 2 % of total length.  (Sosa-Perez and MacDonald 2017) Effect direction is clearly negative (decommissioning reduces both outcomes). |
+| **Gate 4** | **PASS** | 27 instrumented segments (3 traffic strata × 3 treatment groups), complete survey of 185 segments over 12.3 km, BACI data across 3 field seasons. Scope is adequate for the segment scale intended.  (Sosa-Perez and MacDonald 2017)  (Sosa-Perez and MacDonald 2017) |
+| **Gate 5** | **PASS** | Effect size and direction are numerically extractable: −10 percentage points in connectivity (12 % → 2 %) and median sediment production reduced to 0 kg m⁻². Direction is unambiguous (decrease).  (Sosa-Perez and MacDonald 2017)  (Sosa-Perez and MacDonald 2017) |
+
+---
+
+### Provenance verification
+
+The full provenance tag set (`010-*`, `020-*`, `030-*`, `090-*`) was not accessible in the metadata provided to this session. The screener must verify against the actual Zotero record. The following content-side observations are offered to support that check:
+
+- **Block-A framing in the paper**: Connectivity is operationalized both as a **flow-path topology** (drainage features linking road surface to stream — consistent with `010-A2-FlowPathDescriptors`) and as a **quantified connectivity metric** (% connected length, 4-class scheme — consistent with `010-A3-ConnectivityMetrics`). If the record was retrieved under `010-A2` only, the strong metric/quantification angle (A3) is an unreported additional match, though not a contradiction.
+- **Block-B**: Content is strictly `B1-Roads`. No skid trail (B2) or culvert/structure (B3) analysis. If any `020-B2` or `020-B3` tag is present, it would represent a provenance-content drift.
+- **Block-C**: Decommissioning (ripping, ripping + mulching) is the explicit mitigation intervention. If the record was retrieved under an M-query with `030-C3-BMPs` or `030-C2-Infiltration`, both are defensible given that ripping restores infiltration and mulching reduces runoff connectivity. No drift is anticipated here, but the screener should confirm the specific C-tag.
+
+If no B2/B3 tags are present and the A-block tags include either A2 or A3 (or both), write: **Provenance verification: no drift detected.**
+
+---
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** N/A
+**Confidence:** High
+**Items flagged for human re-read:** None. All gate items resolved cleanly from the text. The only open point is the provenance tag check (screener action, not a content ambiguity).
+
+---
+
+### Content-coding suggestions (Include-Final)
+
+- **002** [Infrastructure subtype]: `002-B1-Roads` — the study subject throughout is unpaved forest roads; decommissioning treatments are the intervention, not a co-equal infrastructure type.  (Sosa-Perez and MacDonald 2017) *Note for screener:* if the project coding convention treats road decommissioning BMPs as a C3 infrastructure entry, `002-C3-RoadDrainageBMP` is an alternative; the screener should apply whichever rule is established for treatment-focused B1 papers in the Maßnahmenkatalog.
+
+- **003** [Study type]: `003-FieldMonitoring` (primary, no dual tag warranted) — BACI field monitoring with sediment fences, rain gauges, and road surveys; no distributed hydrological model is run.  (Sosa-Perez and MacDonald 2017)  (Sosa-Perez and MacDonald 2017)
+
+- **004 primary** [Outcome]: `004-SedimentDelivery` — sediment production (kg m⁻²) from road segments measured directly via sediment fences is the dominant quantitative outcome and the metric against which both treatment arms are evaluated.  (Sosa-Perez and MacDonald 2017)  (Sosa-Perez and MacDonald 2017)
+
+- **004 secondary** [Outcome]: `004-FlowPathInitiation` — road-stream connectivity as operationalized here is explicitly a drainage-feature flow-path topology metric (do rills/plumes from the road reach the stream?), which maps to channel-network extension via road drainage (the Wemple et al. 1996 concept cited in the paper).  (Sosa-Perez and MacDonald 2017)  (Sosa-Perez and MacDonald 2017)  (Sosa-Perez and MacDonald 2017)
+
+- **005** [Region]: `005-NorthAmerica` — Arapaho-Roosevelt National Forest, Colorado, USA.  (Sosa-Perez and MacDonald 2017)
+
+---
+
+### Synthesis role (Include-Final)
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** This is among the methodologically strongest pre-/post-treatment field studies for road-stream connectivity reduction: a BACI design with quantified connectivity classes, segment-scale sediment budgets, and a 3-year monitoring window provides clean vote-counting evidence for RQ5 (decommissioning reduces both sediment production and functional road-stream connectivity). The quantitative connectivity result (12 % → 2 % connected road length) is directly comparable to values from other semi-arid North American studies (Libohova 2004: 15 %; Coe 2006: 25–32 %) and constitutes a usable anchor for AquaSilva parameterization of disconnection efficiency under low-intensity rainfall regimes.
+
+---
+
+### Tag replacements made: none.
+
+All proposed tag strings were verified character-for-character against the permitted taxonomy before submission.
+
+## Sources
+
+Sosa-Perez, Gabriel, and Lee H. MacDonald. 2017. “Reductions in Road Sediment Production and Road-Stream Connectivity from Two Decommissioning Treatments.” FOREST ECOLOGY AND MANAGEMENT 398 (August): 116–29. https://doi.org/10.1016/j.foreco.2017.04.031.

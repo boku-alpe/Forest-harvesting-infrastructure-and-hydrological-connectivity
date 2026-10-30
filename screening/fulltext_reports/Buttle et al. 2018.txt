@@ -1,0 +1,37 @@
+[Reading: Buttle et al. 2018, p. 1-5 (5 results)]
+
+[Reading: Buttle et al. 2018, p. 14-19 (6 results)]
+
+[Reading: Buttle et al. 2018, p. 12-14 (3 results)]
+
+[Reading: Buttle et al. 2018, p. 10-12 (3 results)]
+
+## Gate Report — Buttle et al. 2018
+
+**Study type:** Paired catchment (BACI), Field, long-term (31 yr)
+
+**Gate 2:** FAIL — Forest road infrastructure (B1) is treated as a post-hoc explanatory factor for the unexpectedly large runoff response of the selection catchment c33, not as a designed study variable; the experimental variable is silvicultural system, and the term "hydrological connectivity" is not used — flow-pathway partitioning via K:SiO₂ tracers is reported as a co-outcome but is framed as flowpath partitioning rather than connectivity per se. (Buttle et al. 2018, 814) (Buttle et al. 2018, 821)
+
+**Gate 3:**
+- Q1: PASS — Turkey Lakes Watershed, central Ontario, 47°03′N; catchments 4.6–66.5 ha; mean annual P 1189 mm (35% snow); mature shade-tolerant hardwood (sugar maple/yellow birch).  (Buttle et al. 2018, 806)
+- Q2: PASS — BACI paired-catchment design with three treatments (clearcut c31, single-tree selection c33, uniform shelterwood c34) vs. three controls (c32, c35, c46).  (Buttle et al. 2018, 806–807)
+- Q3: PASS — V-notch weirs, ANCOVA on peak flow and zero-flow days, double-mass curves with 10,000-iteration randomization test for runoff/DR/BF, Hamon PET, K:SiO₂ geochemical tracing — all reproducibly described.  (Buttle et al. 2018, 808–809)
+- Q4: UNCLEAR — Only the c33 forest access road is characterized, and minimally: ~750 m length, parallel to stream, culverts oriented toward channel; no road density, age, surface, condition, or cross-drain spacing reported, and the roads on c31 and c34 are not described.  (Buttle et al. 2018, 806)
+- Q5: UNCLEAR — Flowpath partitioning is mechanistically quantified via K:SiO₂ molar ratios in forest floor percolate, soil percolate, ablation/basal till groundwater, and streamflow — a defensible functional-flowpath proxy — but the paper does not invoke "connectivity" as a concept or compute a connectivity index/metric (no IC, no length-of-direct-linkage, no SCM).  (Buttle et al. 2018, 809) (Buttle et al. 2018, 821)
+- Q6: PASS — Clear directional effects: WY runoff, DR and BF all increased in all treatments; largest WY runoff increase in c33 (+156 mm yr⁻¹ vs. c32; slope ratio 1.574) attributed to road-mediated hillslope-runoff diversion; K:SiO₂ ratios increased post-harvest, indicating greater partitioning to surface/near-surface pathways, most pronounced in clearcut.  (Buttle et al. 2018, 816) (Buttle et al. 2018, 821)
+
+**Gate 4:** PASS — 16 pre-harvest + 15 post-harvest water years across three treatment–control pairs; many complete event/season/annual iterations.  (Buttle et al. 2018, 808)
+
+**Gate 5:** PASS — Effect direction on functional flowpaths (increase in surface/near-surface contribution, with road-mediated enhancement of stream delivery in c33) is explicitly derivable.  (Buttle et al. 2018, 814–815) (Buttle et al. 2018, 821)
+
+**Recommendation:** Exclude-Quality (reason: *connectivity not operationalized as primary/co-reported outcome — infrastructure is contextual confounder, not study variable*)
+
+**Confidence:** Medium — The paper contains genuinely valuable material for the AquaSilva road-connectivity narrative (a quantified case where a single 750 m road overshadowed canopy-removal effects on runoff), but it does not meet the connectivity-anchored inclusion logic: roads enter as an unplanned explanation for one catchment, and connectivity is neither named nor metricized. The K:SiO₂ flowpath analysis is the closest functional-connectivity proxy.
+
+**Items flagged for human re-read:** Q4 (infrastructure characterization minimal but non-zero for c33), Q5 (K:SiO₂ as functional-flowpath proxy — does the screener accept tracer-based pathway partitioning as connectivity operationalization under PSALSAR?). If Q5 is accepted, Gate 2 should be re-evaluated and the paper could be reclassified as Include-Final with B1-Roads + A2-FlowPaths tagging.
+
+**Borderline-Stage-1 carry-over:** Unknown from the provided context — please confirm against the Stage-1 log.
+
+## Sources
+
+Buttle, J. M., F. D. Beall, K. L. Webster, et al. 2018. “Hydrologic Response to and Recovery from Differing Silvicultural Systems in a Deciduous Forest Landscape with Seasonal Snow Cover.” Journal of Hydrology 557: 805–25. Scopus. https://doi.org/10.1016/j.jhydrol.2018.01.006.

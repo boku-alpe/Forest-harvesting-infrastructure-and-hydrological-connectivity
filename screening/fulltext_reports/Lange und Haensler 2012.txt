@@ -1,0 +1,50 @@
+Reading: ⁨Lange⁩ und ⁨Haensler⁩ 2012
+
+## Stage-2 screening — Lange & Haensler (2012)
+
+### Gate-by-gate appraisal
+
+**Gate 1 — Full text retrievable.** PASS. The 8-page PDF (Journal of Hydrology 464–465, 157–164) is available and readable. (Lange and Haensler 2012, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** BORDERLINE → recommend FAIL.
+
+The study is framed primarily as a runoff-generation / drought-recovery investigation in a 1.53 km² forest headwater (Engebächle, Black Forest), using hydrograph separation by EC, stream temperature, soil moisture, and weekly nitrate/silica/¹⁸O tracers.  (Lange and Haensler 2012, 1) (Lange and Haensler 2012, 3)
+
+Forest roads (Block B1) do appear as a quantified runoff source: a mapping campaign identified 2.5 km of forest roads "directly connected to the investigated channel reach", and a back-of-envelope calculation (width 2 m, runoff coefficient ≈ 50 %) attributed ~65 m³, i.e. ~30 % of the event water during Event 1, to road surfaces. Wemple & Jones (2003) is cited as the anchor for this argument.  (Lange and Haensler 2012, 6)
+
+However, this treatment is a single-snapshot structural-connectivity estimate (one mapped length, one assumed runoff coefficient, one event) embedded as a discussion sidebar. There is no event-wise variation of a connectivity variable, no metric (e.g., IC, road–stream crossing density, connected length per sub-event), no comparison between connected vs. disconnected segments, and no outcome regressed against connectivity. The study's analytical outcomes (RP, RY, DFP, α, event-water %, Table 1) characterize total catchment response, not the contribution of road connectivity per se.  (Lange and Haensler 2012, 5)
+
+Per the connectivity-anchored inclusion criteria (structural ≠ functional, connectivity must be operationalized as an outcome to enter the core corpus), this falls short.
+
+→ Terminal tag: **`006-Exclude-Quality`**
+→ Exclusion-reason note (verbatim): **`connectivity not operationalized as outcome`**
+
+(Gates 3–5 not assessed; first failed gate determines reason.)
+
+### Rationale for screener (not a tag)
+
+The paper would be a valid sensitivity reference for "forest roads can dominate event water immediately after drought" but does not itself supply an extractable connectivity–outcome relationship. If the synthesis later adds a secondary corpus for *qualitative process evidence*, this record would be a candidate for that secondary list rather than the connectivity core corpus.
+
+### Note on content-coding tags
+
+Content-coding tags (`002-`, `003-`, `004-`, `005-`, `010-A`, `020-B`, `030-C`) are by protocol only proposed for `006-Include-Final` records. They are therefore not proposed here. If the human screener overrides the Gate-2 call and includes the record, the following provisional values would apply (listed for transparency only, not as a suggestion under the current recommendation):
+
+- `002-B1-Roads` — 2.5 km of forest roads mapped as directly connected to the channel  (Lange and Haensler 2012, 6)
+- `003-FieldMonitoring` — continuous rainfall/runoff/soil-moisture/temperature/EC plus weekly water-quality sampling  (Lange and Haensler 2012, 3)
+- `004-RunoffResponse` (primary), `004-FlowPathInitiation` (secondary) — transition from surface- to subsurface-dominated runoff response is the central outcome  (Lange and Haensler 2012, 7)
+- `005-Europe` — Black Forest, SW Germany  (Lange and Haensler 2012, 3)
+- `010-A2-FlowPaths` — flow-path identification via temperature and tracers  (Lange and Haensler 2012, 4)
+- `020-B1-Roads`  (Lange and Haensler 2012, 6)
+- `030-empty` — no mitigation measures evaluated
+
+### Suggested action in Zotero
+
+Apply, on the parent item `10-VQFU5NZH`:
+- tag: `006-Exclude-Quality`
+- child note (new) titled e.g. "Stage-2 exclusion reason" containing exactly: `connectivity not operationalized as outcome`
+
+Shall I create the exclusion-reason note as a child of the item now?
+
+## Sources
+
+Lange, J., and A. Haensler. 2012. “Runoff Generation Following a Prolonged Dry Period.” Journal of Hydrology 464–465: 157–64. Scopus. https://doi.org/10.1016/j.jhydrol.2012.07.010.

@@ -1,0 +1,50 @@
+Reading: López‐Vicente et al. 2017
+
+# Stage-2 gate assessment — López-Vicente et al. (2017)
+
+## Gate-by-gate evaluation
+
+**Gate 1 — Full text retrievable:** Pass. PDF available, 13 pages, all sections legible. (López‐Vicente et al. 2017, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed:** Pass. Block-B infrastructure is an explicit variable in the analysis: linear landscape elements (LLE) include an unpaved forest road (~3 m wide), three trails (~1.5 m wide) and stonewalls/agricultural terraces (~1.2 m high), with total lengths tabulated per scenario and incorporated into the flow-direction mask of the IC model.  (López‐Vicente et al. 2017, 2) (López‐Vicente et al. 2017, 5) Connectivity is operationalized as the primary outcome via the Borselli/Cavalli Index of Connectivity (IC), computed for six land-use scenarios over 70 years.  (López‐Vicente et al. 2017, 3)
+
+**Gate 3 — Q-items (primary study):**
+- Q1 context: 17.2 ha Araguás sub-catchment, Central Spanish Pyrenees, sub-Mediterranean climate, ~800 mm yr⁻¹, mean slope 43 %, elevation 899–1,159 m.  (López‐Vicente et al. 2017, 2) Pass.
+- Q2 design: Modeling (IC over six historic scenarios) combined with 7-year field monitoring (rainfall + V-notch stream gauge).  (López‐Vicente et al. 2017, 2) (López‐Vicente et al. 2017, 4) Pass.
+- Q3 method: IC equation given explicitly; three flow-accumulation algorithms (MD/MD8/D8) compared; 1 × 1 m DEM derived from 5 m lidar; C-RUSLE sourced from named prior studies.  (López‐Vicente et al. 2017, 3) (López‐Vicente et al. 2017, 5) Pass.
+- Q4 infrastructure characterization: Width, height, count and total length of roads, trails, terraces and stonewalls reported per scenario (Table I).  (López‐Vicente et al. 2017, 4) Pass.
+- Q5 connectivity operationalization: IC mapped spatially; mean/SD reported by physiographic unit (Table II–III).  (López‐Vicente et al. 2017, 8) (López‐Vicente et al. 2017, 10) Pass.
+- Q6 effect direction: Roads and trails carry the highest IC values throughout all six scenarios; afforestation lowers and stabilises connectivity; quantified relative changes given (e.g. mean IC in 1945 was 42 % higher than in 2012).  (López‐Vicente et al. 2017, 6) (López‐Vicente et al. 2017, 7) Pass.
+
+**Gate 4 — Sample/scope:** Pass. Six scenarios spanning 1945–2012, 7-yr continuous hydrological record, sub-catchment of analytically tractable size with explicit LLE inventory.  (López‐Vicente et al. 2017, 4)
+
+**Gate 5 — Effect direction extractable:** Pass. Quantitative directional results: roads/trails = locus of maximum IC (mean IC ≈ −2.05 downslope of road vs ≈ −4.31 upslope, MD8 algorithm); afforestation reduces total-area IC by ~42 % between 1945 and 2012.  (López‐Vicente et al. 2017, 8) (López‐Vicente et al. 2017, 10)
+
+## Terminal-tag recommendation
+
+| Tag (verbatim) |
+|---|
+| `006-Include-Stage2` |
+| `006-Include-Final` |
+
+No exclusion-reason note required.
+
+## Content-coding tag proposals
+
+Numeric prefixes verbatim; each tag is a proposal pending human screener confirmation.
+
+- `002-Mixed` — infrastructure portfolio combines an unpaved forest road, three narrow trails and stonewall/terrace structures, none of which dominates singly.  (López‐Vicente et al. 2017, 2)
+- `003-Modeling` (primary) — design is IC modeling across six reconstructed scenarios using historical aerial photography and a lidar DEM.  (López‐Vicente et al. 2017, 2) The 7-year gauging record functions as supporting validation rather than the primary design, so `003-FieldMonitoring` is offered as a secondary candidate if the screener allows dual tagging.  (López‐Vicente et al. 2017, 4)
+- `004-RunoffResponse` — IC is interpreted against measured stream flow and erosive-event statistics from the gauge.  (López‐Vicente et al. 2017, 5) Secondary candidate: `004-FlowPathInitiation`, since the paper analyses flow-path-line length (FPL) as a function of LLE density and discusses gully/rill initiation thresholds.  (López‐Vicente et al. 2017, 7)
+- `005-Europe` — Central Spanish Pyrenees.  (López‐Vicente et al. 2017, 2)
+- `010-A2-FlowPaths` — explicit treatment of flow-path-line length, location and topology as causal mechanism.  (López‐Vicente et al. 2017, 7) Secondary: `010-A3-Metrics`, because the study applies and discusses the Borselli–Cavalli IC metric.  (López‐Vicente et al. 2017, 3)
+- `020-B1-Roads` — unpaved forest road (~3 m) is the single LLE with the strongest local IC signature and the clearest upslope/downslope contrast.  (López‐Vicente et al. 2017, 6) Secondary: `020-B3-Structures` for stonewalls/terraces, which are central to the historical comparison.  (López‐Vicente et al. 2017, 2) Note: the trails are pedestrian/afforestation-access paths, not skid/snig trails in the forest-harvesting sense, so `020-B2-SkidSnigTrails` is **not** recommended.
+- `030-Cany-MitigationControls` — authors propose rebuilding ruined stonewalls at high-FPL locations as a structural measure to reduce connectivity.  (López‐Vicente et al. 2017, 11) (López‐Vicente et al. 2017, 12)
+
+## Brief synthesis note for the extraction phase
+
+This is a strong anchor record for the historical / afforestation arm of the corpus: it isolates the relative contribution of vegetation change vs. LLE change to IC. With only LLE changes, IC varied between −1.7 % and +5.7 %; with vegetation changes alone, IC varied between 0.05 % and 41.3 %.  (López‐Vicente et al. 2017, 11) For AquaSilva's Maßnahmenkatalog this supports parameterising stonewall/terrace restoration as a Type B (area modifier, via roughness/C-factor proxy) measure with a secondary topological effect on flow-path length — relevant for Wienerwald sites with legacy terrace structures.
+
+## Sources
+
+López‐Vicente, Manuel, Estela Nadal‐Romero, and Erik LH Cammeraat. 2017. “Hydrological Connectivity Does Change over 70 Years of Abandonment and Afforestation in the Spanish Pyrenees.” Land Degradation & Development 28 (4): 1298–310.

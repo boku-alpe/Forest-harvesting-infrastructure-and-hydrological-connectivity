@@ -1,0 +1,46 @@
+Reading: ⁨La Marche⁩ und ⁨Lettenmaier⁩ 2001
+
+## Stage-2 Screening — La Marche & Lettenmaier (2001)
+
+### Gate assessment
+
+**Gate 1 — Full text retrievable:** Pass. PDF (20 pp.) is accessible. (La Marche and Lettenmaier 2001, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed:** Pass. Block-B infrastructure (forest roads, culverts, road–ditch network of 547 km / 2171 culverts) is the explanatory variable, and connectivity is explicitly operationalized: culverts are classified as connected vs. non-connected via direct stream crossing or gully extension, and a logistic regression on hillslope curvature and downslope distance predicts gully connectivity (Pg threshold 0.5).  (La Marche and Lettenmaier 2001, 4–5) (La Marche and Lettenmaier 2001, 8–9)
+
+**Gate 3 — Q-items (primary study):**
+- Q1 study context (Deschutes River 149 km², transient snow zone, marine Mediterranean climate, western Cascades): Pass.  (La Marche and Lettenmaier 2001, 2–3)
+- Q2 study design (combined field monitoring + distributed hydrologic modeling with DHSVM): Pass.  (La Marche and Lettenmaier 2001, 1) (La Marche and Lettenmaier 2001, 9)
+- Q3 reproducible methods (crest-stage recorders at 21 segments; 530 km road survey; GIS/DEM connectivity model with explicit regression equation; DHSVM described with road/stream network coupling): Pass.  (La Marche and Lettenmaier 2001, 4) (La Marche and Lettenmaier 2001, 8–9)
+- Q4 infrastructure characterized (road length, cutslope height classes, ditch-relief vs. stream-crossing culverts, contributing area): Pass.  (La Marche and Lettenmaier 2001, 5–6)
+- Q5 connectivity operationalized (four-category typology a–d; predictive logistic model; 24% of 1447 ditch-relief culverts modeled as connected): Pass.  (La Marche and Lettenmaier 2001, 4–5) (La Marche and Lettenmaier 2001, 9)
+- Q6 effect direction derivable (quantified: +2.2–9.5% mean annual flood and +2.9–12.2% 10-yr event due to roads alone): Pass.  (La Marche and Lettenmaier 2001, 1)
+
+**Gate 4 — Sample/scope:** Pass. Nine subcatchments (2.2–21 km²) plus 149 km² main stem, two winter monitoring seasons (1996/97, 1997/98), 2171 surveyed culverts.  (La Marche and Lettenmaier 2001, 1) (La Marche and Lettenmaier 2001, 5)
+
+**Gate 5 — Effect direction extractable:** Pass. Direction is positive (road network increases peak flows; effect increases with return period).  (La Marche and Lettenmaier 2001, 1)
+
+### Recommended terminal tags
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+### Content-coding tag suggestions
+
+| Family | Proposed value | Supporting evidence |
+|---|---|---|
+| 002 Infrastructure subtype | `002-B1-Roads` | Forest roads, culverts and road-ditch drainage are the sole infrastructure class examined.  (La Marche and Lettenmaier 2001, 1) |
+| 003 Study type | `003-Modeling` (primary) + `003-FieldMonitoring` (secondary) | DHSVM distributed modeling of nine subcatchments combined with crest-stage / weir monitoring at 21 road segments.  (La Marche and Lettenmaier 2001, 1) (La Marche and Lettenmaier 2001, 4) |
+| 004 Hydrological focus | `004-PeakFlow` (primary) + `004-RunoffResponse` + `004-FlowPathInitiation` | Mean annual flood and 10-yr peak quantified; ditch runoff measured; gully formation below culverts as new flow-path initiation.  (La Marche and Lettenmaier 2001, 1) (La Marche and Lettenmaier 2001, 4–5) |
+| 005 Region | `005-NorthAmerica` | Deschutes River, Washington, USA (western Cascades).  (La Marche and Lettenmaier 2001, 2) |
+| 010-A Block A | `010-A2-FlowPaths` + `010-A3-Metrics` | Explicit flow-path typology (reinfiltrate / stream-crossing / gully) and quantitative connectivity metric via logistic regression (Pg).  (La Marche and Lettenmaier 2001, 4–5) (La Marche and Lettenmaier 2001, 8–9) |
+| 020-B Block B | `020-B1-Roads` | Roads as the connectivity-introducing infrastructure.  (La Marche and Lettenmaier 2001, 1–2) |
+| 030-C Block C | `030-empty` | No mitigation measures evaluated; study quantifies impact, not retention/BMP effectiveness.  (La Marche and Lettenmaier 2001, 1) |
+
+Note for the human screener: Block A is dual-tagged (A2 + A3) because the paper both defines flow-path categories and derives a quantitative connectivity predictor. If single-tag policy applies, `010-A3-Metrics` is the stronger fit, since the logistic model is the paper's distinctive connectivity contribution.
+
+## Sources
+
+La Marche, Jonathan L., and Dennis P. Lettenmaier. 2001. “Effects of Forest Roads on Flood Flows in the Deschutes River, Washington.” Earth Surface Processes and Landforms 26 (2): 115–34. https://doi.org/10.1002/1096-9837(200102)26:2%253C115::AID-ESP166%253E3.0.CO;2-O.

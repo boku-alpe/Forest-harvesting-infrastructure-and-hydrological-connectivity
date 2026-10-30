@@ -1,0 +1,49 @@
+[Reading: Cao et al. 2021, p. 1-10 (10 results)]
+
+## Stage-2 Gate Report — Cao, Elliot & Long 2021
+
+**Study type:** `003-Modeling`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (none indicated in record metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (26 pp). |
+| Gate 2 | PASS | (a) Roads (paved Highway 89, gravel Cascade Road with ditches, culverts) and sediment basins are the explicit study variable; (b) connectivity is operationalized via flow-path counts, inflow/outflow path interception ratios, and sub-catchment delineation changes — "Roads influenced surface runoff flow path distributions and sub-catchment delineations" (abstract, p.1); "All sub-catchments… are influenced by roads and can be classified as five types" (p.9–10). (Cao et al. 2021, 1) (Cao et al. 2021, 9–10) |
+| Q1 (context) | PASS | Lake Tahoe Basin, Emerald Fire 71 ha, elevation 1890 m, Csb climate (Köppen), mixed conifer forest, mean annual precipitation 1496 mm.  (Cao et al. 2021, 4–5) |
+| Q2 (design) | PASS | Modeling design with before-fire vs after-fire GeoWEPP simulation and with-road vs without-road (2-m LiDAR vs 10-m DEM) comparison.  (Cao et al. 2021, 7–8) |
+| Q3 (method) | PASS | GeoWEPP v10.3 + WEPP Windows, 2-m LiDAR DEM (resampled from 0.5 m), BARC/dNBR burn severity, soil erodibility values from Miller et al. (2015) and Elliot & Hall (2010), CSAs of 200/400/1000 m² tested, sediment basin geometry described in WEPP "Structures" file.  (Cao et al. 2021, 6–8) |
+| Q4 (infrastructure) | PASS | Road 1: paved, 4 % gradient, no drains; Road 2: gravel, crowned, 7 % gradient with ditches and culverts; four sediment basins (total 79.13 m³); sub-catchment areas reported.  (Cao et al. 2021, 5) |
+| Q5 (connectivity operationalized) | PASS | Quantitative metrics: number of inflow vs outflow paths per road segment at varying CSA, "average distance between flow paths", flow path length per pixel, sub-catchment topology classified into five types.  (Cao et al. 2021, 9) |
+| Q6 (effect direction) | PASS | Clear direction reported: roads reduce erosion on downslope hillslopes but increase erosion on fillslopes; Road 2 intercepts a larger share of upslope flow paths than Road 1 (only 15/44 outflow at CSA 1000 m²); 43 % of ridge-originating sub-catchments are intercepted by roads.  (Cao et al. 2021, 1) (Cao et al. 2021, 9–10) |
+| Q7 / Gate 4 (scope) | PASS | Complete modeling iteration for the 71-ha Emerald Fire catchment with pre- and post-fire runs and four monitored sediment basins for validation.  (Cao et al. 2021, 5–8) |
+| Gate 5 (extractability) | PASS | Effect direction extractable both qualitatively and quantitatively (path counts, DBF, deposition mass on roads ≈200 Mg, basin deposition ≈120 Mg measured vs WEPP-predicted).  (Cao et al. 2021, 5) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** — (n/a)
+**Confidence:** High
+**Items flagged for human re-read:** none — though screener may wish to confirm Q5 against the discussion of belt-averaged erosion rates (pp. 11–18, not read here) to verify connectivity is treated as flow-path-density metric rather than purely runoff response.
+
+### Content-coding suggestions
+
+- **002:** `002-Mixed` — roads (B1) plus culverts/ditches/sediment basins (B3) and road drainage BMP (C3) all analyzed; "road prisms, culverts and road ditches influence sedimentation processes".  (Cao et al. 2021, 1)
+- **003:** `003-Modeling` — GeoWEPP/WEPP Windows spatial simulation is the core method.  (Cao et al. 2021, 3)
+- **004:** `004-A2-FlowPathDescriptors` (primary) and `004-RunoffResponse` (secondary) — flow path length, number of inflow/outflow paths, sub-catchment delineation are the connectivity descriptors.  (Cao et al. 2021, 9)
+- **005:** `005-NorthAmerica` — Lake Tahoe Basin, California/Nevada, USA.  (Cao et al. 2021, 4)
+- **010:** `010-A2-FlowPathDescriptors` — flow path interception/diversion by road segments is the explicit Block-A construct.  (Cao et al. 2021, 9–10)
+- **020:** `020-B1-Roads` AND `020-B3-Structures` — both road prisms and culverts/sediment basins examined.  (Cao et al. 2021, 5)
+- **030:** `030-C3-RoadDrainageBMP` — Road 2 ditches, culverts and the four engineered sediment basins are evaluated as retention/drainage practices; deposition estimates compared to measured mass removed by Eldorado County.  (Cao et al. 2021, 5)
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Quantitative anchor for road-induced flow-path disconnection at sub-catchment scale (47 % of area in sub-catchments crossing roads; 43 % of ridge-originating sub-catchments intercepted; ~134 m³ ≈ 120 Mg trapped in four basins post-fire) and a validation case for GeoWEPP at 2-m LiDAR resolution in a Mediterranean-type montane setting — directly relevant to RQ6 effectiveness evidence for road drainage BMPs and to the AquaSilva measure-catalog Type A (sediment basins as discrete storage) and Type C (channel/road ditch modifier) parameterizations.
+
+## Sources
+
+Cao, Longxi, William Elliot, and Jonathan W. Long. 2021. “Spatial Simulation of Forest Road Effects on Hydrology and Soil Erosion after a Wildfire.” Hydrological Processes 35 (6): e14139. https://doi.org/10.1002/hyp.14139.

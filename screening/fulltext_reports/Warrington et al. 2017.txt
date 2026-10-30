@@ -1,0 +1,41 @@
+Reading: Warrington et al. 2017
+
+## Stage-2 Gate Report — Warrington et al. 2017
+
+**Study type:** `003-Review`
+**Checklist applied:** R1–R3
+**Borderline carry-over from Stage 1:** None indicated in metadata
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 (a) Infrastructure as variable | PASS | The review explicitly synthesizes BMPs for "forest roads, skid trails, stream crossings, and streamside management zones" as the analytical objects, not merely as context (p. 4, §3.3; p. 5, §3.4). (Warrington et al. 2017, 4) |
+| Gate 2 (b) Connectivity operationalized as outcome | **FAIL** | Connectivity appears only once and narratively: "stream crossings with inadequate or no BMPs are likely to provide direct connectivity of sediment generated from road systems to hydrologic networks" (Conclusions, p. 9). No connectivity metric, index, or flow-path framework is reviewed; the synthesis outcomes are sediment load, water quality, faunal community response, and habitat — not structural or functional connectivity.  (Warrington et al. 2017, 9) |
+| R1 Peer-reviewed venue | PASS | Published in *Forests* (MDPI), peer-reviewed journal.  (Warrington et al. 2017, 1) |
+| R2 Topical alignment (infrastructure × connectivity) | FAIL | Scope is BMPs × aquatic/riparian fauna and water quality; connectivity is not the framing axis. The Materials and Methods explicitly target faunal species effects, not connectivity (p. 2).  (Warrington et al. 2017, 2) |
+| R3 Extractable synthesis statement on connectivity | UNCLEAR | A single qualitative anchor exists (road→stream sediment connectivity via crossings, p. 9), but no classification scheme, consensus claim, or mitigation-effectiveness summary specifically about connectivity is offered.  (Warrington et al. 2017, 9) |
+| Gate 4 | Auto-pass (review) | — |
+| Gate 5 | FAIL | No connectivity (or connectivity-related) variable is operationalized; only directional claims on sediment, fauna, and water quality.  (Warrington et al. 2017, 3–4) |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `connectivity only narrative, not operationalized`
+**First failed gate:** Gate 2 (b) — sequential rule applied; Gate 2 failure determines exclusion reason and supersedes downstream R2/Gate 5 failures.
+**Confidence:** High
+**Items flagged for human re-read:**
+- R3 marked UNCLEAR — the single sentence on p. 9 framing stream crossings as a sediment-connectivity pathway could, in principle, be cited as a narrative anchor in RQ6 even if the paper does not pass Stage 2. Screener decides whether to retain as a soft anchor outside the core corpus.
+- Adjacent value: the paper is a strong synthesis on BMP effectiveness for sediment reduction and SMZ/stream-crossing design and may be useful in the Maßnahmenkatalog context layer even if excluded from the connectivity-anchored corpus.
+
+### Content-coding suggestions
+
+Not applicable (record is Exclude-Quality).
+
+### Synthesis role
+
+Not applicable. Record does not enter RQ1–RQ6 synthesis. Screener may consider citing as background context for the Maßnahmenkatalog (B1-Roads, B3-Structures BMPs, SMZ design) outside the SLR corpus, with explicit flagging that it is non-corpus material.
+
+## Sources
+
+Warrington, Brooke M., W. Michael Aust, Scott M. Barrett, et al. 2017. “Forestry Best Management Practices Relationships with Aquatic and Riparian Fauna: A Review.” Forests 8 (9): 331.

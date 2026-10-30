@@ -1,0 +1,37 @@
+Reading: ⁨Amatya⁩ und ⁨Skaggs⁩ 2011
+
+## Stage-2 Gate Report — Amatya & Skaggs 2011
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7 (not evaluated past first failure)
+**Borderline carry-over from Stage 1:** No (not indicated in attached metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 1 | PASS | Full text attached (12 pp.). |
+| Gate 2 (a) — Block-B infrastructure as variable | UNCLEAR → effectively FAIL | The site is described as "drained by four 1.4 to 1.8 m deep parallel lateral ditches spaced 100 m apart" with ditch geometry reported as fixed site context, not as a manipulated/compared variable; no contrast of ditch density, spacing, or condition is performed. (Amatya and Skaggs 2011, 2) |
+| Gate 2 (b) — Connectivity operationalized as primary/co-outcome | **FAIL** | Outcomes are runoff coefficient, outflow volume, water-table elevation, ET, and nutrient loads — pure runoff/water-balance hydrology. No connectivity concept, flow-path descriptor, or connectivity metric is introduced anywhere in objectives, methods, results, or discussion: "The main objective … is to summarize the long-term (1988–2008) observations of hydrology and drainage water quality."  (Amatya and Skaggs 2011, 2) |
+| Q1–Q7 | not evaluated | Gates are sequential; first failure terminates evaluation. |
+| Gate 4 | not evaluated | — |
+| Gate 5 | not evaluated | — |
+
+### Recommendation
+
+**Terminal tag:** `006-Exclude-Quality`
+**Exclusion-reason string (verbatim):** `connectivity only narrative, not operationalized`
+**Confidence:** High
+**Items flagged for human re-read:** Gate 2(a) — screener may wish to confirm that plantation drainage ditches in an agricultural-style block do not qualify as Block-B infrastructure under AquaSilva scope (this is a forest-drainage hydrology paper aimed at quantifying long-term water and nutrient balances of a managed pine plantation, not a forest road/skid trail connectivity study). Even under a permissive reading of 2(a), Gate 2(b) fails unambiguously, so the exclusion outcome is robust.
+
+### Content-coding suggestions
+
+Not applicable — record excluded at Gate 2.
+
+### Synthesis role
+
+Not applicable — record excluded at Gate 2. The paper may still be useful as background/contextual reference for drained-plantation water-balance behavior (RQ6 context, not RQ5 vote-counting), but this is outside the formal SLR corpus and at the screener's discretion.
+
+## Sources
+
+Amatya, D. M., and R. W. Skaggs. 2011. “Long-Term Hydrology and Water Quality of a Drained Pine Plantation in North Carolina.” Transactions of the ASABE 54 (6): 2087–98. Scopus.

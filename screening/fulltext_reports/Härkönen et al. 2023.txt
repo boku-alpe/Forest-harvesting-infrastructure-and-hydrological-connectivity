@@ -1,0 +1,41 @@
+[Reading: Härkönen et al. 2023, p. 1-5 (5 results)]
+
+## Stage-2 screening proposal — Härkönen et al. (2023)
+
+**Item:** `10-PZYR5N6S` — "Reviewing peatland forestry: Implications and mitigation measures for freshwater ecosystem browning", *Forest Ecology and Management*, review article.
+
+### Gate-by-gate evaluation
+
+**Gate 1 — Full text retrievable.** PDF available (17 pp., open access CC BY). ✓ pass.
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** This is the decisive gate. The paper is a narrative review of peatland-forestry impacts on freshwater browning (DOC/Fe export). The infrastructure variable discussed is **drainage ditches and ditch network maintenance (DNM)** — peatland-forestry hydrotechnical infrastructure, not Block-B AquaSilva infrastructure (B1 roads, B2 skid/snig trails, B3 retention/mitigation structures). Hydrological connectivity is explicitly invoked as a conceptual mechanism — drainage "multiplies the size of the stream network … thus increasing the hydrological connectivity between the catchment area and surface waters" (Härkönen et al. 2023, 3) — and ditch density is treated as a predictor of DOC and water colour  (Härkönen et al. 2023, 4). However, connectivity is operationalized as a driver of **chemical export (OC, Fe, browning)**, not of runoff generation, peak flow, or flood-relevant flux. The review's outcome domain is water quality, not the flood-hydrological connectivity that anchors the AquaSilva corpus  (Härkönen et al. 2023, 1).
+
+Two defensible exclusion-reason strings exist; the first failed criterion in sequence is the infrastructure mismatch:
+
+- **Primary proposal (Gate 2):** `no Block-B infrastructure as variable` — drainage ditches fall outside the B1/B2/B3 scope defined in the protocol.
+- **Alternative (also Gate 2), if the screener accepts drainage ditches as a borderline B3 case:** `connectivity not operationalized as outcome` — connectivity is mechanistic narrative, not a measured/modelled outcome variable.
+
+Rationale for choosing the first: in the AquaSilva connectivity-anchored taxonomy, Block B is tied to forest-operational infrastructure (Wemple/Croke/Takken lineage). Extending B3 to peatland drainage ditches would shift the corpus toward a different infrastructure tradition (peatland hydrology) and risk Type I errors in synthesis — exactly the scenario the protocol warns against.
+
+Gates 3–5 are not reached once Gate 2 fails (sequential rule).
+
+### Proposed terminal tagging
+
+| Field | Proposed value |
+|---|---|
+| Terminal tag | `006-Exclude-Quality` |
+| Exclusion-reason note (verbatim) | `no Block-B infrastructure as variable` |
+
+No content-coding tags are proposed, since these apply only to Include-Final records.
+
+### Notes for the human screener
+
+1. The paper is a useful **adjacent reference** for the Maßnahmenkatalog discussion of mitigation measures on organic soils (ditch blocking, controlled drainage, overland-flow areas, constructed wetlands)  (Härkönen et al. 2023, 4–5) and for the conceptual treatment of hydrological connectivity in drained catchments. Consider retaining it outside the core corpus as a background/contextual citation rather than discarding it from the library.
+2. If the screener decides to **broaden Block B** to include peatland drainage ditches as B3-Structures (a protocol-level decision), then Gate 2 would pass and the record would proceed to Gate 3 as an R-item. In that case my preliminary R-screening reads: R1 pass (peer-reviewed, *Forest Ecol. Manag.*), R2 borderline (topical alignment is water-quality, not flood-hydrology), R3 pass (extractable synthesis content on ditch effects, DNM, mitigation efficacy). The likely outcome would still be exclusion at R2 (`R2 fail: topical alignment insufficient`).
+3. Recommend flagging this decision in the PSALSAR appraisal log as a **scope boundary case** ("peatland drainage infrastructure vs. forest operational infrastructure") so the rule is applied consistently across other Fennoscandian peatland-forestry hits in the corpus.
+
+Awaiting confirmation before any tag is written to Zotero.
+
+## Sources
+
+Härkönen, L. H., A. Lepistö, S. Sarkkola, P. Kortelainen, and A. Räike. 2023. “Reviewing Peatland Forestry: Implications and Mitigation Measures for Freshwater Ecosystem Browning.” Forest Ecology and Management 531. Scopus. https://doi.org/10.1016/j.foreco.2023.120776.

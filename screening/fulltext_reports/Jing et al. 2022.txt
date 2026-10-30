@@ -1,0 +1,45 @@
+Reading: Jing et al. 2022
+
+# Stage 2 screening — Jing et al. (2022)
+
+## Terminal-tag recommendation
+
+**Proposed terminal tags:** `006-Include-Stage2` AND `006-Include-Final`
+
+**Gate-by-gate assessment:**
+
+- **Gate 1 (full text):** PASS. Complete 12-page article accessible. (Jing et al. 2022, 1)
+- **Gate 2 (Stage-1 confirmed by full text):** PASS. Road networks are the explicit independent variable (Block B), and sediment connectivity (IC / modified ICR) is the operationalized outcome; the study objective explicitly couples the two.  (Jing et al. 2022, 3)
+- **Gate 3 (Q-items, primary study):**
+  - Q1 — context reported: Dongshuanghe watershed, 334.10 km², Dabie Mountain, monsoon climate, 1000–1200 mm annual rainfall, altimetric amplitude 744 m.  (Jing et al. 2022, 3)
+  - Q2 — design classifiable as GIS-based modeling combined with structural network analysis, Random Forest and Geographical Detector Model.  (Jing et al. 2022, 5)
+  - Q3 — methods reproducible: IC equations after Borselli et al. (2008), explicit ICR computation workflow (Road_Mask → FlowDir → DirMask → AccMask → DirFinal), RF parameters (n-trees = 1000, m-try = 2).  (Jing et al. 2022, 5)
+  - Q4 — infrastructure characterized: four road grades (Rd1–Rd4) plus seven structural descriptors (density, slope, bending degree, α, β, γ, cost ratio).  (Jing et al. 2022, 4)
+  - Q5 — connectivity operationalized as IC and a road-modified ICR in which roads act as permanent drainage lines / local sinks.  (Jing et al. 2022, 5)
+  - Q6 — effect direction derivable: mean ICR (−0.97) > mean IC (−2.17); ICR declines quadratically with distance to nearest road (R² = 0.73); road structural variables outrank river variables.  (Jing et al. 2022, 1) (Jing et al. 2022, 7)
+- **Gate 4 (sample/scope):** PASS. Watershed-scale analysis on 394 grid cells of 1 × 1 km.  (Jing et al. 2022, 4)
+- **Gate 5 (effect direction extractable):** PASS. Quantitative, signed effects reported (e.g., 150 m threshold beyond which the road effect on ICR diminishes; Road_S explanatory power 0.127 in GDM).  (Jing et al. 2022, 7)
+
+No exclusion-reason note required.
+
+## Content-coding tag suggestions (Include-Final)
+
+| Family | Proposed value | Rationale |
+|---|---|---|
+| 002 Infrastructure subtype | `002-B1-Roads` | The Block-B variable is the road network alone, classified into four grades (rural → national/provincial); no extraction trails or engineered retention structures are analyzed.  (Jing et al. 2022, 4) |
+| 003 Study type | `003-Modeling` | GIS-based index computation (IC / ICR) coupled with statistical attribution via Random Forest and Geographical Detector Model; no in-situ flux or plot measurements.  (Jing et al. 2022, 5) |
+| 004 Hydrological focus | `004-SedimentDelivery` | Outcome is sediment connectivity / sediment transfer from source to sink; the modified ICR explicitly captures road-mediated sediment routing.  (Jing et al. 2022, 5) A secondary case could be made for `004-FlowPathInitiation` because roads are shown to reroute surface flow via the Road_Mask overlay onto FlowDir  (Jing et al. 2022, 5) — flag for screener confirmation. |
+| 005 Region | `005-Asia` | Study area in Dabie Mountain, Henan, Central China.  (Jing et al. 2022, 3) |
+| 010-A Block A | `010-A3-Metrics` | Methodological backbone is the Borselli IC index and its road-modified variant ICR, used as a quantitative connectivity metric.  (Jing et al. 2022, 5) A secondary `010-A2-FlowPaths` claim is defensible because the paper centers on how roads alter surface flow paths and drainage networks.  (Jing et al. 2022, 2) |
+| 020-B Block B | `020-B1-Roads` | Roads are the only Block-B element analyzed; skid/snig trails and engineered structures are not addressed.  (Jing et al. 2022, 4) |
+| 030-C Block C | `030-empty` | No retention, infiltration, or BMP measure is tested or modeled; mitigation is discussed only as a generic implication in the conclusions, not operationalized as a variable.  (Jing et al. 2022, 10) |
+
+## Notes for the screener
+
+The study is connectivity-anchored in the sense required by the SLR protocol: IC is the explicit outcome, and roads are introduced into the IC computation as drainage modifiers, not merely as a contextual landscape feature. This distinguishes it from runoff-hydrology studies that mention roads only descriptively. The methodological contribution (Road_Mask overlay on FlowDir to derive ICR) is a candidate anchor reference for the "structural connectivity under anthropogenic flow-path modification" cluster in the Synthesis stage, complementary to Croke (2005) for the field-process side.
+
+One caveat for downstream coding: forested vs. agricultural land cover is not separated in the analysis, and "road" includes paved rural through national highways rather than forest roads in the Wemple/Croke sense. If the AquaSilva synthesis distinguishes forest-road connectivity from general rural-road connectivity, this paper should be coded as a transferable-methods reference rather than a direct forest-road case study.
+
+## Sources
+
+Jing, Yaru, Qinghe Zhao, Mengwen Lu, et al. 2022. “Effects of Road and River Networks on Sediment Connectivity in Mountainous Watersheds.” Science of The Total Environment 826 (June): 154189. https://doi.org/10.1016/j.scitotenv.2022.154189.
