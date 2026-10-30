@@ -4,7 +4,7 @@ editor_options: markdown: wrap: 72 ---
 
 # How forest roads, trails, and drainage structures alter hydrological connectivity: A systematic review of three decades of evidence
 
-Elias Amerhauser <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0008-3260-9634)</sup>, Franz Holzleitner <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0001-8489-3050)</sup>, Beverley Wemple <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-3155-9099)</sup>, Maximilian Behringer<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0003-2073-0943)</sup>, Veronika Lechner <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-5716-6541)</sup>, Christian Scheidl<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-5625-6238)</sup> (2026): **How forest roads, trails, and drainage structures alter hydrological connectivity: A systematic review of three decades of evidence**.
+Elias Amerhauser <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0008-3260-9634)</sup>, Franz Holzleitner <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0001-8489-3050)</sup>, Beverley Wemple <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-3155-9099)</sup>, Maximilian Behringer<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0003-2073-0943)</sup>, Veronika Lechner <sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-9707-182X)</sup>, Christian Scheidl<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-5625-6238)</sup> (2026): **How forest roads, trails, and drainage structures alter hydrological connectivity: A systematic review of three decades of evidence**.
 
 This repository holds the data and code behind the review. Running one script reproduces every figure and table of the article and of its Supplementary Material.
 
@@ -55,7 +55,7 @@ Rscript run_all.R
 The script writes the figures to `analysis/figures/`, the companion tables to `analysis/tables/`, and the LaTeX tables of the Supplementary Material to `analysis/writeup/`.
 
 | Script | Produces |
-|----|----|
+|------------------------------------|------------------------------------|
 | `build_cite_map.R` | `cite_map.csv` |
 | `extraction_load.R` | validates the closed vocabularies, applies `effects_corrections.csv`, joins the sheets to the library |
 | `aquasilva_slr_visualization.R` | tag-based counts, PRISMA flow diagram |
@@ -74,7 +74,7 @@ Each record in `aquasilva.csv` carries its provenance and decisions in the colum
 `pipeline/` holds the Python scripts that produced the extraction tables (Supplementary Material S4). They need Python 3 with `pypdf` and `anthropic` and an API key in `ANTHROPIC_API_KEY`.
 
 | Script | Step |
-|----|----|
+|------------------------------------|------------------------------------|
 | `0_prepare.py` | selects the included records, extracts the PDF full texts, writes `manifest.json` |
 | `fix_glyphs.py` | repairs full texts with glyph codes from PDFs without a ToUnicode map |
 | `1_submit.py` | builds and submits one batch per skill (switch `SKILLS`) |
