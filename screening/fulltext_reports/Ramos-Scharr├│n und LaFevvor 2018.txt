@@ -1,0 +1,54 @@
+Reading: ⁨Ramos-Scharrón⁩ und ⁨LaFevor⁩ 2018
+
+## Stage-2 Gate Report — Ramos-Scharrón & LaFevor 2018
+
+**Study type:** `003-FieldMonitoring`
+**Checklist applied:** Q1–Q7
+**Borderline carry-over from Stage 1:** No (not indicated in metadata)
+
+### Gate evaluation
+
+| Gate / Item | Result | Evidence |
+|---|---|---|
+| Gate 2 | PASS | Roads operationalized as study variable; connectivity explicit: "Understanding hydrologic connectivity is essential…", and "road-to-coast connectivity critical to the management of coral reefs" (Ramos-Scharrón and LaFevor 2018, 1) (Ramos-Scharrón and LaFevor 2018, 3) |
+| Q1 (context) | PASS | Coral Bay watershed, 10.7 km², St. John USVI, dry tropical, 1,140 mm/yr, slopes >30%, road density 6.1 km/km²  (Ramos-Scharrón and LaFevor 2018, 2–3) |
+| Q2 (design) | PASS | Gradient/comparative field design: unroaded (UN) vs road-influenced (RI) vs road segment (RD) crest-gauge monitoring with logistic regression  (Ramos-Scharrón and LaFevor 2018, 4) |
+| Q3 (method) | PASS | 46 crest gauges, 15-min tipping bucket, API formula, logistic regression equations 1–2 fully specified  (Ramos-Scharrón and LaFevor 2018, 4) (Ramos-Scharrón and LaFevor 2018, 6) |
+| Q4 (infrastructure) | PASS | Road segments characterized by length, surface area (Ra 284–1,470 m²), flow distance to drain (FD 16–493 m), drain type (ditches/swales/culverts), Ra/FD ratio  (Ramos-Scharrón and LaFevor 2018, 4) (Ramos-Scharrón and LaFevor 2018, 5) |
+| Q5 (connectivity operationalized) | PASS | Connectivity operationalized via terrain-connectivity concept (Bracken 2013), flow distance below road drain, Ra/FD ratio as quantitative connectivity proxy, runoff-frequency contrasts  (Ramos-Scharrón and LaFevor 2018, 2) (Ramos-Scharrón and LaFevor 2018, 6) |
+| Q6 (effect direction) | PASS | Direction reported: roads increase runoff-delivery frequency 2.5–3.2× and shift thresholds downward  (Ramos-Scharrón and LaFevor 2018, 1) |
+| Q7 (scope) | PASS | 1,845 measurements across 46 gauges, 551 storms over ~21 months  (Ramos-Scharrón and LaFevor 2018, 4) (Ramos-Scharrón and LaFevor 2018, 6) |
+| Gate 4 | PASS | Equivalent to Q7 above |
+| Gate 5 | PASS | Quantitative effect sizes derivable (10–13× more frequent road-influenced runoff, threshold shifts from 10–78 mm to 9.3–50 mm)  (Ramos-Scharrón and LaFevor 2018, 1) |
+
+### Recommendation
+
+**Terminal tag:** `006-Include-Stage2` + `006-Include-Final`
+**Exclusion-reason string:** n/a
+**Confidence:** High
+**Items flagged for human re-read:** none
+
+### Content-coding suggestions
+
+- 002: `002-B1-Roads` — forest road surface area and drain proximity are the explicit infrastructure variables  (Ramos-Scharrón and LaFevor 2018, 4)
+- 002: `002-C3-RoadDrainageBMP` — road drains (ditches, swales, relief culverts) characterized as connectivity controls  (Ramos-Scharrón and LaFevor 2018, 3)
+- 003: `003-FieldMonitoring` — crest-gauge monitoring of 46 sites over 21 months  (Ramos-Scharrón and LaFevor 2018, 4)
+- 004: `004-RunoffResponse` — primary outcome is runoff initiation thresholds  (Ramos-Scharrón and LaFevor 2018, 2)
+- 004: `004-A2-FlowPathDescriptors` — flow distance from road drain to channel is core descriptor  (Ramos-Scharrón and LaFevor 2018, 4)
+- 005: `005-NorthAmerica` — U.S. Virgin Islands (Caribbean, US territory)  (Ramos-Scharrón and LaFevor 2018, 2)
+- 010: `010-A2-FlowPathDescriptors` — terrain connectivity defined as maximum downslope reach of runoff below a road drain  (Ramos-Scharrón and LaFevor 2018, 2)
+- 020: `020-B1-Roads` — unpaved forest roads are the main Block-B variable  (Ramos-Scharrón and LaFevor 2018, 2)
+- 020: `020-B3-Structures` — road drainage structures (culverts, swales, ditches) treated as variables  (Ramos-Scharrón and LaFevor 2018, 3)
+- 030: `030-C3-RoadDrainageBMP` — drain spacing/positioning discussed as mitigation lever for road-stream connectivity  (Ramos-Scharrón and LaFevor 2018, 4)
+
+Note on 005: USVI is geographically Caribbean; if AquaSilva taxonomy treats Caribbean as distinct from continental North America, the screener may prefer `005-empty` or a Caribbean-specific value — flag for screener judgment.
+
+### Synthesis role
+
+**Study_Type_Synthesis_Role:** `primary`
+**RQ5 vote-counting:** included
+**Notes for synthesis phase:** Provides quantitative effect sizes for RQ6 — road presence increases runoff-delivery frequency by a factor of 2.5–3.2 and lowers rainfall thresholds for ephemeral-channel activation from ~10–78 mm (unroaded) to ~9.3–50 mm (road-influenced), with Ra/FD as a transferable connectivity descriptor relevant to Maßnahmenkatalog Type C (channel modifier) and BMP placement logic.
+
+## Sources
+
+Ramos-Scharrón, C. E., and M. C. LaFevor. 2018. “Effects of Forest Roads on Runoff Initiation in Low-Order Ephemeral Streams.” Water Resources Research 54 (11): 8613–31. Scopus. https://doi.org/10.1029/2018WR023442.

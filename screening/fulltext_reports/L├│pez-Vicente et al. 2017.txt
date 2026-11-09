@@ -1,0 +1,58 @@
+Reading: López-Vicente et al. 2017
+
+## Stage 2 Gate Evaluation — López-Vicente et al. (2017)
+
+### Gate-by-gate assessment
+
+**Gate 1 (Full text retrievable):** PASS. PDF available, 11 pages, complete.
+
+**Gate 2 (Stage-1 inclusion confirmed):** PASS. Block-B infrastructure (forest roads, skidding trails, plus proposed check-dams) is the explicit treatment variable across six management-based scenarios, and connectivity is operationalized as the primary outcome via Borselli's IC index, updated with the D-infinity algorithm. (López-Vicente et al. 2017, 3)
+
+**Gate 3 (Q-items, primary study — modelling with field validation):**
+- Q1 (context reportable): PASS. Two paired subcatchments K2/K3 (33.2 ha) on Mt. Karasawa, Tochigi, Japan; mean slope 65–66 %; humid temperate, 1416 mm yr⁻¹; orthic brown Cambisol; *Chamaecyparis obtusa* / *Cryptomeria japonica* plantation.  (López-Vicente et al. 2017, 2)
+- Q2 (design classifiable): PASS. Modelling study on a paired-catchment design with field validation from three hillslope plots and six gauging stations across a 40-month monitoring period.  (López-Vicente et al. 2017, 5) (López-Vicente et al. 2017, 8)
+- Q3 (method reproducible): PASS. IC formula given explicitly (Eq. 1), D-infinity in SAGA 2.1.2, 0.5 m LiDAR DEMs from three airborne surveys, Planchon–Darboux pit-filling, all C-RUSLE weights for each land use tabulated with sources.  (López-Vicente et al. 2017, 3) (López-Vicente et al. 2017, 6)
+- Q4 (infrastructure characterized): PASS. Forest road C-RUSLE = 0.5027, skidding trails = 0.2652; geometry, location and topological role described and mapped per scenario; check-dam siting criteria (>90th IC percentile, near trails, distributed) given.  (López-Vicente et al. 2017, 5) (López-Vicente et al. 2017, 6)
+- Q5 (connectivity operationalized): PASS. IC reported at four scales (subcatchment / FMO-area / hillslope plots / streams) and per land-use class.  (López-Vicente et al. 2017, 8)
+- Q6 (effect direction derivable): PASS. Quantitative deltas relative to pre-FMO baseline: +11.4 % (cypress, K2), +10.5 % (cedar, K2), +8.8 % (cedar, K3) in plantations; +8.6 % / +7.4 % in FMO-affected area of K2/K3; +5.4 % in K2 streams; skidding trails highest HC of all classes; check-dams reduce HC by −0.14 % (K2 streams) to −1.32 % (KS31 plot).  (López-Vicente et al. 2017, 6) (López-Vicente et al. 2017, 8)
+
+**Gate 4 (sample/scope):** PASS. Six scenarios across 40 months; 189 storm events; six gauging stations; three time-matched LiDAR DEMs.
+
+**Gate 5 (effect direction extractable):** PASS. Direction unambiguous — thinning + new skid trails *increase* HC; vegetation recovery and check-dams *decrease* HC.
+
+### Terminal tag recommendation
+
+`006-Include-Stage2` AND `006-Include-Final`
+
+No exclusion-reason note required.
+
+---
+
+### Content-coding tag proposals (suggestions for human screener)
+
+| Family | Proposed tag | Rationale (supporting sentence) |
+|---|---|---|
+| 002 Infrastructure subtype | `002-Mixed` | Three Block-B types co-treated in same study: forest road, skidding trails, and proposed check-dams as mitigation structures.  (López-Vicente et al. 2017, 5) |
+| 003 Study type | `003-Modeling` | "We simulated HC … with an updated version of Borselli's index at high spatial resolution."  (López-Vicente et al. 2017, 2) |
+| 003 Study type (second) | `003-PairedCatchment` | "Two adjacent subcatchments … K2 (19.6 ha) and K3 (13.6 ha)" used as paired design.  (López-Vicente et al. 2017, 2) |
+| 004 Hydrological focus | `004-RunoffResponse` | Validation against discharge coefficients in six gauging stations linking HC to observed runoff yield.  (López-Vicente et al. 2017, 8) |
+| 004 Hydrological focus (second) | `004-SedimentDelivery` | IC framed as runoff *and sediment* connectivity; check-dams motivated to reduce sediment + radionuclide delivery.  (López-Vicente et al. 2017, 3) |
+| 004 Hydrological focus (third) | `004-FlowPathInitiation` | Skidding trails identified as the most efficient features initiating hillslope-to-stream flow paths.  (López-Vicente et al. 2017, 8) |
+| 005 Region | `005-Asia` | Mt. Karasawa, Tochigi Prefecture, central Japan.  (López-Vicente et al. 2017, 2) |
+| 010-A Block A | `010-A3-Metrics` | Primary methodological contribution: D-infinity adaptation of Borselli's IC.  (López-Vicente et al. 2017, 3) |
+| 010-A Block A (second) | `010-A2-FlowPaths` | Explicit treatment of LLE mask altering flow direction and weighted flow-path length.  (López-Vicente et al. 2017, 3) |
+| 020-B Block B | `020-B1-Roads` | Forest road characterized as linear feature with highest HC after trails.  (López-Vicente et al. 2017, 8) |
+| 020-B Block B (second) | `020-B2-SkidSnigTrails` | Skidding trails are the central treatment variable across scenarios Sc2 and Sc4.  (López-Vicente et al. 2017, 4) |
+| 020-B Block B (third) | `020-B3-Structures` | Six check-dams proposed and simulated as ScF.  (López-Vicente et al. 2017, 5) |
+| 030-C Block C | `030-C1-Retention` | Check-dams proposed explicitly to reduce HC, sediment, and radionuclide delivery — retention function.  (López-Vicente et al. 2017, 5) |
+| 030-C Block C (second) | `030-Cany-MitigationControls` | Quantitative evaluation of mitigation effectiveness (HC reduction in ScF).  (López-Vicente et al. 2017, 8) |
+
+---
+
+### Brief methodological note for the screener
+
+This record is methodologically central for the connectivity-anchored corpus: it pairs a Borselli-IC modelling design with paired-catchment field validation and treats roads, skid trails, *and* a retention structure (check-dam) inside one consistent metric. It is a strong anchor for the structural-connectivity side of the AquaSilva synthesis. The reported effect sizes are *structural* HC changes (IC-based), not event-flux measurements, so when used in Block C synthesis the values should be flagged as structural-connectivity deltas rather than functional retention coefficients.
+
+## Sources
+
+López-Vicente, M., X. Sun, Y. Onda, H. Kato, T. Gomi, and M. Hiraoka. 2017. “Effect of Tree Thinning and Skidding Trails on Hydrological Connectivity in Two Japanese Forest Catchments.” Geomorphology 292: 104–14. Scopus. https://doi.org/10.1016/j.geomorph.2017.05.006.

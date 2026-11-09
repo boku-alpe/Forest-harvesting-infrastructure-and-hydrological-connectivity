@@ -1,0 +1,50 @@
+Koreňová et al. 2024, p. 1-8
+
+[Reading: Koreňová et al. 2024, p. 9-16 (8 results)]
+
+## Stage 2 screening — Koreňová et al. (2024)
+
+### Gate-by-gate appraisal
+
+**Gate 1 (full text):** PDF retrievable, 20 pp., open-access CC-BY. Pass.
+
+**Gate 2 (Stage-1 inclusion confirmed):** Block-B infrastructure (forest roads, paved and unpaved; bank fortifications; transverse in-channel structures) is treated as a variable affecting connectivity, not merely as context. The paper explicitly attributes lateral disconnectivity to the road network: "Lateral connectivity in Hučivá Desná and even more in Upper Moravice was significantly decreased by a high-density road network" (Koreňová et al. 2024, 12). Connectivity is operationalized as the outcome via three quantitative methods (ECA at six slope thresholds, IC-B with USLE C-factor, IC-C with roughness index)  (Koreňová et al. 2024, 8). Pass.
+
+**Gate 3 (Q-items for primary study):**
+- Q1 study context: Two forested headwater catchments in Hrubý Jeseník Mts., Czech Republic (Hučivá Desná 19.53 km², Upper Moravice 25.67 km²; middle-mountainous, schist/orthogneiss, coniferous commercial forest, 925–1168 mm yr⁻¹)  (Koreňová et al. 2024, 4). Pass.
+- Q2 design classifiable: Hybrid field mapping + GIS-based modeling, with field survey used to validate ECA thresholds  (Koreňová et al. 2024, 5). Pass.
+- Q3 method reproducible: DEM 5G (2.5 m), ArcHydro workflow, slope thresholds 2/5/8/10/15/20°, Connectivity Index Toolbox of Cavalli et al. (2013), 100-m segment classification protocol  (Koreňová et al. 2024, 8). Pass.
+- Q4 infrastructure characterized: Road density and position relative to channel mapped; bank fortification length quantified (2.65 km / >30 % on Hučivá Desná; 0.89 km / ~1 % on Upper Moravice); 124 vs. 81 transverse structures mapped with type and functionality  (Koreňová et al. 2024, 9). Pass.
+- Q5 connectivity operationalized: Both structural (ECA, IC) and partly functional (field-revised "functional ECAs") connectivity quantified  (Koreňová et al. 2024, 11). Pass.
+- Q6 effect direction derivable: Parallel roads reduce slope–channel connectivity; effect stronger in Upper Moravice (revised ECA 2.14 km² vs. modelled ECA8 of 2.59 km², i.e. ~20 % overestimation without road correction)  (Koreňová et al. 2024, 12) (Koreňová et al. 2024, 15). Pass.
+
+**Gate 4 (sample/scope):** Paired-catchment comparison, full longitudinal coverage of two streams (~16 km total), six slope-threshold scenarios. Sufficient. Pass.
+
+**Gate 5 (effect direction extractable):** Negative effect of parallel roads on lateral connectivity is explicitly stated and quantified through ECA-vs.-field-mapping differences and IC-map comparison  (Koreňová et al. 2024, 15). Pass.
+
+### Recommended terminal tags
+
+- `006-Include-Stage2`
+- `006-Include-Final`
+
+No exclusion-reason note required.
+
+### Proposed content-coding tags (for human screener confirmation)
+
+| Family | Proposed value | Supporting evidence |
+|---|---|---|
+| 002 Infrastructure subtype | `002-B1-Roads` | Roads (paved/unpaved forest roads parallel to channels) are the dominant infrastructure variable driving disconnectivity  (Koreňová et al. 2024, 12). Bank fortifications and check dams are also discussed but classified by the authors as channel-modification side-effects rather than the primary B-element; if the screener prefers, `002-Mixed` is defensible. |
+| 003 Study type | `003-Modeling` | GIS-based ECA + IC computation is the analytical core, with field mapping used as ground-truth for threshold selection  (Koreňová et al. 2024, 8). A secondary `003-FieldMonitoring` is also defensible given the May 2019 / Sept 2021 field campaigns  (Koreňová et al. 2024, 6). |
+| 004 Hydrological focus | `004-SedimentDelivery` | Outcome is sediment supply / sediment-transport hazard from hillslopes to channel  (Koreňová et al. 2024, 1). |
+| 005 Region | `005-Europe` | Czech Republic, Hrubý Jeseník  (Koreňová et al. 2024, 3). |
+| 010 Block A | `010-A3-Metrics` | Quantitative IC (Borselli/Cavalli) and ECA are the methodological backbone  (Koreňová et al. 2024, 8). `010-A2-FlowPaths` is a defensible secondary tag because slope–channel pathway interruption by parallel roads is the central mechanism analysed  (Koreňová et al. 2024, 15). |
+| 020 Block B | `020-B1-Roads` | Same evidence as 002 row  (Koreňová et al. 2024, 12). |
+| 030 Block C | `030-empty` | Check dams and bank fortifications are discussed as connectivity disruptors and as causing hungry-water side-effects, not evaluated as flood-retention mitigation measures  (Koreňová et al. 2024, 13). If the screener counts torrent-control check dams as retention infrastructure under the AquaSilva definition, `030-C1-Retention` would be the alternative. |
+
+### Note for the AquaSilva corpus
+
+This record is methodologically anchor-relevant for Block A3 (IC, ECA methodology in data-scarce forested headwaters) and Block B1 (roads as lateral disconnectivity agent), and supplies a transferable workflow for connectivity-anchored screening of small Wienerwald sub-catchments. The quantitative ECA-vs.-field-mapping calibration (8° threshold for Hučivá Desná, 10° for Upper Moravice) is a useful reference value for similar middle-mountain forested settings  (Koreňová et al. 2024, 15).
+
+## Sources
+
+Koreňová, Simona, Monika Šulc Michalková, Zdeněk Máčka, Ronald Pöppl, and Jan Donoval. 2024. “Linking Sediment Connectivity with Sediment Transport Risk Assessment in Small Forested Catchments in the Czech Republic.” River Research and Applications 40 (7): 1343–62. https://doi.org/10.1002/rra.4295.

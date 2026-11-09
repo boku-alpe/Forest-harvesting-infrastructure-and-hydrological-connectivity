@@ -623,7 +623,127 @@ save_plot(p_prisma, "02_prisma_flow", width_cm = W_FULL, height_cm = 18)
 message("\nPRISMA flow rendered. ",
         "File: figures/02_prisma_flow.{pdf,png}")
 
+# 02s  PRISMA FLOW DIAGRAM - SMALL (Fig. 1 of the article)  ====================
+# Compact variant of 02_prisma_flow, placed after section 2.3. Uses the counts
+# from 2.1 and the fill colours from 2.2; the full diagram stays unchanged.
+#
+# Differences from 02_prisma_flow:
+#   (1) Exclusion arrows branch off the vertical flow arrow, mirroring the
+#       citation-tracking arrow that joins it.
+#   (2) Side boxes give counts only; the reasons are listed in Tables S3.4 and
+#       S3.5 of the Supplementary Material.
+#   (3) As in the PRISMA 2020 template, "Reports sought for retrieval" and
+#       "Reports not retrieved" are separate from "Reports assessed for
+#       eligibility" (revision of 7 November 2026; the version of 29 October
+#       merged them and counted the reports not retrieved among the exclusions).
 
+# 2s.1  Boxes ------------------------------------------------------------------
+x_main <- 6.0     # main column centre
+x_side <- 14.2    # side-box centre
+w_side <- 5.0     # side-box width
+h_side <- 1.15    # side-box height
+
+y_dedup   <- 16.20   # branch heights on the main flow
+y_join    <- 13.70   # citation tracking joins the main flow
+y_s1      <- 10.40
+y_notretr <-  7.35
+y_s2      <-  4.15
+
+boxes_s <- tribble(
+  ~id,         ~cx,    ~cy,       ~w,     ~h,     ~label,                                                                                     ~fill,
+  "db_scop",    3.0,   19.9,      2.8,    1.3,    sprintf("Scopus\nn = %d", n_scopus),                                                         fill_id,
+  "db_wos",     6.0,   19.9,      2.8,    1.3,    sprintf("Web of Science\nn = %d", n_wos),                                                    fill_id,
+  "db_sch",     9.0,   19.9,      2.8,    1.3,    sprintf("Google Scholar\nn = %d", n_scholar),                                                fill_id,
+  "other",     19.0,   19.9,      3.6,    1.7,    sprintf("Other methods\n(citation tracking)\nn = %d", n_snowball),                         fill_other,
+  "ident_tot", x_main, 17.6,      8.0,    1.7,    sprintf("Records identified from databases\n(total hits, incl. cross-DB duplicates)\nn = %d", n_db_hits_total), fill_id,
+  "dedup",     x_side, y_dedup,   w_side, h_side, sprintf("Duplicates removed\nn = %d", n_dedup_removed),                                     fill_excl,
+  "ident_uni", x_main, 15.0,      8.0,    1.3,    sprintf("Records identified (unique)\nn = %d", n_db_unique),                                 fill_id,
+  "screen",    x_main, 12.2,      8.0,    1.8,    sprintf("Records screened (title / abstract)\nn = %d\n(%d from databases, %d via citation tracking)",
+                                                          n_screened, n_screened - n_snowball, n_snowball),                                    fill_screen,
+  "s1_excl",   x_side, y_s1,      w_side, h_side, sprintf("Records excluded\nn = %d", n_s1_exclude),                                          fill_excl,
+  "sought",    x_main,  8.8,      8.0,    1.3,    sprintf("Reports sought for retrieval\nn = %d", n_s1_include),                               fill_elig,
+  "notretr",   x_side, y_notretr, w_side, h_side, sprintf("Reports not retrieved\nn = %d", n_not_retr),                                       fill_excl,
+  "fulltxt",   x_main,  5.9,      8.0,    1.3,    sprintf("Reports assessed for eligibility\nn = %d", n_assessed),                             fill_elig,
+  "s2_excl",   x_side, y_s2,      w_side, h_side, sprintf("Reports excluded\nn = %d", n_s2_elig_ex),                                          fill_excl,
+  "incl",      x_main,  2.1,      8.0,    1.9,    sprintf("Studies included in synthesis\nn = %d\n(%d from databases, %d via citation tracking)",
+                                                          n_final, n_final_db, n_snowball),                                                    fill_incl
+)
+
+# Box edges for arrow geometry
+edge <- function(id, side) {
+  b <- boxes_s[boxes_s$id == id, ]
+  switch(side, top = b$cy + b$h/2, bottom = b$cy - b$h/2,
+         left = b$cx - b$w/2, right = b$cx + b$w/2)
+}
+
+# Consistency check: the diagram must close arithmetically
+if (n_screened   - n_s1_exclude != n_s1_include ||
+    n_s1_include - n_not_retr   != n_assessed   ||
+    n_assessed   - n_s2_elig_ex != n_final) {
+  warning("PRISMA small: counts do not close - check 006 tags in Zotero.")
+}
+
+
+# 2s.2  Arrows -----------------------------------------------------------------
+# Main flow: vertical arrows with head. Exclusions: horizontal arrows that
+# start ON the vertical arrow (x = x_main) at the side-box height.
+arrows_s <- tribble(
+  ~x1,    ~y1,                      ~x2,                  ~y2,
+  3.0,    edge("db_scop","bottom"),   4.0,                edge("ident_tot","top"),   # Scopus  -> total
+  6.0,    edge("db_wos","bottom"),    6.0,                edge("ident_tot","top"),   # WoS     -> total
+  9.0,    edge("db_sch","bottom"),    8.0,                edge("ident_tot","top"),   # Scholar -> total
+  x_main, edge("ident_tot","bottom"), x_main,             edge("ident_uni","top"),   # total   -> unique
+  x_main, edge("ident_uni","bottom"), x_main,             edge("screen","top"),      # unique  -> screened
+  x_main, edge("screen","bottom"),    x_main,             edge("sought","top"),      # screened -> sought
+  x_main, edge("sought","bottom"),    x_main,             edge("fulltxt","top"),     # sought  -> assessed
+  x_main, edge("fulltxt","bottom"),   x_main,             edge("incl","top"),        # assessed -> included
+  # branches off the main flow
+  x_main, y_dedup,                    edge("dedup","left"),   y_dedup,               # -> duplicates removed
+  x_main, y_s1,                       edge("s1_excl","left"), y_s1,                  # -> excluded (T/A)
+  x_main, y_notretr,                  edge("notretr","left"), y_notretr,             # -> not retrieved
+  x_main, y_s2,                       edge("s2_excl","left"), y_s2,                  # -> excluded (full text)
+  # citation tracking joins the main flow
+  19.0,   y_join,                     x_main + 0.08,      y_join
+)
+
+arrows_plain_s <- tribble(
+  ~x1,  ~y1,                   ~x2,  ~y2,
+  19.0, edge("other","bottom"), 19.0, y_join
+)
+
+
+# 2s.3  Render -----------------------------------------------------------------
+p_prisma_small <- ggplot() +
+  geom_rect(
+    data = boxes_s,
+    aes(xmin = cx - w/2, xmax = cx + w/2,
+        ymin = cy - h/2, ymax = cy + h/2, fill = fill),
+    colour = "grey25", linewidth = 0.4
+  ) +
+  geom_text(
+    data = boxes_s,
+    aes(x = cx, y = cy, label = label),
+    size = 2.7, lineheight = 1.10
+  ) +
+  geom_segment(
+    data = arrows_plain_s,
+    aes(x = x1, y = y1, xend = x2, yend = y2),
+    linewidth = 0.4, colour = "grey25"
+  ) +
+  geom_segment(
+    data = arrows_s,
+    aes(x = x1, y = y1, xend = x2, yend = y2),
+    arrow = arrow(length = unit(0.18, "cm"), type = "closed"),
+    linewidth = 0.4, colour = "grey25"
+  ) +
+  scale_fill_identity() +
+  coord_fixed(xlim = c(0.5, 21), ylim = c(0.9, 21)) +
+  theme_void(base_size = 10) +
+  theme(plot.margin = margin(8, 8, 8, 8))
+
+save_plot(p_prisma_small, "02_prisma_flow_small", width_cm = W_FULL, height_cm = 18)
+
+message("\nPRISMA (small) rendered. File: figures/02_prisma_flow_small.{pdf,png}")
 
 # 02b  SEARCH STRATEGY PERFORMANCE  ============================================
 #

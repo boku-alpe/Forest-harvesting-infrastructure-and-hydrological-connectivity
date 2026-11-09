@@ -1,0 +1,45 @@
+[Reading: González-Romero et al. 2021, p. 1-6 (6 results)]
+
+## Stage-2 screening — González-Romero et al. (2021)
+
+**Verdict: `006-Include-Stage2` AND `006-Include-Final`**
+
+### Gate-by-gate assessment
+
+**Gate 1 — Full text retrievable.** PASS. The PDF is available (18 pp., open access). (González-Romero et al. 2021, 1)
+
+**Gate 2 — Stage-1 inclusion confirmed by full text.** PASS. Connectivity is explicitly operationalized as the primary outcome via the Aggregated Index of Connectivity (AIC), computed for both structural and functional sediment connectivity at catchment-outlet target.  (González-Romero et al. 2021, 3) (González-Romero et al. 2021, 6) Block-B infrastructure enters as a manipulated variable: check-dams (10 new concrete + 66 rock check-dams + 11 pre-existing concrete), salvage-logging skid trails, and hillslope log/branch barriers are inputs to the post-management DEM/C-factor scenario.  (González-Romero et al. 2021, 5)
+
+**Gate 3 — Q-items (primary study, modeling + field).**
+- Q1 context: PASS — semi-arid Mediterranean, 5 catchments 198–1090 ha, slopes 28.9–39.5 %, Aridisol/Calcid, 320 mm yr⁻¹ MAP, post-2012 wildfire in SE Spain.  (González-Romero et al. 2021, 4)
+- Q2 design: PASS — modeling (AIC on 2 m LiDAR DEM) combined with field SSY monitoring at 10 concrete check-dams.  (González-Romero et al. 2021, 1)
+- Q3 method reproducibility: PASS — full AIC equations, factor definitions, EI30 derivation, and weather-station basis reported.  (González-Romero et al. 2021, 6)
+- Q4 infrastructure characterized: PASS — barrier length (15 m), spacing (10 m), heights (25–40 cm); check-dam heights (3–6.5 m concrete; 2 m rock) and widths (21–39 m); densities tabulated per catchment.  (González-Romero et al. 2021, 4–5)
+- Q5 connectivity operationalized: PASS — structural vs. functional SC explicitly distinguished and both computed.  (González-Romero et al. 2021, 6)
+- Q6 effect direction derivable: PASS — structural SC change x̄ = −1.19 % (σ = 0.41), functional SC change x̄ = +5.32 % (σ = 0.62); SSY = 1.94 Mg ha⁻¹ yr⁻¹ (σ = 1.22); positive correlation reported between SSY and ΔAIC_N-OUT.  (González-Romero et al. 2021, 1)
+
+**Gate 4 — Sample/scope.** PASS. Five catchments, 929 sub-catchments (677 in burned area), paired pre/post-management scenarios.  (González-Romero et al. 2021, 1)
+
+**Gate 5 — Effect direction extractable.** PASS. Hillslope treatments produced significant reductions of AIC_N-OUT at sub-catchment scale; rock check-dams showed no detectable effect (attributed to DEM resolution limitation rather than null physical effect — note this caveat for synthesis).  (González-Romero et al. 2021, 1)
+
+### Proposed content-coding tags
+
+| Family | Proposed value | Rationale (supporting evidence) |
+|---|---|---|
+| 002 Infrastructure subtype | `002-Mixed` | Check-dams (B3), skid trails (B2), and hillslope log barriers (B3) co-occur as treatment set.  (González-Romero et al. 2021, 5) |
+| 003 Study type | `003-Modeling` (primary); also coding `003-FieldMonitoring` if multi-coding is allowed | AIC index modeling on LiDAR DEMs combined with observed SSY at check-dams.  (González-Romero et al. 2021, 1) |
+| 004 Hydrological focus | `004-SedimentDelivery` | Catchment-outlet sediment transfer is the explicit target variable.  (González-Romero et al. 2021, 6) |
+| 005 Region | `005-Europe` | La Sierra de Donceles, Albacete/Murcia, Spain.  (González-Romero et al. 2021, 3) |
+| 010-A Block A | `010-A1-Concepts` + `010-A3-Metrics` | Structural/functional SC concept distinction and AIC index application.  (González-Romero et al. 2021, 2) (González-Romero et al. 2021, 6) |
+| 020-B Block B | `020-B2-SkidSnigTrails` + `020-B3-Structures` | Skid trails opened for salvage logging; rock and concrete check-dams plus hillslope barriers.  (González-Romero et al. 2021, 5) |
+| 030-C Block C | `030-C1-Retention` + `030-C3-BMPs` | Check-dams and log/branch barriers function as retention BMPs in post-fire management.  (González-Romero et al. 2021, 2) (González-Romero et al. 2021, 5) |
+
+### Synthesis-relevant caveats (flagged for AP2)
+
+The null effect attributed to rock check-dams is a **resolution artefact** of the 2 m DEM relative to small secondary-channel structures, not evidence of no hydraulic effect — relevant when the paper is later cited for B3-Structures effectiveness on functional connectivity.  (González-Romero et al. 2021, 1) The Rt factor nearly doubled between scenarios (0.54 → 1.00), which is why the authors emphasize the structural-SC maps for treatment attribution; this should be preserved in any extracted effect-size statement.  (González-Romero et al. 2021, 6)
+
+Shall I write these as a child note on the item for the screener's review?
+
+## Sources
+
+González-Romero, J., M. López-Vicente, E. Gómez-Sánchez, et al. 2021. “Post-Fire Management Effects on Sediment (Dis)Connectivity in Mediterranean Forest Ecosystems: Channel and Catchment Response.” Earth Surface Processes and Landforms 46 (13): 2710–27. Scopus. https://doi.org/10.1002/esp.5202.

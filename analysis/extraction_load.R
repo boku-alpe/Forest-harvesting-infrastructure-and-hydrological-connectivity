@@ -130,6 +130,22 @@ ex_effects        <- read_sheet("effects")
 ex_mitigation     <- read_sheet("mitigation")
 ex_reviews        <- read_sheet("reviews")
 
+# Documented additions (November 2026): infrastructure elements of records whose
+# 002 tags were missing at extraction time. The raw sheet stays untouched.
+n_infra_added <- 0L
+if (file.exists(here("infrastructure_additions.csv"))) {
+  add <- readr::read_csv(here("infrastructure_additions.csv"),
+                         col_types = cols(.default = col_character())) |>
+    select(any_of(names(ex_infrastructure)))
+  dup <- intersect(add$infra_id, ex_infrastructure$infra_id)
+  if (length(dup)) stop("infrastructure addition duplicates existing infra_id: ",
+                        paste(dup, collapse = ", "), call. = FALSE)
+  ex_infrastructure <- bind_rows(ex_infrastructure, add)
+  n_infra_added <- nrow(add)
+  message(sprintf("Added %d documented infrastructure elements from infrastructure_additions.csv.",
+                  n_infra_added))
+}
+
 # -----------------------------------------------------------------------------
 # 3b  Documented manual corrections (consistency review, October 2026)
 # -----------------------------------------------------------------------------
@@ -303,7 +319,8 @@ log_tbl <- bind_rows(
   tibble(check = "mit030_without_row",        value = paste(mit_tag_no_row, collapse = "; ")),
   tibble(check = "reviews_fields_empty",      value = as.character(reviews_empty)),
   tibble(check = "flagged_rows_total",        value = as.character(sum(flag_inv$n))),
-  tibble(check = "manual_corrections_applied", value = as.character(n_corrections))
+  tibble(check = "manual_corrections_applied", value = as.character(n_corrections)),
+  tibble(check = "infrastructure_elements_added", value = as.character(n_infra_added))
 )
 write_csv(log_tbl,  file.path(tables_dir, "extraction_validation_log.csv"))
 write_csv(flag_inv, file.path(tables_dir, "extraction_flag_inventory.csv"))
