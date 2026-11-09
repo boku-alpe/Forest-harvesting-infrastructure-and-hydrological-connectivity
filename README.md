@@ -21,13 +21,16 @@ analysis/                     data and R code, run from this folder
   search/search_strings.csv   the 54 searches (18 queries x 3 databases),
                               complete Boolean strings as run
   studies.csv                 extraction, one row per primary study (55)
-  infrastructure.csv          one row per infrastructure element (95)
+  infrastructure.csv          one row per infrastructure element (95 as extracted)
   connectivity.csv            one row per connectivity metric (225)
   effects.csv                 one row per reported effect (229)
   mitigation.csv              one row per mitigation measure (50)
   reviews.csv                 one row per included review (6)
   effects_corrections.csv     five documented corrections of effect direction,
                               applied at load time; the raw sheets are unchanged
+  infrastructure_additions.csv  two infrastructure elements of one record whose
+                              type tags were missing, appended at load time
+                              (97 elements in the analysis)
   *.R                         analysis scripts, see below
 outputs/
   screening_decisions.csv     decision, stage, and reason for each of the 254
@@ -57,8 +60,8 @@ The script writes the figures to `analysis/figures/`, the companion tables to `a
 | Script | Produces |
 |------------------------------------|------------------------------------|
 | `build_cite_map.R` | `cite_map.csv` |
-| `extraction_load.R` | validates the closed vocabularies, applies `effects_corrections.csv`, joins the sheets to the library |
-| `aquasilva_slr_visualization.R` | tag-based counts, PRISMA flow diagram |
+| `extraction_load.R` | validates the closed vocabularies, applies `effects_corrections.csv`, appends `infrastructure_additions.csv`, joins the sheets to the library |
+| `aquasilva_slr_visualization.R` | tag-based counts, PRISMA flow diagram (full version and the compact Fig. 1 of the article) |
 | `rq_extraction_figures.R`, `rq5_synthesis.R` | extraction-based figures and vote counts |
 | `DR_AS_SLR_manuscript_figures.R` | Figs. 2 to 8 of the article |
 | `writeup_export.R`, `review_synthesis.R` | Tables S5.1 and S6.1 to S6.4 |
@@ -86,8 +89,8 @@ The scripts are archived in the state of their last use (for example `SKILLS = [
 
 ## Licence
 
-**[To be decided, for example CC BY 4.0 for data and MIT for code.]**
+Data (CSV tables and screening reports) are licensed under CC BY 4.0, code (R and Python scripts) under the MIT licence (see LICENSE). Quotations from the included studies remain under the copyright of their authors.
 
 ## Citation
 
-**[Article reference and DOI to be added.]**
+Please cite the article (reference to be added on publication).
